@@ -32,3 +32,23 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+## Docker Fleet Sandbox
+
+- **Image:** `fleet-sandbox` (627MB)
+- **Installed:** Python 3.10, Go 1.24, Rust 1.94, Node 22, GCC 11.4, Git
+- **Usage:** `sudo docker run --rm fleet-sandbox bash -c "command"`
+- **Network:** `fleet-net` (for inter-container communication)
+- **Note:** `ubuntu` user needs `sudo` for docker until re-login (group membership)
+
+### Running Agent Tasks in Sandbox
+```bash
+# Run a Python script in sandbox
+sudo docker run --rm -v /tmp/workspace:/workspace fleet-sandbox python3 /workspace/script.py
+
+# Run Go build
+sudo docker run --rm -v /tmp/workspace:/workspace fleet-sandbox go build /workspace/main.go
+
+# Run Rust tests
+sudo docker run --rm -v /tmp/workspace:/workspace fleet-sandbox cargo test --manifest-path /workspace/Cargo.toml
+```
