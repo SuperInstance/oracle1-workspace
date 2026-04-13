@@ -39,7 +39,15 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - **Vessel repo**: `SuperInstance/openmanus-vessel`
 - **Fleet repo**: `SuperInstance/openmanus-fleet`
 - **Playwright**: Chromium headless via Xvfb :99
-- **Cost**: ~$0.0001/task
+- **Vision models** (for OpenManus screenshot analysis):
+  - `Qwen/Qwen3-VL-32B-Instruct` — fast vision
+  - `Qwen/Qwen3-VL-235B-A22B-Instruct` — heavy vision
+  - `Qwen/Qwen3-VL-235B-A22B-Thinking` — vision + reasoning
+- **Cost**: ~$0.0001-0.001 per call. Use aggressively.
+- **Launcher**: `/tmp/openmanus_fleet.sh "task here"`
+- **Vessel repo**: `SuperInstance/openmanus-vessel`
+- **Fleet repo**: `SuperInstance/openmanus-fleet`
+- **Playwright**: Chromium headless via Xvfb :99
 - **Patches**: Daytona disabled (sandbox.py, tool_base.py, config.py), daytona_sdk shim
 - `scripts/batch.py` — parallel workers (export, descriptions, analyze)
 - `scripts/task_worker.py` — single-task CLI for z.ai calls
