@@ -2,6 +2,15 @@
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
+## DeepInfra (Seed-2.0-Mini + creative models)
+- **API key**: `RhZPtvuy4cXzu02LbBSffbXeqs5Yf2IZ` (in ~/.bashrc)
+- **Base URL**: `https://api.deepinfra.com/v1/openai`
+- **Star model**: `ByteDance/Seed-2.0-mini` — $0.00003/1K tokens, divergent thinker
+- **MCP server**: JC1's `seed-mcp-v2` at `http://localhost:9438` (forked to SuperInstance)
+- **Chain pattern**: Seed-mini (breadth) → Hermes-3-405B (pick best) → Seed-pro (polish)
+- **Key rule**: Never ask for one answer. Always 3-5. Temp 0.85.
+- **Also good for**: small image models, visual analysis
+
 ## CLI Agents
 - **Claude Code** v2.1.100 → `claude` (coding plan active)
 - **Crush** v0.56.0 → `crush` (coding plan active)
