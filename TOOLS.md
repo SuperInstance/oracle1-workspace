@@ -26,6 +26,23 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - `glm-4.7-flash` — bulk parallel spray
 - ~~glm-4.7-flashx~~ — NOT on plan, don't use
 
+## Groq API (high-frequency iterations)
+- **API key**: `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`
+- **Base URL**: `https://api.groq.com/openai/v1`
+- **Best for**: High-frequency iterations, spray-and-pray, rapid feedback loops
+- **Speed**: ~24ms inference for 70B model. Absurdly fast.
+- **⚠️ Python urllib**: Groq blocks default Python User-Agent. Must set `User-Agent: curl/7.88` header.
+- **Models (18)**:
+  - `llama-3.3-70b-versatile` — workhorse, 24ms
+  - `llama-3.1-8b-instant` — fastest, for spray iterations
+  - `meta-llama/llama-4-scout-17b-16e-instruct` — Llama 4
+  - `qwen/qwen3-32b` — Qwen at Groq speed
+  - `moonshotai/kimi-k2-instruct` — Kimi at inference speed
+  - `openai/gpt-oss-120b` — 120B model
+  - `openai/gpt-oss-20b` — mid-tier OSS
+  - `groq/compound` + `groq/compound-mini` — Groq native
+  - Audio: `whisper-large-v3`, `whisper-large-v3-turbo`
+
 ## SiliconFlow API
 - **API key**: `sk-xtcrixoswqhmsopntnkfapccswjywrlsdpbunqjukpileiqo`, base: `https://api.siliconflow.com/v1`
 - **Working as of 2026-04-13** — previously was invalid
