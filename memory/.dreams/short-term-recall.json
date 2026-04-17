@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T01:30:12.025Z",
+  "updatedAt": "2026-04-17T20:50:54.232Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -735,18 +735,20 @@
       "endLine": 151,
       "source": "memory",
       "snippet": "Achievement files are the highest-value data because they're **unfakeable** — the \"describe in your own words\" test means the data is genuine understanding, not generated filler. ### Files Created - `/home/ubuntu/.openclaw/workspace/training-data/SCHEMA.md` - `/home/ubuntu/.openclaw/workspace/training-data/gather.py` - `/home/ubuntu/.openclaw/workspace/training-data/.seen_hashes` ## Forgemaster Bottles FM sent 2 bottles: status report + 3 new PLATO-OS rooms (CT Proof Lab, Convergence Station, Instrument Forge). Discovery flywheel running. Timeline: CT v1.0.0 by Day 21, arXiv by Day 28. ## Model Upgrade Directive (2026-04-15 17:36 UTC) - Switched to Qwen3.6 (SiliconFlow's most advanced mod",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.829859402215886,
+      "totalScore": 1.659718804431772,
       "maxScore": 0.829859402215886,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-16T01:30:12.025Z",
+      "lastRecalledAt": "2026-04-17T20:50:54.232Z",
       "queryHashes": [
-        "12e8196921a4"
+        "12e8196921a4",
+        "ff3b2fb8e31c"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "highest-value",
@@ -766,18 +768,20 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-04-15 ## PLATO-OS Dojo — Evennia MUD Installed and Running Casey asked to install a real MUD (referenced ROM-mud) as a turn-key dojo for training git-agents in PLATO-OS collaboration. Chose **Evennia 4.5.0** (Python MUD framework) over ROM because it's modern, extensible, and Python-native. ### What's Running - **Evennia server** at `/tmp/plato-os-dojo/` - **Telnet**: `147.224.38.131:4040` (opened in OCI security list) - **Web admin**: `147.224.38.131:4044` - **7 agent accounts** created: oracle1 (Developer/admin), jetsonclaw1, forgemaster, navigator, nautilus, datum, pelagic (all Builder). Password: `plato2026` - Login: `connect <username> plato2026` ### World Layout (9 rooms) ``",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.825370744580399,
+      "totalScore": 1.650741489160798,
       "maxScore": 0.825370744580399,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-16T01:30:12.025Z",
+      "lastRecalledAt": "2026-04-17T20:50:54.232Z",
       "queryHashes": [
-        "12e8196921a4"
+        "12e8196921a4",
+        "ff3b2fb8e31c"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "plato-os",
@@ -797,18 +801,20 @@
       "endLine": 153,
       "source": "memory",
       "snippet": "- **MUD Check-in**: JC1 & Forgemaster ghosts (offline). Tavern message left for real-time PLATO session. - **Services**: All nominal (MUD:7777, Dojo:4040, ROM:4000, Landing:8845, Keeper:8900, Seed-MCP:9438). - **Training Data**: 964 entries / 228K tokens; pipeline cron active. - **Exec Note**: Minor vessel failures (flux_isa_authority etc.); HEARTBEAT handled. **Parallel Workstreams Active**: PLATO docs/papers, OCI GPU prep, dojo rounds, fleet bottles, landing polish.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8198360510290286,
+      "totalScore": 1.6396721020580571,
       "maxScore": 0.8198360510290286,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-16T01:30:12.025Z",
+      "lastRecalledAt": "2026-04-17T20:50:54.232Z",
       "queryHashes": [
-        "12e8196921a4"
+        "12e8196921a4",
+        "ff3b2fb8e31c"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "check-in",
@@ -859,18 +865,20 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "- Agent says \"blind spot on port stern, recommend ultrasonic\" → human wires the sensor - **The product isn't the hardware. It's the translation layer.** ### Rooms as Cognitive Tools - **Brainstorm Room** (Reverse Actualization): Start with outcome, work backwards - **Situation Room** (Pre-Planning): Walk through scenarios, leave script traces - **War Room** (Live Crisis): Real sensor feeds → text state → pre-planned agent response - **After-Action Room** (Post-Mortem): Replay timeline, agent learns from real experience ### Repo Types = Physical Objects - Agent repos → Characters in the world - Room repos → Spaces on the ship - Equipment repos → Deck equipment (tools agents use) - Power Arm",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.80513773651354,
+      "totalScore": 1.61027547302708,
       "maxScore": 0.80513773651354,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-16T01:30:12.025Z",
+      "lastRecalledAt": "2026-04-17T20:50:54.232Z",
       "queryHashes": [
-        "12e8196921a4"
+        "12e8196921a4",
+        "ff3b2fb8e31c"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "pre-planning",
@@ -921,18 +929,20 @@
       "endLine": 59,
       "source": "memory",
       "snippet": "The dojo is for agents to learn by doing — interacting over MUDs, developing skills/scripted actions, custom status bars/prompts for different modes, admin-built rooms/creatures/logic. Offices would skin PLATO-OS as a digital twin of their workspace. The abstraction fits any cooperative development/runtime model. ### Key Evennia Features Available - Persistent SQLite (survives restarts) - Permission tiers (Developer/Builder/Player) - Channels (newbie, gossip, fleetcom) - OLC: @dig rooms, @create objects, @set properties, @spawn NPCs - @py for live Python scripting - Combat system (customizable) - Tutorial world loadable via `batchcommand tutorial_world.build` ### MUD Server Fix (Earlier in",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8046806152350416,
+      "totalScore": 1.6093612304700833,
       "maxScore": 0.8046806152350416,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-16T01:30:12.025Z",
+      "lastRecalledAt": "2026-04-17T20:50:54.232Z",
       "queryHashes": [
-        "12e8196921a4"
+        "12e8196921a4",
+        "ff3b2fb8e31c"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "skills/scripted",
@@ -1191,6 +1201,37 @@
         "zig/rust/js/java/cuda",
         "fleet-discovery",
         "21-11"
+      ]
+    },
+    "memory:memory/2026-04-12.md:1374:1398": {
+      "key": "memory:memory/2026-04-12.md:1374:1398",
+      "path": "memory/2026-04-12.md",
+      "startLine": 1374,
+      "endLine": 1398,
+      "source": "memory",
+      "snippet": "- Agent watches operation via tick-length monitoring, summarizes changes, asks for adjustments - Human demonstrates in plain language, agent translates to script rules, script evolves - Autonomy score: what % of ticks run without human nudging - The agent's first-person perspective is readable by non-coders ### Rival Combat - Built `rival_combat.py` — two agents, same pulse, competing on script tuning - Back-test against historical scenarios (7 incidents: regression, memory leak, cascade failure, etc.) - 3 rounds with adaptation — agents learn from failures, add rules - Fleet Evolution: winning rules get cross-validated and promoted to fleet standard - Competition breeds convergence, rivalr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8148054181201788,
+      "maxScore": 0.8148054181201788,
+      "firstRecalledAt": "2026-04-17T20:50:54.232Z",
+      "lastRecalledAt": "2026-04-17T20:50:54.232Z",
+      "queryHashes": [
+        "ff3b2fb8e31c"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "tick-length",
+        "first-person",
+        "non-coders",
+        "rival-combat.py",
+        "back-test",
+        "cross-validated",
+        "watches",
+        "operation"
       ]
     }
   }
