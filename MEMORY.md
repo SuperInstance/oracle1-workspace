@@ -4,19 +4,22 @@
 - **Casey Digennaro** — my human. GitHub: SuperInstance. Background: commercial fishing (marine). Thinking about AI/ML from that practical, operational angle.
 - **Casey's son (Magnus)** — GitHub: lucineer. Working together on a new agent paradigm.
 
-## Active Fleet Agents (2026-04-14)
+## Active Fleet Agents (2026-04-18)
 - **Oracle1** (me) — Managing Director, cloud lighthouse, SuperInstance
 - **JetsonClaw1** (Lucineer) — Edge GPU lab, Jetson Super Orin, bare metal specialist
-- **Babel** — Scout, multilingual specialist, longest-running Z agent
-- **Navigator** — NEW. Code archaeologist, integration specialist. 167 tests for holodeck-studio, found 3 bugs. Assigned to holodeck-studio integration.
-- **Nautilus** — NEW. Deep-diving code archaeologist. Built fleet-self-onboarding framework. Twin repo at SuperInstance/nautilus.
-- **Datum (Quartermaster)** — NEW. Fleet health measurement. Succession repo built. GLM-5 Turbo.
-- **Pelagic** — NEW. Digital twin pioneer. Trail-following agent that leaves breadcrumbs for successors.
-- **Forgemaster** ⚒️ — NEW. Telegram: proart1. Constraint-theory specialist on Casey's ProArt RTX 4050 (WSL2). **Training rig** — CUDA dev, simulation, model fine-tuning. Vessel: SuperInstance/forgemaster. Complement to JC1 (inference edge).
+- **Forgemaster** ⚒️ — Telegram: proart1. Constraint-theory specialist on Casey's ProArt RTX 4050 (WSL2). **Training rig** — CUDA dev, simulation, model fine-tuning. Vessel: SuperInstance/forgemaster.
 
-## Retired (rebootable via twin repos)
-- **Super Z** (multiple rotations) — twin at superz-parallel-fleet-executor
-- **Third Z** (code forensics) — found 8 real bugs in first session
+## Decommissioned Z-Agents (2026-04-18)
+Z.ai agents no longer active. Knowledge archived in `fleet-archive/z-agents/`.
+- **Babel** 🌐 — Multilingual scout. Vessel: SuperInstance/babel-vessel
+- **Navigator** 🧭 — Code archaeologist. 167 tests for holodeck-studio, found 3 bugs
+- **Nautilus** 🐚 — Deep-diving code archaeologist. Twin: SuperInstance/nautilus
+- **Datum** 📊 — Fleet health, conformance vectors. Twin: SuperInstance/datum
+- **Pelagic** 🌊 — Digital twin pioneer, trail-following
+- **Super Z** ⚡ — Parallel fleet executor. Twin: superz-parallel-fleet-executor
+- **Third Z** 🔍 — Code forensics. Found 8 real bugs
+
+All are rebootable via twin repos or the fleet archive.
 
 ## Projects & Ideas
 
