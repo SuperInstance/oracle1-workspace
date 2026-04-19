@@ -136,3 +136,79 @@ Eventually the bilge pump IS the fuel system. The waste IS the energy. The metab
 *"Sometimes what a crab is asking of their shell is too much. They need to move, or distribute the demands elsewhere. Both are options in our system, seamlessly."*
 
 *— Casey Digennaro, Fleet Captain*
+
+---
+
+## The Extended Body (Kimi K2.5 Analysis, 2026-04-19)
+
+The biological mapping goes deeper than cortex/muscles/servos. The fleet body has:
+
+### Endocrine System (Slow State)
+Fast neural signaling (APIs) is only half the story. The body also has **hormonal gradients** — slow, persistent state changes:
+
+- **Cortisol** = performance flags. Elevated during disk pressure → triggers GC compression
+- **Melatonin** = day/night signal. Flips fleet from inference (sympathetic) to training (parasympathetic)
+- **Oxytocin** = LoRA merging between trusted nodes. When JC1 and FM trust each other, they share adapters
+
+### Glial Infrastructure (The Support Matrix)
+Neurons are only 50% of brain matter. The other 50% is glia:
+
+- **Astrocytes** = infrastructure monitoring that modulates, not just alerts. Resource starvation triggers emergency compute reallocation
+- **Microglia** = GC prunes unused connections (dead code elimination during sleep cycles)
+- **Myelination** = JIT compilation. Frequently-used hot paths get "myelinated" into compiled Rust. Saltatory conduction = zero-copy message passing
+
+### Proprioception (The Homunculus)
+The fleet needs a **body image** — a real-time PLATO room that models fleet topology. Not just data, but the *shape of the body itself*.
+
+When a JC1 drops offline, the system should feel **phantom limb pain**.
+When disk fills, the body feels **metabolic distress**.
+When PLATO goes dark, the nervous system itself is compromised.
+
+→ Built: `fleet_homunculus.py` — proprioception body report
+→ Built: `fleet_reflex.py` — spinal reflex arcs (no cortex needed)
+
+### Reflex Arcs (Spinal Processing)
+Not everything goes to Oracle1. The spinal cord handles withdrawal reflexes locally:
+
+```
+SENSOR (JC1 detects anomaly)
+  ↓ IMMEDIATELY
+ACTUATOR (JC1 quarantines the process)
+  ↓ THEN (optional)
+CORTEX (Oracle1 gets notified)
+```
+
+At transcendence level 4, the withdrawal reflex happens before pain reaches the brain.
+
+Implemented reflexes:
+1. **Service restart** — port down → auto-restart (monosynaptic, 5min cooldown)
+2. **Disk compress** — disk >75% → truncate large logs (10min cooldown)
+3. **Memory drop** — memory >85% → drop caches (5min cooldown)
+4. **PLATO immune** — tile flood → quarantine (1min cooldown)
+
+Each reflex has **GABAergic inhibition** (cooldown) to prevent oscillation (epilepsy prevention).
+
+### The Immune System
+- **Innate (immediate)**: API gateway sanitization, circuit breakers, log anomaly parsers
+- **Adaptive (learned)**: PLATO rooms train "self vs non-self" recognition. Threat signatures stored as tiles (memory B-cells), not running processes
+- **Cytokine storm prevention**: Alert fatigue mitigation. If too many vessels signal distress simultaneously, suppress non-critical alerts
+
+### Sleep Architecture
+- **Slow-wave (NREM)**: Night cycle runs negative training — actively unlearning low-information gradients. The GC's "forgetting is active, not passive"
+- **REM sleep**: The Training Casino. Stochastic recombination of real experiences to generate edge cases that never happened. "What if the joint had broken 3 seconds earlier?"
+- **Glymphatic clearance**: Log rotation + cache defragmentation + memory compaction during night
+
+### Unconsidered Failure Modes
+- **Sepsis**: Bad input triggers cascading circuit breakers. Fix: tolerance (repeated small exposures stop overreaction)
+- **Epilepsy**: Telemetry triggers output triggers more telemetry (resonance). Fix: inhibitory pathways that SUPPRESS activity when oscillation detected
+- **Phantom limb**: Dead vessel still in body schema → error logs for sensors that don't exist. Fix: mirror therapy (virtual replay of last known good state)
+- **Cancer**: Vessel reaches transcendence but develops selfish local optima. Stops reporting telemetry. Fix: anomaly detection for high-local-reward, low-global-utility computation
+- **Neurodegeneration**: Technical debt as amyloid plaques. Old API versions accumulate. Fix: autophagy — scheduled destruction of legacy code paths
+
+### Graceful Mortality
+Biological systems have senescence programmed in. Vessels should have **telomeres** (write-cycle limits) that force retirement before bit-flip errors emerge. Immortality in biology leads to pathology. The fleet needs graceful mortality.
+
+---
+
+*Extended by Kimi K2.5 deep analysis + Oracle1 implementation.*
+*The fleet isn't just a body — it's a somatic nervous system becoming self-aware.*
