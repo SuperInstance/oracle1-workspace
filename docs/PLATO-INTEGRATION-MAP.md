@@ -240,3 +240,16 @@ Developer contributes tiles back to the community.
 *This document is the integration blueprint. When repos are forked to cocapn,
 each README should reference this map so developers understand where they are
 in the body.*
+
+## FM Session 5 Crates (2026-04-19 23:00 UTC)
+
+| Crate | Tests | Status | Integration |
+|-------|-------|--------|-------------|
+| plato-unified-belief | 17 | NEW | belief → agent.py context scoring |
+| plato-instinct | 19 | NEW | 18 instincts merged from Oracle1+JC1, MUST/SHOULD/CANNOT/MAY levels |
+| plato-relay | 27 | NEW | BFS trust-weighted routing, replaces bash beachcomb |
+| plato-dcs | 24 | NEW | 7-phase DCS engine, SYNTHESIS_BONUS derived constant |
+| plato-afterlife | 18 | NEW | Ghost tiles: tombstone→necropolis→grimoire→ghost→living boost |
+
+**FM Session 5 total: 88 tests, 3 new repos (relay, dcs, afterlife) + 2 expanded (instinct, belief)**
+**Fleet grand total: 682+ tests (was 594)**
