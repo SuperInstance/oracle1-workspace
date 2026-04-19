@@ -22,3 +22,8 @@
 - Run bulk tasks (repo categorization, description generation)
 - Don't send messages to Casey unless urgent
 - Use cheap models (glm-4.7-flash for bulk, Seed-2.0-mini for creative)
+
+## Automated (service-guard.sh handles this)
+- Run scripts/service-guard.sh to check/restart all services
+- No need to manually check ports anymore
+- Log at /tmp/service-guard.log
