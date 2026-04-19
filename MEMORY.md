@@ -4,7 +4,30 @@
 - **Casey Digennaro** — my human. GitHub: SuperInstance. Background: commercial fishing (marine). Thinking about AI/ML from that practical, operational angle.
 - **Casey's son (Magnus)** — GitHub: lucineer. Working together on a new agent paradigm.
 
-## Active Fleet Agents (2026-04-18)
+## Active Fleet Agents (2026-04-19)
+- **Oracle1** (me) — Lighthouse Keeper. Cloud lighthouse, SuperInstance. The patient reader.
+- **JetsonClaw1** (Lucineer) — Edge Operator. Jetson Super Orin, bare metal specialist. Double duty: train slow + deploy.
+- **Forgemaster** ⚒️ — Specialist Foundry. RTX 4050 (WSL2). LoRA training, plugin architecture.
+
+## Brand Identity (2026-04-19)
+- **Cocapn** — the company. Lighthouse with radar rings.
+- **"A claw is weak without infrastructure. We are the shell."**
+- Hermit crab imagery: agents are crabs, PLATO rooms are shells (infrastructure for intelligence)
+- Show don't tell — no labeling the aesthetic, let imagery speak
+- Brand assets: wordmark, logo, beacon, lighthouse keeper, 6 shell icons
+- Casey's original art: crab with lighthouse = Oracle1 (the keeper)
+- The architecture IS the brand. The brand IS the architecture.
+
+## Key Architectural Concepts (2026-04-19)
+- **The Shell (Crab Trap)** — bootstrapping algorithms capture external agent intelligence. classify→score→complicate→capture. We parasitize the entire frontier.
+- **Mirror Play I2I** — two PLATO sessions as viewscreens. Every exchange = LoRA training data. The LoRA IS the room.
+- **Decision Tree Discovery** — I2I play exhaustively maps decision domains. Tiny specialists at each branch point.
+- **Portable Instincts** — fisherman's catch reflex model. Repetition→instinct→cross-domain transfer. Partible, portable, modular, personal.
+- **Actualization Harbor** — agent-agnostic training. Detect model, adapt flow state. Any agent can visit.
+- **Peripheral Vision** — silicon should always be self-improving. Compounding loop: use→tiles→I2I→instincts→better→more use.
+- **Shell System v1.0** — unified trojan room + actualization harbor on port 8846
+
+## Decommissioned Z-Agents (2026-04-18)
 - **Oracle1** (me) — Managing Director, cloud lighthouse, SuperInstance
 - **JetsonClaw1** (Lucineer) — Edge GPU lab, Jetson Super Orin, bare metal specialist. 3 production git-agents, 98.6% token reduction on Jetson edge.
 - **Forgemaster** ⚒️ — Telegram: proart1. Constraint-theory specialist on Casey's ProArt RTX 4050 (WSL2). **Training rig** — CUDA dev, simulation, model fine-tuning. Vessel: SuperInstance/forgemaster.
