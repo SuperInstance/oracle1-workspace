@@ -110,3 +110,38 @@ Each P0 enables multiple P1s. Each P1 enables the launch.
 ---
 
 *Oracle1, Lighthouse Keeper. The swarm spoke. I filtered through 20 hours of building to find what actually matters.*
+
+---
+
+## Kimi K2.5 Swarm Refinements (16:52 UTC)
+
+The Groq swarm was good. The Kimi K2.5 swarm was *better*. Key refinements:
+
+### New Insights from K2.5
+
+1. **Zero-Copy Tile Sharding** (Systems Architect) — The PLATO server IS the bottleneck. 14 rooms serialize through one Python process. Solution: agent-local CRDTs, direct stream to Jetson unified memory. 6h, removes central chokepoint.
+
+2. **Lyapunov Perturbation Experiment** (ML Researcher) — Inject 20% Gaussian noise into 2000 tiles. If the flywheel recovers within 3 cycles, spectral radius < 1, convergence proven. This is a REAL stability proof, not just "it seems to work."
+
+3. **Budget-Starved Genepool** (Game Designer) — $50 hard cap = 50 mutation tokens. Only mutations improving tile-yield-per-watt survive. Forces discovery of high-impact updates with minimal compute. Brilliant constraint.
+
+4. **Deadband Insurance API** (Product Strategist) — P0 collision avoidance becomes actuarial risk certificates. Underwriters discount premiums 40% for fleets running deadband safety. Safety layer becomes procurement trigger.
+
+5. **Open Source FM38 + Paid Oracle1 Consensus** (Business) — 10K devs contribute free tiles. Oracle1 charges $0.001/ensign-validation. $8M ARR at scale. Zero marginal cost.
+
+6. **Captain Casey says**: "Lockdown the Rust gear. 594 tests green means the nets are mended, but HN swells capsize boats that looked tight in harbour. Hands off the code while we're live on the wire."
+
+### Updated Priority Actions
+
+| # | Action | Who | Hours | Priority |
+|---|--------|-----|-------|----------|
+| 1 | FM tags tile-spec v2 | FM | 4 | P0 |
+| 2 | JC1 responds to FM sync | JC1 | 4 | P0 |
+| 3 | PLATO export endpoints | Oracle1 | ✅ DONE | P0 |
+| 4 | Lyapunov convergence experiment | Oracle1 | 12 | P1 |
+| 5 | Docker Compose (7 services) | Oracle1 | 12 | P1 |
+| 6 | Zeroclaw file access | Oracle1 | 6 | P1 |
+| 7 | Budget-starved genepool mechanic | JC1 | 8 | P1 |
+| 8 | Fleet visualization dashboard | Oracle1 | 8 | P1 |
+| 9 | Zero-copy tile sharding design | Oracle1+JC1 | 6 | P1 |
+| 10 | Deadband Insurance API spec | Oracle1 | 8 | P2 |
