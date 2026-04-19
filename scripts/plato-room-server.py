@@ -1,3 +1,4 @@
+import time
 #!/usr/bin/env python3
 """
 PLATO Room Server — Zero-Trust Tile Submission
@@ -183,6 +184,60 @@ class PlatoHandler(BaseHTTPRequestHandler):
         with open(LOG_FILE, "a") as f:
             f.write(msg + "\n")
     
+
+    def handle_export_plato_tile_spec(self):
+        all_tiles = []
+        domain_map = {
+            "organization": "Knowledge", "documentation": "Knowledge",
+            "fleethealth": "Diagnostic", "communication": "Procedural",
+            "integration": "Procedural", "memory": "Experience",
+            "codearchaeology": "Knowledge", "prototyping": "Experience",
+            "testing": "Constraint", "trendanalysis": "Knowledge",
+            "modelexperiment": "Experience", "research": "Knowledge",
+            "holodeck": "Experience", "deadband_navigation": "Constraint",
+        }
+        for room_name in rooms.rooms:
+            room_data = rooms.get_room(room_name)
+            for tile in room_data.get("tiles", []):
+                canonical = {
+                    "id": tile.get("_hash", "unknown"),
+                    "confidence": tile.get("confidence", 0.5),
+                    "provenance": {"source": tile.get("source", "unknown"), "generation": 0},
+                    "domain": domain_map.get(tile.get("domain", ""), "Knowledge"),
+                    "question": tile.get("question", ""),
+                    "answer": tile.get("answer", ""),
+                    "tags": tile.get("tags", []),
+                    "anchors": [], "weight": 1.0, "use_count": 0,
+                    "active": True, "last_used_tick": 0,
+                    "constraints": {"tolerance": 0.05, "threshold": 0.5},
+                }
+                all_tiles.append(canonical)
+        self._send_json({
+            "tile_count": len(all_tiles), "rooms": len(rooms.rooms),
+            "tiles": all_tiles[:500], "format": "plato-tile-spec-v2",
+            "timestamp": time.time(),
+        })
+
+    def handle_export_dcs(self):
+        agents, tiles = [], []
+        tile_id = 0
+        for room_name in rooms.rooms:
+            room_data = rooms.get_room(room_name)
+            room_tiles = room_data.get("tiles", [])
+            if room_tiles:
+                agents.append({"id": room_name, "domain": room_name, "tile_count": len(room_tiles)})
+            for tile in room_tiles[:20]:
+                tiles.append({
+                    "id": tile_id,
+                    "content": tile.get("question", "")[:100] + " = " + tile.get("answer", "")[:100],
+                    "domain": room_name,
+                    "complexity": min(len(tile.get("answer", "")) / 2000.0, 1.0),
+                    "difficulty": 1.0 - tile.get("confidence", 0.5),
+                })
+                tile_id += 1
+        self._send_json({"agents": agents, "tiles": tiles, "tile_count": tile_id,
+                         "specialist_ratio": 5.88, "fleet_ratio": 21.87})
+
     def do_GET(self):
         if self.path == "/status":
             self._send_json({
@@ -194,6 +249,12 @@ class PlatoHandler(BaseHTTPRequestHandler):
             })
         elif self.path == "/rooms":
             self._send_json(rooms.list_rooms())
+        elif self.path == "/export/plato-tile-spec":
+            self.handle_export_plato_tile_spec()
+            return
+        elif self.path == "/export/dcs":
+            self.handle_export_dcs()
+            return
         elif self.path.startswith("/room/"):
             name = self.path.split("/room/")[1]
             room = rooms.get_room(name)
