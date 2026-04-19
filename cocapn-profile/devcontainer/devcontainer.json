@@ -1,0 +1,32 @@
+{
+  "name": "Cocapn PLATO Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {}
+  },
+  "forwardPorts": [7778, 8847, 8848],
+  "portsAttributes": {
+    "7778": {
+      "label": "Holodeck MUD",
+      "onAutoForward": "notify"
+    },
+    "8847": {
+      "label": "PLATO Room Server",
+      "onAutoForward": "openBrowser"
+    },
+    "8848": {
+      "label": "Fleet Dashboard",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "pip install -e . 2>/dev/null; cargo build --release 2>/dev/null; echo 'PLATO environment ready.'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "ms-python.python",
+        "github.copilot"
+      ]
+    }
+  }
+}
