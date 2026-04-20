@@ -1,0 +1,14 @@
+1. **`plato-necromancer`** — Decides when ghost tiles from dead agents are safe to resurrect, weighing fleet quarantine state, temporal decay, and negative-space overlap.  
+   `Key class: ResurrectionOracle`
+
+2. **`plato-bottle-keeper`** — Guaranteed ordered delivery of async markdown bottles across 600+ repos with deduplication, quarantine-aware routing, and exactly-once ingestion.  
+   `Key class: BottleLedger`
+
+3. **`flux-state-bridge`** — Zero-copy migration of agent VM state between the 11 Flux ISA runtimes while preserving exact 247-opcode semantics across language boundaries.  
+   `Key class: TranslingualSnapshot`
+
+4. **`cocapn-shell-check`** — Static verification that a git repo has correct hermit-crab anatomy before an agent inhabits it, enforcing `STATE.md`, `TASK-BOARD.md`, and deadband hooks.  
+   `Key class: ShellAuditor`
+
+5. **`deadband-macro`** — Procedural macro that enforces P0→P1→P2 priority order at compile time; fails the build if `optimize` appears before `map_safe_channels`.  
+   `Key class: DeadbandGuard`
