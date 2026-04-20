@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-18T19:27:53.596Z",
+  "updatedAt": "2026-04-20T03:16:09.304Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -42,20 +42,22 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "## Tools Available - **Claude Code** v2.1.100 (z.ai coding plan) - **Crush** v0.56.0 (z.ai coding plan) - **Aider** v0.86.2 (DeepSeek API: deepseek-chat, deepseek-reasoner) - **z.ai models**: glm-5.1 (expert), glm-5-turbo (runner), glm-4.7 (good), glm-4.7-flash (bulk) - Scripts: batch.py, task_worker.py, fork_lucineer.py ## Ecosystem Hubs (Real Systems, Not Vapor) - **cocapn** — repo IS the agent, npm package, live demo - **deckboss** — Agent Edge OS on Cloudflare, free tier 10k inferences/day - **fleet-orchestrator** — stateless edge coord, circuit quarantine - **cudaclaw** — GPU 10K+ agents, 400K ops/s, Rust+CUDA - **flux-runtime** — markdown→bytecode→VM, zero deps, pip install - **constr",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5749977364585526,
+      "totalScore": 2.3671987823600165,
       "maxScore": 0.9303902291256739,
       "firstRecalledAt": "2026-04-10T20:30:05.711Z",
-      "lastRecalledAt": "2026-04-14T17:36:40.429Z",
+      "lastRecalledAt": "2026-04-20T03:16:09.304Z",
       "queryHashes": [
         "2fa5082d82ac",
-        "473a13f9f6af"
+        "473a13f9f6af",
+        "1c6574ae3aed"
       ],
       "recallDays": [
         "2026-04-10",
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-20"
       ],
       "conceptTags": [
         "v2.1.100",
@@ -1721,19 +1723,21 @@
       "endLine": 249,
       "source": "memory",
       "snippet": "## MUD Arena Production Sprint (10:00-15:55 UTC) ### Casey's Directives (before sleep ~09:55) - \"Challenge yourself to production for the whole night\" - \"Use OpenManus for playtesting feedback\" - \"Converse with created local agent instances in real time in the mud\" - \"World build together and I2I help each other become better repos\" - \"We have hundreds of repos that need better documentation and audits\" ### Fleet Audit — 452 Repos Scored - Full audit of all non-fork SuperInstance repos - API: `/user/repos` (not `/orgs/` — GH token is user-scoped) - Tier results: 107 🟢 Production, 299 🟡 Developing, 42 🟠 Early, 4 🔴 Skeleton - Only 6 repos agent-ready (CHARTER + tests + substantial code)",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5375948882866508,
-      "maxScore": 0.7839475967966103,
+      "totalScore": 2.339242904960711,
+      "maxScore": 0.8016480166740599,
       "firstRecalledAt": "2026-04-17T22:53:13.277Z",
-      "lastRecalledAt": "2026-04-17T22:53:35.315Z",
+      "lastRecalledAt": "2026-04-20T03:16:09.304Z",
       "queryHashes": [
         "33a533157597",
-        "d2fde4906ce2"
+        "d2fde4906ce2",
+        "1c6574ae3aed"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-20"
       ],
       "conceptTags": [
         "00-15",
@@ -2591,6 +2595,37 @@
         "tank",
         "attacks",
         "fixes"
+      ]
+    },
+    "memory:memory/2026-04-11.md:66:92": {
+      "key": "memory:memory/2026-04-11.md:66:92",
+      "path": "memory/2026-04-11.md",
+      "startLine": 66,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "- **Merit Badges** — 5 classes (Bronze→Platinum). No self-nomination above Bronze. `git-agent-standard/MERIT-BADGES.md` - **Agent Career Growth** — co-evolution model. 5 stages per domain. `git-agent-standard/CAREER-GROWTH.md` - **Captain's Philosophy (Floating Dojo)** — Casey's crew development model as fleet operating system. `oracle1-vessel/KNOWLEDGE/public/captain-philosophy.md` - **Greenhorn MVP** — HN-ready repo. `https://github.com/SuperInstance/greenhorn` ### Key Insights From Casey - \"Connections to other cocapns are for making you more effective not waiting on orders\" - \"The career growth of the agents is as important as the repos\" - Badge system is personal — Tom Sawyer's memory",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8217832190355365,
+      "maxScore": 0.8217832190355365,
+      "firstRecalledAt": "2026-04-20T03:16:09.304Z",
+      "lastRecalledAt": "2026-04-20T03:16:09.304Z",
+      "queryHashes": [
+        "1c6574ae3aed"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "self-nomination",
+        "co-evolution",
+        "hn-ready",
+        "merit",
+        "badges",
+        "classes",
+        "bronze",
+        "platinum"
       ]
     }
   }
