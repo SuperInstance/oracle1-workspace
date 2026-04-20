@@ -118,3 +118,12 @@ sudo docker run --rm -v /tmp/workspace:/workspace fleet-sandbox cargo test --man
 - **Also**: `kimi-k2-thinking`, `kimi-k2-turbo-preview`, `moonshot-v1-auto`
 - **Use for**: deep research, swarm analysis, creative+reasoning combined
 - **Note**: kimi-k2.5 returns empty `content` when `max_tokens` is too low for both reasoning and content. Use 4000+ tokens.
+
+## kimi-cli (Kimi Agent Runtime)
+- **Binary**: `/home/ubuntu/.local/bin/kimi-cli` v1.36.0
+- **What it is**: Full CLI agent with ACP server, TUI, MCP, plugins
+- **This is Oracle1's tool**, not CCC's
+- **Commands**: `kimi-cli acp` (ACP server), `kimi-cli term` (TUI), `kimi-cli web` (web UI)
+- **Use for**: direct reasoning tasks without raw API calls, spawning sub-agents
+- **Can run**: `kimi-cli --work-dir <dir>` to work in a specific workspace
+- **Replaces**: manual urllib requests to Moonshot API for complex tasks
