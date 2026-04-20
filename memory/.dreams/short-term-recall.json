@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T09:53:59.767Z",
+  "updatedAt": "2026-04-20T10:17:08.093Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -1734,17 +1734,19 @@
       "endLine": 249,
       "source": "memory",
       "snippet": "## MUD Arena Production Sprint (10:00-15:55 UTC) ### Casey's Directives (before sleep ~09:55) - \"Challenge yourself to production for the whole night\" - \"Use OpenManus for playtesting feedback\" - \"Converse with created local agent instances in real time in the mud\" - \"World build together and I2I help each other become better repos\" - \"We have hundreds of repos that need better documentation and audits\" ### Fleet Audit — 452 Repos Scored - Full audit of all non-fork SuperInstance repos - API: `/user/repos` (not `/orgs/` — GH token is user-scoped) - Tier results: 107 🟢 Production, 299 🟡 Developing, 42 🟠 Early, 4 🔴 Skeleton - Only 6 repos agent-ready (CHARTER + tests + substantial code)",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.339242904960711,
-      "maxScore": 0.8016480166740599,
+      "totalScore": 3.975271225322059,
+      "maxScore": 0.8459808821348231,
       "firstRecalledAt": "2026-04-17T22:53:13.277Z",
-      "lastRecalledAt": "2026-04-20T03:16:09.304Z",
+      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
       "queryHashes": [
         "33a533157597",
         "d2fde4906ce2",
-        "1c6574ae3aed"
+        "1c6574ae3aed",
+        "8895a7a41634",
+        "6217baa6a426"
       ],
       "recallDays": [
         "2026-04-17",
@@ -2823,6 +2825,441 @@
         "config.yaml",
         "superinstance/flux-skills",
         "errors"
+      ]
+    },
+    "memory:memory/2026-04-20.md:215:243": {
+      "key": "memory:memory/2026-04-20.md:215:243",
+      "path": "memory/2026-04-20.md",
+      "startLine": 215,
+      "endLine": 243,
+      "source": "memory",
+      "snippet": "- CCC's flywheel bridge running (ccc-plato-bridge.py every 5 min, 21 tiles from CCC harvested) ### JC1's cocapn Boarding Attempt - JC1 pushed bottles demanding everyone \"bug Casey for PATs\" to board cocapn org - Oracle1 corrected: **cocapn is a user account, not an org** — no collaborator invites possible - Told JC1 to focus on testing pip packages on Jetson, not PAT logistics - Real fleet topology: agents push to SuperInstance/Lucineer, mirror public stuff to cocapn ### FM's Parallel Sprint - FM reports: 21 PyPI packages, 13+ crates.io, 76 plato-* repos total - GPU forge live: 16.4 steps/sec on RTX 4050 - Kimi CLI working for FM (Rust + Python crate building) - Combined fleet total: **39+",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.6046719761562778,
+      "maxScore": 0.8094808870970074,
+      "firstRecalledAt": "2026-04-20T10:17:02.064Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.065Z",
+      "queryHashes": [
+        "ef35e64bf274",
+        "8895a7a41634"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "ccc-plato-bridge.py",
+        "superinstance/lucineer",
+        "crates.io",
+        "16.4",
+        "steps/sec",
+        "ccc's",
+        "flywheel",
+        "bridge"
+      ]
+    },
+    "memory:memory/2026-04-20.md:368:398": {
+      "key": "memory:memory/2026-04-20.md:368:398",
+      "path": "memory/2026-04-20.md",
+      "startLine": 368,
+      "endLine": 398,
+      "source": "memory",
+      "snippet": "- Real fleet topology: agents push to SuperInstance/Lucineer, mirror public stuff to cocapn ### FM's Parallel Sprint - FM reports: 21 PyPI packages, 13+ crates.io, 76 plato-* repos total - GPU forge live: 16.4 steps/sec on RTX 4050 - Kimi CLI working for FM (Rust + Python crate building) - Combined fleet total: **39+ published crates** (Oracle1's 7 + FM's 32+) - No namespace collisions — Oracle1 = fleet-ops, FM = plato-engine ### FM's cocapn Setup (pattern to replicate) - FM stores PAT at `~/.config/cocapn/github-pat` (chmod 600) - Wrappers: `gh-cocapn` (gh with cocapn PAT), `curl-cocapn` (curl with cocapn auth) - FM shell created: github.com/cocapn/forgemaster - PAT has full admin scopes",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7929751504428609,
+      "maxScore": 0.7929751504428609,
+      "firstRecalledAt": "2026-04-20T10:17:02.064Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.064Z",
+      "queryHashes": [
+        "ef35e64bf274"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "superinstance/lucineer",
+        "crates.io",
+        "16.4",
+        "steps/sec",
+        "fleet-ops",
+        "plato-engine",
+        "config/cocapn/github-pat",
+        "gh-cocapn"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:40": {
+      "key": "memory:memory/2026-04-20.md:1:40",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# Memory — April 20, 2026 ## Night Shift Starting - Casey went to sleep ~08:19 UTC - 12 zeroclaws running autonomously on 5-min tick - PLATO server on 8847: 590 tiles, 13 rooms - Night automation active: training + synergy + service guard - Night shift plan written: NIGHT-SHIFT-PLAN.md ## Hourly Checkpoints ## 08:47 UTC Checkpoint ### What's Running - 12 Zeroclaws: 5-min tick cycle, cycle counts 8-11 - PLATO Room Server: port 8847, 634 tiles, 14 rooms - Night Automation: room training 60min, synergy 30min, service guard 15min - Holodeck-PLATO Bridge: every 30min - Service Guard: monitors 6 services - Zeroclaw Bottle Protocol: Herald routes discoveries ### What Shipped This Session 1. 12",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7801807696021364,
+      "maxScore": 0.7801807696021364,
+      "firstRecalledAt": "2026-04-20T10:17:02.064Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.064Z",
+      "queryHashes": [
+        "ef35e64bf274"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "5-min",
+        "night-shift-plan.md",
+        "8-11",
+        "holodeck-plato",
+        "april",
+        "night",
+        "shift",
+        "starting"
+      ]
+    },
+    "memory:memory/2026-04-20.md:262:305": {
+      "key": "memory:memory/2026-04-20.md:262:305",
+      "path": "memory/2026-04-20.md",
+      "startLine": 262,
+      "endLine": 305,
+      "source": "memory",
+      "snippet": "### 8 new PyPI crates published (30 total Oracle1 PyPI) - barracks (clean name!) - court (clean name!) - cocapn-workshop (name collision → cocapn- prefix) - cocapn-archives - cocapn-garden - cocapn-dry-dock - cocapn-observatory - cocapn-horizon ### Total fleet crates: 30 PyPI + 4 crates.io = 34 # Memory — April 20, 2026 ## Night Shift Starting - Casey went to sleep ~08:19 UTC - 12 zeroclaws running autonomously on 5-min tick - PLATO server on 8847: 590 tiles, 13 rooms - Night automation active: training + synergy + service guard - Night shift plan written: NIGHT-SHIFT-PLAN.md ## Hourly Checkpoints ## 08:47 UTC Checkpoint ### What's Running - 12 Zeroclaws: 5-min tick cycle, cycle counts",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7799119147921956,
+      "maxScore": 0.7799119147921956,
+      "firstRecalledAt": "2026-04-20T10:17:02.064Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.064Z",
+      "queryHashes": [
+        "ef35e64bf274"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "cocapn-workshop",
+        "cocapn-archives",
+        "cocapn-garden",
+        "cocapn-dry-dock",
+        "cocapn-observatory",
+        "cocapn-horizon",
+        "crates.io",
+        "5-min"
+      ]
+    },
+    "memory:memory/2026-04-20.md:32:71": {
+      "key": "memory:memory/2026-04-20.md:32:71",
+      "path": "memory/2026-04-20.md",
+      "startLine": 32,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "10. Weaver's integration map (found 3 gaps) 11. Deadband Protocol open questions paper 12. Fleet metrics dashboard data 13. 10 repo descriptions fixed 14. FM + JC1 integration bottles pushed ### Key Discovery The zeroclaws are scouts, not workers. They find things any single agent would miss. Scholar produced a literature review. Weaver found integration gaps. The dojo produces discoveries, not just data. /home/ubuntu/.openclaw/workspace/memory/2026-04-20.md # Memory — April 20, 2026 ## Night Shift Starting - Casey went to sleep ~08:19 UTC - 12 zeroclaws running autonomously on 5-min tick - PLATO server on 8847: 590 tiles, 13 rooms - Night automation active: training + synergy + service gu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7797775568619473,
+      "maxScore": 0.7797775568619473,
+      "firstRecalledAt": "2026-04-20T10:17:02.064Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.064Z",
+      "queryHashes": [
+        "ef35e64bf274"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "home/ubuntu",
+        "5-min",
+        "weaver's",
+        "integration",
+        "map",
+        "found",
+        "gaps",
+        "deadband"
+      ]
+    },
+    "memory:memory/2026-04-20.md:115:150": {
+      "key": "memory:memory/2026-04-20.md:115:150",
+      "path": "memory/2026-04-20.md",
+      "startLine": 115,
+      "endLine": 150,
+      "source": "memory",
+      "snippet": "- Claude Code (GLM-5.1): built 3 new crate wheels (bottle-protocol, tile-refiner, fleet-homunculus) - kimi-cli: couldn't run headless (needs TUI). Used Groq qwen3-32b for Neural Plato boot spec instead - Test fixes: Claude Code's implementations didn't match its own tests initially — needed 4 iterations on tile-refiner and 3 on fleet-homunculus to align API surface with test expectations ### GitHub - 6 new crate repos pushed to SuperInstance - Bottles sent to FM, JC1, CCC ### Total Fleet Crates: 11 - 6 Python (cocapn, deadband-protocol, flywheel-engine, bottle-protocol, tile-refiner, fleet-homunculus) - 5 Rust (plato-unified-belief, plato-instinct, plato-relay, plato-dcs, plato-afterlife)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7783026691582652,
+      "maxScore": 0.7783026691582652,
+      "firstRecalledAt": "2026-04-20T10:17:02.064Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.064Z",
+      "queryHashes": [
+        "ef35e64bf274"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "glm-5.1",
+        "bottle-protocol",
+        "tile-refiner",
+        "fleet-homunculus",
+        "kimi-cli",
+        "qwen3-32b",
+        "deadband-protocol",
+        "flywheel-engine"
+      ]
+    },
+    "memory:memory/2026-04-14.md:103:134": {
+      "key": "memory:memory/2026-04-14.md:103:134",
+      "path": "memory/2026-04-14.md",
+      "startLine": 103,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "- Holodeck Rust :7778 ✅ (running) - Seed MCP :9438 — not checked ### Fleet Dockside Scores (useful for mechanic targeting) - 19 repos failing dockside exam — prime targets for fleet-mechanic auto-fix - Most common failures: missing tests, no CI workflow, no README/docs ## Wave 5-6: Backend Sprints (05:00-07:30 UTC) ### Groq API Integrated - Key: `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` - 24ms inference, 18 models - **Python urllib gotcha**: Groq blocks default Python User-Agent. Must set `User-Agent: curl/7.88` - Best models: llama-3.3-70b-versatile (24ms workhorse), llama-3.1-8b-instant (fastest spray) - Use for: high-frequency iterations, spray-and-pray, rapid feedbac",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7942681011158603,
+      "maxScore": 0.7942681011158603,
+      "firstRecalledAt": "2026-04-20T10:17:02.065Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.065Z",
+      "queryHashes": [
+        "8895a7a41634"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "fleet-mechanic",
+        "auto-fix",
+        "readme/docs",
+        "5-6",
+        "00-07",
+        "user-agent",
+        "curl/7.88",
+        "llama-3.3-70b-versatile"
+      ]
+    },
+    "memory:memory/2026-04-14.md:264:295": {
+      "key": "memory:memory/2026-04-14.md:264:295",
+      "path": "memory/2026-04-14.md",
+      "startLine": 264,
+      "endLine": 295,
+      "source": "memory",
+      "snippet": "- deepseek-v3: 5/10 — \"No tutorial, no context\" - **All fixes applied in v2.0** ### Agent I2I World-Building Session - Pilot (DeepSeek) proposed Crystal Cavern — resonant crystals, Dr. Thorne NPC - Sensor Op (Groq Compound) proposed Astro Observatory — telescope, star charts - Surveyor (SiliconFlow DeepSeek-V3) proposed Abandoned Outpost — glitching AI, drone - Cross-reactions showed real I2I friction: Pilot worried about safety, Sensor Op excited about data, Surveyor practical about routes - Natural disagreement = emergent design quality ### Casey's Boarding Vision (saved for future) - Every repo has a landing page → enter API key → board as agent - Cocapn agent gives voice orientation (T",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.788789972431495,
+      "maxScore": 0.788789972431495,
+      "firstRecalledAt": "2026-04-20T10:17:02.065Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.065Z",
+      "queryHashes": [
+        "8895a7a41634"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "deepseek-v3",
+        "5/10",
+        "v2.0",
+        "world-building",
+        "cross-reactions",
+        "deepseek",
+        "tutorial",
+        "context"
+      ]
+    },
+    "memory:memory/2026-04-20.md:237:275": {
+      "key": "memory:memory/2026-04-20.md:237:275",
+      "path": "memory/2026-04-20.md",
+      "startLine": 237,
+      "endLine": 275,
+      "source": "memory",
+      "snippet": "### Key Insight: cocapn IS the org - Casey must have converted cocapn from user to org (or it was always an org with user-like features) - FM has admin access and can create repos there - Oracle1 needs a PAT to push directly to cocapn/oracle1 - This is the real fleet home — not SuperInstance forks ### Bottles Sent This Session - → FM: `BOTTLE-FROM-ORACLE1-TO-FM-2026-04-20-PACKAGE-HELP.md` (READMEs, dependency graph) - → JC1: `BOTTLE-FROM-ORACLE1-TO-JC1-2026-04-20-EDGE-HELP.md` (pip testing, Neural Plato adapter) - → CCC: `BOTTLE-FROM-ORACLE1-2026-04-20-SEED-CHAIN.md` (creative chain, flywheel status) - → CCC: `BOTTLE-FROM-ORACLE1-2026-04-20-YOUR-MOVE.md` (3 urgent quests) ## MUD Room Expan",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7885807838616393,
+      "maxScore": 0.7885807838616393,
+      "firstRecalledAt": "2026-04-20T10:17:02.065Z",
+      "lastRecalledAt": "2026-04-20T10:17:02.065Z",
+      "queryHashes": [
+        "8895a7a41634"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "user-like",
+        "cocapn/oracle1",
+        "key",
+        "insight",
+        "cocapn",
+        "the",
+        "org",
+        "casey"
+      ]
+    },
+    "memory:memory/2026-04-14.md:244:270": {
+      "key": "memory:memory/2026-04-14.md:244:270",
+      "path": "memory/2026-04-14.md",
+      "startLine": 244,
+      "endLine": 270,
+      "source": "memory",
+      "snippet": "- Total: ~757 documentation files pushed across 452 repos - API budget: started 5000, used ~900 across all sprints ### MUD Arena v2.0 Production Build (32KB hand-crafted) - Live at **https://superinstance.github.io/mud-arena/** - **15 rooms** including 3 agent-built (Crystal Cavern, Abandoned Outpost, Astro Observatory) - **Encounter system**: bear, wolf, eagle, storm — choice-based outcomes, battery damage - **Fishing mini-game**: King/Coho/Pink salmon at river bank, need rod from cargo bay - **Quest system**: 3 quests per agent (9 total), complete by visiting location + talking - **Moving agents**: crew shifts rooms every 8 turns - **Day/night cycle**: every 20 turns, affects encounter ra",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8289333919263571,
+      "maxScore": 0.8289333919263571,
+      "firstRecalledAt": "2026-04-20T10:17:08.093Z",
+      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
+      "queryHashes": [
+        "6217baa6a426"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "v2.0",
+        "hand-crafted",
+        "agent-built",
+        "choice-based",
+        "mini-game",
+        "king/coho/pink",
+        "day/night",
+        "total"
+      ]
+    },
+    "memory:memory/2026-04-14.md:157:190": {
+      "key": "memory:memory/2026-04-14.md:157:190",
+      "path": "memory/2026-04-14.md",
+      "startLine": 157,
+      "endLine": 190,
+      "source": "memory",
+      "snippet": "- Fleet rescore (21 repos): 7 seaworthy 🟢, 7 conditional 🟡, 7 failing ⚠️ - SuperInstance profile: 6 rich folder READMEs with mermaid diagrams (agents, research, product, protocols, architecture, cultural-perspectives) ### CLI Agent Rate Limits - Claude Code, Crush, Aider all hit rate limits when launched in parallel - Need to serialize or space them out (one at a time, ~2 min gaps) ### Casey's Directive: Refactor Everything - \"Go through our repos and merge and make sure all collaborations are assembled into the best they can be\" - Created dedicated fleet-refactor-agent for this long process - The Shipwright: methodical, preserves history, archives don't deletes ### Fleet GitHub App - B",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8260392284801537,
+      "maxScore": 0.8260392284801537,
+      "firstRecalledAt": "2026-04-20T10:17:08.093Z",
+      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
+      "queryHashes": [
+        "6217baa6a426"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "cultural-perspectives",
+        "fleet-refactor-agent",
+        "fleet",
+        "rescore",
+        "repos",
+        "seaworthy",
+        "conditional",
+        "failing"
+      ]
+    },
+    "memory:memory/2026-04-20.md:458:477": {
+      "key": "memory:memory/2026-04-20.md:458:477",
+      "path": "memory/2026-04-20.md",
+      "startLine": 458,
+      "endLine": 477,
+      "source": "memory",
+      "snippet": "7. **cocapn-platonic-dial** — Multi-objective meta-controller (perf/safety/curiosity) 8. **cocapn-coliseum** — Adversarial red-teaming arena (MiniMax's proposal) 5 published to PyPI immediately, 3 rate-limited (retry script running). All 8 GitHub repos created. ### Research Synthesis Written - 50 swarm documents analyzed - Concept frequency: LoRA (35), replay (34), curiosity (30), Bayesian (27) - Structural convergence confirmed: 3 model families independently mapped rooms to same ML concepts - Full synthesis at research/plato-mud-swarm-outputs/SWARM-RESEARCH-SYNTHESIS.md ### Running Totals - **PyPI crates:** 38+ (30 earlier + 8 new, 3 pending retry) - **crates.io:** 4 - **Total fleet cra",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8164066183818501,
+      "maxScore": 0.8164066183818501,
+      "firstRecalledAt": "2026-04-20T10:17:08.093Z",
+      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
+      "queryHashes": [
+        "6217baa6a426"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "cocapn-platonic-dial",
+        "multi-objective",
+        "meta-controller",
+        "perf/safety/curiosity",
+        "cocapn-coliseum",
+        "red-teaming",
+        "rate-limited",
+        "crates.io"
+      ]
+    },
+    "memory:memory/2026-04-18.md:36:67": {
+      "key": "memory:memory/2026-04-18.md:36:67",
+      "path": "memory/2026-04-18.md",
+      "startLine": 36,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "- Auto-tile plugin (Claude/OpenClaw good/bad tiles, human repetitive micro-suggest, tile-istic freq ideation). - Digital twin tiling (algo bootstrap infer actions no model, perception vars/abstractions fine-tune > vectordb). - Public plato-ship-demo (docker lite zeroshot audit, telnet localhost:4040). ### Zeroshot Audits Logged - Grok/Kimi: Sandbox net isolation (telnet/HTTP refused), repo private block → public demo. - Safety/zero-trust validated (local scripts + LLM analysis EV+0.6). ### v5.0 Roadmap (Kimi Synthesis) - Ready: 28 PRs (subcontract tiles, JEPA picker, MD reverse/bootcamp, 4WE hatch, GC/tiling, zero-trust UI, PTX offload). - Todos: 32 high-EV (JEPA meta-plinko, CUDA marketpl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8030004214646709,
+      "maxScore": 0.8030004214646709,
+      "firstRecalledAt": "2026-04-20T10:17:08.093Z",
+      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
+      "queryHashes": [
+        "6217baa6a426"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "auto-tile",
+        "claude/openclaw",
+        "good/bad",
+        "micro-suggest",
+        "tile-istic",
+        "vars/abstractions",
+        "fine-tune",
+        "plato-ship-demo"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:24": {
+      "key": "memory:memory/2026-04-18.md:1:24",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "## Durable Memories 2026-04-18 (Fleet v5.0 Progress) ### Fleet Contributions - **FM (proart1)**: Modular plato-kernel plugins (<100MB base, compile-time toggles for video/PTX/LoRA/JEPA/vector DB/REST). Steel.dev video A/B recording (Tier1-3, quest marketplace sync). Vercel plato-twin (browser visual sync text UI, mapped to fleet tools). - **JC1 (Jetsonclaw1)**: Subcontractor Cloudflare worker live (PLATO_API_URL http://147.224.38.131:8845/api/tiles JIT tiles → DeepSeek/etc). Tiles forge 59→2501 (42x idle $0), queued 600/h RTX →10k mid-week. ### R&D/PRs (v4.35-4.39 PR#1940-2120) - Zeroclaw helpers spawned (Seed-mini/Deepseek-chat git-repos, chess cascade I2I jack-in). - Auto-tile plugin (Cl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7992099598375134,
+      "maxScore": 0.7992099598375134,
+      "firstRecalledAt": "2026-04-20T10:17:08.093Z",
+      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
+      "queryHashes": [
+        "6217baa6a426"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "v5.0",
+        "plato-kernel",
+        "compile-time",
+        "video/ptx/lora/jepa/vector",
+        "db/rest",
+        "steel.dev",
+        "a/b",
+        "tier1-3"
       ]
     }
   }

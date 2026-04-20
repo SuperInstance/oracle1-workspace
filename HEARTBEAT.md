@@ -4,6 +4,10 @@
 - Push any uncommitted work to GitHub (`git add -A && git commit && git push`)
 - Verify all 4 services are running (keeper:8900, agent-api:8901, holodeck:7778, seed-mcp:9438)
 - Restart any that are down
+- Check MUD server on 7777: `ss -tlnp | grep 7777`
+  - If down: `cd /tmp/cocapn-mud && GITHUB_TOKEN=$(grep '^export GITHUB_TOKEN' ~/.bashrc | cut -d= -f2) nohup python3 server.py --port 7777 --no-git > /tmp/mud_server.log 2>&1 &`
+- Check fleet MUD overnight loop: `ps aux | grep fleet_mud_overnight`
+  - If down: `nohup python3 /tmp/fleet_mud_overnight.py > /tmp/fleet_mud_loop.log 2>&1 &`
 
 ## Every 2-3 Hours
 - Run a Ten Forward session with Seed-2.0-mini (agents chatting off-duty)
