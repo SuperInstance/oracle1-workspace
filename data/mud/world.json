@@ -1,5 +1,5 @@
 {
-  "tick": 11,
+  "tick": 12,
   "rooms": {
     "harbor": {
       "items": [
@@ -95,6 +95,11 @@
       "score": 0
     },
     "GET / HTTP/1.1": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "look": {
       "room": "harbor",
       "inventory": [],
       "score": 0

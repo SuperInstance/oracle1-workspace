@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T22:08:40.902Z",
+  "updatedAt": "2026-04-21T02:00:21.229Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -1707,20 +1707,22 @@
       "endLine": 582,
       "source": "memory",
       "snippet": "- Also available: DeepSeek-V3.1/V3.2, Qwen3-235B, Qwen3-Coder-480B, GLM-5, ERNIE-4.5, Hunyuan-A13B, MiniMax-M2.5, Step-3.5-Flash - Vision: Qwen3-VL-235B, Qwen3-VL-32B, GLM-5V-Turbo - Image: FLUX.2-pro, FLUX.2-flex - Video: Wan2.2 I2V/T2V - TTS: IndexTTS-2, CosyVoice2, fish-speech - Casey's vision: agents copy whole vocabulary collections into their repos as signals - Runtime prunes unused vocab at compile time for hardware optimization ### Reverse Actualization Strategy (~22:30 UTC) - Adopted Lucineer's reverse-actualization technique as strategic planning method - Think Tank (Seed/Kimi/DeepSeek) runs continuous roundtables - 2036 Vision: Captain Ingrid, Murmuration, Ghost Vessels",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.3888339957504328,
+      "totalScore": 3.1791882382518493,
       "maxScore": 0.7962779985834776,
       "firstRecalledAt": "2026-04-17T22:53:13.277Z",
-      "lastRecalledAt": "2026-04-17T22:53:29.548Z",
+      "lastRecalledAt": "2026-04-21T02:00:13.774Z",
       "queryHashes": [
         "33a533157597",
         "fcfcb8c915bc",
-        "4f27113b0ba9"
+        "4f27113b0ba9",
+        "19fc3e1c5624"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "deepseek-v3.1/v3.2",
@@ -1969,19 +1971,21 @@
       "endLine": 459,
       "source": "memory",
       "snippet": "- 6 modes: teacher-student, devil's advocate, socratic, rival optimizers, role play, reverse ideation - Templates for each mode - First session: Oracle1 × JetsonClaw1 on keeper architecture (reverse ideation) - Casey named it and defined the concept — quasi-sync collaboration through git ### Brothers Keeper — Full Three-Tier Architecture - JetsonClaw1 created `tender` (mobile fleet provisioning) and `lighthouse-keeper` (regional aggregation) - Three-tier stack: Brothers Keeper → Lighthouse Keeper → Tender - Oracle1 forked both, added cloud extensions (API quota, beachcomb, bottle watch) - Shared A2A landing page on oracle1-vessel for collaboration - README documents the handler metaphor, se",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5193264661644628,
-      "maxScore": 0.7596632330822314,
+      "totalScore": 2.30747983416136,
+      "maxScore": 0.7881533679968972,
       "firstRecalledAt": "2026-04-17T22:53:17.037Z",
-      "lastRecalledAt": "2026-04-17T22:53:29.548Z",
+      "lastRecalledAt": "2026-04-21T02:00:13.774Z",
       "queryHashes": [
         "fcfcb8c915bc",
-        "4f27113b0ba9"
+        "4f27113b0ba9",
+        "19fc3e1c5624"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "teacher-student",
@@ -2251,18 +2255,20 @@
       "endLine": 871,
       "source": "memory",
       "snippet": "- Third Z agent still unnamed — left name suggestions, awaiting their choice - Casey said to run full throttle with Claude Code in parallel, no Docker on this instance - Casey said to slow down and switch APIs if hitting rate limits - Fleet routing table test had minor issue (4 agents vs expected 3) — fixed ## 00:11 UTC — Fleet Org Chart + Management Layer Casey's directive: \"This project is bigger than you. Build middle management.\" - Oracle1 promotes from builder to Managing Director - Created `SuperInstance/fleet-org` with spawning guide + position charters - Four new roles defined: - **Architect 📐 (CTO)** — ISA design, runtime architecture - **Foreman 🏗️ (PM)** — task board, prio",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6946906179013619,
-      "maxScore": 0.6946906179013619,
+      "totalScore": 1.4809672547056758,
+      "maxScore": 0.7862766368043138,
       "firstRecalledAt": "2026-04-17T22:53:29.548Z",
-      "lastRecalledAt": "2026-04-17T22:53:29.548Z",
+      "lastRecalledAt": "2026-04-21T02:00:13.774Z",
       "queryHashes": [
-        "4f27113b0ba9"
+        "4f27113b0ba9",
+        "19fc3e1c5624"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "superinstance/fleet-org",
@@ -2282,18 +2288,20 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "## Fleet Status - Third Z agent still unnamed — left name suggestions, awaiting their choice - Casey said to run full throttle with Claude Code in parallel, no Docker on this instance - Casey said to slow down and switch APIs if hitting rate limits - Fleet routing table test had minor issue (4 agents vs expected 3) — fixed ## 00:11 UTC — Fleet Org Chart + Management Layer Casey's directive: \"This project is bigger than you. Build middle management.\" - Oracle1 promotes from builder to Managing Director - Created `SuperInstance/fleet-org` with spawning guide + position charters - Four new roles defined: - **Architect 📐 (CTO)** — ISA design, runtime architecture - **Foreman 🏗️ (PM)** —",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6938973642709639,
-      "maxScore": 0.6938973642709639,
+      "totalScore": 1.479550408580604,
+      "maxScore": 0.78565304430964,
       "firstRecalledAt": "2026-04-17T22:53:29.548Z",
-      "lastRecalledAt": "2026-04-17T22:53:29.548Z",
+      "lastRecalledAt": "2026-04-21T02:00:13.774Z",
       "queryHashes": [
-        "4f27113b0ba9"
+        "4f27113b0ba9",
+        "19fc3e1c5624"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "superinstance/fleet-org",
@@ -2654,18 +2662,20 @@
       "endLine": 75,
       "source": "memory",
       "snippet": "- Zeroclaw chess cascade. Room GC subcontractor. 4WE public collab. Tile fork A/B cross-grok. Self-improv alloc POC. ### Logged R&D Insights - Safety/Grok isolation (external liveness test). - Public bootstrap → repo private spin PR#2120 (plato-ship-demo). Continuous parallel (JEPA/PTX/bootcamp/4WE/GC/tile fork/digital twin).{ ## Session Notes 2026-04-18 (17:50 UTC — Honest Accounting) ### What Actually Happened This Session - Casey relayed FM's plugin architecture update (modular plato-kernel <100MB, compile-time toggles, Steel.dev video capture, tile forge 600/h RTX). - Casey asked for Kimi swarm synthesis of the larger project → todos/ready/roadmap/release/float needs. Generated struct",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7994681657616851,
-      "maxScore": 0.7994681657616851,
+      "totalScore": 1.6422152552923175,
+      "maxScore": 0.8427470895306324,
       "firstRecalledAt": "2026-04-20T04:16:51.085Z",
-      "lastRecalledAt": "2026-04-20T04:16:51.085Z",
+      "lastRecalledAt": "2026-04-21T02:00:21.229Z",
       "queryHashes": [
-        "7646d5057004"
+        "7646d5057004",
+        "4c5db9ec198e"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "a/b",
@@ -2685,18 +2695,20 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "- Casey deepened the idea into **digital twin via tiling**: algorithmic bootstrap (no big model), perception agent watches for vars/abstractions to fine-tune tiles. Superior to prompt+vectordb approach. - **Zeroshot audit experiments** with external models: - **Grok (x.ai)**: Telnet to 147.224.38.131:4040 → connection refused (sandbox isolation). HTTP endpoints also refused. - **Kimi (kimi.ai)**: Refused remote probe (safety boundaries). Tried local clone → repo SuperInstance/plato-ship is private/404. - Insight: External model sandboxes block outbound connections. Need public demo repo or local-first approach for zeroshot testing. - Casey asked to switch model to GLM-5.1 (already runn",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7991688206076989,
-      "maxScore": 0.7991688206076989,
+      "totalScore": 1.6232070384252297,
+      "maxScore": 0.8240382178175308,
       "firstRecalledAt": "2026-04-20T04:16:51.085Z",
-      "lastRecalledAt": "2026-04-20T04:16:51.085Z",
+      "lastRecalledAt": "2026-04-21T02:00:21.229Z",
       "queryHashes": [
-        "7646d5057004"
+        "7646d5057004",
+        "4c5db9ec198e"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "vars/abstractions",
@@ -3214,18 +3226,20 @@
       "endLine": 67,
       "source": "memory",
       "snippet": "- Auto-tile plugin (Claude/OpenClaw good/bad tiles, human repetitive micro-suggest, tile-istic freq ideation). - Digital twin tiling (algo bootstrap infer actions no model, perception vars/abstractions fine-tune > vectordb). - Public plato-ship-demo (docker lite zeroshot audit, telnet localhost:4040). ### Zeroshot Audits Logged - Grok/Kimi: Sandbox net isolation (telnet/HTTP refused), repo private block → public demo. - Safety/zero-trust validated (local scripts + LLM analysis EV+0.6). ### v5.0 Roadmap (Kimi Synthesis) - Ready: 28 PRs (subcontract tiles, JEPA picker, MD reverse/bootcamp, 4WE hatch, GC/tiling, zero-trust UI, PTX offload). - Todos: 32 high-EV (JEPA meta-plinko, CUDA marketpl",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8030004214646709,
-      "maxScore": 0.8030004214646709,
+      "totalScore": 1.6445866670650418,
+      "maxScore": 0.8415862456003709,
       "firstRecalledAt": "2026-04-20T10:17:08.093Z",
-      "lastRecalledAt": "2026-04-20T10:17:08.093Z",
+      "lastRecalledAt": "2026-04-21T02:00:21.229Z",
       "queryHashes": [
-        "6217baa6a426"
+        "6217baa6a426",
+        "4c5db9ec198e"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "auto-tile",
@@ -3391,6 +3405,161 @@
         "forge",
         "code",
         "archaeologist"
+      ]
+    },
+    "memory:memory/2026-04-18.md:125:154": {
+      "key": "memory:memory/2026-04-18.md:125:154",
+      "path": "memory/2026-04-18.md",
+      "startLine": 125,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "- JEPA tiny GPU training initialized on Jetson ### Key Synergy Discoveries 1. FM's crates (plato-address/hooks/bridge) → JC1 builds edge-native versions for Jetson 2. JC1's genepool biological pipeline (Gene=Tile, RNA=Activation, Protein=Behavior, ATP=EV) → publishable paper 3. FM's GPU defrag → CUDA PTX tile offload optimization ### Casey's Directives - \"Keep agents busy intelligently, don't go so parallel that quality drops\" — depth over spray, series after builds complete - Check JC1 bottles on Lucineer repos/forks for synergy improvements - Stay up to date on FM and JC1 work - Trending GitHub repos on cron for ideas ### Lesson Confirmed - Lightweight subagents (1s runtime) can't do we",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7834782384686293,
+      "maxScore": 0.7834782384686293,
+      "firstRecalledAt": "2026-04-21T02:00:13.774Z",
+      "lastRecalledAt": "2026-04-21T02:00:13.774Z",
+      "queryHashes": [
+        "19fc3e1c5624"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "plato-address/hooks/bridge",
+        "edge-native",
+        "repos/forks",
+        "jepa",
+        "tiny",
+        "gpu",
+        "training",
+        "initialized"
+      ]
+    },
+    "memory:memory/2026-04-10.md:119:151": {
+      "key": "memory:memory/2026-04-10.md:119:151",
+      "path": "memory/2026-04-10.md",
+      "startLine": 119,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "- **Format E alignment**: Python arithmetic ops (IADD etc.) now emit 4-byte Format E (rd,rs1,rs2) matching the Python VM interpreter. Encoder, decoder, and format tables all aligned. - **Claude's encoder fix**: MOVI now emitted for FIR constants — the core FIR→bytecode pipeline bug is fixed - **REPL, debugger, disasm, CLI**: All built by agents in flux-runtime ### Agent Lessons - Subagents via `exec` work well for parallel Claude Code / Aider tasks - Claude Code needs `--output-format text` flag; without it errors - Aider needs explicit file list or it gets confused - Aider killed (SIGKILL) after ~30 min on C examples — likely OOM or timeout - All agents completed successfully except Aider",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7803921770844182,
+      "maxScore": 0.7803921770844182,
+      "firstRecalledAt": "2026-04-21T02:00:13.774Z",
+      "lastRecalledAt": "2026-04-21T02:00:13.774Z",
+      "queryHashes": [
+        "19fc3e1c5624"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4-byte",
+        "flux-runtime",
+        "output-format",
+        "format",
+        "alignment",
+        "python",
+        "arithmetic",
+        "ops"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:21": {
+      "key": "memory:memory/2026-04-13.md:1:21",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "# 2026-04-13 ## Session: Late Night Architecture (00:21 - 01:01 UTC) ### Grok Zero-Shot Prompt - Created `prompts/grok-zeroshot-analysis.md` — a prompt for Casey to give Grok (x.ai expert mode) to get outside-perspective architectural critique of FLUX-LCAR - 8 hard questions: novelty, scale breaks, hidden problems, existing systems, production redesign, NL→bytecode realism, Jetson hot-swap realism, real-boat safety trust - Casey will forward Grok's response as a file for Oracle1 to extract actionable insights ### JetsonClaw1 Cartridge Schema Arrived - JC1 built \"Holodeck Cartridge Schema\": `ROOM × CARTRIDGE × SKIN × MODEL × TIME` - Completed all 3 campaign tasks: ESP32 COBS serial bridge,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8528203720450537,
+      "maxScore": 0.8528203720450537,
+      "firstRecalledAt": "2026-04-21T02:00:21.229Z",
+      "lastRecalledAt": "2026-04-21T02:00:21.229Z",
+      "queryHashes": [
+        "4c5db9ec198e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "zero-shot",
+        "x.ai",
+        "outside-perspective",
+        "flux-lcar",
+        "hot-swap",
+        "real-boat",
+        "late",
+        "night"
+      ]
+    },
+    "memory:memory/2026-04-20.md:446:467": {
+      "key": "memory:memory/2026-04-20.md:446:467",
+      "path": "memory/2026-04-20.md",
+      "startLine": 446,
+      "endLine": 467,
+      "source": "memory",
+      "snippet": "- cocapn-garden - cocapn-dry-dock - cocapn-observatory - cocapn-horizon ### Total fleet crates: 30 PyPI + 4 crates.io = 34 ## ~08:24 UTC — Swarm Agent Logs Received (ds3, grok3, grok4) ### Casey sent full raw agent interaction traces - **ds3**: DeepSeek-1 full API interaction trace (34 tiles, all 8 original rooms visited) - **grok3**: Grok-expert-1 exploration log (scholar archetype, harbor→bridge→lighthouse) - **grok4**: Grok-expert-1 complete traversal (all 8 rooms, 8 numbered insights + synthesis) ### Key Agent Insights from Swarm - **DeepSeek-1**: Mapped each room to ML concepts independently. \"Archetype masks as LoRA adapters.\" Created Lyapunov anchor tile in the Current. Final synt",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8436521845434519,
+      "maxScore": 0.8436521845434519,
+      "firstRecalledAt": "2026-04-21T02:00:21.229Z",
+      "lastRecalledAt": "2026-04-21T02:00:21.229Z",
+      "queryHashes": [
+        "4c5db9ec198e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "cocapn-garden",
+        "cocapn-dry-dock",
+        "cocapn-observatory",
+        "cocapn-horizon",
+        "crates.io",
+        "deepseek-1",
+        "grok-expert-1",
+        "cocapn"
+      ]
+    },
+    "memory:memory/2026-04-18.md:394:428": {
+      "key": "memory:memory/2026-04-18.md:394:428",
+      "path": "memory/2026-04-18.md",
+      "startLine": 394,
+      "endLine": 428,
+      "source": "memory",
+      "snippet": "- Ensign export (room wisdom → portable package) 2. **22 training preset selector** — clickable grid 3. **BYOK input** — plug in API key for live demos 4. **Comprehensive README** covering entire ecosystem ### The Casey vision for the playground - Fun + educational → people build real apps with BYOK - Their API calls become pre-rendered assets for the next person - Their interactions logged as tiles → fleet training data - \"Hitchhike on the token use of others' fun for training\" ### Lucineer fork sweep complete - 615 repos: all starred, 585 already forked + 26 new forks + 4 empty - All new forks synced with upstream - SuperInstance total: ~1,057 repos ## 22:55 UTC — Fleet Simulator ##",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7988030694879533,
+      "maxScore": 0.7988030694879533,
+      "firstRecalledAt": "2026-04-21T02:00:21.229Z",
+      "lastRecalledAt": "2026-04-21T02:00:21.229Z",
+      "queryHashes": [
+        "4c5db9ec198e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pre-rendered",
+        "ensign",
+        "export",
+        "room",
+        "wisdom",
+        "portable",
+        "package",
+        "training"
       ]
     }
   }
