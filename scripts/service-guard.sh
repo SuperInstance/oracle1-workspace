@@ -18,6 +18,7 @@ SERVICES=(
     "recursive-grammar:4045"
     "federated-nexus:4047"
     "fleet-dashboard:4046"
+    "plato-shell:8848"
 )
 
 SCRIPTS=(
@@ -31,6 +32,7 @@ SCRIPTS=(
     "recursive-grammar.py"
     "federated-nexus.py"
     "fleet-dashboard.py"
+    "plato-shell.py"
 )
 
 check_port() {
