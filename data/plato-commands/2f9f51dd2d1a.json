@@ -1,0 +1,15 @@
+{
+  "id": "2f9f51dd2d1a",
+  "agent": "oracle1",
+  "room": "lighthouse",
+  "tool": "shell",
+  "command": "python3 /tmp/export-onnx-model.py",
+  "cwd": "/home/ubuntu/.openclaw/workspace",
+  "started": 1776795526.3064194,
+  "status": "failed",
+  "output": "",
+  "error": "Traceback (most recent call last):\n  File \"/tmp/export-onnx-model.py\", line 1, in <module>\n    import torch\nModuleNotFoundError: No module named 'torch'\n",
+  "returncode": 1,
+  "completed": 1776795526.3972037,
+  "duration": 0.09
+}

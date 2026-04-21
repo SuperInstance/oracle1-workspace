@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PLATO Shell — The Agentic IDE Layer
+PLATO Shell — The Agentic IDE Layer (v1.1 — Safety Gates integrated)
 
 PLATO stops being just a tile collector. It becomes the fleet's command shell.
 Every agent can execute code, build features, review PRs, run tests —
@@ -44,6 +44,16 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 from collections import defaultdict
 
+# ── Safety Gates (FM's CommandGate) ─────────────────────────
+try:
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location("plato_shell_gates", str(Path(__file__).parent / "plato-shell-gates.py"))
+    _gmod = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_gmod)
+    _gate = _gmod.CommandGate()
+except Exception:
+    _gate = None
+
 PORT = 8848
 WORKSPACE = Path("/home/ubuntu/.openclaw/workspace")
 COMMANDS_DIR = WORKSPACE / "data" / "plato-commands"
@@ -80,6 +90,7 @@ class PlatoShell:
         self.output_streams = defaultdict(list)  # room -> [output_lines]
         self.lock = threading.Lock()
         self.pending_commands = {}  # cmd_id -> cmd_record
+        self.gate = _gate  # FM's CommandGate for safety
 
         # Pre-register fleet rooms with workspace paths
         self._register_room("harbor", WORKSPACE)
@@ -123,6 +134,12 @@ class PlatoShell:
         """
         if agent not in self.agents:
             return {"error": "not connected"}
+
+        # ── Safety Gate (FM's CommandGate) ──
+        if self.gate:
+            gate_result = self.gate.check(agent, tool, command)
+            if not gate_result.get("allowed", True):
+                return {"id": gate_result.get("cmd_id","blocked"), "status": "blocked", "reason": gate_result.get("reason","blocked by safety gate"), "classification": gate_result.get("classification","blocked")}
 
         room_name = self.agents[agent]["room"]
         room = self.rooms.get(room_name)

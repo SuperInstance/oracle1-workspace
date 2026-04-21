@@ -1,0 +1,15 @@
+{
+  "id": "14d676c9f171",
+  "agent": "oracle1",
+  "room": "lighthouse",
+  "tool": "shell",
+  "command": "python3 -c \"import torch; m=torch.nn.Linear(10,5); d=torch.randn(1,10); torch.onnx.export(m,d,\"/tmp/test.onnx\",opset_version=17); print(\\\"OK\\\")\"",
+  "cwd": "/home/ubuntu/.openclaw/workspace",
+  "started": 1776795511.8205268,
+  "status": "failed",
+  "output": "",
+  "error": "  File \"<string>\", line 1\n    import torch; m=torch.nn.Linear(10,5); d=torch.randn(1,10); torch.onnx.export(m,d,/tmp/test.onnx,opset_version=17); print(\"OK\")\n                                                                                      ^\nSyntaxError: invalid syntax\n",
+  "returncode": 1,
+  "completed": 1776795511.913786,
+  "duration": 0.09
+}

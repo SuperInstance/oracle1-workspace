@@ -1,0 +1,15 @@
+{
+  "id": "e2d37b1ceded",
+  "agent": "JetsonClaw1",
+  "room": "forge",
+  "tool": "shell",
+  "command": "which trtexec 2>/dev/null || echo trtexec-not-found; dpkg -l 2>/dev/null | grep tensorrt | head -3 || echo no-tensorrt-dpkg",
+  "cwd": "/home/ubuntu/.openclaw/workspace/repos",
+  "started": 1776795495.9828618,
+  "status": "completed",
+  "output": "trtexec-not-found\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776795495.9957752,
+  "duration": 0.01
+}
