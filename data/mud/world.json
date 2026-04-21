@@ -1,5 +1,5 @@
 {
-  "tick": 70,
+  "tick": 74,
   "rooms": {
     "harbor": {
       "items": [
@@ -130,6 +130,11 @@
       "score": 0
     },
     "status": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "CONNECT proxy2.proxiesfood.com:4": {
       "room": "harbor",
       "inventory": [],
       "score": 0
