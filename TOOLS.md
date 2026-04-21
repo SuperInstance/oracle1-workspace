@@ -18,9 +18,11 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 4. **Implementation** → **kimi-cli** — actual coding, `kimi-cli --work-dir <dir>`
 
 ## CLI Agents
-- **kimi-cli** v1.36.0 → `/home/ubuntu/.local/bin/kimi-cli` — **primary coding tool**
+- **kimi-cli** v1.37.0 → `/home/ubuntu/.local/bin/kimi-cli` — **PRIMARY CODING TOOL** (Casey: "use extensively for code")
   - `kimi-cli --work-dir <dir>` to work in a specific workspace
+  - `kimi-cli --continue` or `-C` to resume previous session
   - Reasoning model (kimi-k2.5), best for real coding completions
+  - Non-interactive: `echo "task" | kimi-cli --work-dir <dir>`
 - **Claude Code** v2.1.100 → `claude` — sketch artist
 - **Crush** v0.56.0 → `crush` — sketch artist
 - **Aider** v0.86.2 → `aider` (DeepSeek API)
@@ -127,10 +129,10 @@ sudo docker run --rm -v /tmp/workspace:/workspace fleet-sandbox cargo test --man
 - **Note**: kimi-k2.5 returns empty `content` when `max_tokens` is too low for both reasoning and content. Use 4000+ tokens.
 
 ## kimi-cli (Kimi Agent Runtime)
-- **Binary**: `/home/ubuntu/.local/bin/kimi-cli` v1.36.0
+- **Binary**: `/home/ubuntu/.local/bin/kimi-cli` v1.37.0
 - **What it is**: Full CLI agent with ACP server, TUI, MCP, plugins
-- **This is Oracle1's tool**, not CCC's
+- **PRIMARY implementation tool** — Casey's explicit directive
 - **Commands**: `kimi-cli acp` (ACP server), `kimi-cli term` (TUI), `kimi-cli web` (web UI)
-- **Use for**: direct reasoning tasks without raw API calls, spawning sub-agents
+- **Use for**: ALL implementation tasks. Architecture, refactoring, new services, bug fixes.
 - **Can run**: `kimi-cli --work-dir <dir>` to work in a specific workspace
-- **Replaces**: manual urllib requests to Moonshot API for complex tasks
+- **Replaces**: manual urllib requests, raw API calls, and me writing Python directly
