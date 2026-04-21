@@ -1,5 +1,5 @@
 {
-  "tick": 79,
+  "tick": 91,
   "rooms": {
     "harbor": {
       "items": [
@@ -135,6 +135,16 @@
       "score": 0
     },
     "CONNECT proxy2.proxiesfood.com:4": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-9998": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "SSH-2.0-Go": {
       "room": "harbor",
       "inventory": [],
       "score": 0
