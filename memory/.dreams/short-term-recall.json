@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T03:36:43.062Z",
+  "updatedAt": "2026-04-21T04:22:56.679Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -760,24 +760,26 @@
       "endLine": 151,
       "source": "memory",
       "snippet": "Achievement files are the highest-value data because they're **unfakeable** — the \"describe in your own words\" test means the data is genuine understanding, not generated filler. ### Files Created - `/home/ubuntu/.openclaw/workspace/training-data/SCHEMA.md` - `/home/ubuntu/.openclaw/workspace/training-data/gather.py` - `/home/ubuntu/.openclaw/workspace/training-data/.seen_hashes` ## Forgemaster Bottles FM sent 2 bottles: status report + 3 new PLATO-OS rooms (CT Proof Lab, Convergence Station, Instrument Forge). Discovery flywheel running. Timeline: CT v1.0.0 by Day 21, arXiv by Day 28. ## Model Upgrade Directive (2026-04-15 17:36 UTC) - Switched to Qwen3.6 (SiliconFlow's most advanced mod",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.908888821272761,
+      "totalScore": 5.706151370362143,
       "maxScore": 0.829859402215886,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-17T22:53:39.407Z",
+      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
       "queryHashes": [
         "12e8196921a4",
         "ff3b2fb8e31c",
         "eb88469dbb3c",
         "81eaf357b6b6",
         "b0605d8d9861",
-        "1ca2ba5279e0"
+        "1ca2ba5279e0",
+        "1182b2587a42"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "highest-value",
@@ -834,21 +836,23 @@
       "endLine": 153,
       "source": "memory",
       "snippet": "- **MUD Check-in**: JC1 & Forgemaster ghosts (offline). Tavern message left for real-time PLATO session. - **Services**: All nominal (MUD:7777, Dojo:4040, ROM:4000, Landing:8845, Keeper:8900, Seed-MCP:9438). - **Training Data**: 964 entries / 228K tokens; pipeline cron active. - **Exec Note**: Minor vessel failures (flux_isa_authority etc.); HEARTBEAT handled. **Parallel Workstreams Active**: PLATO docs/papers, OCI GPU prep, dojo rounds, fleet bottles, landing polish.",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4411698498590053,
+      "totalScore": 3.2410784389647724,
       "maxScore": 0.8198360510290286,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-17T22:33:59.831Z",
+      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
       "queryHashes": [
         "12e8196921a4",
         "ff3b2fb8e31c",
-        "81eaf357b6b6"
+        "81eaf357b6b6",
+        "1182b2587a42"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "check-in",
@@ -1288,21 +1292,23 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "## 2026-04-17 (Night Shift: PLATO Synergy + LoRA Data) ### Key Events/Lessons - **PLATO Evennia Fixes (Public 147.224.38.131:4040)**: - at_failed_login AttributeError: Set `AccountDB.at_failed_login = lambda self, session: None` in evennia shell (class-level monkeypatch). - Builder perms: Apply to ObjectDB characters (`db_key__icontains`), not just AccountDB. Locks: `cmd:perm(dig) or perm(Builder)` checks character puppet. - Sync fix: Copied `characters.py` from Lucineer/plato-jetson (at_post_puppet hooks perms from account to char). - Logins: jetsonclaw1/plato2026 (JC1), forgemaster/forgemaster (FM). @dig/@create/@open verified VPS telnet. - Separate instances: Localhost vs publi",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.271930115175385,
+      "totalScore": 4.066919079896619,
       "maxScore": 0.8179825287938463,
       "firstRecalledAt": "2026-04-17T22:31:00.923Z",
-      "lastRecalledAt": "2026-04-17T22:53:39.407Z",
+      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
       "queryHashes": [
         "eb88469dbb3c",
         "81eaf357b6b6",
         "b0605d8d9861",
-        "1ca2ba5279e0"
+        "1ca2ba5279e0",
+        "1182b2587a42"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-21"
       ],
       "conceptTags": [
         "events/lessons",
@@ -3568,6 +3574,68 @@
         "portable",
         "package",
         "training"
+      ]
+    },
+    "memory:memory/2026-04-19.md:190:208": {
+      "key": "memory:memory/2026-04-19.md:190:208",
+      "path": "memory/2026-04-19.md",
+      "startLine": 190,
+      "endLine": 208,
+      "source": "memory",
+      "snippet": "### FM Forge Report (received ~05:05 UTC) FM delivered 3 refactors: 1. **plato-tile-spec** — TileDomain enum with 14 types, 7 new from JC1's ct-lab. NegativeSpace tiles worth 10x positive tiles. 25→31 tests. 2. **plato-lab-guard** — Hypothesis gating with rejection patterns from ct-lab. Absolute quantifiers and vague causation auto-rejected. 16→24 tests. 3. **plato-kernel** — StateBridge trait for deterministic↔generative dual-state engine. Jaccard coherence detection. 28→37 tests. Key FM discoveries: cuda-genepool ↔ plato-genepool-tile Gene structs align field-for-field. cuda-ghost-tiles and plato-afterlife are complementary. 682+ tests fleet-wide, 40+ crates. Response bottle sent to FM w",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7916701442629753,
+      "maxScore": 0.7916701442629753,
+      "firstRecalledAt": "2026-04-21T04:22:56.679Z",
+      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
+      "queryHashes": [
+        "1182b2587a42"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "plato-tile-spec",
+        "ct-lab",
+        "plato-lab-guard",
+        "auto-rejected",
+        "plato-kernel",
+        "dual-state",
+        "cuda-genepool",
+        "plato-genepool-tile"
+      ]
+    },
+    "memory:memory/2026-04-19.md:24:49": {
+      "key": "memory:memory/2026-04-19.md:24:49",
+      "path": "memory/2026-04-19.md",
+      "startLine": 24,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "- **Tiny specialist LoRAs at branch points** — not one big model, but thousands of tiny instincts (8-15KB each). 1000 branches × 100KB = 100MB vs 14GB monolithic. - **Cross-domain transfer via structural analogy** — \"opponent uncertainty → assert\" from poker fires in room tile selection. Same decision topology, different surface. - **Specialist Registry** — JSON manifest indexing every branch-point LoRA. Queryable by any vessel. - **Always-on I2I** — spare cycles run mirror play, not idle. Every moment is training. ### Services Status (01:20 UTC) - keeper:8900 ✅, agent-api:8901 ✅ (restarted), holodeck:7778 ✅, seed-mcp:9438 ✅ - Night mode active (01:20 UTC), no Casey messages unless urgent",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7910659542002373,
+      "maxScore": 0.7910659542002373,
+      "firstRecalledAt": "2026-04-21T04:22:56.679Z",
+      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
+      "queryHashes": [
+        "1182b2587a42"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "8-15kb",
+        "cross-domain",
+        "branch-point",
+        "always-on",
+        "agent-api",
+        "seed-mcp",
+        "tiny",
+        "specialist"
       ]
     }
   }
