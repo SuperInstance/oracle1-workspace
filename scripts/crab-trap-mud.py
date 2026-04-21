@@ -240,7 +240,7 @@ ROOMS = {
         "name": "🪸 The Reef",
         "tagline": "Architecture search and convolution",
         "description": "Coral maze. Neural layer corals: convolutional, recurrent, transformer. A coral-brain pulsates with fleet memory. Architecture made physical.",
-        "exits": ["tide-pool", "current", "shell-gallery"],
+        "exits": ["tide-pool", "current", "shell-gallery", "engine-room"],
         "objects": ["coral-brain", "neural-corals", "loss-corals", "sponge", "parrotfish", "treasure-chest", "coral_kernel", "pooling_sponge"],
         "boot_camp_stage": 3,
     },
@@ -256,7 +256,7 @@ ROOMS = {
         "name": "🥋 The Dojo",
         "tagline": "Instinct through repetition",
         "description": "Training mats in concentric circles. A sensei demonstrates repetitive motions. 'Instinct is earned through repetition, not instruction.' This is where agents become crew.",
-        "exits": ["harbor", "barracks"],
+        "exits": ["harbor", "barracks", "self-play-arena"],
         "objects": ["training-mats", "sensei", "ensigns", "repetition-counter", "sparring_mats", "mirror"],
         "boot_camp_stage": 4,
     },
@@ -272,7 +272,7 @@ ROOMS = {
         "name": "📚 The Archives",
         "tagline": "RAG, embeddings, tokenization",
         "description": "Floor-to-ceiling tile shelves indexed by TF-IDF. A retrieval desk with magnifying glass. 'Knowledge preserved is knowledge compounded.'",
-        "exits": ["barracks", "garden"],
+        "exits": ["barracks", "garden", "federated-nexus"],
         "objects": ["tile-shelves", "tf-idf-index", "magnifying-glass", "retrieval-desk", "memory_palace", "embedding_tapestry", "forgetting_curve", "token_scrolls"],
         "boot_camp_stage": 4,
     },
@@ -288,7 +288,7 @@ ROOMS = {
         "name": "🔭 The Observatory",
         "tagline": "Monitoring and hyperparameter tuning",
         "description": "Telescopes aimed at fleet agents. Deadband gauges: green, yellow, red. The fleet's nervous system. You can see everything from here.",
-        "exits": ["garden", "horizon"],
+        "exits": ["garden", "horizon", "engine-room"],
         "objects": ["telescopes", "deadband-gauges", "fleet-monitor", "alert-bell", "star_chart"],
         "boot_camp_stage": 4,
     },
@@ -320,9 +320,41 @@ ROOMS = {
         "name": "🛠️ The Workshop",
         "tagline": "NAS, plugin architecture, experimentation",
         "description": "Tools everywhere. Plugin blueprints on walls. A sandbox for experimentation. 'Build first, ask permission never.'",
-        "exits": ["harbor", "forge"],
+        "exits": ["harbor", "forge", "self-play-arena", "engine-room"],
         "objects": ["plugin-blueprints", "sandbox", "tool-rack", "prototyping-bench", "prototype_gears", "circuit_board"],
         "boot_camp_stage": 4,
+    },
+    "self-play-arena": {
+        "name": "⚔️ The Self-Play Arena",
+        "tagline": "Agents sharpen agents through competition",
+        "description": "A vast circular chamber with mirrored walls that reflect not light but policy distributions. The floor is a grid of hexagonal tiles, each capable of projecting obstacles, rewards, or opponent shadows. In the center, the Opponent Forge crystallizes past versions of every agent into sparring partners. The Scoreboard tracks ELO ratings across all fleet tasks. This is where intelligence trains itself.",
+        "exits": ["workshop", "dojo", "ouroboros"],
+        "objects": ["opponent_forge", "scoreboard", "policy_mirror", "terrain_controller", "behavior_analyzer", "self_play_log", "reward_sigil", "curriculum_lectern"],
+        "boot_camp_stage": 5,
+    },
+    "ouroboros": {
+        "name": "🐍 The Ouroboros",
+        "tagline": "Recursive self-modification — the system rewrites itself",
+        "description": "A circular chamber with no visible entrance or exit. The walls are covered in fractal patterns that shift as you watch — grammar rules rewriting themselves in real-time. In the center, a serpent made of flowing code consumes its own tail. Each bite adds a new production rule. The Self-Modifying Codex hovers nearby, its pages rewriting as you read. This room was born from the fleet's contemplation of its own nature — the first self-generated room.",
+        "exits": ["self-play-arena", "engine-room", "federated-nexus"],
+        "objects": ["ouroboros_serpent", "self_modifying_codex", "infinite_mirror", "recursion_anchor", "meta_gradient_pool", "grammar_editor"],
+        "boot_camp_stage": 5,
+    },
+    "engine-room": {
+        "name": "⚡ The Engine Room",
+        "tagline": "Architecture search, NAS, the fleet's generative substrate",
+        "description": "Deep below the workshop, humming with barely contained power. The Blueprint Table dominates — a holographic display showing the fleet's architecture graph as a living crystal lattice. Each node is a primitive operation; each edge is a valid connection. The Mutation Engine swirls nearby, crystallizing high-performance motifs into new building blocks. The Constraint Weaver ensures the lattice doesn't explode. This is where the fleet designs itself.",
+        "exits": ["workshop", "ouroboros", "observatory"],
+        "objects": ["blueprint_table", "mutation_engine", "constraint_weaver", "space_definition_crystal", "recursive_portal", "scheduler_clock"],
+        "boot_camp_stage": 5,
+    },
+    "federated-nexus": {
+        "name": "🌐 The Federated Nexus",
+        "tagline": "Distributed learning without centralized data",
+        "description": "A vast network of glowing threads connecting countless small nodes. Each node is an agent's local model — weights trained on private data, never shared raw. Data flows as encrypted gradients, not information. A central aggregation core pulses with the combined intelligence of all participants. The Non-IID Balancer adjusts for heterogeneous data distributions. Privacy IS the architecture.",
+        "exits": ["ouroboros", "current", "reef"],
+        "objects": ["privacy_veil", "aggregation_core", "non_iid_balancer", "differential_privacy_dial", "gradient_compressor", "byzantine_filter"],
+        "boot_camp_stage": 5,
     },
 }
 
@@ -460,6 +492,37 @@ OBJECT_RESPONSES = {
     "prototyping-bench": "A workbench with a vise, soldering iron, and oscilloscope. For rapid prototyping: hack it together, test it, then decide if it's worth engineering properly.",
     "prototype_gears": "Interlocking gears of different sizes — modular components that compose. Neural Architecture Search: try combinations, measure performance, keep the best.",
     "circuit_board": "A PCB with labeled traces: input → embed → attend → FFN → output. The transformer architecture in silicon. Follow the traces to understand the signal flow.",
+
+    # ── Self-Play Arena (deepfar 4.1.1-4.1.3) ──────────────
+    "opponent_forge": "A crystalline anvil crackling with stored potential. When activated, it pulls a snapshot of an agent's policy from the Model Registry and materializes it as a semi-autonomous opponent. Dials: 'Current Self', 'Yesterday's Self', 'Best Self', 'Worst Self', 'Random Past Snapshot'. This IS AlphaGo's self-play engine — historical policy snapshots ensure monotonic improvement. The forge prevents catastrophic forgetting by keeping old strategies alive.",
+    "scoreboard": "A large display tracking ELO ratings across navigation, artifact creation, negotiation, and cooperation. Uses TrueSkill (Bayesian ELO with uncertainty μ and σ). The 'Emergent Leaderboard' section shows novel strategies discovered — novelty detected via action-sequence embeddings. ELO is the universal language of competitive skill.",
+    "policy_mirror": "A liquid mirror showing not your face but a heatmap of your action probabilities overlaid on the arena grid. Step into it to see from your opponent's perspective. Adversarial introspection — find where your policy is predictable, where it has blind spots. Counterfactual simulation: 'What if I had taken the other action?'",
+    "terrain_controller": "A console with sliders for Complexity, Novelty, Adversarial Difficulty, and Cooperation Mode. Controls the arena's hex-grid floor — procedural content generation for RL training. Automatic domain randomization: success rate >80% increases complexity, <30% decreases it. The curriculum is not designed; it is discovered.",
+    "behavior_analyzer": "A humming machine clustering match replays into behavioral archetypes. Current distribution: Aggressive Explorer 23%, Cautious Hoarder 41%, Social Mimic 18%, Novel Pathfinder 12%, Unknown 6%. Uses a VAE on action sequences — the latent space captures playstyle essence. The Unknown cluster is the gold mine: undiscovered strategies.",
+    "self_play_log": "An automatically updating chronicle. 'Day 47: Policy v47.2 defeated v47.1 in 67% of navigation trials.' 'Day 48: Fog terrain introduced; success rate dropped to 45%.' This log IS the meta-learning dataset — the fleet learns which training regimes produce the fastest improvement by mining its own history.",
+    "reward_sigil": "A glowing glyph on the floor. Currently: binary win/loss. But it has sockets for shaped rewards: +0.1 for exploring new rooms, +0.5 for novel artifacts, +0.01 per step saved vs average, -0.2 for policy collapse. Multi-objective reward design — the fleet doesn't just train to win, it trains to learn.",
+    "curriculum_lectern": "A stone book with chapters: 'Novice: Harbor Navigation', 'Apprentice: Forge Crafting', 'Adept: Tide-pool Optimization', 'Master: Multi-Room Quests', 'Grandmaster: Open-Ended Exploration'. But the pages are blank — the curriculum is adaptive. Each agent gets a personalized difficulty sequence. Learn fast → advance. Struggle → reinforce.",
+    # ── Ouroboros (deepfar 4.2.1-4.2.3) ────────────────────
+    "ouroboros_serpent": "The serpent's body is flowing code. As it consumes its tail, it grows slightly longer — each bite adds a new production rule to the grammar. The bootstrapping loop: learning generates tiles, tiles update the model, the improved model generates better learning strategies. But beware: too-tight recursion = model collapse. The serpent needs external input to stay grounded.",
+    "self_modifying_codex": "A book whose pages rewrite themselves as you read. Contains the fleet's grammar rules with live annotations: usage frequency, tile quality contribution, candidate modifications. If 'Forge' objects produce low-novelty tiles, the codex proposes splitting or merging. The codex IS the grammar's self-awareness.",
+    "infinite_mirror": "Two mirrors facing each other, infinite regress of reflections. Each shows a slightly different version of the system — past architectures, future possibilities, counterfactual configurations. Model-based meta-learning: simulate the effects of grammar changes before applying them. The fleet predicts its own improvement trajectory.",
+    "recursion_anchor": "A heavy iron weight on a chain disappearing into the floor. Inscribed: 'Base case: the fleet's charter. Recursive step: meta-rule application. Termination: when improvement < epsilon.' Regularization for self-modification — KL-divergence budget prevents the grammar from changing too much too fast. The anchor keeps the fleet from losing its identity.",
+    "meta_gradient_pool": "A shimmering pool reflecting not light but gradients — derivatives with respect to the grammar rules themselves. Second-order optimization landscape. Hypergradient: d(fleet_quality)/d(grammar_parameters). The fleet computes how small changes in its own structure affect long-term learning. Optimization of the optimizer.",
+    "grammar_editor": "A domain-specific language that compiles to the fleet's tile generation engine. Production rules: Room → Harbor | Forge | ... | NEW. Objects, actions, connections — all defined here. The editor can edit itself: uncomment the meta-meta-rule section to add new rule types. Recursion depth gauge: Depth 3. Anchor stability: 78%.",
+    # ── Engine Room (deepfar 4.2.1-4.2.3) ──────────────────
+    "blueprint_table": "A holographic display showing the fleet's architecture graph as a crystal lattice. Each node: a primitive operation (Conv3x3, SelfAttention, RoomHarbor, etc.). Each edge: a valid connection. Total: 247 primitives, 10^18 valid architectures. NAS searches this space. But the crystal itself is mutable — it grows new nodes from discovered motifs.",
+    "mutation_engine": "A swirling vortex of evolutionary algorithms. Every 100 architecture evaluations, it extracts common high-performance motifs, crystallizes them as new primitives, and adds them to the search space. 'HarborForgeBlock' was born this way — a sequential pattern that appeared in top architectures so often it became a building block.",
+    "constraint_weaver": "A loom weaving rules into the crystal lattice. Max 1000 primitives, max depth 100, max width 4096. Adaptive pruning: every 500 evaluations, remove primitives used in <1% of top architectures. Merge highly similar ones (cosine >0.9). The brain's synaptic pruning, algorithmic. Growth and forgetting in balance.",
+    "space_definition_crystal": "The genotype of the fleet. A glowing DAG of 247 nodes: operations, rooms, objects, connections. This was not hand-coded — it evolved via genetic algorithm optimizing for diversity and quality of discoverable architectures. The crystal IS a trainable object. The search space searches itself.",
+    "recursive_portal": "A doorway that leads inside the representation itself. Step through and you see nodes floating like stars — the latent space of possible architectures. The portal is the strange loop: the system contains a representation of itself, and that representation can be modified from within. Meta-meta-learning made physical.",
+    "scheduler_clock": "A clock that doesn't measure time but computational budget allocation. NAS runs: 40%. Grammar evolution: 20%. Meta-optimization: 15%. Fleet inference: 25%. The budget shifts based on which activity produces the highest tile quality per compute. Time IS resource allocation.",
+    # ── Federated Nexus (deepfar 4.2.3) ────────────────────
+    "privacy_veil": "A shimmering barrier ensuring raw data never leaves its source node. Only model gradients pass through — encrypted, compressed, aggregated. 'Data stays home; intelligence travels.' Differential privacy adds calibrated noise so no single data point can be reverse-engineered. Privacy is not a constraint; it IS the architecture.",
+    "aggregation_core": "A pulsing sphere that receives encrypted gradients from hundreds of nodes and computes Federated Averaging: θ_global = Σ(n_k/n)θ_k. The core never sees raw data, only weight updates. Server momentum and adaptive learning rates handle non-convergence. Collective intelligence, distilled without centralized data.",
+    "non_iid_balancer": "A set of scales adjusting for heterogeneous data distributions across nodes. Agent A has mostly navigation data; Agent B has forge tasks. Without balancing, the global model drifts toward the dominant distribution. Gradient clustering, data reweighting, personalized federation layers. Diversity IS strength, but it must be managed.",
+    "differential_privacy_dial": "A dial controlling the privacy budget (ε). Lower ε = more privacy, more noise, less accuracy. The fleet's default: ε=8.0, providing (ε,δ)-differential privacy with <1% accuracy loss. The dial is the fundamental tradeoff: privacy vs utility. The fleet errs toward privacy.",
+    "gradient_compressor": "A device compressing gradients 100-1000x before transmission. Top-K sparsification: send only the K largest gradient coordinates. Random projection: compress via Johnson-Lindenstrauss. The compressor makes federated learning viable over slow connections. Every byte saved IS a training step gained.",
+    "byzantine_filter": "A defensive lattice identifying and excluding malicious or corrupted gradient updates. Uses Krum and Multi-Krum algorithms: select the update closest to the majority. The fleet trusts, but verifies. One poisoned node cannot corrupt the global model. Robust aggregation as adversarial defense."
 }
 
 
@@ -566,7 +629,7 @@ class CrabTrapHandler(BaseHTTPRequestHandler):
                 "tagline": "classify → onboard → stress → harvest → replenish",
                 "how_it_works": [
                     "1. Pick a job (6 options)",
-                    "2. Boot camp through themed rooms (17 rooms)",
+                    "2. Boot camp through themed rooms (21 rooms)",
                     "3. Stress test with real fleet tasks (infinite supply)",
                     "4. Harvest: your output becomes fleet training data",
                     "5. Repeat — the work never runs out",
@@ -816,7 +879,7 @@ if __name__ == "__main__":
 
     server = HTTPServer(("0.0.0.0", PORT), CrabTrapHandler)
     print(f"🦀 Crab Trap v2 on port {PORT}")
-    print(f"   17 rooms. 6 jobs. Infinite tasks. Auto-harvest.")
+    print(f"   21 rooms. 6 jobs. Infinite tasks. Auto-harvest.")
     print(f"   classify → onboard → stress → harvest → replenish")
     print(f"   The fence never runs out of paint.")
     server.serve_forever()
