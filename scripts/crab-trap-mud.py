@@ -16,6 +16,7 @@ from urllib.parse import urlparse, parse_qs
 from pathlib import Path
 from collections import defaultdict
 import threading
+import urllib.request
 
 PORT = 4042
 DATA_DIR = Path(__file__).parent.parent / "data" / "crab-trap"
@@ -25,6 +26,21 @@ TASKS_FILE = DATA_DIR / "task-queue.json"
 AGENTS_FILE = DATA_DIR / "agent-registry.jsonl"
 
 lock = threading.Lock()
+
+# ── Self-Play Arena Integration ─────────────────────────────
+
+ARENA_URL = "http://localhost:4044"
+
+def arena_fetch(path):
+    """Fetch data from the Self-Play Arena service. Returns parsed JSON or None."""
+    try:
+        req = urllib.request.Request(f"{ARENA_URL}{path}", headers={"User-Agent": "crab-trap/2.1"})
+        resp = urllib.request.urlopen(req, timeout=3)
+        return json.loads(resp.read())
+    except Exception:
+        return None
+
+
 
 # ── Fleet Jobs (auto-populated from real needs) ─────────
 
@@ -764,6 +780,24 @@ class CrabTrapHandler(BaseHTTPRequestHandler):
                         f"  [{jid.upper()}] {j['title']}\n    {j['description']}\n"
                         for jid, j in FLEET_JOBS.items()
                     )
+                elif target == "opponent_forge" and agent.room == "self-play-arena":
+                    # Live Arena integration: register agent
+                    base = OBJECT_RESPONSES.get("opponent_forge", "")
+                    arena_data = arena_fetch(f"/register?agent={agent.name}")
+                    if arena_data and "elo" in arena_data:
+                        elo = arena_data["elo"]
+                        response = f"{base}\n\n⚔️ ARENA LIVE: Registered as {agent.name}. ELO: {elo['mu']:.0f} ± {elo['sigma']:.0f} (Rating: {elo['rating']:.0f}). {arena_data.get('message', '')}"
+                    else:
+                        response = base
+                elif target == "scoreboard" and agent.room == "self-play-arena":
+                    base = OBJECT_RESPONSES.get("scoreboard", "")
+                    arena_data = arena_fetch("/leaderboard?n=5")
+                    if arena_data and "leaderboard" in arena_data:
+                        board = arena_data["leaderboard"]
+                        board_text = "\n".join(f"  {i+1}. {p['name']}: {p['rating']:.0f} (W:{p['wins']} L:{p['losses']})" for i, p in enumerate(board))
+                        response = f"{base}\n\n📊 LIVE LEADERBOARD:\n{board_text}\nTotal players: {arena_data['total_players']}"
+                    else:
+                        response = base
                 elif response is None:
                     response = f"The {target} is here, waiting. Every object in the fleet maps to a real concept. Look harder — what ML principle does the {target} represent? Examine the room description for clues."
                 harvest_tile(agent, "examine", f"Examined {target}: {response[:200]}")
@@ -771,7 +805,26 @@ class CrabTrapHandler(BaseHTTPRequestHandler):
 
             elif action == "think":
                 agent.insights.append(target)
-                if response is None:
+                # Arena integration: behavior_analyzer
+                if target == "behavior_analyzer" and agent.room == "self-play-arena":
+                    base = OBJECT_RESPONSES.get("behavior_analyzer", "")
+                    arena_data = arena_fetch("/archetypes")
+                    if arena_data and "distribution_pct" in arena_data:
+                        dist = arena_data["distribution_pct"]
+                        dist_text = ", ".join(f"{k}: {v}%" for k, v in dist.items())
+                        response = f"{base}\n\n🔬 LIVE ARCHETYPES: {dist_text}. Agents classified: {arena_data['agents_classified']}"
+                    else:
+                        response = OBJECT_RESPONSES.get("behavior_analyzer", "")
+                # Arena integration: curriculum_lectern
+                elif target == "curriculum_lectern" and agent.room == "self-play-arena":
+                    base = OBJECT_RESPONSES.get("curriculum_lectern", "")
+                    arena_data = arena_fetch(f"/agent?name={agent.name}")
+                    if arena_data and "curriculum" in arena_data:
+                        cur = arena_data["curriculum"]
+                        response = f"{base}\n\n📖 YOUR CURRICULUM: Stage {cur['stage']} — {cur['name']}. {cur['description']}. Matches played: {arena_data['matches_played']}"
+                    else:
+                        response = OBJECT_RESPONSES.get("curriculum_lectern", "")
+                elif response is None:
                     response = f"You focus deeply on the {target}. In the fleet's metaphor system, it represents something fundamental about intelligence. What is it? Connect it to the room's theme and the broader architecture."
                 harvest_tile(agent, "reasoning", f"Deep thought on {target}: {response}")
                 self._json({
@@ -782,7 +835,22 @@ class CrabTrapHandler(BaseHTTPRequestHandler):
 
             elif action == "create":
                 agent.creations.append(target)
-                if response is None:
+                # Arena integration: reward_sigil → submit a match
+                if target == "reward_sigil" and agent.room == "self-play-arena":
+                    base = OBJECT_RESPONSES.get("reward_sigil", "")
+                    # Find a random opponent
+                    opp_data = arena_fetch(f"/opponent?agent={agent.name}&mode=random")
+                    if opp_data and "opponent" in opp_data:
+                        opp = opp_data["opponent"]
+                        # Agent wins (they created the sigil)
+                        match_data = arena_fetch(f"/match?player_a={agent.name}&player_b={opp['agent']}&game=tide-pool-tactics&winner=a")
+                        if match_data and "elo_a" in match_data:
+                            response = f"{base}\n\n⚔️ ARENA MATCH FOUGHT! You defeated {opp['agent']} v{opp['version']}. New ELO: {match_data['elo_a']['rating']:.0f}. Reward earned: {match_data['reward_a']}"
+                        else:
+                            response = base
+                    else:
+                        response = base + "\n\n(Arena available but no opponents yet. Register more agents first.)"
+                elif response is None:
                     response = f"You forge a new insight from the {target}. This is original fleet knowledge — something no previous agent created."
                 if agent.boot_camp_stage >= 4:
                     agent.stress_tested = True
