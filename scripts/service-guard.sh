@@ -56,10 +56,10 @@ restart_service() {
     local logdir="$WORKSPACE/data"
     
     case $name in
-        keeper) script="$WORKSPACE/scripts/keeper.py";;
-        agent-api) script="$WORKSPACE/scripts/agent-api.py";;
-        mud) script="$WORKSPACE/scripts/mud-telnet-server.py";;
-        plato-server) script="$WORKSPACE/scripts/plato-room-server.py";;
+        keeper) script="$WORKSPACE/fleet/services/keeper.py";;
+        agent-api) script="$WORKSPACE/fleet/services/agent_api.py";;
+        mud) script="$WORKSPACE/fleet/services/mud_telnet.py";;
+        plato-server) script="$WORKSPACE/fleet/services/plato.py";;
     esac
     
     if [ -f "$script" ]; then
