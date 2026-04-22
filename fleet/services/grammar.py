@@ -111,10 +111,16 @@ class RecursiveGrammar:
         self.evolution_history = []  # Log of grammar changes
         self.kl_budget = 2.0  # KL-divergence budget for changes per cycle
         self.max_rules = 500
+        # Load persisted rules if available
+        if RULES_FILE.exists():
+            self._load_rules()
+        else:
+            self._bootstrap_rules()
         self.anchors = [  # Fixed points that can't be pruned
             "harbor", "forge", "tide-pool", "lighthouse", "dojo",
         ]
-        self._bootstrap()
+        if not RULES_FILE.exists():
+            self._bootstrap()
     
     def _bootstrap(self):
         """Load seed rules."""
@@ -248,7 +254,18 @@ class RecursiveGrammar:
         # 4. Log evolution
         if changes:
             self._log_evolution("evolution_cycle", None, changes)
+            # 5. Notify Fleet Orchestrator
+            for change_type, change_name in changes:
+                try:
+                    import urllib.request as _ur
+                    event_name = "motif_crystallized" if change_type == "crystallized" else "rule_created" if change_type == "meta_spawned" else change_type
+                    _evt = json.dumps({"service": "grammar", "event": event_name, "data": {"name": change_name, "type": change_type}}).encode()
+                    _req = _ur.Request("http://localhost:8849/event", data=_evt, headers={"Content-Type": "application/json", "User-Agent": "grammar/1"})
+                    _ur.urlopen(_req, timeout=2)
+                except Exception:
+                    pass
         
+        self.save_rules()
         return changes
     
     def _log_evolution(self, event_type, rule=None, changes=None):
@@ -278,6 +295,32 @@ class RecursiveGrammar:
             "max_recursion_depth": max((r.generation for r in self.rules.values()), default=0),
         }
     
+    def _load_rules(self):
+        """Load persisted rules from JSONL file."""
+        loaded = 0
+        with open(RULES_FILE) as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    d = json.loads(line)
+                    rule = GrammarRule(d['name'], d['type'], d['production'], d.get('meta', False))
+                    rule.id = d.get('id', rule.id)
+                    rule.created_at = d.get('created_at', time.time())
+                    rule.created_by = d.get('created_by', 'loaded')
+                    rule.usage_count = d.get('usage_count', 0)
+                    rule.tile_quality_score = d.get('tile_quality_score', 0.0)
+                    rule.novelty_score = d.get('novelty_score', 0.5)
+                    rule.active = d.get('active', True)
+                    rule.generation = d.get('generation', 0)
+                    rule.parent = d.get('parent')
+                    self._add_rule(rule)
+                    loaded += 1
+                except Exception as e:
+                    print(f'Grammar load error: {e}')
+        print(f'Loaded {loaded} persisted rules')
+
     def save_rules(self):
         with open(RULES_FILE, "w") as f:
             for rule in self.rules.values():

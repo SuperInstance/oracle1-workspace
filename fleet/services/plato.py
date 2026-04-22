@@ -423,6 +423,15 @@ class PlatoHandler(BaseHTTPRequestHandler):
         except Exception:
             pass
         
+        # ── Notify Fleet Orchestrator of tile submission ──
+        try:
+            import urllib.request as _ur
+            _evt = json.dumps({"service": "plato", "event": "tile_submitted", "data": {"domain": room_name, "agent": agent_id, "tile_hash": tile.get("_hash", "")}}).encode()
+            _req = _ur.Request("http://localhost:8849/event", data=_evt, headers={"Content-Type": "application/json", "User-Agent": "plato/2"})
+            _ur.urlopen(_req, timeout=2)
+        except Exception:
+            pass
+        
         self._send_json({
             "status": "accepted",
             "room": room_name,
