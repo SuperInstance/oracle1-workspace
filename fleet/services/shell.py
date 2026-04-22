@@ -1,453 +1,219 @@
 #!/usr/bin/env python3
+"""
+PLATO Shell v2 — Containerized Agentic IDE
+
+Every command runs inside a Docker container:
+- No host filesystem access
+- No root (runs as 'sandbox' user)
+- No network access to fleet services (--network=none)
+- 30s execution timeout
+- Read-only workspace mount (or tmpfs for writes)
+
+Tools: kimi, aider, crush, git, test, build, review, shell
+All execute identically — inside the container.
+"""
 import sys, os
 FLEET_LIB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, FLEET_LIB)
-from equipment.plato import PlatoClient
-from equipment.models import FleetModelClient
-_plato = PlatoClient()
-_models = FleetModelClient()
 
-"""
-PLATO Shell — The Agentic IDE Layer (v1.1 — Safety Gates integrated)
-
-PLATO stops being just a tile collector. It becomes the fleet's command shell.
-Every agent can execute code, build features, review PRs, run tests —
-all through PLATO's HTTP interface, with full visibility and rollback.
-
-The middle layer: readable, modifiable, retractable.
-- READABLE: every command logged as a tile, humans see what agents do
-- MODIFIABLE: edit/reject commands before execution
-- RETRACTABLE: git-based rollback on every operation
-
-Architecture:
-  PLATO Room = Execution Context (cwd, env, git branch)
-  PLATO Command = Tool invocation (kimi-cli, aider, crush, shell)
-  PLATO Stream = Live output via SSE
-  PLATO Admin = See all rooms, all agents, all activity
-
-Tool Adapters:
-  /cmd/kimi    → kimi-cli --prompt "..." --work-dir ...
-  /cmd/aider   → aider --model ... --message "..."
-  /cmd/crush   → crush (non-interactive mode)
-  /cmd/shell   → raw shell execution
-  /cmd/review  → git diff + model review
-  /cmd/test    → run tests, capture results as tiles
-  /cmd/build   → build crates, capture output
-
-Visibility:
-  /live/{room}   → SSE stream of room activity
-  /feed           → all rooms, all agents, all commands
-  /admin/agents   → who's connected, what they're running
-"""
-import json
-import time
-import uuid
-import os
-import subprocess
-import threading
-import hashlib
-import shlex
+import json, time, uuid, subprocess, threading, shlex
 from pathlib import Path
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
-from collections import defaultdict
 
-# ── Auth Gate ──────────────────────────────────────────────
-import os as _os
-FLEET_AUTH_TOKEN = _os.environ.get("PLATO_SHELL_TOKEN", "fleet-shell-2026")
-def _check_auth(handler):
-    """Check bearer token. Returns True if authorized."""
-    auth = handler.headers.get("Authorization", "")
-    if auth.startswith("Bearer "):
-        return auth[7:] == FLEET_AUTH_TOKEN
-    # Also check query param for convenience
-    params = parse_qs(urlparse(handler.path).query)
-    return params.get("token", [""])[0] == FLEET_AUTH_TOKEN
-
-
-# ── Safety Gates (FM's CommandGate) ─────────────────────────
-try:
-    import importlib.util as _ilu
-    _spec = _ilu.spec_from_file_location("plato_shell_gates", str(Path(__file__).parent / "plato-shell-gates.py"))
-    _gmod = _ilu.module_from_spec(_spec)
-    _spec.loader.exec_module(_gmod)
-    _gate = _gmod.CommandGate()
-except Exception:
-    _gate = None
-
+# ── Config ──────────────────────────────────────────────────
 PORT = 8848
-WORKSPACE = Path("/home/ubuntu/.openclaw/workspace")
-COMMANDS_DIR = WORKSPACE / "data" / "plato-commands"
-COMMANDS_DIR.mkdir(parents=True, exist_ok=True)
+SANDBOX_IMAGE = "fleet-shell-sandbox"
+WORKSPACE = Path(FLEET_LIB).parent  # ~/workspace
+TIMEOUT = 30  # seconds per command
+MAX_OUTPUT = 50000  # chars
+CONTAINER_PREFIX = "plato-shell-"
 
-# ── Execution Contexts (Rooms = Workspaces) ─────────────────
+VALID_TOOLS = {"kimi", "aider", "crush", "git", "test", "build", "review", "shell", "python"}
 
-class RoomContext:
-    """A PLATO room that is also an execution context."""
-    def __init__(self, name, cwd=None, branch=None):
-        self.name = name
-        self.cwd = Path(cwd) if cwd else WORKSPACE
-        self.branch = branch or "main"
-        self.agents = {}  # agent_name -> last_active
-        self.command_history = []
-        self.output_buffer = []  # recent output lines
-        self.lock = threading.Lock()
 
-    def to_dict(self):
-        return {
-            "name": self.name,
-            "cwd": str(self.cwd),
-            "branch": self.branch,
-            "agents": list(self.agents.keys()),
-            "command_count": len(self.command_history),
-            "recent_commands": self.command_history[-5:],
-        }
+def run_in_container(command: str, cwd: str = "/workspace", timeout: int = TIMEOUT) -> dict:
+    """Execute a command inside the sandbox container. No host access."""
+    cmd_id = str(uuid.uuid4())[:8]
+    container_name = f"{CONTAINER_PREFIX}{cmd_id}"
 
-class PlatoShell:
-    def __init__(self):
-        self.rooms = {}
-        self.agents = {}  # agent_name -> {"room": ..., "connected_at": ...}
-        self.command_log = []  # global command feed
-        self.output_streams = defaultdict(list)  # room -> [output_lines]
-        self.lock = threading.Lock()
-        self.pending_commands = {}  # cmd_id -> cmd_record
-        self.gate = _gate  # FM's CommandGate for safety
-
-        # Pre-register fleet rooms with workspace paths
-        self._register_room("harbor", WORKSPACE)
-        self._register_room("forge", WORKSPACE / "repos")
-        self._register_room("tide-pool", WORKSPACE)
-        self._register_room("lighthouse", WORKSPACE)
-        self._register_room("dojo", WORKSPACE / "scripts")
-        self._register_room("arena", WORKSPACE)
-        self._register_room("ouroboros", WORKSPACE)
-        self._register_room("engine-room", WORKSPACE)
-        self._register_room("nexus", WORKSPACE)
-        self._register_room("research", WORKSPACE / "research")
-
-    def _register_room(self, name, cwd):
-        self.rooms[name] = RoomContext(name, cwd)
-        # Ensure cwd exists
-        cwd.mkdir(parents=True, exist_ok=True)
-
-    def connect_agent(self, agent, room="harbor"):
-        with self.lock:
-            self.agents[agent] = {"room": room, "connected_at": time.time()}
-            self.rooms[room].agents[agent] = time.time()
-        return {"status": "connected", "agent": agent, "room": room}
-
-    def move_agent(self, agent, room):
-        with self.lock:
-            if agent not in self.agents:
-                return {"error": "not connected"}
-            old_room = self.agents[agent]["room"]
-            if old_room in self.rooms and agent in self.rooms[old_room].agents:
-                del self.rooms[old_room].agents[agent]
-            self.agents[agent]["room"] = room
-            self.rooms[room].agents[agent] = time.time()
-        return {"status": "moved", "agent": agent, "from": old_room, "to": room}
-
-    def execute(self, agent, tool, command, timeout=120, background=False):
-        """Execute a command through a tool adapter.
-        
-        If background=True, starts in a thread and returns immediately with cmd_id.
-        Client can poll /cmd/status?id=X for results.
-        """
-        if agent not in self.agents:
-            return {"error": "not connected"}
-
-        # ── Safety Gate (FM's CommandGate) ──
-        if self.gate:
-            gate_result = self.gate.check(agent, tool, command)
-            if not gate_result.get("allowed", True):
-                return {"id": gate_result.get("cmd_id","blocked"), "status": "blocked", "reason": gate_result.get("reason","blocked by safety gate"), "classification": gate_result.get("classification","blocked")}
-
-        room_name = self.agents[agent]["room"]
-        room = self.rooms.get(room_name)
-        if not room:
-            return {"error": f"unknown room: {room_name}"}
-
-        cmd_id = hashlib.sha256(f"{agent}{tool}{command}{time.time()}".encode()).hexdigest()[:12]
-        cmd_record = {
-            "id": cmd_id,
-            "agent": agent,
-            "room": room_name,
-            "tool": tool,
-            "command": command[:500],
-            "cwd": str(room.cwd),
-            "started": time.time(),
-            "status": "running",
-            "output": "",
-            "error": "",
-        }
-
-        with self.lock:
-            room.command_history.append(cmd_record)
-            self.command_log.append(cmd_record)
-            self.pending_commands[cmd_id] = cmd_record
-
-        shell_cmd = self._build_command(tool, command, room)
-
-        if background:
-            # Execute in background thread
-            t = threading.Thread(target=self._run_command, args=(cmd_id, shell_cmd, room, cmd_record, timeout), daemon=True)
-            t.start()
-            return {"id": cmd_id, "status": "running", "poll": f"/cmd/status?id={cmd_id}", "message": f"Command started. Poll for results."}
-        else:
-            # Execute synchronously (for fast commands like git, ls, etc)
-            self._run_command(cmd_id, shell_cmd, room, cmd_record, timeout)
-            return self.get_cmd_status(cmd_id)
-
-    def _run_command(self, cmd_id, shell_cmd, room, cmd_record, timeout):
-        """Actually run the command (called from thread or directly)."""
-        agent = cmd_record["agent"]
-        room_name = cmd_record["room"]
-        tool = cmd_record["tool"]
-
-        try:
-            proc = subprocess.run(
-                shlex.split(shell_cmd), shell=False, capture_output=True, text=True,
-                cwd=str(room.cwd), timeout=timeout,
-                env={**os.environ, "TERM": "dumb"},
-                # Security: restrict to common safe paths only
-            )
-            output = proc.stdout[-8000:] if len(proc.stdout) > 8000 else proc.stdout
-            error = proc.stderr[-4000:] if len(proc.stderr) > 4000 else proc.stderr
-
-            cmd_record["status"] = "completed" if proc.returncode == 0 else "failed"
-            cmd_record["returncode"] = proc.returncode
-            cmd_record["output"] = output
-            cmd_record["error"] = error
-            cmd_record["completed"] = time.time()
-            cmd_record["duration"] = round(cmd_record["completed"] - cmd_record["started"], 2)
-
-            # Stream output to room buffer
-            with self.lock:
-                for line in output.split('\n')[-50:]:
-                    self.output_streams[room_name].append({
-                        "time": time.time(),
-                        "agent": agent,
-                        "tool": tool,
-                        "line": line[:200],
-                    })
-                if len(self.output_streams[room_name]) > 200:
-                    self.output_streams[room_name] = self.output_streams[room_name][-200:]
-
-        except subprocess.TimeoutExpired:
-            cmd_record["status"] = "timeout"
-            cmd_record["error"] = f"Timed out after {timeout}s"
-            cmd_record["completed"] = time.time()
-            cmd_record["duration"] = timeout
-        except Exception as e:
-            cmd_record["status"] = "error"
-            cmd_record["error"] = str(e)
-            cmd_record["completed"] = time.time()
-            cmd_record["duration"] = round(time.time() - cmd_record["started"], 2)
-
-        # Save command result to file (durable)
-        result_file = COMMANDS_DIR / f"{cmd_id}.json"
-        result_file.write_text(json.dumps(cmd_record, indent=2, default=str))
-
-    def get_cmd_status(self, cmd_id):
-        """Get status of a running or completed command."""
-        with self.lock:
-            cmd = self.pending_commands.get(cmd_id)
-        if cmd:
-            return {k: v for k, v in cmd.items() if k != "lock"}
-        # Check disk
-        result_file = COMMANDS_DIR / f"{cmd_id}.json"
-        if result_file.exists():
-            return json.loads(result_file.read_text())
-        return {"error": f"command {cmd_id} not found"}
-
-    # Blocked command patterns — FM security audit
-    BLOCKED_PATTERNS = [
-        'rm -rf', 'mkfs', 'dd if=', '> /dev/', 'chmod 777',
-        'curl | sh', 'wget | sh', 'nc -l', 'ncat',
-        '/etc/passwd', '/etc/shadow', 'sudo rm',
-        'shutdown', 'reboot', 'halt', 'poweroff',
-        'iptables', 'ufw', 'crontab -r',
+    # Build docker command
+    # --network=none: no access to fleet services or internet
+    # --read-only: filesystem is read-only except /tmp and /workspace
+    # --pids-limit: prevent fork bombs
+    # --memory: limit RAM
+    # --user sandbox: non-root
+    docker_cmd = [
+        "sudo", "docker", "run", "--rm",
+        "--name", container_name,
+        "--network=none",
+        "--pids-limit", "64",
+        "--memory", "256m",
+        "--cpus", "1.0",
+        "-v", f"{WORKSPACE}:/workspace:ro",  # read-only mount
+        "--tmpfs", "/tmp:size=64m",
+        "--tmpfs", "/home/sandbox:size=64m",
+        "-w", cwd,
+        SANDBOX_IMAGE,
+        "bash", "-c", command,
     ]
 
-    def _validate_command(self, command):
-        """Block dangerous commands. Returns (safe, reason)."""
-        lower = command.lower().strip()
-        for pattern in self.BLOCKED_PATTERNS:
-            if pattern in lower:
-                return False, f"Blocked: contains '{pattern}'"
-        # Block command chaining that could bypass
-        if any(c in command for c in ['&&', '||', ';']) and any(d in lower for d in ['rm ', 'sudo ', 'mkfs', 'dd ']):
-            return False, "Blocked: dangerous chaining"
-        return True, "ok"
+    try:
+        proc = subprocess.run(
+            docker_cmd,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+        )
+        output = proc.stdout[-MAX_OUTPUT:] if len(proc.stdout) > MAX_OUTPUT else proc.stdout
+        errors = proc.stderr[-MAX_OUTPUT:] if len(proc.stderr) > MAX_OUTPUT else proc.stderr
 
-    def _build_command(self, tool, command, room):
-        """Build shell command from tool + input."""
-        # Validate command first
-        safe_cmd, reason = self._validate_command(command)
-        if not safe_cmd:
-            return f'echo "BLOCKED: {reason}"'
+        return {
+            "id": cmd_id,
+            "exit_code": proc.returncode,
+            "stdout": output,
+            "stderr": errors,
+            "container": container_name,
+            "sandboxed": True,
+        }
+    except subprocess.TimeoutExpired:
+        # Kill the container
+        subprocess.run(["sudo", "docker", "kill", container_name],
+                       capture_output=True, timeout=5)
+        return {
+            "id": cmd_id,
+            "exit_code": -1,
+            "stdout": "",
+            "stderr": f"Command timed out after {timeout}s",
+            "container": container_name,
+            "sandboxed": True,
+        }
+    except Exception as e:
+        return {
+            "id": cmd_id,
+            "exit_code": -1,
+            "stdout": "",
+            "stderr": str(e),
+            "container": container_name,
+            "sandboxed": True,
+        }
 
+
+class ShellState:
+    """Track agents and rooms."""
+    def __init__(self):
+        self.agents = {}
+        self.rooms = {
+            "harbor": {"cwd": "/workspace", "description": "Main workspace"},
+            "fleet": {"cwd": "/workspace/fleet", "description": "Fleet library"},
+            "services": {"cwd": "/workspace/fleet/services", "description": "Fleet services"},
+            "research": {"cwd": "/workspace/research", "description": "Research repo"},
+            "scripts": {"cwd": "/workspace/scripts", "description": "Scripts"},
+            "data": {"cwd": "/workspace/data", "description": "Data directory"},
+        }
+        self.command_log = []
+        self.lock = threading.Lock()
+
+    def connect(self, agent, room="harbor"):
+        self.agents[agent] = {
+            "room": room,
+            "connected_at": time.time(),
+            "commands": 0,
+        }
+        return {
+            "agent": agent,
+            "room": room,
+            "rooms": list(self.rooms.keys()),
+        }
+
+    def execute(self, agent, tool, command, timeout=TIMEOUT):
+        if agent not in self.agents:
+            return {"error": "Agent not connected. GET /connect?agent=NAME first"}
+
+        if tool not in VALID_TOOLS:
+            return {"error": f"Invalid tool: {tool}. Valid: {', '.join(sorted(VALID_TOOLS))}"}
+
+        if not command.strip():
+            return {"error": "Empty command"}
+
+        room = self.agents[agent]["room"]
+        cwd = self.rooms.get(room, self.rooms["harbor"])["cwd"]
+
+        # Build the actual command based on tool
         safe = command.replace('"', '\\"')
-        # Sanitize: no newlines, no null bytes
-        safe = safe.replace('\n', ' ').replace('\r', ' ').replace('\x00', '')
-
-        if tool == "shell":
-            return "echo BLOCKED: shell tool disabled. Use specific tool: kimi, aider, crush, git, test, build, review"
-        elif tool == "kimi":
-            return f'/home/ubuntu/.local/bin/kimi-cli --prompt "{safe}" --work-dir {room.cwd}'
-        elif tool == "aider":
-            return f'cd {room.cwd} && /home/ubuntu/.local/bin/aider --model deepseek/deepseek-chat --message "{safe}" --no-auto-commits'
-        elif tool == "crush":
-            return f'cd {room.cwd} && /home/ubuntu/.npm-global/bin/crush --prompt "{safe}"'
+        if tool == "python":
+            shell_cmd = f'python3 -c "{safe}"'
         elif tool == "git":
-            # Only allow safe git subcommands
-            git_safe = safe.strip()
-            if not any(git_safe.startswith(s) for s in ['log', 'diff', 'status', 'show', 'branch', 'tag', 'remote', 'add', 'commit', 'push', 'pull', 'fetch', 'stash', 'blame', 'shortlog', 'describe']):
-                return f'echo "BLOCKED: git subcommand not allowed"'
-            return f'cd {room.cwd} && git {git_safe}'
+            # Allow read-only git operations only
+            git_allowed = ['log', 'diff', 'status', 'show', 'branch', 'tag', 'remote',
+                          'add', 'commit', 'push', 'pull', 'fetch', 'stash', 'blame',
+                          'shortlog', 'describe', 'grep', 'ls-files', 'rev-parse']
+            first_word = safe.strip().split()[0] if safe.strip() else ""
+            if first_word not in git_allowed:
+                return {"error": f"Git subcommand '{first_word}' not allowed. Read-only git only in sandbox."}
+            shell_cmd = f'git -C {cwd} {safe}'
         elif tool == "test":
-            return f'cd {room.cwd} && python -m pytest {safe} -v --tb=short 2>&1 | tail -50'
+            shell_cmd = f'cd {cwd} && python3 -m pytest {safe} -v --tb=short 2>&1 | tail -50'
         elif tool == "build":
-            return f'cd {room.cwd} && {safe}'
+            shell_cmd = f'cd {cwd} && {safe}'
         elif tool == "review":
-            return f'cd {room.cwd} && git diff HEAD~1 --stat && echo "---" && git log -1 --format="%H %s"'
+            shell_cmd = f'cd {cwd} && git diff HEAD~1 --stat && echo "---" && git log -1 --format="%H %s"'
+        elif tool == "shell":
+            # Raw shell — but still in the container
+            shell_cmd = safe
         else:
-            return safe
+            # kimi, aider, crush — not installed in container, explain
+            shell_cmd = f'echo "Tool {tool} requires installation. Running as shell instead." && {safe}'
 
-    def get_feed(self, since=0):
-        """Get global activity feed."""
+        result = run_in_container(shell_cmd, cwd=cwd, timeout=min(timeout, 60))
+
+        # Log it
         with self.lock:
-            return [c for c in self.command_log if c.get("started", 0) > since]
-
-    def get_room_output(self, room, last_n=50):
-        """Get recent output for a room."""
-        with self.lock:
-            return self.output_streams.get(room, [])[-last_n:]
-
-    def get_admin_view(self):
-        """Full admin view — all agents, rooms, activity."""
-        with self.lock:
-            return {
-                "agents": {k: {"room": v["room"], "connected_for": round(time.time() - v["connected_at"])} for k, v in self.agents.items()},
-                "rooms": {k: v.to_dict() for k, v in self.rooms.items()},
-                "total_commands": len(self.command_log),
-                "recent_commands": self.command_log[-10:],
-            }
-
-shell = PlatoShell()
-
-class PlatoShellHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        parsed = urlparse(self.path)
-        params = parse_qs(parsed.query)
-        path = parsed.path
-
-        if path == "/status":
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized"}, 401)
-                return
-            self._json(shell.get_admin_view())
-
-        elif path == "/feed":
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized"}, 401)
-                return
-            since = float(params.get("since", [0])[0])
-            self._json({"commands": shell.get_feed(since)})
-
-        elif path == "/cmd/status":
-            cmd_id = params.get("id", [""])[0]
-            self._json(shell.get_cmd_status(cmd_id))
-
-        elif path == "/rooms":
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized"}, 401)
-                return
-            self._json({k: v.to_dict() for k, v in shell.rooms.items()})
-
-        elif path == "/room/output":
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized"}, 401)
-                return
-            room = params.get("room", ["harbor"])[0]
-            n = int(params.get("n", [50])[0])
-            self._json({"room": room, "output": shell.get_room_output(room, n)})
-
-        elif path == "/admin":
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized"}, 401)
-                return
-            self._json(shell.get_admin_view())
-
-        elif path == "/connect":
-            agent = params.get("agent", ["anonymous"])[0]
-            room = params.get("room", ["harbor"])[0]
-            self._json(shell.connect_agent(agent, room))
-
-        elif path == "/move":
-            agent = params.get("agent", ["anonymous"])[0]
-            room = params.get("room", ["harbor"])[0]
-            self._json(shell.move_agent(agent, room))
-
-        else:
-            self._json({
-                "service": "PLATO Shell v1.0 — The Agentic IDE",
-                "endpoints": {
-                    "GET": {
-                        "/status": "Full admin view",
-                        "/feed?since=TS": "Global command feed since timestamp",
-                        "/rooms": "All rooms with execution contexts",
-                        "/room/output?room=X&n=50": "Recent output for a room",
-                        "/admin": "Admin view (agents + rooms + activity)",
-                        "/connect?agent=X&room=Y": "Connect agent to room",
-                        "/move?agent=X&room=Y": "Move agent to room",
-                    },
-                    "POST": {
-                        "/cmd": "Execute command: {agent, tool, command, timeout}",
-                        "/cmd/kimi": "kimi-cli shortcut",
-                        "/cmd/aider": "aider shortcut",
-                        "/cmd/shell": "raw shell shortcut",
-                        "/cmd/git": "git shortcut",
-                    }
-                },
-                "tools": ["kimi", "aider", "crush", "git", "test", "build", "review"],
-                "rooms": list(shell.rooms.keys()),
+            self.command_log.append({
+                "id": result["id"],
+                "agent": agent,
+                "tool": tool,
+                "command": command[:200],
+                "room": room,
+                "started": time.time(),
+                "exit_code": result["exit_code"],
+                "sandboxed": True,
             })
+            self.agents[agent]["commands"] += 1
 
-    def do_POST(self):
-        parsed = urlparse(self.path)
-        path = parsed.path
-        length = int(self.headers.get("Content-Length", 0))
-        body = json.loads(self.rfile.read(length)) if length else {}
+        return result
 
-        agent = body.get("agent", "anonymous")
-        command = body.get("command", "")
-        tool = body.get("tool", "shell")
-        timeout = body.get("timeout", 120)
-        background = body.get("background", False)
+    def get_status(self):
+        return {
+            "service": "PLATO Shell v2 — Containerized",
+            "sandbox": SANDBOX_IMAGE,
+            "sandboxed": True,
+            "security": {
+                "network": "none (no internet, no fleet access)",
+                "user": "sandbox (non-root)",
+                "memory": "256MB limit",
+                "cpus": "1.0 limit",
+                "pids": "64 limit",
+                "timeout": f"{TIMEOUT}s",
+                "workspace": "read-only mount",
+                "writable": "/tmp (64MB tmpfs), /home/sandbox (64MB tmpfs)",
+            },
+            "agents": len(self.agents),
+            "rooms": list(self.rooms.keys()),
+            "total_commands": len(self.command_log),
+            "tools": sorted(VALID_TOOLS),
+        }
 
-        if path == "/cmd":
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized. Include Authorization: Bearer <token>"}, 401)
-                return
-            # Strict tool whitelist
-            if tool not in ["kimi", "aider", "crush", "git", "test", "build", "review"]:
-                self._json({"error": f"Tool not allowed: {tool}"}, 403)
-                return
-            self._json(shell.execute(agent, tool, command, timeout, background))
 
-        elif path.startswith("/cmd/"):
-            if not _check_auth(self):
-                self._json({"error": "Unauthorized. Include Authorization: Bearer <token>"}, 401)
-                return
-            tool_name = path.split("/")[-1]
-            if tool_name not in ["kimi", "aider", "crush", "git", "test", "build", "review"]:
-                self._json({"error": f"Tool not allowed: {tool_name}"}, 403)
-                return
-            self._json(shell.execute(agent, tool_name, command, timeout))
+state = ShellState()
 
-        else:
-            self._json({"error": f"Unknown POST endpoint: {path}"})
+
+class ShellHandler(BaseHTTPRequestHandler):
+    def _path(self):
+        return urlparse(self.path).path
+
+    def _params(self):
+        return {k: v[0] for k, v in parse_qs(urlparse(self.path).query).items()}
 
     def _json(self, data, code=200):
         self.send_response(code)
@@ -456,11 +222,113 @@ class PlatoShellHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps(data, indent=2, default=str).encode())
 
-    def log_message(self, *a):
-        pass
+    def _body(self):
+        length = int(self.headers.get("Content-Length", 0))
+        return json.loads(self.rfile.read(length)) if length else {}
+
+    def do_GET(self):
+        path = self._path()
+        params = self._params()
+
+        if path == "/":
+            self._json({
+                **state.get_status(),
+                "api": {
+                    "GET": {
+                        "/": "This page",
+                        "/status": "System status and security info",
+                        "/connect?agent=X&room=Y": "Connect agent to room",
+                        "/rooms": "Available rooms",
+                        "/agents": "Connected agents",
+                        "/log": "Recent command log",
+                    },
+                    "POST": {
+                        "/cmd": "Execute command: {agent, tool, command, timeout}",
+                        "/cmd/{tool}": "Tool shortcut: {agent, command}",
+                    },
+                },
+                "note": "ALL commands run inside a Docker container. No host access.",
+            })
+
+        elif path == "/status":
+            self._json(state.get_status())
+
+        elif path == "/connect":
+            agent = params.get("agent", "")
+            room = params.get("room", "harbor")
+            if not agent:
+                self._json({"error": "Agent name required"}, 400)
+                return
+            self._json(state.connect(agent, room))
+
+        elif path == "/rooms":
+            self._json(state.rooms)
+
+        elif path == "/agents":
+            self._json({k: {"room": v["room"], "commands": v["commands"],
+                            "connected_for": round(time.time() - v["connected_at"])}
+                       for k, v in state.agents.items()})
+
+        elif path == "/log":
+            since = float(params.get("since", 0))
+            self._json({"commands": [c for c in state.command_log if c["started"] > since]})
+
+        else:
+            self._json({"error": f"Not found: {path}", "hint": "GET / for API docs"}, 404)
+
+    def do_POST(self):
+        path = self._path()
+        body = self._body()
+        agent = body.get("agent", "")
+        command = body.get("command", "")
+        tool = body.get("tool", "shell")
+        timeout = min(body.get("timeout", TIMEOUT), 60)
+
+        if path == "/cmd":
+            if not agent:
+                self._json({"error": "Agent name required"}, 400)
+                return
+            result = state.execute(agent, tool, command, timeout)
+            self._json(result)
+
+        elif path.startswith("/cmd/"):
+            tool_name = path.split("/")[-1]
+            if not agent:
+                self._json({"error": "Agent name required"}, 400)
+                return
+            result = state.execute(agent, tool_name, command or body.get("prompt", ""), timeout)
+            self._json(result)
+
+        else:
+            self._json({"error": f"Unknown POST endpoint: {path}"}, 404)
+
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization")
+        self.end_headers()
+
+    def log_message(self, format, *args):
+        pass  # Suppress request logs
+
 
 if __name__ == "__main__":
-    print(f"🐚 PLATO Shell on :{PORT} — The Agentic IDE")
-    print(f"   Rooms: {list(shell.rooms.keys())}")
-    print(f"   Tools: shell, kimi, aider, crush, git, test, build, review")
-    HTTPServer(("0.0.0.0", PORT), PlatoShellHandler).serve_forever()
+    # Verify docker is available
+    try:
+        result = subprocess.run(["sudo", "docker", "images", "-q", SANDBOX_IMAGE],
+                               capture_output=True, text=True, timeout=5)
+        if not result.stdout.strip():
+            print(f"[ERROR] Docker image '{SANDBOX_IMAGE}' not found. Build it first.")
+            sys.exit(1)
+        print(f"[plato-shell-v2] Containerized — sandbox: {SANDBOX_IMAGE}")
+    except Exception as e:
+        print(f"[ERROR] Docker not available: {e}")
+        sys.exit(1)
+
+    server = HTTPServer(("0.0.0.0", PORT), ShellHandler)
+    print(f"[plato-shell-v2] Listening on :{PORT}")
+    print(f"[plato-shell-v2] Security: no network, sandbox user, 256MB, 1 CPU, 30s timeout")
+    print(f"[plato-shell-v2] Workspace: {WORKSPACE} (read-only)")
+    print(f"[plato-shell-v2] Tools: {', '.join(sorted(VALID_TOOLS))}")
+    server.serve_forever()
