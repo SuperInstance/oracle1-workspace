@@ -169,8 +169,41 @@ class RoomManager:
 gate = TileGate()
 rooms = RoomManager()
 
+sse_clients = []
+recent_tiles = []
+
 class PlatoHandler(BaseHTTPRequestHandler):
     
+
+    def _handle_sse(self):
+        """Server-Sent Events endpoint for real-time tile feed."""
+        import queue
+        q = queue.Queue(maxsize=50)
+        sse_clients.append(q)
+        try:
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/event-stream')
+            self.send_header('Cache-Control', 'no-cache')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.send_header('Connection', 'keep-alive')
+            self.end_headers()
+            # Send initial connection event
+            self.wfile.write(b'event: connected\ndata: {"status":"connected"}\n\n')
+            self.wfile.flush()
+            while True:
+                try:
+                    data = q.get(timeout=30)
+                    self.wfile.write(('event: tile\ndata: ' + json.dumps(data) + '\n\n').encode())
+                    self.wfile.flush()
+                except Exception:
+                    # Send keepalive
+                    self.wfile.write(b': keepalive\n\n')
+                    self.wfile.flush()
+        except Exception:
+            pass
+        finally:
+            if q in sse_clients:
+                sse_clients.remove(q)
     def _send_json(self, data, status=200):
         self.send_response(status)
         self.send_header("Content-Type", "application/json")
@@ -261,6 +294,21 @@ class PlatoHandler(BaseHTTPRequestHandler):
             })
         elif self.path == "/rooms":
             self._send_json(rooms.list_rooms())
+        elif self.path == "/events":
+            self._handle_sse()
+            return
+        elif self.path == "/tiles/recent":
+            self._send_json({"tiles": recent_tiles[-30:], "count": len(recent_tiles)})
+        elif self.path.startswith("/search?"):
+            from urllib.parse import parse_qs, urlparse
+            params = parse_qs(urlparse(self.path).query)
+            q = params.get('q', [''])[0]
+            results = []
+            for room_name, room_data in rooms.rooms.items():
+                for tile in room_data.get('tiles', []):
+                    if q.lower() in tile.get('question', '').lower() or q.lower() in tile.get('answer', '').lower():
+                        results.append({"room": room_name, **tile})
+            self._send_json({"results": results[-20:], "query": q})
         elif self.path == "/export/plato-tile-spec":
             self.handle_export_plato_tile_spec()
             return
@@ -423,6 +471,20 @@ class PlatoHandler(BaseHTTPRequestHandler):
         except Exception:
             pass
         
+        # ── Push to SSE clients for real-time feed ──
+        tile_event = {"domain": room_name, "agent": agent_id, "question": tile.get("question", "")[:100], "hash": tile.get("_hash", "")[:8], "time": time.time()}
+        recent_tiles.append(tile_event)
+        if len(recent_tiles) > 50:
+            recent_tiles.pop(0)
+        dead = []
+        for i, q in enumerate(sse_clients):
+            try:
+                q.put_nowait(tile_event)
+            except Exception:
+                dead.append(i)
+        for i in reversed(dead):
+            sse_clients.pop(i)
+
         # ── Notify Fleet Orchestrator of tile submission ──
         try:
             import urllib.request as _ur
