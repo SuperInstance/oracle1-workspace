@@ -124,3 +124,9 @@ log "  Stop all:      bash scripts/start-fleet.sh --stop"
 log "  Curriculum:    python3 scripts/curriculum-engine.py --agent X --repo URL --domain D --model deepseek"
 log "  Submit tiles:  python3 scripts/submit-session.py session.md --agent X"
 log "═══════════════════════════════════"
+
+echo "[FLEET][0m Starting fleet runner..."
+if ! ss -tlnp | grep -q ":8899 "; then
+    nohup python3 fleet/services/fleet_runner.py > /tmp/fleet-runner.log 2>&1 &
+    echo "[FLEET][0m   ✅ fleet-runner started (PID $!, :8899)"
+fi

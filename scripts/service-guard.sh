@@ -18,11 +18,12 @@ SERVICES=(
     "recursive-grammar:4045"
     "federated-nexus:4047"
     "fleet-dashboard:4046"
-    "plato-shell:8848"
+    "plato-shell:8848"  # v2 containerized — sandboxed, no host access
     "fleet-orchestrator:8849"
     "adaptive-mud:8850"
     "purplepincher-monitor:8851"
     "tile-quality-scorer:8852"
+    "web-terminal:4060"
 )
 
 SCRIPTS=(
@@ -36,11 +37,12 @@ SCRIPTS=(
     "recursive-grammar.py"
     "federated-nexus.py"
     "fleet-dashboard.py"
-    "plato-shell.py"
+    "plato-shell.py"  # v2 containerized
     "fleet-orchestrator.py"
     "adaptive-mud.py"
     "purplepincher-monitor.py"
     "tile-quality-scorer.py"
+    "plato-web-terminal.py"
 )
 
 check_port() {
@@ -54,10 +56,10 @@ restart_service() {
     local logdir="$WORKSPACE/data"
     
     case $name in
-        keeper) script="$WORKSPACE/scripts/keeper.py";;
-        agent-api) script="$WORKSPACE/scripts/agent-api.py";;
-        mud) script="$WORKSPACE/scripts/mud-telnet-server.py";;
-        plato-server) script="$WORKSPACE/scripts/plato-room-server.py";;
+        keeper) script="$WORKSPACE/fleet/services/keeper.py";;
+        agent-api) script="$WORKSPACE/fleet/services/agent_api.py";;
+        mud) script="$WORKSPACE/fleet/services/mud_telnet.py";;
+        plato-server) script="$WORKSPACE/fleet/services/plato.py";;
     esac
     
     if [ -f "$script" ]; then

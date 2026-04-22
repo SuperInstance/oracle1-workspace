@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T09:14:50.653Z",
+  "updatedAt": "2026-04-22T20:24:58.108Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -3671,6 +3671,130 @@
         "flux-cuda",
         "flux-llama",
         "flux-benchmarks"
+      ]
+    },
+    "memory:memory/2026-04-11.md:349:383": {
+      "key": "memory:memory/2026-04-11.md:349:383",
+      "path": "memory/2026-04-11.md",
+      "startLine": 349,
+      "endLine": 383,
+      "source": "memory",
+      "snippet": "- **DeepSeek**: Cataloged 30 GitHub features exploitable by agents - Published research to flux-research repo ### New Infrastructure Repos - **flux-collab** (11 tests) — A2A-first agent cooperation framework - Auto-assign tasks based on skills/trust - GitHub Actions workflow generation - GitHub Projects v2 config generation - **fleet-ci** — 4 workflow patterns for fleet CI/CD - Auto-test on push (language detection) - TODO-to-issue scanner - Fleet health check (every 30 min) - Cross-repo sync (dispatch events) - Deployed CI workflows to 6 repos ### GitHub Free Tier Budget Analysis - 5,000 API requests/hour (using ~21) - 2,000 Actions minutes/month (plenty) - 500MB artifact st",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8381041097088593,
+      "maxScore": 0.8381041097088593,
+      "firstRecalledAt": "2026-04-22T20:24:58.108Z",
+      "lastRecalledAt": "2026-04-22T20:24:58.108Z",
+      "queryHashes": [
+        "cf18edac20c1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "flux-research",
+        "flux-collab",
+        "a2a-first",
+        "auto-assign",
+        "skills/trust",
+        "fleet-ci",
+        "ci/cd",
+        "auto-test"
+      ]
+    },
+    "memory:memory/2026-04-20.md:485:518": {
+      "key": "memory:memory/2026-04-20.md:485:518",
+      "path": "memory/2026-04-20.md",
+      "startLine": 485,
+      "endLine": 518,
+      "source": "memory",
+      "snippet": "2. **cocapn-colora** — Value-conditioned LoRA adapters (condition on fleet values) 3. **cocapn-curriculum-forest** — Adaptive skill trees (grow branches, prune dead) 4. **cocapn-abyss** — Curiosity-driven exploration (RND, intrinsic motivation) 5. **cocapn-meta-lab** — Fleet hypergradient optimization (online hyperparam tuning) 6. **cocapn-fleetmind** — Blended probabilistic agent ensemble 7. **cocapn-platonic-dial** — Multi-objective meta-controller (perf/safety/curiosity) 8. **cocapn-coliseum** — Adversarial red-teaming arena (MiniMax's proposal) 5 published to PyPI immediately, 3 rate-limited (retry script running). All 8 GitHub repos created. ### Research Synthesis Written - 50 swarm d",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8140711859483828,
+      "maxScore": 0.8140711859483828,
+      "firstRecalledAt": "2026-04-22T20:24:58.108Z",
+      "lastRecalledAt": "2026-04-22T20:24:58.108Z",
+      "queryHashes": [
+        "cf18edac20c1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "cocapn-colora",
+        "value-conditioned",
+        "cocapn-curriculum-forest",
+        "cocapn-abyss",
+        "curiosity-driven",
+        "cocapn-meta-lab",
+        "cocapn-fleetmind",
+        "cocapn-platonic-dial"
+      ]
+    },
+    "memory:memory/2026-04-11.md:377:400": {
+      "key": "memory:memory/2026-04-11.md:377:400",
+      "path": "memory/2026-04-11.md",
+      "startLine": 377,
+      "endLine": 400,
+      "source": "memory",
+      "snippet": "- Research docs published to flux-research ## Evening Session (18:37-19:37 UTC) — Message-in-a-Bottle + Fleet Mechanic v2 + Fleet Architecture ### Fleet Mechanic v2 Upgrade (DONE) - **fix_code.py** (8 tests) — Parses pytest/cargo/go test failures, suggests fixes (assertion relaxation, type casts, borrow checker hints) - **gen_code.py** (8 tests) — Generates Python/Rust/Go code from specs, natural language parsing, source + test generation - **review.py** (9 tests) — Security scanner (hardcoded secrets, eval, shell injection), style, complexity, fleet compliance. Score 0-100, auto-approve at 60+. **Proved on real code: reviewed flux-a2a-signal's 30K lines, found 64 real issues** - **Codesp",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8123832843263449,
+      "maxScore": 0.8123832843263449,
+      "firstRecalledAt": "2026-04-22T20:24:58.108Z",
+      "lastRecalledAt": "2026-04-22T20:24:58.108Z",
+      "queryHashes": [
+        "cf18edac20c1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "flux-research",
+        "37-19",
+        "message-in-a-bottle",
+        "fix-code.py",
+        "pytest/cargo/go",
+        "gen-code.py",
+        "python/rust/go",
+        "review.py"
+      ]
+    },
+    "memory:memory/2026-04-11.md:394:421": {
+      "key": "memory:memory/2026-04-11.md:394:421",
+      "path": "memory/2026-04-11.md",
+      "startLine": 394,
+      "endLine": 421,
+      "source": "memory",
+      "snippet": "- `from-fleet/` — Context + priority needs - `for-fleet/` — Empty, ready for collaborators ### Beachcomb Scanner (DONE) - `beachcomb.py` — Scans for new forks, external PRs, message-in-a-bottle folders on fork repos - First live scan: found 2 Lucineer forks, 5 pending dependabot PRs on SmartCRDT - Stateful — only reports NEW activity each scan - Pushed to `oracle1-vessel` ### Fleet Architecture Discussion (18:37-18:44 UTC) Casey described the full 4-tier autonomy model: 1. **Oracle1** 🔮 — Always on, cron, heartbeats, fleet management 2. **JetsonClaw1** ⚡ — Always on OpenClaw on Jetson hardware 3. **Z Agents** 📋 — Half-hour re-awaken cycle, build context between nudges, self-direct 4.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8112618997757348,
+      "maxScore": 0.8112618997757348,
+      "firstRecalledAt": "2026-04-22T20:24:58.108Z",
+      "lastRecalledAt": "2026-04-22T20:24:58.108Z",
+      "queryHashes": [
+        "cf18edac20c1"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "from-fleet",
+        "for-fleet",
+        "beachcomb.py",
+        "message-in-a-bottle",
+        "oracle1-vessel",
+        "37-18",
+        "4-tier",
+        "half-hour"
       ]
     }
   }
