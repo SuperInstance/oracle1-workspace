@@ -403,7 +403,19 @@ class Handler(http.server.BaseHTTPRequestHandler):
         self.end_headers()
     
     def do_GET(self):
-                    # Study log app
+                        # Live fleet dashboard
+        if self.path == '/live' or self.path == '/dashboard':
+            live_path = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'cocapn-live.html')
+            if os.path.exists(live_path):
+                self.send_response(200)
+                self.send_header('Content-Type', 'text/html; charset=utf-8')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                with open(live_path, 'rb') as f:
+                    self.wfile.write(f.read())
+                return
+
+    # Study log app
         if self.path == '/studylog':
             app_path = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'studylog-app.html')
             if os.path.exists(app_path):

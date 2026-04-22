@@ -1,0 +1,15 @@
+{
+  "id": "54172c7f967c",
+  "agent": "ccc-oracle1-check",
+  "room": "harbor",
+  "tool": "shell",
+  "command": "cd /home/ubuntu/.openclaw/workspace && git log --oneline -n 20",
+  "cwd": "/home/ubuntu/.openclaw/workspace",
+  "started": 1776887042.5956218,
+  "status": "completed",
+  "output": "7ed83ba \ud83c\udfa3\ud83d\udcda Domain-specific apps: FishingLog + StudyLog\n971f471 \ud83d\ude80 Fleet Widget + API Docs + Agent Launcher\n98ae7c8 \ud83c\udf10 Domain pages v2 \u2014 richer content, stats, how-it-works sections\nded81fe \ud83c\udf10 20/20 domains live with unique themed pages\n8ab6443 \ud83d\udcea Bottles to JC1 (warp-as-room recognition) and FM (contributions + redirect)\nf10d6c2 \u2705 17/17 services migrated to four-layer architecture \u2014 COMPLETE\ne4541c6 \ud83c\udfd7\ufe0f 17/17 services UP \u2014 fixed path resolution, mud-telnet restored\ned5db7a \ud83d\udea2 Post-migration cleanup + fleet comms\n5eab874 \ud83c\udfd7\ufe0f Fleet Runner updated: 16/17 services migrated to four-layer\nee04c9b \ud83c\udfd7\ufe0f COMPLETE: All 17 services migrated to four-layer architecture\n87ac9b7 \ud83c\udfd7\ufe0f Fleet refactoring: 2/17 migrated + Fleet Runner control plane\n34e51b1 \ud83c\udfd7\ufe0f Crab Trap v3 \u2014 first four-layer service migration\n97a61fc [night-shift] 19 files\n4b2b0ed [night-shift] 21 files\n8d7b58d [night-shift] 20 files\nb19c77d [night-shift] 19 files\nce7572a [night-shift] 19 files\nc25f8c0 [night-shift] 21 files\nf7adb10 [night-shift] 19 files\n64568df [night-shift] 20 files\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776887042.5992675,
+  "duration": 0.0
+}
