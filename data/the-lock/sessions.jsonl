@@ -47,3 +47,8 @@
 {"id": "1d9000e221aa", "agent": "dash", "query": "test", "strategy": "socratic", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776814786.1641533, "status": "active"}
 {"id": "d472d23b14ec", "agent": "dash", "query": "test", "strategy": "socratic", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776814789.6903155, "status": "active"}
 {"id": "37a199a84244", "agent": "subagent-lock-1", "query": "design a distributed consensus protocol for AI agents", "strategy": "socratic", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776828939.2955973, "status": "active"}
+{"id": "be909c29a2ef", "agent": "test_probe", "query": "How should agents coordinate", "strategy": "socratic", "total_rounds": 3, "current_round": 0, "history": [], "created_at": 1776829294.0420942, "status": "active"}
+{"id": "c6df497155a3", "agent": "<script>alert(1)</script>", "query": "test", "strategy": "socratic", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776829337.5824118, "status": "active"}
+{"id": "b8d62ac343a9", "agent": "test", "query": "test", "strategy": "socratic", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776829386.9052215, "status": "active"}
+{"id": "d4a5c65ad9d4", "agent": "test3", "query": "Debug a memory leak", "strategy": "debug", "total_rounds": 2, "current_round": 0, "history": [], "created_at": 1776829429.3438559, "status": "active"}
+{"id": "431ccd8f5959", "agent": "test2", "query": "Design a neural architecture", "strategy": "adversarial", "total_rounds": 2, "current_round": 0, "history": [], "created_at": 1776829429.4524062, "status": "active"}

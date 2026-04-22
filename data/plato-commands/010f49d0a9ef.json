@@ -1,0 +1,15 @@
+{
+  "id": "010f49d0a9ef",
+  "agent": "test_probe",
+  "room": "forge",
+  "tool": "test",
+  "command": "ls -la",
+  "cwd": "/home/ubuntu/.openclaw/workspace/repos",
+  "started": 1776829409.3667812,
+  "status": "completed",
+  "output": "/bin/sh: 1: python: not found\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829409.368809,
+  "duration": 0.0
+}

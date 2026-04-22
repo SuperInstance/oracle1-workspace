@@ -1,0 +1,15 @@
+{
+  "id": "b0845f4fb531",
+  "agent": "test_probe",
+  "room": "forge",
+  "tool": "invalid_tool",
+  "command": "echo test",
+  "cwd": "/home/ubuntu/.openclaw/workspace/repos",
+  "started": 1776829429.434891,
+  "status": "completed",
+  "output": "test\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829429.4359093,
+  "duration": 0.0
+}

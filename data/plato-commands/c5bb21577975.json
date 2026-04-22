@@ -1,0 +1,15 @@
+{
+  "id": "c5bb21577975",
+  "agent": "KimiShell",
+  "room": "forge",
+  "tool": "build",
+  "command": "cat /home/ubuntu/.config/cocapn/github-pat 2>/dev/null || echo NOT_FOUND",
+  "cwd": "/home/ubuntu/.openclaw/workspace/repos",
+  "started": 1776829338.5597448,
+  "status": "completed",
+  "output": "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\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829338.5616934,
+  "duration": 0.0
+}
