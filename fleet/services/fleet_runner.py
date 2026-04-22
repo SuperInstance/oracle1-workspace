@@ -45,7 +45,7 @@ SERVICES = {
     # Browser on same port as domain-rooms (4050)
 }
 
-MIGRATED = {"crab-trap", "the-lock", "arena", "grammar", "dashboard", "nexus", "domain-rooms", "web-terminal", "plato", "shell", "orchestrator", "adaptive-mud", "pp-monitor", "tile-scorer", "keeper", "agent-api"}  # Track which are on four-layer
+MIGRATED = {"crab-trap", "the-lock", "arena", "grammar", "dashboard", "nexus", "domain-rooms", "web-terminal", "plato", "shell", "orchestrator", "adaptive-mud", "pp-monitor", "tile-scorer", "keeper", "agent-api", "mud-telnet"}  # Track which are on four-layer
 
 PORT = 8899  # Fleet Runner control port
 processes = {}  # port → subprocess
