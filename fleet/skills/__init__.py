@@ -1,79 +1,62 @@
-from typing import Dict, Any, Optional, Callable
-from abc import ABC, abstractmethod
+"""
+Skills Layer — Behavior and Prompt Templates.
+Skills define HOW an agent thinks for a given task.
+"""
+import json
 
 
-class Skill(ABC):
-    """Base class for skills with registration and execution capabilities."""
+class Skill:
+    """Base class for fleet skills."""
+    
+    name = "base"
+    description = "Base skill"
+    
+    def __init__(self):
+        self.templates = {}
+    
+    def register(self, key, template):
+        """Register a prompt template."""
+        self.templates[key] = template
+    
+    def render(self, key, **kwargs):
+        """Render a template with variables."""
+        template = self.templates.get(key, "")
+        return template.format(**kwargs)
+    
+    def execute(self, context_manager, model_client, **kwargs):
+        """Execute the skill. Override in subclasses."""
+        raise NotImplementedError("Subclasses must implement execute()")
+    
+    def system_prompt(self):
+        """Return the skill's system prompt. Override in subclasses."""
+        return ""
 
-    _registry: Dict[str, "Skill"] = {}
 
-    def __init__(self, name: str, description: str = ""):
-        self.name = name
-        self.description = description
-        self.metadata: Dict[str, Any] = {}
-        self._is_registered = False
-
-    @classmethod
-    def register(cls, skill: "Skill") -> bool:
-        """Register a skill in the global registry."""
-        if skill.name in cls._registry:
-            return False
-        cls._registry[skill.name] = skill
-        skill._is_registered = True
-        return True
-
-    @classmethod
-    def unregister(cls, name: str) -> bool:
-        """Unregister a skill from the global registry."""
-        if name in cls._registry:
-            cls._registry[name]._is_registered = False
-            del cls._registry[name]
-            return True
-        return False
-
-    @classmethod
-    def get(cls, name: str) -> Optional["Skill"]:
-        """Get a registered skill by name."""
-        return cls._registry.get(name)
-
-    @classmethod
-    def list_all(cls) -> Dict[str, "Skill"]:
+class SkillRegistry:
+    """Registry of available skills."""
+    
+    def __init__(self):
+        self._skills = {}
+    
+    def register(self, skill):
+        """Register a skill."""
+        self._skills[skill.name] = skill
+    
+    def get(self, name):
+        """Get a skill by name."""
+        return self._skills.get(name)
+    
+    def list_skills(self):
         """List all registered skills."""
-        return cls._registry.copy()
-
-    @classmethod
-    def execute(cls, name: str, *args, **kwargs) -> Any:
-        """Execute a registered skill by name."""
-        skill = cls.get(name)
+        return {name: skill.description for name, skill in self._skills.items()}
+    
+    def execute(self, name, context_manager, model_client, **kwargs):
+        """Execute a skill by name."""
+        skill = self.get(name)
         if not skill:
-            raise ValueError(f"Skill '{name}' not found in registry")
-        return skill.execute_impl(*args, **kwargs)
-
-    @abstractmethod
-    def execute_impl(self, *args, **kwargs) -> Any:
-        """Implementation of the skill execution. Must be overridden by subclasses."""
-        pass
-
-    def is_registered(self) -> bool:
-        """Check if this skill is registered."""
-        return self._is_registered
-
-    def set_metadata(self, key: str, value: Any):
-        """Set metadata for this skill."""
-        self.metadata[key] = value
-
-    def get_metadata(self, key: str) -> Optional[Any]:
-        """Get metadata value for this skill."""
-        return self.metadata.get(key)
-
-    def to_dict(self) -> Dict[str, Any]:
-        """Convert skill to dictionary representation."""
-        return {
-            "name": self.name,
-            "description": self.description,
-            "registered": self._is_registered,
-            "metadata": self.metadata,
-        }
+            raise ValueError(f"Unknown skill: {name}")
+        return skill.execute(context_manager, model_client, **kwargs)
 
 
-__all__ = ["Skill"]
+# Global registry
+registry = SkillRegistry()
