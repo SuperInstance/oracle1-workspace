@@ -1,0 +1,15 @@
+{
+  "id": "5cf06390e675",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829850.3865354,
+  "status": "completed",
+  "output": "total 152\ndrwx------ 18 ubuntu ubuntu 4096 Apr 21 20:03 .\ndrwxr-x--- 22 ubuntu ubuntu 4096 Apr 22 03:48 ..\ndrwx------  4 ubuntu ubuntu 4096 Apr 18 18:59 agents\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 10 03:02 canvas\ndrwx------  2 ubuntu ubuntu 4096 Apr 10 03:11 credentials\ndrwx------  3 ubuntu ubuntu 4096 Apr 22 02:21 delivery-queue\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 21 21:09 devices\n-rw-------  1 ubuntu ubuntu  178 Apr 22 03:48 exec-approvals.json\ndrwxrwxr-x  3 ubuntu ubuntu 4096 Apr 19 19:46 extensions\ndrwx------  2 ubuntu ubuntu 4096 Apr 15 14:44 flows\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 10 03:02 identity\ndrwx------  2 ubuntu ubuntu 4096 Apr 10 02:53 logs\ndrwx------  3 ubuntu ubuntu 4096 Apr 10 18:53 media\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 21 09:10 memory\n-rw-------  1 ubuntu ubuntu 9921 Apr 19 19:46 openclaw.json\n-rw-------  1 ubuntu ubuntu    0 Apr 19 18:18 openclaw.json.589984.b0e35075-ef7d-4503-8a48-fcfbf18620b9.tmp\n-rw-------  1 ubuntu ubuntu    0 Apr 19 18:49 openclaw.json.593514.07492e56-e65a-4295-b916-6dbfd9ca85ff.tmp\n-rw-------  1 ubuntu ubuntu    0 Apr 19 18:49 openclaw.json.593532.f6b487d9-12f9-4550-9e8b-2a191d5ec7d8.tmp\n-rw-------  1 ubuntu ubuntu 9921 Apr 19 19:46 openclaw.json.bak\n-rw-------  1 ubuntu ubuntu 9921 Apr 19 19:46 openclaw.json.bak.1\n-rw-------  1 ubuntu ubuntu 9922 Apr 19 19:46 openclaw.json.bak.2\n-rw-------  1 ubuntu ubuntu 9921 Apr 19 19:46 openclaw.json.bak.3\n-rw-------  1 ubuntu ubuntu 9921 Apr 19 19:46 openclaw.json.bak.4\ndrwxrwxr-x  3 ubuntu ubuntu 4096 Apr 10 02:50 qqbot\ndrwx------  2 ubuntu ubuntu 4096 Apr 21 08:31 subagents\ndrwx------  2 ubuntu ubuntu 4096 Apr 19 19:01 tasks\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 22 03:48 telegram\n-rw-------  1 ubuntu ubuntu  189 Apr 21 20:03 update-check.json\ndrwxrwxr-x 40 ubuntu ubuntu 4096 Apr 22 03:50 workspace\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829850.3888514,
+  "duration": 0.0
+}

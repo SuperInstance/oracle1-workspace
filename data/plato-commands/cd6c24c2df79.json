@@ -1,0 +1,15 @@
+{
+  "id": "cd6c24c2df79",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/delivery-queue/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830013.3041987,
+  "status": "completed",
+  "output": "total 12\ndrwx------  3 ubuntu ubuntu 4096 Apr 22 02:21 .\ndrwx------ 18 ubuntu ubuntu 4096 Apr 21 20:03 ..\ndrwx------  2 ubuntu ubuntu 4096 Apr 10 07:32 failed\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830013.3065712,
+  "duration": 0.0
+}

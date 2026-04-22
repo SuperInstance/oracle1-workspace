@@ -1,0 +1,15 @@
+{
+  "id": "9c690f05ade9",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat '/home/ubuntu/.openclaw/workspace/state/sessions/agent%3Aclaude%3Aacp%3Afd82ac30-a5b8-4878-84fd-11315ac34de2%3Aoneshot%3A51de4537-a6cc-47e5-85b1-29ad4848ff7c.json' | head -50",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830195.7243102,
+  "status": "completed",
+  "output": "{\n  \"schema\": \"acpx.session.v1\",\n  \"acpx_record_id\": \"agent:claude:acp:fd82ac30-a5b8-4878-84fd-11315ac34de2:oneshot:51de4537-a6cc-47e5-85b1-29ad4848ff7c\",\n  \"acp_session_id\": \"1f99c6bf-6f64-4519-b9e2-09b6a53d5868\",\n  \"agent_command\": \"npx -y @agentclientprotocol/claude-agent-acp@^0.25.0\",\n  \"cwd\": \"/home/ubuntu/.openclaw/workspace\",\n  \"name\": \"agent:claude:acp:fd82ac30-a5b8-4878-84fd-11315ac34de2\",\n  \"created_at\": \"2026-04-18T19:00:01.791Z\",\n  \"last_used_at\": \"2026-04-18T19:02:09.221Z\",\n  \"last_seq\": 0,\n  \"last_request_id\": \"61822e5a-0c47-474e-a3ea-56f64381f359\",\n  \"event_log\": {\n    \"active_path\": \"/home/ubuntu/.acpx/sessions/agent%3Aclaude%3Aacp%3Afd82ac30-a5b8-4878-84fd-11315ac34de2%3Aoneshot%3A51de4537-a6cc-47e5-85b1-29ad4848ff7c.stream.ndjson\",\n    \"segment_count\": 5,\n    \"max_segment_bytes\": 67108864,\n    \"max_segments\": 5,\n    \"last_write_error\": null\n  },\n  \"closed\": true,\n  \"closed_at\": \"2026-04-18T19:02:09.446Z\",\n  \"pid\": 516756,\n  \"agent_started_at\": \"2026-04-18T19:00:02.211Z\",\n  \"last_prompt_at\": \"2026-04-18T19:00:08.197Z\",\n  \"protocol_version\": 1,\n  \"agent_capabilities\": {\n    \"_meta\": {\n      \"claudeCode\": {\n        \"promptQueueing\": true\n      }\n    },\n    \"promptCapabilities\": {\n      \"image\": true,\n      \"embeddedContext\": true\n    },\n    \"mcpCapabilities\": {\n      \"http\": true,\n      \"sse\": true\n    },\n    \"loadSession\": true,\n    \"sessionCapabilities\": {\n      \"fork\": {},\n      \"list\": {},\n      \"resume\": {},\n      \"close\": {}\n    }\n  },\n  \"title\": null,\n  \"messages\": [\n    {\n      \"User\": {\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830195.726436,
+  "duration": 0.0
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c8e9c52cf8d5",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "aider",
+  "command": "whoami",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829799.1167932,
+  "status": "timeout",
+  "output": "",
+  "error": "Timed out after 10s",
+  "completed": 1776829809.1207423,
+  "duration": 10
+}

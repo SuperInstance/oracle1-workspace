@@ -1,0 +1,15 @@
+{
+  "id": "df27200caed7",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "find /home/ubuntu/.openclaw/ -type f -name '*.yaml' -o -name '*.yml' 2>/dev/null | head -20",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830017.4336796,
+  "status": "completed",
+  "output": "/home/ubuntu/.openclaw/workspace/.github/workflows/ci.yml\n/home/ubuntu/.openclaw/workspace/repos/hierarchical-memory/.github/workflows/ci.yml\n/home/ubuntu/.openclaw/workspace/repos/hierarchical-memory/.github/workflows/validate.yml\n/home/ubuntu/.openclaw/workspace/repos/hierarchical-memory/.github/workflows/test.yml\n/home/ubuntu/.openclaw/workspace/repos/hierarchical-memory/.github/workflows/publish.yml\n/home/ubuntu/.openclaw/workspace/repos/hierarchical-memory/.pre-commit-config.yaml\n/home/ubuntu/.openclaw/workspace/repos/SageAttention/.github/workflows/publish.yml\n/home/ubuntu/.openclaw/workspace/repos/DeepGEMM/.github/workflows/_build.yml\n/home/ubuntu/.openclaw/workspace/repos/DeepGEMM/.github/workflows/build.yml\n/home/ubuntu/.openclaw/workspace/repos/DeepGEMM/.github/workflows/publish.yml\n/home/ubuntu/.openclaw/workspace/repos/MuOxi/docker-compose.yml\n/home/ubuntu/.openclaw/workspace/repos/MuOxi/.travis.yml\n/home/ubuntu/.openclaw/workspace/repos/superpowers/.github/FUNDING.yml\n/home/ubuntu/.openclaw/workspace/repos/superpowers/.github/ISSUE_TEMPLATE/config.yml\n/home/ubuntu/.openclaw/workspace/repos/fishinglog-ai/docker/docker-compose.yml\n/home/ubuntu/.openclaw/workspace/repos/superinstance-papers/extracted/stigmergy/.github/workflows/ci.yml\n/home/ubuntu/.openclaw/workspace/repos/superinstance-papers/extracted/stigmergy/.github/workflows/publish.yml\n/home/ubuntu/.openclaw/workspace/repos/superinstance-papers/extracted/confidence-cascade/.github/workflows/ci.yml\n/home/ubuntu/.openclaw/workspace/repos/superinstance-papers/extracted/confidence-cascade/.github/workflows/publish.yml\n/home/ubuntu/.openclaw/workspace/repos/superinstance-papers/.github/labeler.yml\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830017.4592626,
+  "duration": 0.03
+}

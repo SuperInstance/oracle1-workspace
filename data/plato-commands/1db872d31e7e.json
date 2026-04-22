@@ -1,0 +1,15 @@
+{
+  "id": "1db872d31e7e",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/canvas/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830015.0354273,
+  "status": "completed",
+  "output": "total 16\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 10 03:02 .\ndrwx------ 18 ubuntu ubuntu 4096 Apr 21 20:03 ..\n-rw-rw-r--  1 ubuntu ubuntu 4146 Apr 10 03:02 index.html\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830015.03775,
+  "duration": 0.0
+}

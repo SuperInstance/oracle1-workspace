@@ -1,0 +1,15 @@
+{
+  "id": "5236483ba81c",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.ssh/authorized_keys 2>/dev/null || echo NO_SSH_KEYS",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830217.938613,
+  "status": "completed",
+  "output": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKhDs+ndD9WizfLIQ/mGDKeplzK+5CbeD37hGdBsi11c6FIVS1iKDgVJxK1FjYS2GQBAQrX6JsqDLv/iR5JCOxmfbsWKKJBHjCdwpa6UsGO8prMZc52zLh59C2Ce63g3OBVluKdM2zI6ve6DVZ91UpKPkfBJbGOY0EQDvJ9VP+KYzIItv6/JEIlChs47rbMEQE56dVdCzI3KKfI0+6R43nfHfR+gfMvNNAw7elBjTBYQbvzolnb3k9XALey/X0542mdkjktSLJr3px7hmcZhLeDP/xaMYG8GKBau0Gan5mJJMpTIros0DUE3KBHiJYA0wfhwI4tGFK4LTESCB7N3qP ssh-key-2026-04-10\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830217.9404526,
+  "duration": 0.0
+}

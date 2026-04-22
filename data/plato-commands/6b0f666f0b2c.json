@@ -1,0 +1,15 @@
+{
+  "id": "6b0f666f0b2c",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829845.2560852,
+  "status": "completed",
+  "output": "total 148\ndrwxr-x--- 22 ubuntu ubuntu 4096 Apr 22 03:48 .\ndrwxr-xr-x  5 root   root   4096 Apr 15 15:16 ..\ndrwxrwxr-x  3 ubuntu ubuntu 4096 Apr 10 07:16 .aider\n-rw-rw-r--  1 ubuntu ubuntu  498 Apr 10 07:17 .aider.chat.history.md\n-rw-rw-r--  1 ubuntu ubuntu   33 Apr 10 07:17 .aider.input.history\n-rw-------  1 ubuntu ubuntu 5602 Apr 21 17:41 .bash_history\n-rw-r--r--  1 ubuntu ubuntu  220 Jan  6  2022 .bash_logout\n-rw-r--r--  1 ubuntu ubuntu 4683 Apr 21 04:33 .bashrc\ndrwx------  5 ubuntu ubuntu 4096 Apr 14 08:22 .bottle\ndrwx------ 10 ubuntu ubuntu 4096 Apr 21 00:35 .cache\ndrwxrwxr-x  4 ubuntu ubuntu 4096 Apr 20 17:13 .cargo\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 10 06:40 .chelper\ndrwxrwxr-x  9 ubuntu ubuntu 4096 Apr 17 18:37 .claude\n-rw-rw-r--  1 ubuntu ubuntu 4314 Apr 21 06:31 .claude.json\ndrwxrwxr-x  5 ubuntu ubuntu 4096 Apr 10 03:02 .codex\ndrwxrwxr-x 11 ubuntu ubuntu 4096 Apr 21 03:49 .config\ndrwx------  3 ubuntu ubuntu 4096 Apr 18 21:14 .docker\n-rw-------  1 ubuntu ubuntu  356 Apr 22 03:48 .git-credentials\n-rw-rw-r--  1 ubuntu ubuntu  131 Apr 18 18:12 .gitconfig\ndrwxrwxr-x  7 ubuntu ubuntu 4096 Apr 22 03:49 .kimi\ndrwxrwxr-x  5 ubuntu ubuntu 4096 Apr 10 15:28 .local\ndrwxrwxr-x  5 ubuntu ubuntu 4096 Apr 10 03:02 .npm\ndrwxrwxr-x  4 ubuntu ubuntu 4096 Apr 10 02:46 .npm-global\n-rw-------  1 ubuntu ubuntu   32 Apr 10 02:45 .npmrc\ndrwx------ 18 ubuntu ubuntu 4096 Apr 21 20:03 .openclaw\ndrwx------  3 ubuntu ubuntu 4096 Apr 13 17:28 .pki\n-rw-r--r--  1 ubuntu ubuntu  854 Apr 10 16:45 .profile\ndrwxrwxr-x  6 ubuntu ubuntu 4096 Apr 10 16:45 .rustup\ndrwx------  2 ubuntu ubuntu 4096 Apr 10 01:52 .ssh\n-rw-r--r--  1 ubuntu ubuntu    0 Apr 10 02:37 .sudo_as_admin_successful\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 13 05:11 .tenderctl\n-rw-rw-r--  1 ubuntu ubuntu  196 Apr 21 01:25 .wget-hsts\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 21 06:26 .zai\n-rw-rw-r--  1 ubuntu ubuntu   26 Apr 10 07:15 .zshrc\ndrwxrwxr-x  3 ubuntu ubuntu 4096 Apr 10 17:06 go\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829845.2584474,
+  "duration": 0.0
+}

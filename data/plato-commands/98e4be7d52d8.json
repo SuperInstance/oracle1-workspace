@@ -1,0 +1,15 @@
+{
+  "id": "98e4be7d52d8",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "admin",
+  "command": "whoami",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829789.4932375,
+  "status": "completed",
+  "output": "ubuntu\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829789.4951894,
+  "duration": 0.0
+}

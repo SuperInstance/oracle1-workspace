@@ -1,0 +1,15 @@
+{
+  "id": "e4e538a4432a",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.openclaw/identity/device-auth.json",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830066.05513,
+  "status": "completed",
+  "output": "{\n  \"version\": 1,\n  \"deviceId\": \"5094260174c3e1ec2388611b751cb1d6a79243dcc3897df91a4d9f9bce4159cd\",\n  \"tokens\": {\n    \"operator\": {\n      \"token\": \"YMXKiQqpTGZxkeaX7vfdOqBL2z431p-6_Tgs00GpR-A\",\n      \"role\": \"operator\",\n      \"scopes\": [\n        \"operator.admin\",\n        \"operator.approvals\",\n        \"operator.pairing\",\n        \"operator.read\",\n        \"operator.talk.secrets\",\n        \"operator.write\"\n      ],\n      \"updatedAtMs\": 1776805789666\n    }\n  }\n}\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830066.0569284,
+  "duration": 0.0
+}

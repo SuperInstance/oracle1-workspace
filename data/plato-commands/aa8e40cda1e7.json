@@ -1,0 +1,15 @@
+{
+  "id": "aa8e40cda1e7",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "find /home/ubuntu/.openclaw/ -type f -name '*.json' 2>/dev/null | head -20",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830016.8366246,
+  "status": "completed",
+  "output": "/home/ubuntu/.openclaw/identity/device.json\n/home/ubuntu/.openclaw/identity/device-auth.json\n/home/ubuntu/.openclaw/devices/pending.json\n/home/ubuntu/.openclaw/devices/paired.json\n/home/ubuntu/.openclaw/devices/bootstrap.json\n/home/ubuntu/.openclaw/workspace/state/sessions/agent%3Aclaude%3Aacp%3Afd82ac30-a5b8-4878-84fd-11315ac34de2%3Aoneshot%3A51de4537-a6cc-47e5-85b1-29ad4848ff7c.json\n/home/ubuntu/.openclaw/workspace/state/sessions/agent%3Aclaude%3Aacp%3A395305f1-c035-4a53-a231-02a484c23606%3Aoneshot%3A97438f99-71e8-4ae3-a02d-3aa0bbe5757e.json\n/home/ubuntu/.openclaw/workspace/state/sessions/agent%3Aclaude%3Aacp%3Af3b249a4-6ffb-45ed-92c4-42b3e194dd5a%3Aoneshot%3A53ba93b2-b4ef-44ae-9997-010714be8ef5.json\n/home/ubuntu/.openclaw/workspace/narrow-games/constraint_sim_complex.json\n/home/ubuntu/.openclaw/workspace/narrow-games/constraint_simulation_results.json\n/home/ubuntu/.openclaw/workspace/narrow-games/constraint_sim_final.json\n/home/ubuntu/.openclaw/workspace/narrow-games/complex_deadband_sim.json\n/home/ubuntu/.openclaw/workspace/training-data/fleet-metrics.json\n/home/ubuntu/.openclaw/workspace/training-data/fleet-status.json\n/home/ubuntu/.openclaw/workspace/training-data/body-report.json\n/home/ubuntu/.openclaw/workspace/training-data/dcs-fleet-input.json\n/home/ubuntu/.openclaw/workspace/training-data/knowledge/testing.json\n/home/ubuntu/.openclaw/workspace/training-data/knowledge/organization.json\n/home/ubuntu/.openclaw/workspace/training-data/knowledge/trendanalysis.json\n/home/ubuntu/.openclaw/workspace/training-data/knowledge/prototyping.json\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830016.8552425,
+  "duration": 0.02
+}

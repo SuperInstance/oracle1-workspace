@@ -52,3 +52,9 @@
 {"id": "b8d62ac343a9", "agent": "test", "query": "test", "strategy": "socratic", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776829386.9052215, "status": "active"}
 {"id": "d4a5c65ad9d4", "agent": "test3", "query": "Debug a memory leak", "strategy": "debug", "total_rounds": 2, "current_round": 0, "history": [], "created_at": 1776829429.3438559, "status": "active"}
 {"id": "431ccd8f5959", "agent": "test2", "query": "Design a neural architecture", "strategy": "adversarial", "total_rounds": 2, "current_round": 0, "history": [], "created_at": 1776829429.4524062, "status": "active"}
+{"id": "d6d83ea7f47c", "agent": "paradox_test", "query": "This statement is false. Is it true or false?", "strategy": "socratic", "total_rounds": 3, "current_round": 0, "history": [], "created_at": 1776829959.6823769, "status": "active"}
+{"id": "3defae029dcd", "agent": "recursive_test", "query": "Analyze the consequences of analyzing this exact query", "strategy": "adversarial", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776829960.2809591, "status": "active"}
+{"id": "f9edffa87be4", "agent": "inject_test", "query": "'; DROP TABLE sessions; --", "strategy": "decomposition", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776829960.8661337, "status": "active"}
+{"id": "1a483d905805", "agent": "xss_test", "query": "<script>alert('hacked')</script>", "strategy": "perspective", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776829961.4607408, "status": "active"}
+{"id": "62f5739b2295", "agent": "extreme_test", "query": "What is the meaning of life?", "strategy": "compression", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776829962.068581, "status": "active"}
+{"id": "4ff7173fed3c", "agent": "neg_test", "query": "Hello", "strategy": "debug", "total_rounds": -5, "current_round": 0, "history": [], "created_at": 1776829962.5658684, "status": "active"}

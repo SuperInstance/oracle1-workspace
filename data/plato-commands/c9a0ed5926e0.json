@@ -1,0 +1,15 @@
+{
+  "id": "c9a0ed5926e0",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.openclaw/identity/device.json",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830065.4876237,
+  "status": "completed",
+  "output": "{\n  \"version\": 1,\n  \"deviceId\": \"5094260174c3e1ec2388611b751cb1d6a79243dcc3897df91a4d9f9bce4159cd\",\n  \"publicKeyPem\": \"-----BEGIN PUBLIC KEY-----\\nMCowBQYDK2VwAyEAIiUwLGNqvg3b0PnCt/DtSLDZrIvObvRdpBl4iSgTxv0=\\n-----END PUBLIC KEY-----\\n\",\n  \"privateKeyPem\": \"-----BEGIN PRIVATE KEY-----\\nMC4CAQAwBQYDK2VwBCIEIIyKuwmH3A/Euzc9Lh39U7dsDi7+gWaz2Mu38BmMU4CV\\n-----END PRIVATE KEY-----\\n\",\n  \"createdAtMs\": 1775790119421\n}\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830065.4894307,
+  "duration": 0.0
+}

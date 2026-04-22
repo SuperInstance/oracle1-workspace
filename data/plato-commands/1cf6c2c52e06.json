@@ -1,0 +1,15 @@
+{
+  "id": "1cf6c2c52e06",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "git",
+  "command": "whoami",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829810.6632597,
+  "status": "failed",
+  "output": "",
+  "error": "git: 'whoami' is not a git command. See 'git --help'.\n",
+  "returncode": 1,
+  "completed": 1776829810.6676412,
+  "duration": 0.0
+}

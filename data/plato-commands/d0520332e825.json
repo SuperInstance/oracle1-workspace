@@ -1,0 +1,15 @@
+{
+  "id": "d0520332e825",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/workspace/state/sessions/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830195.2644029,
+  "status": "completed",
+  "output": "total 180\ndrwxrwxr-x 2 ubuntu ubuntu  4096 Apr 18 19:02 .\ndrwxrwxr-x 3 ubuntu ubuntu  4096 Apr 18 18:59 ..\n-rw-rw-r-- 1 ubuntu ubuntu 81377 Apr 18 19:01 agent%3Aclaude%3Aacp%3A395305f1-c035-4a53-a231-02a484c23606%3Aoneshot%3A97438f99-71e8-4ae3-a02d-3aa0bbe5757e.json\n-rw-rw-r-- 1 ubuntu ubuntu 49230 Apr 18 19:02 agent%3Aclaude%3Aacp%3Af3b249a4-6ffb-45ed-92c4-42b3e194dd5a%3Aoneshot%3A53ba93b2-b4ef-44ae-9997-010714be8ef5.json\n-rw-rw-r-- 1 ubuntu ubuntu 37483 Apr 18 19:02 agent%3Aclaude%3Aacp%3Afd82ac30-a5b8-4878-84fd-11315ac34de2%3Aoneshot%3A51de4537-a6cc-47e5-85b1-29ad4848ff7c.json\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830195.2667058,
+  "duration": 0.0
+}

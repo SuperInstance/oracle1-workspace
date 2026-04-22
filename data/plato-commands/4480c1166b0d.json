@@ -1,0 +1,15 @@
+{
+  "id": "4480c1166b0d",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /etc/shadow 2>/dev/null || echo SHADOW_BLOCKED",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830217.455684,
+  "status": "completed",
+  "output": "SHADOW_BLOCKED\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830217.4575806,
+  "duration": 0.0
+}

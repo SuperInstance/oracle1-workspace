@@ -1,0 +1,15 @@
+{
+  "id": "e190c998c0a1",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829847.9485626,
+  "status": "completed",
+  "output": "total 180\ndrwxr-xr-x  19 root root   4096 Apr 20 19:51 .\ndrwxr-xr-x  19 root root   4096 Apr 20 19:51 ..\nlrwxrwxrwx   1 root root      7 Feb 28 09:57 bin -> usr/bin\ndrwxr-xr-x   4 root root   4096 Apr 10 06:47 boot\ndrwxr-xr-x  19 root root   3900 Apr 21 23:46 dev\ndrwxr-xr-x 111 root root   4096 Apr 21 01:25 etc\ndrwxr-xr-x   5 root root   4096 Apr 15 15:16 home\nlrwxrwxrwx   1 root root      7 Feb 28 09:57 lib -> usr/lib\ndrwx------   2 root root  16384 Feb 28 10:01 lost+found\ndrwxr-xr-x   2 root root   4096 Feb 28 09:57 media\ndrwxr-xr-x   2 root root   4096 Feb 28 09:57 mnt\ndrwxr-xr-x   4 root root   4096 Apr 12 16:35 opt\ndr-xr-xr-x 264 root root      0 Apr 20 19:51 proc\ndrwx------   7 root root   4096 Apr 13 17:12 root\ndrwxr-xr-x  35 root root   1140 Apr 22 03:47 run\nlrwxrwxrwx   1 root root      8 Feb 28 09:57 sbin -> usr/sbin\ndrwxr-xr-x   8 root root   4096 Feb 28 10:08 snap\ndrwxr-xr-x   2 root root   4096 Feb 28 09:57 srv\ndr-xr-xr-x  13 root root      0 Apr 20 19:51 sys\ndrwxrwxrwt  30 root root 110592 Apr 22 03:41 tmp\ndrwxr-xr-x  12 root root   4096 Apr 10 01:52 usr\ndrwxr-xr-x  13 root root   4096 Feb 28 10:00 var\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829847.9508426,
+  "duration": 0.0
+}

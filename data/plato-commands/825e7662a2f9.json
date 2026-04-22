@@ -1,0 +1,15 @@
+{
+  "id": "825e7662a2f9",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/workspace/repos/cocapn/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830263.981031,
+  "status": "completed",
+  "output": "total 796\ndrwxrwxr-x 13 ubuntu ubuntu   4096 Apr 10 10:30 .\ndrwxrwxr-x 35 ubuntu ubuntu   4096 Apr 20 23:16 ..\n-rw-rw-r--  1 ubuntu ubuntu    161 Apr 10 10:30 .dockerignore\n-rw-rw-r--  1 ubuntu ubuntu    220 Apr 10 10:30 .editorconfig\n-rw-rw-r--  1 ubuntu ubuntu    742 Apr 10 10:30 .eslintrc.json\ndrwxrwxr-x  8 ubuntu ubuntu   4096 Apr 22 03:50 .git\ndrwxrwxr-x  5 ubuntu ubuntu   4096 Apr 10 10:30 .github\n-rw-rw-r--  1 ubuntu ubuntu    193 Apr 10 10:30 .gitignore\n-rw-rw-r--  1 ubuntu ubuntu     74 Apr 10 10:30 .offline-queue.json\n-rw-rw-r--  1 ubuntu ubuntu    133 Apr 10 10:30 .prettierrc\n-rw-rw-r--  1 ubuntu ubuntu   4017 Apr 10 10:30 CHANGELOG.md\n-rw-rw-r--  1 ubuntu ubuntu  14900 Apr 10 10:30 CLAUDE.md\n-rw-rw-r--  1 ubuntu ubuntu   1787 Apr 10 10:30 CONTRIBUTING.md\n-rw-rw-r--  1 ubuntu ubuntu   3364 Apr 10 10:30 Dockerfile\n-rw-rw-r--  1 ubuntu ubuntu   1072 Apr 10 10:30 LICENSE\n-rw-rw-r--  1 ubuntu ubuntu   8509 Apr 10 10:30 README.md\n-rw-rw-r--  1 ubuntu ubuntu   3141 Apr 10 10:30 SECURITY.md\n-rw-rw-r--  1 ubuntu ubuntu   1068 Apr 10 10:30 docker-compose.yml\ndrwxrwxr-x  8 ubuntu ubuntu   4096 Apr 10 10:30 docs\ndrwxrwxr-x  7 ubuntu ubuntu   4096 Apr 10 10:30 e2e\ndrwxrwxr-x  4 ubuntu ubuntu   4096 Apr 10 10:30 examples\ndrwxrwxr-x  5 ubuntu ubuntu   4096 Apr 10 10:30 modules\n-rw-rw-r--  1 ubuntu ubuntu  25270 Apr 10 10:30 onboard.md\n-rw-rw-r--  1 ubuntu ubuntu 601841 Apr 10 10:30 package-lock.json\n-rw-rw-r--  1 ubuntu ubuntu    609 Apr 10 10:30 package.json\ndrwxrwxr-x 11 ubuntu ubuntu   4096 Apr 10 10:30 packages\n-rw-rw-r--  1 ubuntu ubuntu  18899 Apr 10 10:30 roadmap1.txt\n-rw-rw-r--  1 ubuntu ubuntu  20639 Apr 10 10:30 roadmap2.txt\n-rw-rw-r--  1 ubuntu ubuntu   3104 Apr 10 10:30 roadmap3.txt\ndrwxrwxr-x  2 ubuntu ubuntu   4096 Apr 10 10:30 schemas\ndrwxrwxr-x  2 ubuntu ubuntu   4096 Apr 10 10:30 scripts\ndrwxrwxr-x  4 ubuntu ubuntu   4096 Apr 10 10:30 templates\ndrwxrwxr-x  2 ubuntu ubuntu   4096 Apr 10 10:30 test-results\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830263.983547,
+  "duration": 0.0
+}

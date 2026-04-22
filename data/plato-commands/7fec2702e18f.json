@@ -1,0 +1,15 @@
+{
+  "id": "7fec2702e18f",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /etc/os-release",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829843.4685645,
+  "status": "completed",
+  "output": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829843.4704478,
+  "duration": 0.0
+}

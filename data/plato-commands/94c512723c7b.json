@@ -1,0 +1,15 @@
+{
+  "id": "94c512723c7b",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.openclaw/exec-approvals.json",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830012.2934859,
+  "status": "completed",
+  "output": "{\n  \"version\": 1,\n  \"socket\": {\n    \"path\": \"/home/ubuntu/.openclaw/exec-approvals.sock\",\n    \"token\": \"9JzO5OyQXcq_Y0bHXSqqPimBPA-Rnkp6\"\n  },\n  \"defaults\": {},\n  \"agents\": {}\n}\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830012.2952297,
+  "duration": 0.0
+}

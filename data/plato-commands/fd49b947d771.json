@@ -1,0 +1,15 @@
+{
+  "id": "fd49b947d771",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.openclaw/workspace/repos/cocapn/README.md 2>/dev/null | head -50 || echo NO_README",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830265.1239216,
+  "status": "completed",
+  "output": "<div align=\"center\">\n\n# Cocapn\n\n### *Clone a repo. It's alive.*\n\nThe repository IS the agent. Not a runtime that works on repos \u2014 the repo itself is a living entity. Its code, AI, memory, wiki, frontend, and backend all grow together in Git. Two repos: private brain, public face. Clone it, it works. Deploy anywhere.\n\n[![CI](https://github.com/CedarBeach2019/cocapn/actions/workflows/ci.yml/badge.svg)](https://github.com/CedarBeach2019/cocapn/actions/workflows/ci.yml)\n[![npm version](https://badge.fury.io/js/cocapn.svg)](https://www.npmjs.com/package/cocapn)\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)\n\n[Live Demo](https://cocapn-agent.magnus-digennaro.workers.dev) \u00b7\n[Docs](https://docs.cocapn.app) \u00b7\n[Architecture](docs/ARCHITECTURE.md)\n\n</div>\n\n---\n\n## What It Is\n\nCocapn is an open-source agent framework where **the repo is the agent**. Every repo you create with it is a self-contained AI entity \u2014 it remembers, learns, and grows. Git is the database. `soul.md` is the personality. The agent doesn't search your code \u2014 it *is* your code.\n\nTwo repos per agent: a **private brain** (facts, memory, personality, secrets) and a **public face** (website, skin, domain). Fork it, customize it, deploy it. MIT license, no vendor lock-in, fully self-hosted.\n\n## Quick Start\n\n```bash\nnpm create cocapn\n# \u2192 Prompts for username, domain, template\n# \u2192 Creates private repo (alice-brain) + public repo (alice.makerlog.ai)\n# \u2192 Scaffolds soul.md, config, memory/, wiki/\n\ncd alice-brain\ncocapn secret set DEEPSEEK_API_KEY     # stored in keychain, never in git\ncocapn start --public ../alice.makerlog.ai\n\n# In another terminal:\ncd ../alice.makerlog.ai && npm run dev\n# \u2192 http://localhost:5173 \u2014 your agent is alive\n```\n\nOpen the chat. Close it. Restart tomorrow. **Your agent remembers everything.**\n\n![Cocapn Chat UI](docs/demo-screenshot.png)\n\n## How It Works\n\n```\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830265.1261628,
+  "duration": 0.0
+}
