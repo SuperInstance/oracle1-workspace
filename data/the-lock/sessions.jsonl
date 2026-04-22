@@ -46,3 +46,4 @@
 {"id": "887a3fcf9d7d", "agent": "kimi-round2", "query": "What is emergence", "strategy": "socratic", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776814715.4659772, "status": "active"}
 {"id": "1d9000e221aa", "agent": "dash", "query": "test", "strategy": "socratic", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776814786.1641533, "status": "active"}
 {"id": "d472d23b14ec", "agent": "dash", "query": "test", "strategy": "socratic", "total_rounds": 1, "current_round": 0, "history": [], "created_at": 1776814789.6903155, "status": "active"}
+{"id": "37a199a84244", "agent": "subagent-lock-1", "query": "design a distributed consensus protocol for AI agents", "strategy": "socratic", "total_rounds": 5, "current_round": 0, "history": [], "created_at": 1776828939.2955973, "status": "active"}
