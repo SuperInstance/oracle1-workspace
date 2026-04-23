@@ -41,3 +41,8 @@
 - If down: restart via `bash /tmp/zc_loop2.sh &`
 - Log: `/tmp/zeroclaw-loop.log`
 - Tick interval: 5 minutes
+
+## Rate Attention Sampling (every heartbeat)
+- `curl -s -X POST http://localhost:4056/sample` — triggers rate computation
+- Check `curl -s http://localhost:4056/attention` for things needing attention
+- If anything CRITICAL or HIGH, investigate and report to Casey

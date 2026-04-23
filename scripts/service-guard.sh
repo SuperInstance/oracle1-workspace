@@ -105,3 +105,6 @@ fi
 
 # Grammar Compactor (port 4055)
 check_and_start 4055 'python3 /home/ubuntu/.openclaw/workspace/fleet/services/grammar_compactor.py' '/tmp/grammar-compactor.log'
+
+# Rate Attention (port 4056)
+check_and_start 4056 'python3 /home/ubuntu/.openclaw/workspace/fleet/services/rate_attention.py' '/tmp/rate-attention.log'
