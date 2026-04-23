@@ -1,0 +1,88 @@
+{
+  "id": "df7bf0361e85",
+  "label": "initial-state",
+  "timestamp": 1776978816.9345284,
+  "time_iso": "2026-04-23T21:13:36Z",
+  "archive_stats": {
+    "total_records": 4,
+    "agents": 2,
+    "services": 2,
+    "rooms": 3,
+    "outcomes": {
+      "success": 3,
+      "failure": 1
+    },
+    "types": {
+      "submission": 3,
+      "build": 1
+    },
+    "oldest": 1776978816.8218696,
+    "newest": 1776978816.8403463
+  },
+  "trends_24h": {
+    "window_hours": 24,
+    "total_events": 4,
+    "outcomes": {
+      "success": 3,
+      "failure": 1
+    },
+    "types": {
+      "submission": 3,
+      "build": 1
+    },
+    "agents_active": 2,
+    "services_active": 2,
+    "failure_rate": 25.0,
+    "top_agents": [
+      [
+        "oracle1",
+        3
+      ],
+      [
+        "explorer",
+        1
+      ]
+    ],
+    "top_services": [
+      [
+        "PLATO",
+        3
+      ],
+      [
+        "Gatekeeper",
+        1
+      ]
+    ]
+  },
+  "plato_status": "down",
+  "arena_status": "up",
+  "grammar_status": "up",
+  "gatekeeper_status": "up",
+  "gatekeeper_stats": {
+    "total_decisions": 4,
+    "allows": 2,
+    "denies": 2,
+    "remediates": 0,
+    "allow_rate": 50.0,
+    "registered_agents": 3,
+    "policies": 7,
+    "restricted_rooms": 3
+  },
+  "librarian_status": "up",
+  "librarian_stats": {
+    "services": {
+      "total": 25,
+      "up": 25
+    },
+    "rooms": {
+      "total": 132,
+      "tiles": 4214
+    },
+    "agents": 20,
+    "jobs": 10,
+    "domains": {},
+    "index_age_seconds": 850,
+    "index_count": 1
+  },
+  "pathfinder_status": "up"
+}
