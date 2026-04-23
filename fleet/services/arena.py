@@ -119,7 +119,33 @@ class ELOSystem:
         return {name: p.to_dict() for name, p in self.players.items()}
 
 
-elo = ELOSystem()
+def _reconstruct_elo(matches_file):
+    """Reconstruct ELO ratings from match history on startup."""
+    elo = ELOSystem()
+    if not matches_file.exists():
+        return elo
+    try:
+        with open(matches_file) as f:
+            for line in f:
+                try:
+                    m = json.loads(line.strip())
+                    winner = m.get("winner", "")
+                    players = [m.get("player_a", ""), m.get("player_b", "")]
+                    if winner in players:
+                        loser = [p for p in players if p != winner][0]
+                        elo.update(winner, loser, draw=False)
+                    elif winner == "draw":
+                        elo.update(players[0], players[1], draw=True)
+                except (json.JSONDecodeError, IndexError):
+                    continue
+        n_matches = sum(1 for _ in open(matches_file))
+        print(f"  ELO reconstructed from {n_matches} matches: {len(elo.players)} players")
+    except Exception as e:
+        print(f"  ELO reconstruction failed: {e}")
+    return elo
+
+
+elo = _reconstruct_elo(MATCHES_FILE)
 
 
 # ── Policy Snapshots (Opponent Forge) ──────────────────────

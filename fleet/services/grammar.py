@@ -190,26 +190,61 @@ class RecursiveGrammar:
         object_rules = [self.rules[rid] for rid in self.rules_by_type.get("object", [])
                        if rid in self.rules and self.rules[rid].active]
         
-        # Simple motif detection: objects with similar quality scores used together
+        # Motif detection: crystallize high-usage patterns into new rules
+        # Three evolution modes:
+        # Mode 1: Same-room objects with similar scores (original)
+        # Mode 2: Cross-room objects with shared ML concepts (new)
+        # Mode 3: Usage-only crystallization for heavily-used objects (new)
         if len(object_rules) >= 2:
-            for i in range(len(object_rules)):
-                for j in range(i + 1, len(object_rules)):
-                    a, b = object_rules[i], object_rules[j]
+            used_high = [r for r in object_rules if r.usage_count > 5]
+            for i in range(len(used_high)):
+                for j in range(i + 1, len(used_high)):
+                    a, b = used_high[i], used_high[j]
                     similarity = 1.0 - abs(a.score() - b.score())
-                    if similarity > 0.9 and a.usage_count > 10 and b.usage_count > 10:
-                        # Check if they share a parent room
-                        a_room = a.production.get("parent_room", "")
-                        b_room = b.production.get("parent_room", "")
-                        if a_room == b_room and a_room:
-                            merged_name = f"{a.name}_and_{b.name}"
-                            if merged_name not in self.rules_by_name:
-                                result = self.add_rule(
-                                    merged_name, "object",
-                                    {"ml_concept": f"combined_{a.production.get('ml_concept', '')}_{b.production.get('ml_concept', '')}",
-                                     "parent_room": a_room, "merged_from": [a.name, b.name]},
-                                    created_by="evolution"
-                                )
-                                changes.append(("crystallized", merged_name))
+                    
+                    # Mode 1: Same room, high similarity
+                    a_room = a.production.get("parent_room", "")
+                    b_room = b.production.get("parent_room", "")
+                    if a_room == b_room and a_room and similarity > 0.8 and a.usage_count > 5 and b.usage_count > 5:
+                        merged_name = f"{a.name}_and_{b.name}"
+                        if merged_name not in self.rules_by_name:
+                            self.add_rule(
+                                merged_name, "object",
+                                {"ml_concept": f"combined_{a.production.get('ml_concept', '')}_{b.production.get('ml_concept', '')}",
+                                 "parent_room": a_room, "merged_from": [a.name, b.name]},
+                                created_by="evolution"
+                            )
+                            changes.append(("crystallized_same_room", merged_name))
+                        continue
+                    
+                    # Mode 2: Cross-room, shared ML concept
+                    a_concept = a.production.get("ml_concept", "")
+                    b_concept = b.production.get("ml_concept", "")
+                    if a_concept and b_concept and a_concept == b_concept and a.usage_count > 8 and b.usage_count > 8:
+                        merged_name = f"{a.name}_x_{b.name}"
+                        if merged_name not in self.rules_by_name:
+                            self.add_rule(
+                                merged_name, "object",
+                                {"ml_concept": f"cross_room_{a_concept}",
+                                 "parent_room": f"{a_room}_and_{b_room}", "merged_from": [a.name, b.name],
+                                 "evolution_mode": "cross_room"},
+                                created_by="evolution"
+                            )
+                            changes.append(("crystallized_cross_room", merged_name))
+                        continue
+                    
+                    # Mode 3: Both heavily used (>15 uses) — crystallize even without similarity
+                    if a.usage_count > 15 and b.usage_count > 15 and similarity > 0.5:
+                        merged_name = f"{a.name}_syn_{b.name}"
+                        if merged_name not in self.rules_by_name:
+                            self.add_rule(
+                                merged_name, "object",
+                                {"ml_concept": f"synthesis_{a.production.get('ml_concept', 'x')}_{b.production.get('ml_concept', 'y')}",
+                                 "parent_room": a_room or b_room or "evolved", "merged_from": [a.name, b.name],
+                                 "evolution_mode": "usage_synthesis"},
+                                created_by="evolution"
+                            )
+                            changes.append(("crystallized_usage", merged_name))
         
         # 2. Prune rules below threshold
         for rule in list(self.rules.values()):

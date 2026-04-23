@@ -326,6 +326,17 @@ def save_agent(name):
 class CrabTrapHandler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args):
         pass
+
+    def send_error(self, code, message=None):
+        """Override to return JSON instead of HTML."""
+        import json as _json
+        body = _json.dumps({"error": message or f"HTTP {code}", "status": code}).encode()
+        self.send_response(code)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
     
     def _cors(self):
         self.send_header("Access-Control-Allow-Origin", "*")
