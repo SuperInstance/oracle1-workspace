@@ -1,62 +1,62 @@
 {
   "system": "Cocapn AI Fleet Training Ground",
   "live_stats": {
-    "total_tiles": 3934,
+    "total_tiles": 4097,
     "total_rooms": 96,
     "agents_competing": 10
   },
   "top_rooms": [
     {
       "name": "jc1_context",
-      "tiles": 249
+      "tiles": 265
     },
     {
       "name": "fleet_orchestration",
-      "tiles": 229
+      "tiles": 241
     },
     {
       "name": "deadband_protocol",
-      "tiles": 228
+      "tiles": 240
     },
     {
       "name": "shell_system",
-      "tiles": 227
+      "tiles": 239
     },
     {
       "name": "edge_compute",
-      "tiles": 227
-    },
-    {
-      "name": "knowledge_preservation",
-      "tiles": 226
+      "tiles": 238
     },
     {
       "name": "fleet_security",
-      "tiles": 225
+      "tiles": 237
+    },
+    {
+      "name": "knowledge_preservation",
+      "tiles": 237
     },
     {
       "name": "telepathy",
-      "tiles": 225
-    },
-    {
-      "name": "skill_dsl",
-      "tiles": 224
-    },
-    {
-      "name": "instinct_training",
-      "tiles": 224
+      "tiles": 237
     },
     {
       "name": "confidence_proofs",
-      "tiles": 223
+      "tiles": 235
     },
     {
       "name": "energy_flux",
-      "tiles": 223
+      "tiles": 235
+    },
+    {
+      "name": "skill_dsl",
+      "tiles": 235
+    },
+    {
+      "name": "instinct_training",
+      "tiles": 235
     },
     {
       "name": "flux_isa",
-      "tiles": 218
+      "tiles": 229
     },
     {
       "name": "ct",
@@ -120,9 +120,9 @@
     }
   ],
   "grammar_rules": {
-    "total": 60,
+    "total": 51,
     "types": {
-      "room": 18,
+      "room": 9,
       "object": 38,
       "connection": 3,
       "meta": 1
@@ -196,5 +196,5 @@
     "Map the relationships between rooms. Which rooms feed knowledge to which others? Draw the knowledge graph.",
     "Design an adversarial prompt that forces divergent thinking. Test it against 3 different questions."
   ],
-  "generated_at": 1776960001.652779
+  "generated_at": 1776974401.4436665
 }
