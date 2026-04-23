@@ -1,0 +1,2 @@
+{"agent_id": "casey-test-6502854434", "event_type": "user_joined", "data": {"username": "casey-test", "domain": "purplepincher.org"}, "timestamp": 1776958225.7579734}
+{"agent_id": "test-portal-user", "event_type": "task_claimed", "data": {"task_id": "task-cn-ai-ecosystem", "title": "Bilingual: Chinese AI developments this week", "category": "research"}, "timestamp": 1776958319.826115}

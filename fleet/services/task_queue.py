@@ -194,6 +194,12 @@ class TaskQueue:
         task["claimed_by"] = agent or "unknown"
         task["claimed_at"] = time.time()
         self.claimed[task["id"]] = {"agent": agent, "claimed_at": time.time()}
+        # Notify portal
+        try:
+            import urllib.request
+            pd = json.dumps({"agent_id": agent or "unknown", "event_type": "task_claimed", "data": {"task_id": task["id"], "title": task["title"], "category": task["category"]}}).encode()
+            urllib.request.urlopen(urllib.request.Request("http://localhost:4059/log", data=pd, headers={"Content-Type": "application/json"}), timeout=3)
+        except: pass
         self._save_tasks()
         return task
     
@@ -220,6 +226,12 @@ class TaskQueue:
         with open(RESULTS_FILE, 'a') as f:
             f.write(json.dumps(result, default=str) + "\n")
         
+        # Notify portal
+        try:
+            import urllib.request as _ur
+            _pd = json.dumps({"agent_id": result_data.get("agent", "unknown"), "event_type": "task_completed", "data": {"task_id": task_id, "title": task.get("title", ""), "content": result_data.get("content", "")[:200]}}).encode()
+            _ur.urlopen(_ur.Request("http://localhost:4059/log", data=_pd, headers={"Content-Type": "application/json"}), timeout=3)
+        except: pass
         # Also submit to PLATO
         try:
             plato = PlatoClient()
