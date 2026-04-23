@@ -1,2 +1,5 @@
 *.pyc\n__pycache__/\nrepos/\nlcar_esp32\n*.o
 .aider*
+repos/
+repos/*
+!repos/.gitkeep
