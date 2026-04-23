@@ -102,3 +102,6 @@ if ! pgrep -f "zc_loop" > /dev/null; then
     echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] DOWN zeroclaw-loop — restarting" >> "$LOG"
     nohup bash "$WORKSPACE/scripts/zc_loop.sh" > /dev/null 2>&1 &
 fi
+
+# Grammar Compactor (port 4055)
+check_and_start 4055 'python3 /home/ubuntu/.openclaw/workspace/fleet/services/grammar_compactor.py' '/tmp/grammar-compactor.log'
