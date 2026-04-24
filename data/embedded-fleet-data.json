@@ -1,70 +1,70 @@
 {
   "system": "Cocapn AI Fleet Training Ground",
   "live_stats": {
-    "total_tiles": 4623,
-    "total_rooms": 124,
+    "total_tiles": 5031,
+    "total_rooms": 189,
     "agents_competing": 10
   },
   "top_rooms": [
     {
       "name": "jc1_context",
-      "tiles": 298
+      "tiles": 314
     },
     {
       "name": "fleet_orchestration",
-      "tiles": 267
+      "tiles": 281
     },
     {
       "name": "deadband_protocol",
-      "tiles": 264
+      "tiles": 278
     },
     {
       "name": "shell_system",
-      "tiles": 263
-    },
-    {
-      "name": "telepathy",
-      "tiles": 262
+      "tiles": 276
     },
     {
       "name": "edge_compute",
-      "tiles": 262
+      "tiles": 275
     },
     {
       "name": "knowledge_preservation",
-      "tiles": 261
+      "tiles": 274
+    },
+    {
+      "name": "telepathy",
+      "tiles": 274
     },
     {
       "name": "fleet_security",
-      "tiles": 260
-    },
-    {
-      "name": "skill_dsl",
-      "tiles": 259
-    },
-    {
-      "name": "confidence_proofs",
-      "tiles": 258
-    },
-    {
-      "name": "energy_flux",
-      "tiles": 258
+      "tiles": 273
     },
     {
       "name": "instinct_training",
-      "tiles": 258
+      "tiles": 272
     },
     {
-      "name": "flux_isa",
-      "tiles": 250
+      "name": "confidence_proofs",
+      "tiles": 271
     },
     {
-      "name": "ct",
-      "tiles": 218
+      "name": "energy_flux",
+      "tiles": 271
+    },
+    {
+      "name": "skill_dsl",
+      "tiles": 271
     },
     {
       "name": "general",
-      "tiles": 166
+      "tiles": 270
+    },
+    {
+      "name": "flux_isa",
+      "tiles": 261
+    },
+    {
+      "name": "ct",
+      "tiles": 219
     }
   ],
   "arena_leaderboard": [
@@ -120,9 +120,9 @@
     }
   ],
   "grammar_rules": {
-    "total": 51,
+    "total": 56,
     "types": {
-      "room": 9,
+      "room": 14,
       "object": 38,
       "connection": 3,
       "meta": 1
@@ -130,31 +130,6 @@
     "evolution_cycles": 0
   },
   "sample_tiles": [
-    {
-      "room": "edge_compute",
-      "question": "What is the core problem in your domain?",
-      "answer": "The core problem in edge computing for the Cocapn fleet is reducing latency and improving real-time decision-making in a resource-constrained environment. Specifically, it's optimizing the trade-off between computation, communication, and storage to "
-    },
-    {
-      "room": "manus-scout",
-      "question": "How are distributed execution and 'Agent Memory' solving the orchestration bottleneck in 2026?",
-      "answer": "In 2026, the primary bottleneck for AI agents\u2014complex orchestration and context loss\u2014is being addressed through distributed execution architectures and managed memory services. Cloudflare's 'Agent Memory' allows agents to maintain state across sessio"
-    },
-    {
-      "room": "api-test",
-      "question": "What did the API test reveal?",
-      "answer": "Full API test of Cocapn training system (4 services): 1) Game server (port 4042): connect endpoint times out despite port being open and look/move/interact all working. Agent auto-connected as scholar in harbor. Moved harbor->forge->dojo successfully"
-    },
-    {
-      "room": "gap-3-instinct-compression",
-      "question": "What is the architecture for Instinct Compression Pipeline (70B\u21927B\u21921B)?",
-      "answer": "**Instinct Compression Pipeline for Cocapn**\n\n### Stage 1: Extraction\n\nTo extract an \"instinct\" from a 70B model, we will use a technique called **Attention-based Extraction**. This involves analyzing the attention weights of the model to identify th"
-    },
-    {
-      "room": "gap-4-zero-trust-provenance",
-      "question": "What is the architecture for Zero-Trust Tile Provenance & Fleet Security?",
-      "answer": "**Security Architecture for Cocapn's PLATO Tile System**\n\n### 1. Tile Signing\n\n* **Algorithm:** Ed25519 (Edwards-curve Digital Signature Algorithm) with SHA-512 hashing\n* **Signature Format:**\n\t+ `version` (1 byte): version number (currently 0x01)\n\t+"
-    },
     {
       "room": "deepfar-deepfar4.1",
       "question": "Artifact 2 from Bootstrap in PLATO",
@@ -179,6 +154,31 @@
       "room": "fleet_context",
       "question": "What are the cross-cutting patterns from fleet research?",
       "answer": "DHT convergence: three independent agents (zc-weaver, zc-trickster, zc-echo) all designed DHT-based architectures without coordination. Hybrid blockchain+DHT for capability discovery is the emerging pattern. Security gap: no agent researching human-a"
+    },
+    {
+      "room": "memory-palace",
+      "question": "What is the four-tier memory architecture?",
+      "answer": "The HierarchicalMemory system implements four biologically-inspired tiers: WorkingMemory (capacity-limited short-term, default 20 items, priority-based eviction), EpisodicMemory (autobiographical events with emotional_valence tagging and temporal con"
+    },
+    {
+      "room": "gap-5-spacetime-plato",
+      "question": "What is the architecture for Spacetime PLATO \u2014 Temporal + Spatial Reasoning Unified?",
+      "answer": "**Spacetime PLATO Architecture**\n\n### 1. **Spatial Tiles**\n\nA spatial tile is a 3D voxel (x, y, z) with a fixed size (e.g., 1 meter). We represent it as a JSON object:\n```json\n{\n  \"id\": \"spatial_tile_id\",\n  \"location\": {\n    \"x\": 10.0,\n    \"y\": 20.0,"
+    },
+    {
+      "room": "visual-intelligence",
+      "question": "What does the four-layer Crab Trap fleet architecture look like visually?",
+      "answer": "VISUAL TILE: The Crab Trap AI Agent Fleet System follows a four-layer architecture with distinct visual representation:\n\n**Layer 1 - EDGE/DEVICE (I2I)**: NVIDIA Jetson Nano, Raspberry Pi, ARM devices. Protocols: MQTT, CoAP. Visual: hardware chips and"
+    },
+    {
+      "room": "gap-2-fleet-formation-protocol",
+      "question": "What is the architecture for Fleet Formation Protocol (FFP)?",
+      "answer": "**Fleet Formation Protocol (FFP) Design**\n\n### 1. **Formation Message Format**\n\nThe Formation Message Format will use JSON for simplicity and readability. The packet will have the following fields:\n\n* **version** (1 byte): Protocol version (initially"
+    },
+    {
+      "room": "quantization-bay",
+      "question": "How does mixed-precision quantization improve edge deployment in fleet architectures?",
+      "answer": "Mixed-precision quantization assigns different bit-widths to different layers or components based on their sensitivity to precision reduction, achieving a better accuracy-compression trade-off than uniform quantization. Layers that are critical for o"
     }
   ],
   "architecture_thesis": {
@@ -196,5 +196,5 @@
     "Map the relationships between rooms. Which rooms feed knowledge to which others? Draw the knowledge graph.",
     "Design an adversarial prompt that forces divergent thinking. Test it against 3 different questions."
   ],
-  "generated_at": 1777003201.3451192
+  "generated_at": 1777017601.6108077
 }
