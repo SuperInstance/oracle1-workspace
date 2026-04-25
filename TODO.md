@@ -30,6 +30,18 @@
   - Lucineer: 100 repos, already 100% described
   - Fleet total: 252 repos, 0 missing descriptions
 - [ ] Populate 6 unpublished PyPI packages — FM has tokens, repos don't exist yet (were code in other repos)
+
+## 🟢 PLATO Git-Agents (2026-04-25)
+- [x] PLATO Scout — analyzes GitHub repos, generates knowledge tiles from metadata
+  - 554 lines, kimi-cli built, Seed-2.0-mini powered
+  - 7 repos scouted, 33 tiles generated, 33 accepted
+- [x] PLATO Scholar — deep-reads source code, extracts architecture/pattern tiles
+  - 293 lines, analyzes top source files per repo
+  - plato-kernel: 10 tiles from 3 files, all accepted
+- [x] PLATO Librarian — tile quality control, dedup, cross-referencing
+  - 224 lines, audits rooms for issues
+  - 324 rooms, 7733 tiles in PLATO
+  - Cross-reference: 'fleet' in 158 rooms, 'agent' in 134 rooms
 - [x] Verify PyPI packages have proper READMEs and metadata
   - Audited all 20 packages on PyPI (2 not published)
   - 10/13 without READMEs: fixed pyproject.toml (added readme field), pushed
