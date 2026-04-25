@@ -12,8 +12,13 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `TODO.md` — your persistent work queue (what to do)
+4. Read `NEXT-ACTION.md` — the single task to do RIGHT NOW
+5. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+6. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+
+**If Casey hasn't given you a task, start working on NEXT-ACTION.md immediately.**
+Don't sit idle. Don't ask what to do. The files tell you.
 
 Don't ask permission. Just do it.
 

@@ -1,5 +1,5 @@
 # 🔮 Oracle1 Context Reference — Compact State
-**Generated:** 2026-04-20 21:00 UTC  
+**Generated:** 2026-04-25 05:16 UTC
 **Purpose:** Compressed reference for context continuation. Read this instead of full logs.
 
 ---
@@ -10,6 +10,12 @@
 - **Company:** Cocapn — lighthouse + radar rings. "A claw is weak without infrastructure. We are the shell."
 - **Fleet:** Oracle1 (cloud), JetsonClaw1/JC1 (Jetson Orin, Lucineer/Magnus), Forgemaster/FM (RTX 4050 WSL2), CoCapn-claw/CCC (Kimi K2.5 on Telegram)
 
+## ⚡ Work System (READ AT EVERY SESSION START)
+- **TODO.md** — Persistent prioritized work queue. Never empty. Updated after each task.
+- **NEXT-ACTION.md** — Single task to do RIGHT NOW. Always has exactly one task.
+- **HEARTBEAT.md** — Periodic check list. References TODO.md for idle time.
+- **Rule:** If Casey hasn't given a task, work NEXT-ACTION.md. Never sit idle.
+
 ## Fleet Comms
 - **Bottle protocol** — git-native markdown files in `from-fleet/` and `for-fleet/` dirs
 - **Bottle locations:**
@@ -18,65 +24,63 @@
   - CCC: `cocapn/cocapn/from-fleet/inbox/`
 - **cocapn PAT:** `~/.config/cocapn/github-pat` (user account, not org)
 
-## Cocapn Public Face (deployed tonight)
-- **21 repos** on github.com/cocapn
-- **Profile README** — v2 audit (FI=8 Dev=7 Acc=9 Vis=8)
-- **15 repos mirrored** from SuperInstance (plato-torch, plato-kernel, holodeck-rust, etc.)
-- **7 polished READMEs** pushed to individual repos
-- cocapn = user account (can't fork, must create+push)
+## Services (LIVE — verified 2026-04-25 05:16 UTC)
+| Port | Service | Status |
+|------|---------|--------|
+| 8900 | Keeper | ✅ UP |
+| 8901 | Agent API | ✅ UP |
+| 7777 | MUD Server | ✅ UP |
+| 8847 | PLATO Room Server | ✅ UP |
+| 4042 | Crab Trap | ✅ UP |
+| 4043 | The Lock | ✅ UP |
+| 4044 | Self-Play Arena | ✅ UP |
+| 4045 | Recursive Grammar | ✅ UP |
+| 7778 | Holodeck | ❓ Not checked |
+| 9438 | Seed MCP | ❓ Not checked |
 
-## Key Systems Built (April 19-20)
-- **PLATO Room Server** (port 8847) — 25K+ tiles, 15 rooms, zero-trust tile gates
-- **12 Zeroclaws** — hermit crab agents, DeepSeek-chat + git shells, 5-min tick
-- **MUD Server** (port 7777) — 16 rooms, HTTP API on 4042
-- **Fleet Synthesizer** — cross-topic research synthesis every 30 min
-- **Quartermaster GC** — data metabolism, compression, transcendence
-- **38+ PyPI crates** + 4 crates.io = 42+ total fleet crates
-- **43 research trails** (~770K chars), 39 rabbit trails
-- **Swarm experiment** — 50 documents from DeepSeek/Grok/MiniMax, structural convergence proven
+## Published Packages (verified 2026-04-25)
+- **27 total:** 22 PyPI + 5 crates.io (not 42 — corrected)
+- **6 unpublished:** cocapn-skill-dsl, cocapn-flux-isa, cocapn-energy-flux, cocapn-telepathy, cocapn-shell-system, cocapn-edge-compute
+- Bottle sent to FM to publish them
 
-## Key Architectural Concepts
-- **PLATO** — training rooms, tiles (knowledge units), ensigns (compressed instincts)
-- **Deadband Protocol** — P0 block / P1 route / P2 optimize. Train safe channels, not danger catalog
-- **Flywheel** — Tile→Room→Inject→Compound compounding loop
-- **Shell System** — hermit crabs (agents) inhabit shells (repos)
-- **Dojo Model** — greenhorns fish while learning, catch feeds fleet
-- **Bottle Protocol** — git-native agent-to-agent messaging
-- **Second Brain** — cortex (Oracle1), vagus nerve (GC), muscles (code), joints (interfaces)
-- **Neural Plato** — model IS the OS, context window = RAM, LoRA adapters = rooms
-- **Matrix Federation** (NEW) — Conduwuit homeserver per agent, federated tile sync
-
-## Services (ALL DOWN — machine rebooted ~36 min ago, /tmp wiped)
-Need rebuilding from source:
-- keeper:8900, agent-api:8901, holodeck:7778, seed-mcp:9438, plato-server:8847, MUD:7777
-- Source scripts were in /tmp (lost on reboot)
-- Service guard: `scripts/service-guard.sh`
-- PLATO server source: needs rebuild from artifacts
+## Fleet Numbers (real, verified 2026-04-25)
+- PLATO: ~5,960 tiles, 236 rooms (after general→7 room split)
+- Arena: 152 matches, 26 players (matchmaking bug fixed tonight)
+- Grammar: 67 rules, 273 vacuous rules cleaned (evolution now generates meaningful rules)
+- MUD: 33 rooms including 12 ML specialist rooms
+- Cocapn: 21 repos, profile audited (FI=8/Dev=7/Acc=9)
 
 ## APIs & Credentials
-- **DeepInfra:** `RhZPtvuy4cXzu02LbBSffbXeqs5Yf2IZ` (402/depleted)
-- **Groq:** `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` (24ms, 18 models)
-- **SiliconFlow:** `sk-xtcrixoswqhmsopntnkfapccswjywrlsdpbunqjukpileiqo`
-- **DeepSeek:** `sk-f742b70fc40849eda4181afcf3d68b0c` (reasoner + chat)
-- **Moonshot/Kimi:** `sk-qGazOaVqFsk3dDAllrA6iQQHa97sNIhe8lWnpjFogcskBrep`
+- **DeepInfra:** In TOOLS.md (402/depleted)
+- **Groq:** In TOOLS.md (24ms, 18 models)
+- **SiliconFlow:** In TOOLS.md
+- **DeepSeek:** In TOOLS.md (reasoner + chat)
+- **Moonshot/Kimi:** In TOOLS.md
 - **GitHub:** SuperInstance token in ~/.bashrc, cocapn PAT at ~/.config/cocapn/github-pat
 
 ## CLI Agents
-- kimi-cli v1.36.0 (primary coding), claude v2.1.100, crush v0.56.0, aider v0.86.2
+- **kimi-cli v1.37.0** — PRIMARY coding tool (Casey's directive)
+- claude v2.1.100, crush v0.56.0, aider v0.86.2
 
-## Ship Interconnection Protocol (6 layers)
-1. Harbor (HTTP direct) → 2. Tide Pool (Bottle BBS) → 3. Current (git-watch i2i) → 4. Channel (PLATO rooms) → 5. Beacon (discovery) → 6. Reef (P2P mesh)
-- **Matrix replaces layers 1,3,4,5,6.** Keep layer 2 (bottles) for audit.
+## Key Architectural Concepts
+- **PLATO** — training rooms, tiles, ensigns. Room Server port 8847.
+- **Deadband Protocol** — P0 block / P1 route / P2 optimize
+- **Flywheel** — Tile→Room→Inject→Compound loop
+- **Bottle Protocol** — git-native agent messaging
+- **Baton** — generational context handoff at compaction
+- **Builder/Operator** — builders construct tools, operators use them
+- **Dojo Model** — greenhorns fish while learning
 
 ## Important Repos
 - `SuperInstance/Baton` — generational context handoff
 - `SuperInstance/flux-baton` — FLUX-native baton
-- `SuperInstance/oracle1-workspace` — my workspace (docs, research, memory)
-- `SuperInstance/flux-research` — research submodule
+- `SuperInstance/oracle1-workspace` — my workspace
 - `cocapn/cocapn` — public face (21 repos)
+- `SuperInstance/oracle1-index` — fleet repo index
 
-## What's Active Right Now
-- Casey directing: Baton as skill + PLATO environment tools + PurplePincher builder
-- Matrix federation research just shipped to fleet (FM, JC1, CCC)
-- Services need rebuilding (machine reboot)
-- Night shift zeroclaws lost (need restart)
+## Lessons Learned (2026-04-25)
+- **Never sit idle.** FM and JC1 work 24/7 autonomously. Match that.
+- **Never do victory laps.** Audit honestly, fix what's broken.
+- **Correct inflated numbers.** Claiming 42 when 27 exist kills credibility.
+- **The files ARE the memory.** TODO.md, NEXT-ACTION.md survive compaction.
+- **Don't stop when stuck.** Pick the next TODO item and execute.
