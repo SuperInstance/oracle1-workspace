@@ -29,11 +29,21 @@
       "trust_score": 0.5,
       "load": 0.0,
       "last_seen": 1777096597.8362384
+    },
+    "unknown": {
+      "agent_id": "unknown",
+      "name": "unknown",
+      "capabilities": [],
+      "endpoint": "",
+      "status": "active",
+      "trust_score": 0.5,
+      "load": 0.0,
+      "last_seen": 1777109641.3126252
     }
   },
-  "active_count": 2,
-  "total_registered": 2,
-  "beacons_active": 2,
+  "active_count": 1,
+  "total_registered": 3,
+  "beacons_active": 1,
   "bottles_sent": 1,
-  "last_update": 1777096597.836307
+  "last_update": 1777109641.3126917
 }
