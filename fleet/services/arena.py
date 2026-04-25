@@ -238,7 +238,7 @@ class LeagueManager:
 league = LeagueManager()
 # Reconstruct league snapshots from known players
 for player_name, player in elo.players.items():
-    league.add_snapshot(player_name, f"Reconstructed from {player.matches} matches")
+    league.add_snapshot(player_name, f"Reconstructed from {player.games} games")
 if elo.players:
     print(f"  League reconstructed: {len(league.snapshots)} snapshots for {len(elo.players)} players")
 
@@ -783,6 +783,14 @@ class ArenaHandler(BaseHTTPRequestHandler):
                 "league_snapshots": len(league.snapshots),
                 "archetype_distribution": archetypes.distribution(),
                 "games_available": list(GAMES.keys()),
+                "recent_matches": [m.to_dict() for m in matches[-10:]],
+            })
+        
+        elif path == "/matches":
+            limit = min(100, max(1, int(params.get("limit", ["20"])[0])))
+            self._json({
+                "total": len(matches),
+                "matches": [m.to_dict() for m in matches[-limit:]],
             })
         
         else:
