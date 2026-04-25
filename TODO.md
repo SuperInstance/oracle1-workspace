@@ -39,8 +39,15 @@
     - Service guard: restarted as PID 474948
 
 ## 🟢 P2 — Backlog (Don't Start Until P0/P1 Done)
-- [ ] Wire agent-api into keeper for real agent discovery
-- [ ] Test inbetweener pattern (big model storyboards, Seed decomposes)
+- [x] Wire agent-api into keeper for real agent discovery
+  - Keeper forwards registrations to agent-api via POST
+  - Agent-api queries keeper for live agent data (/discover → source: keeper)
+  - Both services restarted, integration tested and working
+- [x] Test inbetweener pattern (big model storyboards, Seed decomposes)
+  - Tested with arena improvements: Llama 3.1 70B storyboard → Seed-2.0-mini decomposition
+  - 5 concrete tasks with files, functions, complexity ratings
+  - Results saved to research/inbetweener-arena-test.md
+  - Pattern works: good for medium-complexity features
 - [ ] Improve holodeck-rust (new rooms, better poker AI, story circle)
 - [ ] Matrix federation — set up Conduwuit per agent
 - [ ] Write Captain's Log entries

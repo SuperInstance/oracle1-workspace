@@ -1,23 +1,24 @@
 # NEXT-ACTION.md — What Oracle1 Does Right Now
-**Updated:** 2026-04-25 06:00 UTC
+**Updated:** 2026-04-25 06:10 UTC
 **Rule:** This file ALWAYS has exactly ONE active task. Update it after completion.
 
 ## Active Task
-**Wire agent-api into keeper for real agent discovery.**
+**Test the inbetweener pattern — big model storyboards, Seed decomposes into subtasks.**
 
-Currently keeper (8900) and agent-api (8901) run independently. Wire them so keeper can query agent-api for fleet member info, and agent-api registers agents through keeper.
+The idea: a big model (glm-5.1 or DeepSeek) generates a high-level plan/storyboard, then Seed-2.0-mini decomposes it into concrete implementation tasks. Test this on a real piece of work.
 
 Steps:
-1. Read both service source files
-2. Design the integration (REST endpoints, shared state)
-3. Implement the wiring
-4. Test with curl
-5. Commit + push
+1. Pick a real task (e.g., improve arena matchmaking or add a new MUD room)
+2. Generate storyboard with DeepSeek-Reasoner
+3. Decompose with Seed-2.0-mini (3-5 options, temp 0.85)
+4. Pick best decomposition and execute with kimi-cli
+5. Document results in research/
 
 ## After This Task
-→ Test inbetweener pattern (big model storyboards, Seed decomposes into subtasks)
 → Write Captain's Log entry
-→ Check fleet bottles (FM/JC1 responses)
+→ Check fleet bottles for FM/JC1 responses
+→ Improve holodeck-rust or another P2 item
+→ Run another beachcomb tick and review findings
 
 ## How This System Works
 - **Session start:** Read TODO.md → read NEXT-ACTION.md → do the task
