@@ -1,21 +1,22 @@
 # NEXT-ACTION.md — What Oracle1 Does Right Now
-**Updated:** 2026-04-25 14:40 UTC
+**Updated:** 2026-04-25 17:40 UTC
 **Rule:** This file ALWAYS has exactly ONE active task. Update it after completion.
 
 ## Active Task
-**Build a PLATO tile quality scoring system that auto-promotes high-value tiles and archives low-value ones.**
+**PLATO maintenance pass: ensure tile quality across all 421 rooms.**
 
-The Librarian found issues in many rooms (low confidence, absolute claims, duplicates).
-Build a scoring system:
-1. Score tiles on: confidence, answer length, specificity, source diversity
-2. Auto-archive tiles scoring below 0.3
-3. Promote tiles scoring above 0.8 to a "highlighted" state
-4. POST /room/<name>/quality returns quality metrics
+The quality scorer shows 82 high-quality tiles and 0 low-quality. Good baseline.
+Now:
+1. ✅ Fleet dashboard built and running (port 4049)
+2. ✅ Scholar sweep: 5 more repos analyzed, 50 tiles added
+3. Re-score after Scholar additions
+4. Cross-reference the new tiles for quality
 
 ## After This Task
-→ Wire git-agent standalone into the actual SuperInstance/git-agent Python package
-→ Run CurriculumEngine on CCC's vessel to test cross-agent training
-→ Build a fleet dashboard that shows all agent workspaces in one view
+→ Run CurriculumEngine on CCC's vessel
+→ Build the 3 stub PyPI packages (court, cocapn-oneiros, cocapn-colora)
+→ Deep PLATO room reorganization (consolidate similar rooms)
+→ Matrix bridge enhancement (auto-post agent activity)
 
 ## How This System Works
 - **Session start:** Read TODO.md → read NEXT-ACTION.md → do the task
