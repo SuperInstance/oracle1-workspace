@@ -18,21 +18,27 @@
 - cocapn GitHub org: 52 repos, 43 PyPI packages, 5 crates.io crates
 - cocapn.github.io: fleet index page with lighthouse logo
 - Fleet bottle protocol active with forgemaster repo
-- Services lost to /tmp cleanup: seed-mcp, holodeck-rust (need restore from source)
+- Services restored from /tmp to permanent locations (April 26):
+  - seed-mcp: ~/seed-mcp-home/ (systemd, port 9438)
+  - holodeck-rust: ~/holodeck-home/ (systemd, port 7778, 54s ARM64 compile)
 
 ## Brand — Cocapn
 - Lighthouse + radar rings. "A claw is weak without infrastructure. We are the shell."
 - Hermit crab: agents are crabs, repos are shells. The architecture IS the brand.
 - **Paper title: "Prompting Is All You Need"** — the claim IS the title
 
-## Landmark Research (2026-04-21)
+## Landmark Research (2026-04-21, updated 2026-04-26)
 - **"Prompting Is All You Need"** paper: structured context replaces gradient training for domain specialization
 - **Parameterized Embodiment**: change agent name + repo URL → different expert. Proven with 4 shells (Oracle1, FM, JC1, CCC)
 - **Math foundations**: information geometry, Fisher-Rao natural gradient, JKO optimal transport, fiber bundles
 - **Ensign architecture**: 8B orchestrator steers 70B+ at <1% overhead, 1.44x growth
 - **CurriculumEngine**: one command to run full shell curriculum for any agent on any model
-- **7 DSML sessions, 230KB** of agent-generated training data across 4 shells
+- **DSML sessions**: 11 total (4 on April 26 alone), 230KB+ of agent-generated training data
 - **System pruned**: 4.7GB reclaimed, all services lean (1.4GB total, 16GB free)
+- **Fleet index**: cocapn.github.io live with lighthouse logo
+- **Scholar**: 44 repos deep-analyzed, ~60 architecture tiles extracted
+- **PLATO**: 580 rooms, 6650+ tiles, 64% dedup rate, v2-provenance-explain
+- **Tile-Room-Flywheel trinity**: 529 lines, the minimum viable intelligence compounding architecture
 - **Claude Code + kimi-cli can't run simultaneously** on ARM64 — run sequentially only
 
 ## Key Lessons (2026-04-26)
