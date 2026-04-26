@@ -55,7 +55,7 @@ def audit_room(room):
     """Audit a single room for quality."""
     tiles = get_room_tiles(room)
     if not tiles:
-        return {"room": room, "tiles": 0, "issues": []}
+        return {"room": room, "tiles": 0, "issues": 0, "details": []}
 
     issues = []
     hashes = {}

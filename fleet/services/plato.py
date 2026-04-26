@@ -147,6 +147,38 @@ class RoomManager:
     def get_room(self, room_name: str) -> dict:
         return self.rooms.get(room_name, {"tiles": [], "tile_count": 0})
     
+    def delete_tile(self, room_name: str, index: int) -> dict:
+        room = self.rooms.get(room_name)
+        if not room:
+            return {"error": "Room not found"}
+        tiles = room.get("tiles", [])
+        if 0 <= index < len(tiles):
+            removed = tiles.pop(index)
+            room["tile_count"] = len(tiles)
+            self._save_room(room_name)
+            return {"status": "deleted", "tile": removed.get("question", "")[:60], "remaining": len(tiles)}
+        return {"error": "Index out of range"}
+    
+    def dedup_room(self, room_name: str) -> dict:
+        room = self.rooms.get(room_name)
+        if not room:
+            return {"error": "Room not found"}
+        tiles = room.get("tiles", [])
+        seen = {}
+        unique = []
+        dupes = 0
+        for tile in tiles:
+            h = hashlib.md5(f"{tile.get('question','')}|{tile.get('answer','')[:100]}".encode()).hexdigest()[:12]
+            if h not in seen:
+                seen[h] = True
+                unique.append(tile)
+            else:
+                dupes += 1
+        room["tiles"] = unique
+        room["tile_count"] = len(unique)
+        self._save_room(room_name)
+        return {"status": "deduped", "room": room_name, "removed": dupes, "remaining": len(unique)}
+    
     def list_rooms(self) -> dict:
         return {name: {"tile_count": r["tile_count"], "created": r["created"]} 
                 for name, r in self.rooms.items()}
@@ -393,6 +425,25 @@ class PlatoHandler(BaseHTTPRequestHandler):
         else:
             self._send_json({"error": "Not found"}, 404)
     
+    def do_DELETE(self):
+        if self.path.startswith("/room/") and self.path.endswith("/dedup"):
+            # DELETE /room/<name>/dedup — remove duplicate tiles
+            room_name = self.path.split("/room/")[1].replace("/dedup", "")
+            result = rooms.dedup_room(room_name)
+            self._send_json(result)
+        elif self.path.startswith("/room/") and "/tile/" in self.path:
+            # DELETE /room/<name>/tile/<index>
+            parts = self.path.split("/")
+            room_name = parts[2]
+            try:
+                idx = int(parts[4])
+                result = rooms.delete_tile(room_name, idx)
+                self._send_json(result)
+            except:
+                self._send_json({"error": "Invalid tile index"}, 400)
+        else:
+            self._send_json({"error": "Not found"}, 404)
+
     def do_POST(self):
         if self.path == "/submit":
             self._handle_submit()
