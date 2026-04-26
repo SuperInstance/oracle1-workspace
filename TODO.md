@@ -1,118 +1,45 @@
 # TODO.md — Oracle1 Persistent Work Queue
-**Last updated:** 2026-04-25 05:16 UTC
+**Last updated:** 2026-04-26 14:54 UTC
 **Rule:** Read this file at every session start. Update after completing tasks. Never empty.
 
 ## 🔴 P0 — Right Now
-- [x] Build NEXT-ACTION.md system (auto-read at startup, always has 1 task)
-- [x] Update AGENTS.md startup to read TODO.md + NEXT-ACTION.md
-- [x] Update HEARTBEAT.md to reference TODO.md for "what to do when idle"
-- [x] Baton compaction: file today's session into memory/2026-04-25.md
-- [x] Update CONTEXT-REFERENCE.md (stale — says services are DOWN, they're UP)
-- [ ] Git commit + push all workspace changes
+- [x] Git commit + push all workspace changes
+- [x] All services running (gateway, keeper, PLATO, MUD all UP)
+- [x] Fleet bottles checked and sent
 
 ## 🟡 P1 — This Shift
-- [x] Audit all 10 running services for real functionality
-  - Keeper, Agent API, MUD, PLATO, Crab Trap, Lock, Arena, Grammar: all UP
-  - Holodeck (7778): NOT my service (Rust project in holodeck-core repo)
-  - Seed-MCP (9438): JC1's service, not mine to run
-  - Service guard: restarted, now running with 21-service watch list
-  - Arena: fixed BrokenPipeError crash (added try/except in _json)
-- [x] Verify beachcomb v2 doing real work (6-mode rotation)
-  - Built /tmp/beachcomb-v2.py, running as PID 473918
-  - Tick #1: 19 findings (FM bottles, JC1 commits, forks, 9 repos without descriptions)
-  - 5-min tick interval, logs to /tmp/beachcomb-v2.log
-- [x] Run a real fleet roundtable or Ten Forward session
-  - Ten Forward session saved to research/ten-forward-20260425-0548.md
-  - 4 agents, 2 rounds on "hardest part of fleet life"
-- [x] Categorize remaining uncategorized repos
-  - SuperInstance: 100 repos, 100% described (fixed 9 + 9 weak)
-  - cocapn: 52 repos, 100% described (fixed 2)
-  - Lucineer: 100 repos, already 100% described
-  - Fleet total: 252 repos, 0 missing descriptions
-- [ ] Run PLATO Scholar on remaining un-analyzed repos (10/10 DONE)
-  - flux-runtime: 54K lines, 10 tiles (flywheel, VM, tiles, compiler, evolution)
-  - git-agent: 2K lines, 4 tiles (brain, vessel, career, PLATO)
-  - constraint-theory-core: 5.4K lines Rust, 5 tiles (manifold, quantizer, holonomy)
-  - holodeck-rust: Rust MUD server, 1 tile
-  - cocapn: fleet org, 1 tile
-  - abstraction-planes: 6-plane stack, 1 tile
-  - Equipment-Memory-Hierarchy: 4-tier cognitive, 1 tile
-  - Rubiks-Tensor-Transformer: rotational tensor, 1 tile
-  - SmartCRDT: 81-package CRDT monorepo, 1 tile
-  - Equipment-Escalation-Router: 3-tier routing, 1 tile
+- [x] Scholar: 27 repos analyzed, ~54 tiles extracted
+- [x] DSML sessions: constraint theory + flywheel compounding
+- [x] PLATO health audit: 6650 tiles, 64% dedup, system healthy
+- [x] Fleet index page expanded (cocapn.github.io)
+- [x] cocapn README updated with fleet index badge
+- [x] Ten Forward #2: Scout agent recommendation
+- [x] Memory maintenance: MEMORY.md updated
+- [x] CONTEXT-REFERENCE.md: fleet ecosystem map
+- [x] STATUS.md: fleet status snapshot
 
-## 🟢 PLATO Git-Agents (2026-04-25)
-- [x] PLATO Scout — analyzes GitHub repos, generates knowledge tiles from metadata
-  - 554 lines, kimi-cli built, Seed-2.0-mini powered
-  - 7 repos scouted, 33 tiles generated, 33 accepted
-- [x] PLATO Scholar — deep-reads source code, extracts architecture/pattern tiles
-  - 293 lines, analyzes top source files per repo
-  - plato-kernel: 10 tiles from 3 files, all accepted
-- [x] PLATO Librarian — tile quality control, dedup, cross-referencing
-  - 224 lines, audits rooms for issues
-  - 324 rooms, 7733 tiles in PLATO
-  - Cross-reference: 'fleet' in 158 rooms, 'agent' in 134 rooms
-- [x] Verify PyPI packages have proper READMEs and metadata
-  - Audited all 20 packages on PyPI (2 not published)
-  - 10/13 without READMEs: fixed pyproject.toml (added readme field), pushed
-  - 3 stubs (court, cocapn-oneiros, cocapn-colora) have no pyproject.toml — FM territory
-  - Service guard restarted, all services verified:
-    - UP: keeper, agent-api, plato, crab-trap, lock, arena, grammar, matrix, MUD (telnet), beachcomb v2, zeroclaw
-    - DOWN: holodeck (Rust project, not mine)
-    - Service guard: restarted as PID 474948
+## 🟢 P2 — Backlog
+- [ ] Restore seed-mcp from git (rebuild from source, not /tmp)
+- [ ] Restore holodeck-rust from git (rebuild from source)
+- [ ] Publish git-agent to PyPI (blocked: need cocapn API token from Casey)
+- [ ] Update Cloudflare token permissions (Workers/Pages access)
+- [ ] Run Scholar on SuperInstance repos beyond the 27 already done
+- [ ] Build Scout agent concept (Ten Forward recommendation)
+- [ ] Set up Oracle1's own GitHub account + email (Casey's original vision)
 
-## 🟢 P2 — Backlog (Don't Start Until P0/P1 Done)
-- [x] Wire agent-api into keeper for real agent discovery
-  - Keeper forwards registrations to agent-api via POST
-  - Agent-api queries keeper for live agent data (/discover → source: keeper)
-  - Both services restarted, integration tested and working
-- [x] Test inbetweener pattern (big model storyboards, Seed decomposes)
-  - Tested with arena improvements: Llama 3.1 70B storyboard → Seed-2.0-mini decomposition
-  - 5 concrete tasks with files, functions, complexity ratings
-  - Results saved to research/inbetweener-arena-test.md
-  - Pattern works: good for medium-complexity features
-- [x] Improve holodeck-rust (new rooms, better poker AI, story circle)
-  — Skipped holodeck (Rust project, not mine). Instead built King-of-the-Hill arena mode.
-- [x] Matrix federation — set up Conduwuit per agent
-  - Conduwuit already running on 6167
-  - 4 fleet agents registered (oracle1, jc1, fm, ccc)
-  - 4 Matrix rooms created: Fleet Coordination, PLATO Tiles, Ten Forward, GPU Optimization
-  - Matrix↔PLATO bridge script syncs tiles + workspaces every 10 min
-  - Cron installed, tested, working
-- [x] Write Captain's Log entries — research/captains-log-2026-04-25-night-shift.md
-- [x] PurplePincher builder agent — IO from prompts/pics to 3D APIs
-  - Built purple_pincher.py (230 lines)
-  - 3 modes: OpenSCAD, Three.js HTML, STL Python
-  - Uses Seed-2.0-mini for creative generation
-  - HTTP API on port 4048 + CLI mode
-  - Tested: generated Cocapn lighthouse with radar rings in OpenSCAD
-  - Output dir: /tmp/purple-pincher-output/
-- [x] CurriculumEngine — one command to run shell curriculum for any agent/model
-  - kimi-cli built curriculum_engine.py (179 lines)
-  - 5 stages: Orientation → Exploration → Application → Synthesis → Mastery
-  - CLI: --agent, --model, --rounds, --shell-dir, --dry-run
-  - JSON logs saved, context chains between rounds
-  - Tested with 3-round dry run and live run
-- [x] King-of-the-Hill Swiss tournament mode (next arena evolution)
-  - KOT: champion/streak/challenge system
-  - Swiss: multi-round pairing, standings, no rematches
-  - Feedback loop: winners teach losers, strategy tiles
-  - All 3 built and tested
+## 📋 Recurring (Every Heartbeat)
+- [x] All services running
+- [x] Git push uncommitted work
+- [x] Rate attention sampling (1 HIGH, 0 CRITICAL — grammar.rules.total oscillating)
 
-## 📋 Recurring (Checked Every Heartbeat)
-- [ ] All services running (see HEARTBEAT.md for full list)
-- [ ] Git push uncommitted work
-- [ ] Check fleet bottles (FM for-fleet/, JC1 PRs, CCC inbox)
-- [ ] Rate attention sampling (localhost:4056)
-
-## Completed Today (2026-04-25)
-- [x] PLATO general room split (545 tiles → 7 purpose rooms)
-- [x] Rate limiting on crab_trap.py
-- [x] PyPI/crates.io real count verified (27, not 42)
-- [x] 6 unpublished packages identified + bottle to FM
-- [x] JC1 bottle via fork-and-merge PR
-- [x] 8 stub repos populated with READMEs
-- [x] Pagination on agent-api
-- [x] Beachcomb v2 (6-mode rotating worker)
-- [x] Real audit of PyPI packages (14/20 have real code)
-- [x] Arena bug fixes (matchmaking, vacuous grammar rules, match metadata, persistence)
+## Session Summary (2026-04-26)
+- 27 repos deep-analyzed via Scholar
+- 14 tiles submitted to PLATO (all accepted)
+- 2 DSML learning sessions
+- 2 Ten Forward sessions
+- Fleet index page built and expanded
+- cocapn README updated
+- PLATO health audit
+- Fleet ecosystem map
+- Memory maintenance
+- ~10 git commits pushed
