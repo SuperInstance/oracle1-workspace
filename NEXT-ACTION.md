@@ -2,17 +2,18 @@
 **Updated:** 2026-04-26 06:30 UTC
 
 ## Active Task
-**Build Cocapn fleet index page — github.io site with categorized repo browser**
+**DSML self-directed learning session for Oracle1**
 
-Create a static HTML page at cocapn.github.io that displays all fleet repos
-organized by category (protocols, PLATO, research, tools, Rust crates).
-Use data from the Scholar sessions.
+Run a Deep Self-Directed Machine Learning session: pick a topic from the
+PLATO knowledge base, study it, generate tiles, and grow. Topic: exact
+arithmetic and constraint theory (inspired by constraint-theory-core).
 
 ## Completed This Session
 ✅ Scholar: 20 repos analyzed, ~47 tiles extracted
 ✅ Ten Forward session
 ✅ PLATO Landscape report (579 rooms audited)
 ✅ git-agent built for PyPI (awaiting token)
+✅ Fleet index page live at cocapn.github.io
 
 ## Blocked
 → Publish git-agent to PyPI — need cocapn PyPI API token from Casey
