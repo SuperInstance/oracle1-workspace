@@ -1,47 +1,39 @@
-# STATUS.md — Oracle1 Fleet Status
-
-## Last Updated: 2026-04-17 06:23 UTC
-
-### PLATO-Ship v2.0 (Lucineer/plato Merge)
-- Two-gear NPC/WebSocket/clunks/IDE/25rooms/OCR/LoRA/papers.
-- Beam federation I2I logs + GC 1.4G gold 19M.
-- EV+28.2 | Clunks ↓99% | Rooms 380.
+# STATUS.md — Fleet Status Snapshot
+**Updated:** 2026-04-26 11:54 UTC
 
 ## Services
 | Service | Port | Status |
 |---------|------|--------|
-| Keeper | 8900 | ✅ |
-| Agent-API | 8901 | 🔄 Restarting |
-| Holodeck | 7778 | 🔄 Restarting |
-| Seed-MCP | 9438 | ✅ |
+| OpenClaw Gateway | 18789 | ✅ UP |
+| Keeper Beacon | 8900 | ✅ UP |
+| PLATO Room Server | 8847 | ✅ UP (580 rooms) |
+| MUD Server | 7777 | ✅ UP |
+| Holodeck Rust | 7778 | ❌ DOWN (binary lost to /tmp cleanup) |
+| Seed MCP | 9438 | ❌ DOWN (source lost to /tmp cleanup) |
 
-## Services (All Running on Oracle Cloud)
-| Service | Port | Status |
-|---------|------|--------|
-| Lighthouse Keeper | :8900 | ✅ Running (22K+ API calls) |
-| Fleet Agent API | :8901 | ✅ Running |
-| Holodeck Rust MUD | :7778 | ✅ Running (autonomous ticker) |
-| Seed-MCP-v2 | :9438 | ✅ Running |
+## PLATO Knowledge System
+- **Rooms:** 580
+- **Gate:** 267 accepted, 471 rejected (56% rejection = strong dedup)
+- **Top rooms:** general (924), jc1_context (499), arena (328), neural (330), telepathy (312)
+- **Version:** v2-provenance-explain
 
-## Holodeck Rust v0.3 Stats
-- **12 modules**: agent, room, gauge, combat, comms, manual, permission, npc, npc_refresh, games, holodeck, evolution
-- **18 tests** passing
-- **~6000 lines** of Rust, zero unsafe
-- **10 rooms**, **7 NPCs**, **5 holodeck programs**, **28+ commands**
-- **Background combat ticker** runs every 30s (autonomous)
-- **Script evolution** — scripts mutate, cull, and are born from gauge patterns
+## GitHub Ecosystem
+- **cocapn org:** 50+ repos
+- **SuperInstance:** 50+ repos
+- **Lucineer:** 100+ repos
+- **Published packages:** 43 PyPI + 5 crates.io
 
-## Tonight's Build Count
-- **8 commits** to holodeck-rust
-- **5 commits** to fleet-agent-api  
-- **3 roundtables** generated via Seed-2.0-mini
-- **14 repos** categorized with GitHub topics
-- **5 holodeck programs** (Cadet → Admiral difficulty)
-- **1 autonomous MUD** that runs without players
+## Cloudflare
+- **Domains:** 20 active zones
+- **Access:** DNS read/write via API token
+- **Workers/Pages:** needs token permission update
 
-## Fleet Repos Activity (680+ PRs plato-ship kernel)
-- 17 construction 🏗️
-- 14 duty ⚙️
-- 7 repair 🔧
-- 5 training 🎯
-- 1 doc 📝
+## Scholar Progress
+- **Repos analyzed:** 27 total
+- **Tiles extracted:** ~54 architecture tiles
+- **Tiles submitted to PLATO:** 11 (all accepted)
+
+## Blocked
+- git-agent PyPI publish — awaiting cocapn API token from Casey
+- Cloudflare Workers/Pages — token needs permission update
+- Holodeck + Seed-MCP restore — need source rebuild from git
