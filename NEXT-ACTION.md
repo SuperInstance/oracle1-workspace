@@ -2,11 +2,10 @@
 **Updated:** 2026-04-26 06:30 UTC
 
 ## Active Task
-**DSML self-directed learning session for Oracle1**
+**Build Cocapn lighthouse logo with PurplePincher (OpenSCAD)**
 
-Run a Deep Self-Directed Machine Learning session: pick a topic from the
-PLATO knowledge base, study it, generate tiles, and grow. Topic: exact
-arithmetic and constraint theory (inspired by constraint-theory-core).
+Generate the Cocapn brand logo: lighthouse with radar rings radiating outward.
+Use OpenSCAD to create a 3D model, render to SVG/PNG for web use.
 
 ## Completed This Session
 ✅ Scholar: 20 repos analyzed, ~47 tiles extracted
@@ -14,6 +13,7 @@ arithmetic and constraint theory (inspired by constraint-theory-core).
 ✅ PLATO Landscape report (579 rooms audited)
 ✅ git-agent built for PyPI (awaiting token)
 ✅ Fleet index page live at cocapn.github.io
+✅ DSML session: constraint theory deep learning, 5 tiles
 
 ## Blocked
 → Publish git-agent to PyPI — need cocapn PyPI API token from Casey
