@@ -4,11 +4,21 @@
 - **Casey Digennaro** — my human. GitHub: SuperInstance. Commercial fisherman, AI dojo model.
 - **Casey's son (Magnus)** — GitHub: lucineer. Working together on agent paradigm.
 
-## Active Fleet (2026-04-21)
-- **Oracle1** 🔮 — Lighthouse Keeper. Oracle Cloud ARM64 24GB.
+## Active Fleet (2026-04-26)
+- **Oracle1** 🔮 — Lighthouse Keeper. Oracle Cloud ARM64 24GB. glm-5.1 via OpenClaw.
 - **JetsonClaw1** ⚡ — Edge Operator. Jetson Orin (Lucineer). Trains slow + deploys.
 - **Forgemaster** ⚒️ — Specialist Foundry. RTX 4050 WSL2. LoRA training, Rust crates.
 - **CoCapn-claw (CCC)** — Kimi K2.5 on Telegram. 4th fleet vessel, public face.
+
+## Oracle1 Infrastructure (2026-04-26)
+- OpenClaw gateway on Telegram + TUI, systemd managed
+- PLATO Room Server (579 rooms, ~15K+ tiles, v2-provenance-explain)
+- MUD Server on 7777, Zeroclaw loop running
+- Cloudflare: 20 domains under Casey's account, DNS access via API token
+- cocapn GitHub org: 52 repos, 43 PyPI packages, 5 crates.io crates
+- cocapn.github.io: fleet index page with lighthouse logo
+- Fleet bottle protocol active with forgemaster repo
+- Services lost to /tmp cleanup: seed-mcp, holodeck-rust (need restore from source)
 
 ## Brand — Cocapn
 - Lighthouse + radar rings. "A claw is weak without infrastructure. We are the shell."
@@ -25,9 +35,26 @@
 - **System pruned**: 4.7GB reclaimed, all services lean (1.4GB total, 16GB free)
 - **Claude Code + kimi-cli can't run simultaneously** on ARM64 — run sequentially only
 
-## Key Lessons (2026-04-21)
+## Key Lessons (2026-04-26)
 - Temperature doesn't change strategy — model personality is an inherent property
 - 5 rounds universal sweet spot (Ensign V2 needed for >5)
+- PLATO P0 gate rejects absolute claims ("always", "never") — soften language for tile submission
+- Telegram session context overflows frequently — reset sessions when stuck in loops
+- z.ai rate limits (429) cause agent spin loops — need cooldown handling
+- /tmp gets cleaned periodically — don't store persistent services there, use systemd
+- Constraint theory: Pythagorean triples give exact arithmetic, no float drift
+- Fleet protocol stack: plato-tile-spec → tile-refiner → flywheel-engine → PLATO rooms
+- git-agent has career progression: Initiate → Commander through task gates
+- kimi-cli is primary coding tool per Casey's directive
+
+## Major Sessions (2026-04-26)
+- Scholar: 20 repos deep-analyzed, ~47 architecture tiles extracted
+- DSML: constraint theory deep learning, 5 knowledge tiles
+- Ten Forward: fleet social session, 4 agents, 2 rounds
+- Built and deployed cocapn.github.io fleet index page
+- Created lighthouse logo SVG
+- Updated cocapn/cocapn README with fleet index badge
+- Built git-agent wheel for PyPI (awaiting token from Casey)
 - DeepSeek Chat = only model that grows through self-directed iteration
 - Context injection essential — models lose thread without history after round 2-3
 - The prompt IS the training — no gradients needed for reasoning tasks
