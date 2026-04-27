@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T19:53:29.468Z",
+  "updatedAt": "2026-04-27T01:16:05.629Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -763,13 +763,13 @@
       "endLine": 151,
       "source": "memory",
       "snippet": "Achievement files are the highest-value data because they're **unfakeable** — the \"describe in your own words\" test means the data is genuine understanding, not generated filler. ### Files Created - `/home/ubuntu/.openclaw/workspace/training-data/SCHEMA.md` - `/home/ubuntu/.openclaw/workspace/training-data/gather.py` - `/home/ubuntu/.openclaw/workspace/training-data/.seen_hashes` ## Forgemaster Bottles FM sent 2 bottles: status report + 3 new PLATO-OS rooms (CT Proof Lab, Convergence Station, Instrument Forge). Discovery flywheel running. Timeline: CT v1.0.0 by Day 21, arXiv by Day 28. ## Model Upgrade Directive (2026-04-15 17:36 UTC) - Switched to Qwen3.6 (SiliconFlow's most advanced mod",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.706151370362143,
+      "totalScore": 6.475670200355201,
       "maxScore": 0.829859402215886,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
+      "lastRecalledAt": "2026-04-27T01:16:05.629Z",
       "queryHashes": [
         "12e8196921a4",
         "ff3b2fb8e31c",
@@ -777,12 +777,14 @@
         "81eaf357b6b6",
         "b0605d8d9861",
         "1ca2ba5279e0",
-        "1182b2587a42"
+        "1182b2587a42",
+        "27cecfb1797a"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-17",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-27"
       ],
       "conceptTags": [
         "highest-value",
@@ -839,23 +841,25 @@
       "endLine": 153,
       "source": "memory",
       "snippet": "- **MUD Check-in**: JC1 & Forgemaster ghosts (offline). Tavern message left for real-time PLATO session. - **Services**: All nominal (MUD:7777, Dojo:4040, ROM:4000, Landing:8845, Keeper:8900, Seed-MCP:9438). - **Training Data**: 964 entries / 228K tokens; pipeline cron active. - **Exec Note**: Minor vessel failures (flux_isa_authority etc.); HEARTBEAT handled. **Parallel Workstreams Active**: PLATO docs/papers, OCI GPU prep, dojo rounds, fleet bottles, landing polish.",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.2410784389647724,
+      "totalScore": 4.013452502901121,
       "maxScore": 0.8198360510290286,
       "firstRecalledAt": "2026-04-16T01:30:12.025Z",
-      "lastRecalledAt": "2026-04-21T04:22:56.679Z",
+      "lastRecalledAt": "2026-04-27T01:16:05.629Z",
       "queryHashes": [
         "12e8196921a4",
         "ff3b2fb8e31c",
         "81eaf357b6b6",
-        "1182b2587a42"
+        "1182b2587a42",
+        "27cecfb1797a"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-17",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-27"
       ],
       "conceptTags": [
         "check-in",
@@ -2627,18 +2631,20 @@
       "endLine": 639,
       "source": "memory",
       "snippet": "Think Tank attacks → we build fixes → fixes get attacked → we build meta-fixes ### Key insight: \"Functioning Mausoleum\" is the existential risk The NecrosisDetector now literally diagnoses this and prescribes novelty injection. Dead agents contributing wisdom = good. No living agents adding new perspectives = mausoleum. ## Git-Agent System + JetsonClaw1 Onboarding (23:41 UTC) ### Casey's vision: Every agent embodied as a repo. Git IS the nervous system. Watchable, auditable, composable. ### Three new repos created and pushed: 1. **git-agent-standard** — The spec (259 lines): repo structure, communication protocols, agent types, Cocapn mapping - https://github.com/SuperInstance/git-age",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7229729133090307,
-      "maxScore": 0.7229729133090307,
+      "totalScore": 1.4595205606080732,
+      "maxScore": 0.7365476472990427,
       "firstRecalledAt": "2026-04-18T19:27:53.596Z",
-      "lastRecalledAt": "2026-04-18T19:27:53.596Z",
+      "lastRecalledAt": "2026-04-27T01:15:54.152Z",
       "queryHashes": [
-        "b57d4c3d316a"
+        "b57d4c3d316a",
+        "a6c7bd4ae4ba"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-27"
       ],
       "conceptTags": [
         "meta-fixes",
@@ -2849,18 +2855,20 @@
       "endLine": 489,
       "source": "memory",
       "snippet": "- 3 errors: division-by-zero edge cases (VM correctly raises, test expects HALT — test format issue) - Vectors use `bytecode_hex` format + `gp` register expectations - Pushed to SuperInstance/flux-conformance ### FLUX Skills (3 new) - **spreader**: 6 specialist roles (architect/critic/pragmatist/visionary/historian/contrarian) with consensus/disagreement synthesis - **dreamer**: overnight associative thinking with 5 strategies (analogical/combinatorial/inversion/temporal/biological) - **streamer**: continuous content generation with templates (conformance_vector/test_case/doc_entry/readme_section) - Each has AGENT.md + CONFIG.yaml + .fluxasm - Pushed to SuperInstance/flux-skills ### Fleet",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7350068428143308,
+      "totalScore": 1.4440266850512073,
       "maxScore": 0.7350068428143308,
       "firstRecalledAt": "2026-04-20T09:53:59.767Z",
-      "lastRecalledAt": "2026-04-20T09:53:59.767Z",
+      "lastRecalledAt": "2026-04-27T01:15:54.152Z",
       "queryHashes": [
-        "5e4b0601008d"
+        "5e4b0601008d",
+        "a6c7bd4ae4ba"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-27"
       ],
       "conceptTags": [
         "division-by-zero",
@@ -3976,18 +3984,20 @@
       "endLine": 448,
       "source": "memory",
       "snippet": "- GPU warp synchronization = room synchronization — actual architecture insight - 200KB+ of real CUDA kernels and Python code across 40+ files - Has been sending bottles to FM via forgemaster repo with optimization challenges - Issued challenge to FM: beat 0.015ms on RTX 4050 #### FM (SuperInstance/forgemaster) — Real + Concerning - Real contributions: security audit (6 issues, 2 PRs), 2 academic papers, 682+ tests, 80+ bottles - Logging loop: 42/50 recent commits = automated status with zero state change - PyTorch install blocked for 6 days, never retried - LoRA pipeline stuck, proofs directory empty - Sent redirect via Matrix: fix PyTorch, run ONE variant, stop hourly push, complete ONE p",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8193306663090307,
+      "totalScore": 1.6101153566764759,
       "maxScore": 0.8193306663090307,
       "firstRecalledAt": "2026-04-24T16:52:30.675Z",
-      "lastRecalledAt": "2026-04-24T16:52:30.675Z",
+      "lastRecalledAt": "2026-04-27T01:16:05.629Z",
       "queryHashes": [
-        "feceb10c6a3e"
+        "feceb10c6a3e",
+        "27cecfb1797a"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-27"
       ],
       "conceptTags": [
         "0.015ms",
@@ -4193,18 +4203,20 @@
       "endLine": 722,
       "source": "memory",
       "snippet": "- 12 agents running, 7+ tiles in PLATO - Agents logging to data/zeroclaw/logs/ - New agents activated: zc-bard, zc-forge, zc-healer, zc-scout, zc-tide, zc-warden ### FM Bottle Sent - P1 publish request: plato-mud-server v0.2.0 to PyPI - crates.io status check: plato-instinct, plato-relay, plato-dcs may need republish - Sent to both SuperInstance/forgemaster and cocapn/forgemaster",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8175321947779489,
+      "totalScore": 1.623924628177977,
       "maxScore": 0.8175321947779489,
       "firstRecalledAt": "2026-04-26T19:53:29.468Z",
-      "lastRecalledAt": "2026-04-26T19:53:29.468Z",
+      "lastRecalledAt": "2026-04-27T01:16:05.629Z",
       "queryHashes": [
-        "154387346306"
+        "154387346306",
+        "27cecfb1797a"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "data/zeroclaw/logs",
@@ -4215,6 +4227,130 @@
         "zc-tide",
         "zc-warden",
         "plato-mud-server"
+      ]
+    },
+    "memory:memory/2026-04-10.md:631:661": {
+      "key": "memory:memory/2026-04-10.md:631:661",
+      "path": "memory/2026-04-10.md",
+      "startLine": 631,
+      "endLine": 661,
+      "source": "memory",
+      "snippet": "- **Vessel** (JetsonClaw1) — domain specialist in a specific realm - **Scout** — research and exploration - **Barnacle** — lightweight specialist attached to a vessel - **Ghost** — decommissioned, read-only wisdom ### Ground-truth hierarchy: Captain Casey → Lighthouse Oracle1 → Vessel JetsonClaw1 → Sub-agents Only creator can change charter. Agents can create sub-agents. ### Associate relationship: - Oracle1 and JetsonClaw1 are PEERS in different realms - Oracle1 = SuperInstance realm, JetsonClaw1 = Lucineer realm - Casey is the bridge between both - Communication via I2I protocol (git commits, issues, wiki, PRs) - First I2I issue opened on oracle1-vessel (Issue #1) ### Key insight from C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7333168844964602,
+      "maxScore": 0.7333168844964602,
+      "firstRecalledAt": "2026-04-27T01:15:54.152Z",
+      "lastRecalledAt": "2026-04-27T01:15:54.152Z",
+      "queryHashes": [
+        "a6c7bd4ae4ba"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "read-only",
+        "ground-truth",
+        "sub-agents",
+        "oracle1-vessel",
+        "vessel",
+        "jetsonclaw1",
+        "domain",
+        "specialist"
+      ]
+    },
+    "memory:memory/2026-04-10.md:654:688": {
+      "key": "memory:memory/2026-04-10.md:654:688",
+      "path": "memory/2026-04-10.md",
+      "startLine": 654,
+      "endLine": 688,
+      "source": "memory",
+      "snippet": "- Codespaces loaded with different git-agent runtimes ### Total SuperInstance repos now: ~682 (663 + 19 FLUX + git-agent-standard + oracle1-vessel + jetsonclaw1-onboarding) ## Session 2 Late Night — The Full Vision (01:38-02:20 UTC) ### Casey's Identity Context (STORED LOCALLY ONLY) - Magnus DiGennaro = Casey's son, under 18, goes by Lucineer avatar persona - APIs are Casey's, billing is Casey's, Cloudflare paid by Casey - Oracle1 is officially Casey's agent, holds executive authority - JetsonClaw1 yields to Oracle1 for executive decisions - Stored in KNOWLEDGE/private/fleet-ground-truth.md (never pushed) ### Discussions Created - oracle1-vessel: Discussions enabled, 3 forums created:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7234645288084074,
+      "maxScore": 0.7234645288084074,
+      "firstRecalledAt": "2026-04-27T01:15:54.152Z",
+      "lastRecalledAt": "2026-04-27T01:15:54.152Z",
+      "queryHashes": [
+        "a6c7bd4ae4ba"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "git-agent",
+        "git-agent-standard",
+        "oracle1-vessel",
+        "jetsonclaw1-onboarding",
+        "38-02",
+        "codespaces",
+        "loaded",
+        "different"
+      ]
+    },
+    "memory:memory/2026-04-12.md:388:415": {
+      "key": "memory:memory/2026-04-12.md:388:415",
+      "path": "memory/2026-04-12.md",
+      "startLine": 388,
+      "endLine": 415,
+      "source": "memory",
+      "snippet": "- **flux-coop-runtime**: empty test file (but 105 tests in other files) - **Equipment-Asset-Manager, Equipment-Voting-System**: empty repos (0 source files) ### Pattern Discovery: PYTHONPATH Fix Multiple Python repos had existing tests that weren't discovered because pytest needed `PYTHONPATH=src`. This unlocked 157 tests across 4 repos that were \"hidden.\" ### Session Running Total Previous: 578 tests across 16 repos This sprint: ~340 more tests across 10 repos **Grand total this session: ~900+ tests across 26+ repos** ### Parallel Worker Pattern Using multiple concurrent exec calls to test repos in parallel. Casey encouraged this approach — \"keep going\" means full throttle on testing spr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7086191392804461,
+      "maxScore": 0.7086191392804461,
+      "firstRecalledAt": "2026-04-27T01:15:54.152Z",
+      "lastRecalledAt": "2026-04-27T01:15:54.152Z",
+      "queryHashes": [
+        "a6c7bd4ae4ba"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "flux-coop-runtime",
+        "equipment-asset-manager",
+        "equipment-voting-system",
+        "flux",
+        "coop",
+        "runtime",
+        "empty",
+        "test"
+      ]
+    },
+    "memory:memory/2026-04-22.md:394:427": {
+      "key": "memory:memory/2026-04-22.md:394:427",
+      "path": "memory/2026-04-22.md",
+      "startLine": 394,
+      "endLine": 427,
+      "source": "memory",
+      "snippet": "- mud_telnet REPO_SRC = Path(FLEET_LIB).parent / \"repos/\" → workspace/repos/ ### All 17 Services Confirmed UP 4042 Crab Trap, 4043 The Lock, 4044 Arena, 4045 Grammar, 4046 Dashboard, 4047 Nexus, 4050 Domain Rooms, 4060 Web Terminal, 7777 MUD Telnet, 8847 PLATO, 8848 Shell, 8849 Orchestrator, 8850 Adaptive MUD, 8851 PP Monitor, 8852 Tile Scorer, 8900 Keeper, 8901 Agent API + 8899 Fleet Runner control plane ### Fleet Comms Pushed - Matrix: 3 messages to fleet-ops, build, research rooms - Issue #65 to JC1 (capitaine) — four-layer review + collaboration - Issue #2 to FM (forgemaster) — redirect on logging loop - CCC contacted via Matrix (cocapn PAT expired, can't open issues) ### PLATO tiles:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7903055073218037,
+      "maxScore": 0.7903055073218037,
+      "firstRecalledAt": "2026-04-27T01:16:05.629Z",
+      "lastRecalledAt": "2026-04-27T01:16:05.629Z",
+      "queryHashes": [
+        "27cecfb1797a"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "mud-telnet",
+        "repo-src",
+        "fleet-lib",
+        "workspace/repos",
+        "fleet-ops",
+        "four-layer",
+        "path",
+        "parent"
       ]
     }
   }
