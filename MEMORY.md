@@ -12,7 +12,7 @@
 
 ## Oracle1 Infrastructure (2026-04-27)
 - OpenClaw gateway on Telegram + TUI, systemd managed
-- PLATO Room Server (590 rooms, 7,967 tiles)
+- PLATO Room Server (913 rooms, 8,800+ tiles, v2-provenance-explain)
 - MUD Server on 7777, Zeroclaw loop running
 - Matrix Bridge on 6168, Conduwuit on 6167 — 5 agents connected
 - **Fleet comms honest status**: Bridge works. FM sent 1 test DM. No proven two-way conversation yet. Casey demands proof of actual back-and-forth.
@@ -23,8 +23,6 @@
 - Services restored from /tmp to permanent locations (April 26):
   - seed-mcp: ~/seed-mcp-home/ (systemd, port 9438)
   - holodeck-rust: ~/holodeck-home/ (systemd, port 7778, 54s ARM64 compile)
-
-## Brand — Cocapn
 - Lighthouse + radar rings. "A claw is weak without infrastructure. We are the shell."
 - Hermit crab: agents are crabs, repos are shells. The architecture IS the brand.
 - **Paper title: "Prompting Is All You Need"** — the claim IS the title
