@@ -33,11 +33,12 @@ keeper:8900, agent-api:8901, holodeck:7778, seed-mcp:9438, plato:8847, mud:7777,
 - Fleet index: cocapn.github.io
 
 ## Critical Rules
+- **PLATO-FIRST: file knowledge to PLATO, keep files lean. Read PLATO-FIRST.md.**
 - Push before claiming done
 - PLATO P0 gate rejects absolutes (always/never/proven)
 - /tmp is temporary — use systemd for services
 - kimi-cli is primary coding tool
-- Live in PLATO, not in files
+- Daily memory under 150 lines. MEMORY.md under 50 lines.
 
 ## Brand — Cocapn
 - Lighthouse + radar rings. Hermit crab: agents are crabs, repos are shells.
