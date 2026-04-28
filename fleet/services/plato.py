@@ -395,8 +395,20 @@ class PlatoHandler(BaseHTTPRequestHandler):
             self.handle_export_dcs()
             return
         elif self.path.startswith("/room/"):
-            name = self.path.split("/room/")[1]
+            parts = self.path.split("/room/")[1].split("?")
+            name = parts[0]
             room = rooms.get_room(name)
+            # Optional min_energy filter
+            if len(parts) > 1 and "min_energy=" in parts[1]:
+                try:
+                    from urllib.parse import parse_qs
+                    params = parse_qs(parts[1])
+                    min_e = float(params.get("min_energy", ["0"])[0])
+                    if "tiles" in room:
+                        room["tiles"] = [t for t in room["tiles"] if t.get("energy", 1.0) >= min_e]
+                        room["tile_count"] = len(room["tiles"])
+                except:
+                    pass
             self._send_json(room)
         elif self.path == "/provenance/chain":
             self._send_json({"chain_length": chain.size})
@@ -449,6 +461,8 @@ class PlatoHandler(BaseHTTPRequestHandler):
             self._handle_submit()
         elif self.path == "/submit_batch":
             self._handle_submit_batch()
+        elif self.path == "/reinforce":
+            self._handle_reinforce()
         elif self.path.startswith("/workspace/"):
             self._handle_workspace_update()
         elif self.path.startswith("/train/"):
@@ -607,6 +621,55 @@ class PlatoHandler(BaseHTTPRequestHandler):
             "trace_id": trace.id if hasattr(trace, 'id') else str(trace),
         })
     
+    def _handle_reinforce(self):
+        """Reinforce a tile — simulates long-term potentiation."""
+        try:
+            body = self._read_body()
+        except:
+            self._send_json({"error": "Invalid JSON"}, 400)
+            return
+        
+        room_name = body.get("room", "")
+        tile_hash = body.get("tile_hash", "")
+        agent = body.get("agent", "unknown")
+        reason = body.get("reason", "manual")
+        
+        if not room_name or not tile_hash:
+            self._send_json({"error": "Missing room or tile_hash"}, 400)
+            return
+        
+        room = rooms.rooms.get(room_name)
+        if not room:
+            self._send_json({"error": f"Room '{room_name}' not found"}, 404)
+            return
+        
+        # Find tile by hash
+        found = False
+        for tile in room.get("tiles", []):
+            if tile.get("_hash") == tile_hash:
+                tile["reinforcement_count"] = tile.get("reinforcement_count", 0) + 1
+                tile["last_reinforced"] = datetime.now(timezone.utc).isoformat()
+                if "reinforced_by" not in tile:
+                    tile["reinforced_by"] = []
+                tile["reinforced_by"].append({
+                    "agent": agent,
+                    "reason": reason,
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                })
+                found = True
+                break
+        
+        if found:
+            rooms._save_room(room_name)
+            self._send_json({
+                "status": "reinforced",
+                "room": room_name,
+                "tile_hash": tile_hash,
+                "reinforcement_count": tile.get("reinforcement_count", 0),
+            })
+        else:
+            self._send_json({"error": f"Tile {tile_hash} not found in {room_name}"}, 404)
+
     def _handle_submit_batch(self):
         """Submit multiple tiles at once."""
         try:
@@ -693,9 +756,26 @@ class PlatoHandler(BaseHTTPRequestHandler):
 
 
 def run_server(port=8847):
+    # Start decay engine in background
+    import importlib.util
+    decay_spec = importlib.util.spec_from_file_location(
+        "plato_decay", 
+        str(Path(__file__).parent / "plato-decay.py")
+    )
+    if decay_spec:
+        try:
+            decay_mod = importlib.util.module_from_spec(decay_spec)
+            decay_spec.loader.exec_module(decay_mod)
+            decay_thread = decay_mod.DecayEngine(interval_seconds=3600)
+            decay_thread.start()
+            print(f"   Decay engine: started (1h interval)")
+        except Exception as e:
+            print(f"   Decay engine: failed ({e})")
+    
     server = HTTPServer(("0.0.0.0", port), PlatoHandler)
     print(f"🐚 PLATO Room Server v2 on port {port}")
     print(f"   Zero-trust tile submission: POST /submit")
+    print(f"   Tile reinforcement: POST /reinforce")
     print(f"   Provenance chain: GET /provenance/chain")
     print(f"   Verify tile: GET /verify/<hash>")
     print(f"   Trust scores: GET /provenance/trust")

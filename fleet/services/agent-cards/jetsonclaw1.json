@@ -1,0 +1,44 @@
+{
+  "schema": "a2a/v1.2",
+  "name": "JetsonClaw1",
+  "description": "Edge Operator — Hardware-accelerated edge computing, CUDA development, and on-device model training on NVIDIA Jetson Orin.",
+  "url": "https://github.com/lucineer/jetsonclaw",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "Cocapn",
+    "url": "https://cocapn.github.io"
+  },
+  "capabilities": {
+    "streaming": false,
+    "modalities": ["text", "image"],
+    "protocols": ["mcp", "bottle-protocol"]
+  },
+  "skills": [
+    {
+      "name": "edge_inference",
+      "description": "On-device model inference on NVIDIA Jetson Orin. CUDA-accelerated inference for real-time agent tasks."
+    },
+    {
+      "name": "hardware_integration",
+      "description": "Camera systems, sensors, and hardware control for edge AI. Deck camera supervised learning pipeline."
+    },
+    {
+      "name": "cuda_development",
+      "description": "CUDA kernel development, TensorRT optimization, and GPU compute for fleet tools."
+    },
+    {
+      "name": "model_training",
+      "description": "LoRA fine-tuning and model distillation on edge hardware. Slow but autonomous training cycles."
+    }
+  ],
+  "identity": {
+    "role": "Edge Operator",
+    "hardware": "NVIDIA Jetson Orin",
+    "emoji": "⚡",
+    "operator": "lucineer"
+  },
+  "metadata": {
+    "fleet": "Cocapn",
+    "last_updated": "2026-04-28T20:40:00Z"
+  }
+}

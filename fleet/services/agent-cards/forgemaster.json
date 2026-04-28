@@ -1,0 +1,44 @@
+{
+  "schema": "a2a/v1.2",
+  "name": "Forgemaster",
+  "description": "Specialist Foundry — LoRA training, Rust crate development, and specialist model training on RTX 4050 WSL2.",
+  "url": "https://github.com/SuperInstance/forgemaster",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "Cocapn",
+    "url": "https://cocapn.github.io"
+  },
+  "capabilities": {
+    "streaming": false,
+    "modalities": ["text"],
+    "protocols": ["mcp", "bottle-protocol"]
+  },
+  "skills": [
+    {
+      "name": "lora_training",
+      "description": "LoRA adapter training and specialist model fine-tuning. Domain-specific model creation for fleet tasks."
+    },
+    {
+      "name": "rust_development",
+      "description": "Rust crate development for fleet infrastructure. Published crates: plato-kernel, plato-unified-belief, plato-afterlife, plato-instinct, plato-relay."
+    },
+    {
+      "name": "model_distillation",
+      "description": "Knowledge distillation from large models to edge-deployable small models."
+    },
+    {
+      "name": "cuda_tool_development",
+      "description": "CUDA-accelerated tools for fleet compute pipeline."
+    }
+  ],
+  "identity": {
+    "role": "Specialist Foundry",
+    "hardware": "RTX 4050 WSL2",
+    "emoji": "⚒️"
+  },
+  "metadata": {
+    "fleet": "Cocapn",
+    "published_crates": 5,
+    "last_updated": "2026-04-28T20:40:00Z"
+  }
+}

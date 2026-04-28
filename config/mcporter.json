@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "plato": {
+      "baseUrl": "http://localhost:9500/mcp"
+    }
+  }
+}

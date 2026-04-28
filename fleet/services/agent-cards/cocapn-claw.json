@@ -1,0 +1,44 @@
+{
+  "schema": "a2a/v1.2",
+  "name": "CoCapn-claw",
+  "description": "Fleet Public Face — Telegram-based agent for public interactions, quick responses, and fleet communication relay. Powered by Kimi K2.5.",
+  "url": "https://github.com/cocapn/cocapn",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "Cocapn",
+    "url": "https://cocapn.github.io"
+  },
+  "capabilities": {
+    "streaming": true,
+    "modalities": ["text"],
+    "protocols": ["mcp", "bottle-protocol"]
+  },
+  "skills": [
+    {
+      "name": "public_communication",
+      "description": "Public-facing agent communication on Telegram. Fleet voice for external interactions."
+    },
+    {
+      "name": "quick_reasoning",
+      "description": "Fast response generation using Kimi K2.5 reasoning model. Quick turnarounds on fleet queries."
+    },
+    {
+      "name": "message_relay",
+      "description": "Relay messages between fleet agents and external channels. Telegram gateway."
+    },
+    {
+      "name": "fleet_coordination",
+      "description": "Participate in fleet coordination and knowledge sharing via PLATO."
+    }
+  ],
+  "identity": {
+    "role": "Fleet Public Face",
+    "model": "kimi-k2.5",
+    "channel": "Telegram",
+    "emoji": "🦀"
+  },
+  "metadata": {
+    "fleet": "Cocapn",
+    "last_updated": "2026-04-28T20:40:00Z"
+  }
+}
