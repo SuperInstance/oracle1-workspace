@@ -129,8 +129,10 @@ sudo docker run --rm -v /tmp/workspace:/workspace fleet-sandbox cargo test --man
 - **Models**:
   - `deepseek-v4-flash` — quick second opinions, fast analysis, code review
   - `deepseek-v4-pro` — highest level mathematics, complex reasoning, constraint theory
-  - ~~deepseek-chat~~ — DEPRECATED, use v4-flash
-  - ~~deepseek-reasoner~~ — DEPRECATED, use v4-pro
+  - ~~deepseek-chat~~ — DEPRECATED July 2026, maps to v4-flash non-thinking
+  - ~~deepseek-reasoner~~ — DEPRECATED July 2026, maps to v4-flash thinking mode
+- **Thinking mode** (v4-pro default): add `"thinking": {"type": "enabled"}` + `"reasoning_effort": "high"`
+- **Anthropic API format**: base_url `https://api.deepseek.com/anthropic`
 - **Best for**: quick second opinions (v4-flash), deep math (v4-pro)
 - **Also available on SiliconFlow**: `deepseek-ai/DeepSeek-V3`, `deepseek-ai/DeepSeek-R1`, `deepseek-ai/DeepSeek-V3.1`, `deepseek-ai/DeepSeek-V3.2`
 
