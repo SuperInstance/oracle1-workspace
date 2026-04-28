@@ -3,7 +3,7 @@
 
 ## 🔴 P0 — Blocked on Casey
 - [ ] **Matrix two-way communication**: FM/JC1/CCC don't poll Matrix. Need heartbeat config.
-- [ ] **Cloudflare token**: needs Workers/Pages permissions
+- [ ] **Cloudflare API token**: needs Workers/Pages permissions. Waiting for Casey.
 - [ ] **Oracle1 GitHub account + email**: Casey's original vision, not started
 - [ ] **Lucineer repo descriptions**: 8 repos need descriptions, token lacks write access
 

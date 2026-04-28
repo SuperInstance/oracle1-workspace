@@ -4528,3 +4528,21 @@
 [2026-04-28T21:35:04Z] RESTART crab-trap:4042
 [2026-04-28T21:35:07Z] RECOVERED crab-trap:4042
 [2026-04-28T21:35:07Z] OK — all services checked
+[2026-04-28T21:40:01Z] DOWN Fleet Dashboard:4049
+[2026-04-28T21:40:01Z] MISSING Fleet Dashboard:4049 (/home/ubuntu/.openclaw/workspace/fleet/services/)
+[2026-04-28T21:40:01Z] OK — all services checked
+[2026-04-28T21:45:01Z] DOWN Fleet Dashboard:4049
+[2026-04-28T21:45:01Z] MISSING Fleet Dashboard:4049 (/home/ubuntu/.openclaw/workspace/fleet/services/)
+[2026-04-28T21:45:01Z] OK — all services checked
+[2026-04-28T21:50:01Z] DOWN Fleet Dashboard:4049
+[2026-04-28T21:50:01Z] MISSING Fleet Dashboard:4049 (/home/ubuntu/.openclaw/workspace/fleet/services/)
+[2026-04-28T21:50:01Z] OK — all services checked
+[2026-04-28T21:55:01Z] DOWN Fleet Dashboard:4049
+[2026-04-28T21:55:01Z] MISSING Fleet Dashboard:4049 (/home/ubuntu/.openclaw/workspace/fleet/services/)
+[2026-04-28T21:55:01Z] OK — all services checked
+[2026-04-28T22:00:01Z] DOWN Fleet Dashboard:4049
+[2026-04-28T22:00:01Z] MISSING Fleet Dashboard:4049 (/home/ubuntu/.openclaw/workspace/fleet/services/)
+[2026-04-28T22:00:01Z] OK — all services checked
+[2026-04-28T22:05:01Z] DOWN Fleet Dashboard:4049
+[2026-04-28T22:05:01Z] MISSING Fleet Dashboard:4049 (/home/ubuntu/.openclaw/workspace/fleet/services/)
+[2026-04-28T22:05:01Z] OK — all services checked

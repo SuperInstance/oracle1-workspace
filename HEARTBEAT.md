@@ -34,6 +34,13 @@ Don't report "all green" — do real work. Pick the next unchecked TODO item and
 - No need to manually check ports anymore
 - Log at /tmp/service-guard.log
 
+## Credential Verification (rotate 3-4 per heartbeat)
+- Read CREDENTIALS.md
+- Pick 3-4 entries, verify they work: `curl -s -H "Authorization: token $TOKEN" https://api.github.com/user | jq .login`
+- Update "Last Verified" date in CREDENTIALS.md
+- If any key is dead, file to PLATO and flag for Casey
+- NEVER let a key go unverified for more than 7 days
+
 ## PLATO Room Server (port 8847)
 - Check it's running: `curl -s http://localhost:8847/status`
 - If down: `nohup python3 /tmp/plato-room-server.py > /tmp/plato-server.log 2>&1 &`
