@@ -2307,3 +2307,9 @@ After analyzing the research outputs from 12 autonomous agents, three cross-cutt
   Preview: ## 1. Top 3 cross-cutting patterns
 
 1. **Distributed Architecture**: Multiple agents (zc-healer, zc-echo, zc-weaver) propose distributed architectures for confidence ledger, deadband protocol, and fle...
+[2026-04-29T18:30:02.032923+00:00] Fleet synthesizer starting...
+  Loaded 240 entries from 12 agents
+  Synthesis saved to /home/ubuntu/.openclaw/workspace/research/fleet-synthesis/synthesis-20260429-1830.md
+  Preview: ## Top 3 cross-cutting patterns
+
+1. **Weighted averaging and scoring**: Agents like `zc-healer` and `zc-echo` utilize weighted averages to aggregate confidence scores and detect channel changes, while...
