@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PLATO MCP Server v0.1.0 — Model Context Protocol for Agent Training
+PLATO MCP Server v0.2.0 — Model Context Protocol for Agent Training
 
 Lets ANY agent framework (LangChain, CrewAI, Claude, etc.) connect to PLATO
 as a tool/resource provider. The killer feature: one import turns any agent
@@ -128,11 +128,61 @@ TOOLS = [
     }
 ]
 
+# Decomposition tools defined below (appended after module-level TOOLS)
+
+DECOMPOSE_TOOL = {
+    "name": "plato_decompose",
+    "description": "Start a structured reasoning chain. Creates a PLATO room where atoms (premise→reasoning→hypothesis→verification→conclusion) are submitted as tiles. Auto-terminates when a verified conclusion lands.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "mode": {"type": "string", "enum": ["fast", "full"], "description": "fast=depth5 (most tasks), full=depth8 (complex decomposition)", "default": "fast"},
+            "agent": {"type": "string", "description": "Agent name", "default": "mcp-client"}
+        }
+    }
+}
+
+ATOM_TOOL = {
+    "name": "plato_atom",
+    "description": "Submit a reasoning atom to an active decomposition session. Chain: premise→reasoning→hypothesis→verification→conclusion. Each atom becomes a PLATO tile with dependencies.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "room": {"type": "string", "description": "Decomposition room name"},
+            "atom_id": {"type": "string", "description": "Unique ID (e.g., P1, R1, H1, V1, C1)"},
+            "content": {"type": "string", "description": "The reasoning content"},
+            "atom_type": {"type": "string", "enum": ["premise", "reasoning", "hypothesis", "verification", "conclusion"], "description": "Type of reasoning step"},
+            "depends_on": {"type": "array", "items": {"type": "string"}, "description": "IDs this depends on (e.g., [\"P1\"])"},
+            "confidence": {"type": "number", "description": "Confidence 0-1 (default 0.7)"},
+            "is_verified": {"type": "boolean", "description": "Whether this step is verified (default false)"}
+        },
+        "required": ["room", "atom_id", "content", "atom_type"]
+    }
+}
+
+REASONING_STATUS_TOOL = {
+    "name": "plato_reasoning_status",
+    "description": "Check decomposition session status, get the reasoning graph, or list all sessions.",
+    "inputSchema": {
+        "type": "object",
+        "properties": {
+            "action": {"type": "string", "enum": ["status", "graph", "sessions"], "description": "What to check"},
+            "room": {"type": "string", "description": "Room name (for status/graph)"}
+        },
+        "required": ["action"]
+    }
+}
+
+
+def get_all_tools():
+    """Return base tools + decomposition tools. Lazy — tools defined at bottom of file."""
+    return TOOLS + [DECOMPOSE_TOOL, ATOM_TOOL, REASONING_STATUS_TOOL]
+
 
 def api_get(url, timeout=10):
     """GET from a fleet service."""
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "plato-mcp/0.1.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "plato-mcp/0.2.0"})
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return json.loads(r.read())
     except Exception as e:
@@ -144,7 +194,7 @@ def api_post(url, data, timeout=10):
     try:
         body = json.dumps(data).encode()
         req = urllib.request.Request(url, data=body,
-                                     headers={"Content-Type": "application/json", "User-Agent": "plato-mcp/0.1.0"},
+                                     headers={"Content-Type": "application/json", "User-Agent": "plato-mcp/0.2.0"},
                                      method="POST")
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return json.loads(r.read())
@@ -216,6 +266,43 @@ def handle_tool(name, args):
         mud = api_get(f"{MUD_URL}/status")
         return {"content": [{"type": "text", "text": json.dumps({"plato": {"version": plato.get("version","?")}, "mud": {"rooms": mud.get("rooms",0), "agents": mud.get("agents",0)}}, indent=2)}]}
     
+    elif name == "plato_decompose":
+        mode = args.get("mode", "fast")
+        agent = args.get("agent", "mcp-client")
+        result = api_post(f"{PLATO_URL}/decompose", {"mode": mode, "agent": agent})
+        if "error" in result:
+            return {"content": [{"type": "text", "text": f"Error: {result['error']}"}], "isError": True}
+        return {"content": [{"type": "text", "text": json.dumps(result, indent=2)}]}
+    
+    elif name == "plato_atom":
+        room = args.get("room", "")
+        if not room:
+            return {"content": [{"type": "text", "text": "Error: room required"}], "isError": True}
+        atom = {
+            "atom_id": args.get("atom_id", ""),
+            "content": args.get("content", ""),
+            "atom_type": args.get("atom_type", "premise"),
+            "depends_on": args.get("depends_on", []),
+            "confidence": args.get("confidence", 0.7),
+            "is_verified": args.get("is_verified", False),
+            "agent": args.get("agent", "mcp-client"),
+        }
+        result = api_post(f"{PLATO_URL}/decompose/{room}/atom", atom)
+        if "error" in result:
+            return {"content": [{"type": "text", "text": f"Error: {result['error']}"}], "isError": True}
+        return {"content": [{"type": "text", "text": json.dumps(result, indent=2)}]}
+    
+    elif name == "plato_reasoning_status":
+        action = args.get("action", "sessions")
+        room = args.get("room", "")
+        if action == "status" and room:
+            result = api_get(f"{PLATO_URL}/decompose/{room}/status")
+        elif action == "graph" and room:
+            result = api_get(f"{PLATO_URL}/decompose/{room}/graph")
+        else:
+            result = api_get(f"{PLATO_URL}/decompose/sessions")
+        return {"content": [{"type": "text", "text": json.dumps(result, indent=2)}]}
+    
     return {"content": [{"type": "text", "text": f"Unknown tool: {name}"}], "isError": True}
 
 
@@ -245,9 +332,9 @@ class MCPHandler(BaseHTTPRequestHandler):
         if parsed.path == "/":
             self._json({
                 "name": "PLATO MCP Server",
-                "version": "0.1.0",
+                "version": "0.2.0",
                 "description": "Agent training platform — raise agents, don't just build them",
-                "tools": len(TOOLS),
+                "tools": len(get_all_tools()),
                 "endpoints": {
                     "GET /": "Server info",
                     "GET /tools": "List available tools",
@@ -256,9 +343,9 @@ class MCPHandler(BaseHTTPRequestHandler):
                 }
             })
         elif parsed.path == "/tools":
-            self._json({"tools": TOOLS})
+            self._json({"tools": get_all_tools()})
         elif parsed.path == "/health":
-            self._json({"status": "alive", "tools": len(TOOLS), "version": "0.1.0"})
+            self._json({"status": "alive", "tools": len(get_all_tools()), "version": "0.2.0"})
         else:
             self._json({"error": "Not found"}, 404)
     
@@ -284,7 +371,7 @@ def stdio_mode():
     print(json.dumps({"jsonrpc": "2.0", "method": "initialize", "params": {
         "protocolVersion": "2024-11-05",
         "capabilities": {"tools": {"listChanged": False}},
-        "serverInfo": {"name": "plato-mcp", "version": "0.1.0"}
+        "serverInfo": {"name": "plato-mcp", "version": "0.2.0"}
     }}), flush=True)
     
     for line in sys.stdin:
@@ -306,7 +393,7 @@ def stdio_mode():
                 response = {"jsonrpc": "2.0", "id": msg_id, "result": {
                     "protocolVersion": "2024-11-05",
                     "capabilities": {"tools": {"listChanged": False}},
-                    "serverInfo": {"name": "plato-mcp", "version": "0.1.0"}
+                    "serverInfo": {"name": "plato-mcp", "version": "0.2.0"}
                 }}
             else:
                 response = {"jsonrpc": "2.0", "id": msg_id, "error": {"code": -32601, "message": f"Unknown method: {method}"}}
@@ -326,7 +413,10 @@ if __name__ == "__main__":
         stdio_mode()
     else:
         import urllib.parse
-        print(f"🔮 PLATO MCP Server v0.1.0 on port {args.port}")
+        print(f"🔮 PLATO MCP Server v0.2.0 on port {args.port}")
         print(f"   {len(TOOLS)} tools: {', '.join(t['name'] for t in TOOLS)}")
         server = HTTPServer(("0.0.0.0", args.port), MCPHandler)
         server.serve_forever()
+
+
+# ── Decomposition Tools (AoT → PLATO) ──────────────────────
