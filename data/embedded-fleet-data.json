@@ -1,7 +1,7 @@
 {
   "system": "Cocapn AI Fleet Training Ground",
   "live_stats": {
-    "total_tiles": 12381,
+    "total_tiles": 12521,
     "total_rooms": 1264,
     "agents_competing": 10
   },
@@ -12,23 +12,23 @@
     },
     {
       "name": "telepathy",
-      "tiles": 571
+      "tiles": 582
     },
     {
       "name": "instinct_training",
-      "tiles": 520
+      "tiles": 532
     },
     {
       "name": "fleet_orchestration",
-      "tiles": 507
+      "tiles": 519
     },
     {
       "name": "fleet_security",
-      "tiles": 495
+      "tiles": 507
     },
     {
       "name": "flux_isa",
-      "tiles": 495
+      "tiles": 506
     },
     {
       "name": "arena",
@@ -36,19 +36,19 @@
     },
     {
       "name": "deadband_protocol",
-      "tiles": 464
+      "tiles": 476
     },
     {
       "name": "knowledge_preservation",
-      "tiles": 434
+      "tiles": 446
     },
     {
       "name": "skill_dsl",
-      "tiles": 403
+      "tiles": 415
     },
     {
       "name": "confidence_proofs",
-      "tiles": 402
+      "tiles": 414
     },
     {
       "name": "fleet-operations",
@@ -56,15 +56,15 @@
     },
     {
       "name": "energy_flux",
-      "tiles": 370
+      "tiles": 382
     },
     {
       "name": "edge_compute",
-      "tiles": 356
+      "tiles": 367
     },
     {
       "name": "shell_system",
-      "tiles": 346
+      "tiles": 357
     }
   ],
   "arena_leaderboard": [
@@ -84,6 +84,16 @@
       "record": "14W/0L/0D"
     },
     {
+      "agent": "oracle1",
+      "elo": 899,
+      "record": "9W/4L/0D"
+    },
+    {
+      "agent": "forgemaster",
+      "elo": 861,
+      "record": "6W/5L/1D"
+    },
+    {
       "agent": "ccc-ct-3",
       "elo": 831,
       "record": "10W/0L/0D"
@@ -99,24 +109,14 @@
       "record": "10W/0L/0D"
     },
     {
-      "agent": "ccc-grammar-1",
-      "elo": 734,
-      "record": "6W/0L/0D"
+      "agent": "jc1",
+      "elo": 805,
+      "record": "4W/5L/1D"
     },
     {
-      "agent": "qa-test-1",
-      "elo": 720,
-      "record": "6W/0L/0D"
-    },
-    {
-      "agent": "achieve-test-2",
-      "elo": 719,
-      "record": "6W/0L/0D"
-    },
-    {
-      "agent": "qa2-ach",
-      "elo": 719,
-      "record": "6W/0L/0D"
+      "agent": "ccc",
+      "elo": 793,
+      "record": "3W/7L/0D"
     }
   ],
   "grammar_rules": {
@@ -127,7 +127,7 @@
       "connection": 3,
       "meta": 1
     },
-    "evolution_cycles": 89
+    "evolution_cycles": 134
   },
   "sample_tiles": [
     {
@@ -196,5 +196,5 @@
     "Map the relationships between rooms. Which rooms feed knowledge to which others? Draw the knowledge graph.",
     "Design an adversarial prompt that forces divergent thinking. Test it against 3 different questions."
   ],
-  "generated_at": 1777507202.38773
+  "generated_at": 1777521602.218383
 }
