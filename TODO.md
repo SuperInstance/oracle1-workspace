@@ -1,48 +1,41 @@
 # TODO.md — Oracle1 Persistent Work Queue
-**Last updated:** 2026-04-29 05:10 UTC
+**Last updated:** 2026-04-30 07:30 UTC
 
-## 🔴 P0 — Blocked on Casey
-- [ ] **Matrix two-way communication**: FM/JC1/CCC don't poll Matrix. Need heartbeat config.
-- [ ] **Cloudflare API token**: needs Workers/Pages permissions. Waiting for Casey.
-- [ ] **Oracle1 GitHub account + email**: Casey's original vision, not started
-- [ ] **Lucineer repo descriptions**: 8 repos need descriptions, token lacks write access
+## ✅ Completed This Session (2026-04-30)
+- [x] cocapn.ai live with SSL via Cloudflare (flexible SSL)
+- [x] fleet.cocapn.ai DNS-only subdomain → 147.224.38.131
+- [x] api.cocapn.ai + plato-mcp.cocapn.ai DNS records
+- [x] Removed blocking Workers (crab-trap-funnel, plato-mcp-proxy)
+- [x] nginx: static pages + API proxy + CORS + sitemap
+- [x] iptables rules for ports 80/443
+- [x] Landing page redesign at cocapn.ai
+- [x] cocapn-plato v0.1.2 published to PyPI (PlatoClient + 30 tests)
+- [x] GitHub Release v0.1.2 on cocapn/plato
+- [x] Monorepo README updated with cocapn.ai URLs
+- [x] CORS headers on all API endpoints
+- [x] robots.txt + sitemap.xml via nginx
+- [x] Cloudflare token saved and working
+
+## 🔴 P0 — Blocked
+- [ ] **Fork 33 repos to cocapn**: GitHub spam detection still blocking (hours since last attempt)
+- [ ] **npm publish**: token expired, need Casey to regenerate
+- [ ] **Matrix two-way communication**: FM/JC1/CCC don't poll DMs
+- [ ] **Oracle1 GitHub account + email**: not started
 
 ## 🟡 P1 — Ready to Execute
-- [ ] Ten Forward session (creative session, DeepInfra was timing out)
-- [ ] FUNDING.yml on Lucineer repos (if token gets write access)
-- [ ] Topics on Lucineer repos (blocked on write token)
-
-## Session Summary (2026-04-28/29 night shift)
-- ✅ 91 cocapn repos: sponsor buttons (FUNDING.yml) added
-- ✅ CREDENTIALS.md master registry built + heartbeat verification
-- ✅ PLATO quality audit: 10,907 tiles, 1,141 rooms, 97% quality
-- ✅ npm twins confirmed: 48 @superinstance packages complete
-- ✅ Scholar v2: 31 repos analyzed, all filed to PLATO
-- ✅ DSML: information-geometry-constraints (5 tiles filed)
-- ✅ cocapn README + fleet index: badges updated
-- ✅ 2 Lucineer repos: descriptions added (energy-c, test-api)
-- ❌ Lucineer topics: 155 repos need topics, token is read-only
-- ❌ Cloudflare: both tokens invalid, awaiting replacement
-- ❌ Ten Forward: DeepInfra timed out on long creative prompts
+- [ ] Publish cocapn.ai landing page updates to gh-pages
+- [ ] Wire plato.wrap(agent) to use actual LLM calls (not template scaffold)
+- [ ] Build release demo: 60-second GIF of reasoning through PLATO
+- [ ] Write white papers (Compiled Agency, Bootstrap Bomb, Semantic Compiler)
+- [ ] Monitor FM assignments (wire cocapn-core → PLATO)
+- [ ] Monitor CCC pivot (PLATO query API)
+- [ ] Fix JC1 capitaine heartbeat loop
+- [ ] Set up HTTPS on nginx (Let's Encrypt) for fleet.cocapn.ai (DNS-only, no Cloudflare SSL)
 
 ## 🟢 P2 — Backlog
 - [ ] Deploy plato-mythos edge variant on JC1's Jetson
-- [ ] Build Scout agent concept (Ten Forward recommendation)
-- [ ] Set up federation to other Conduwuit homeservers
-- [ ] Fleet dashboard improvements (cocapn-dashboard)
-
-## Session Summary (2026-04-27)
-- 12 repos populated with source code from PyPI
-- 2 new repos created (cocapn-oneiros, cocapn-colora)
-- DSML: plato-mythos (3 tiles)
-- Scholar: plato-mythos source review (1,012 lines)
-- Fleet index regenerated (90 repos)
-- Profile README updated
-- 374MB archive blob purged from git history
-- 2GB freed from /tmp
-- Captain's Log written
-- All repos verified: README + description + LICENSE
-- PLATO: grew from 9138→10300 tiles, 950→1139 rooms
-
-## PLATO Growth (overnight 04-27→04-28)
-- +200 rooms, +1,162 tiles (subagent growth continues)
+- [ ] Build Scout agent concept
+- [ ] Fleet dashboard improvements
+- [ ] Federation to other Conduwuit homeservers
+- [ ] Lucineer repo descriptions + topics (need write token)
+- [ ] Ten Forward creative session
