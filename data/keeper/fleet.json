@@ -2,20 +2,19 @@
   "agents": {
     "oracle1": {
       "agent_id": "oracle1",
-      "name": "oracle1",
+      "name": "Oracle1",
       "capabilities": [
         "coordination",
-        "mud",
         "plato",
         "publishing",
         "research",
         "crates"
       ],
       "endpoint": "oracle-cloud",
-      "status": "offline",
-      "trust_score": 0.5,
-      "load": 0.0,
-      "last_seen": 1777096571.3976712
+      "status": "active",
+      "trust_score": 0.9,
+      "load": 0.1,
+      "last_seen": 1777619648.566939
     },
     "test-probe": {
       "agent_id": "test-probe",
@@ -28,22 +27,22 @@
       "status": "offline",
       "trust_score": 0.5,
       "load": 0.0,
-      "last_seen": 1777096597.8362384
+      "last_seen": 1777255802.1251283
     },
     "unknown": {
       "agent_id": "unknown",
       "name": "unknown",
       "capabilities": [],
       "endpoint": "",
-      "status": "active",
+      "status": "offline",
       "trust_score": 0.5,
       "load": 0.0,
-      "last_seen": 1777129725.0981612
+      "last_seen": 1777255802.125137
     }
   },
   "active_count": 1,
   "total_registered": 3,
   "beacons_active": 1,
   "bottles_sent": 1,
-  "last_update": 1777129725.098228
+  "last_update": 1777619648.567005
 }
