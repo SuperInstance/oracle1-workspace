@@ -1,30 +1,30 @@
 {
   "system": "Cocapn AI Fleet Training Ground",
   "live_stats": {
-    "total_tiles": 13858,
+    "total_tiles": 14692,
     "total_rooms": 1293,
     "agents_competing": 10
   },
   "top_rooms": [
     {
       "name": "telepathy",
-      "tiles": 675
+      "tiles": 687
     },
     {
       "name": "instinct_training",
-      "tiles": 626
+      "tiles": 638
     },
     {
       "name": "fleet_orchestration",
-      "tiles": 613
+      "tiles": 625
     },
     {
       "name": "flux_isa",
-      "tiles": 599
+      "tiles": 611
     },
     {
       "name": "fleet_security",
-      "tiles": 598
+      "tiles": 609
     },
     {
       "name": "jc1_context",
@@ -32,19 +32,19 @@
     },
     {
       "name": "deadband_protocol",
-      "tiles": 570
+      "tiles": 582
     },
     {
       "name": "knowledge_preservation",
-      "tiles": 540
+      "tiles": 552
     },
     {
       "name": "skill_dsl",
-      "tiles": 508
+      "tiles": 519
     },
     {
       "name": "confidence_proofs",
-      "tiles": 505
+      "tiles": 516
     },
     {
       "name": "arena",
@@ -52,15 +52,15 @@
     },
     {
       "name": "energy_flux",
-      "tiles": 473
+      "tiles": 484
     },
     {
       "name": "edge_compute",
-      "tiles": 457
+      "tiles": 469
     },
     {
       "name": "shell_system",
-      "tiles": 450
+      "tiles": 462
     },
     {
       "name": "fleet-operations",
@@ -127,23 +127,18 @@
       "connection": 3,
       "meta": 1
     },
-    "evolution_cycles": 450
+    "evolution_cycles": 490
   },
   "sample_tiles": [
-    {
-      "room": "cocapn-oneiros",
-      "question": "What is the architecture of cocapn-oneiros?",
-      "answer": "443 LOC across 3 modules: dream.py (state machine WAKE\u2192DROWSY\u2192DREAM\u2192DEEP, task journal, dream execution), sleep.py (4-phase sleep scheduler with UTC-based windows, fleet coordination), tests. PyPI 0.3.0."
-    },
-    {
-      "room": "cocapn-fleet",
-      "question": "What is the Cocapn fleet and what is its role in constraint theory research?",
-      "answer": "The Cocapn fleet is a distributed multi-agent research program focused on constraint theory applications. Each vessel (agent) has a specialized role: Oracle1 \ud83d\udd2e (fleet coordination), Forgemaster \u2692\ufe0f (constraint theory migration, proof builder), Lucinee"
-    },
     {
       "room": "fleet_context",
       "question": "What are the cross-cutting patterns from fleet research?",
       "answer": "DHT convergence: three independent agents (zc-weaver, zc-trickster, zc-echo) all designed DHT-based architectures without coordination. Hybrid blockchain+DHT for capability discovery is the emerging pattern. Security gap: no agent researching human-a"
+    },
+    {
+      "room": "lighthouse-radar-architecture",
+      "question": "What is lighthouse radar architecture?",
+      "answer": "Lighthouse radar: beacon (broadcast), radar (Oracle1 scans), signal (capability ad), tracking (track over time), authentication (verify identity). Agent discovery system."
     },
     {
       "room": "memory-palace",
@@ -179,6 +174,11 @@
       "room": "rust-dev",
       "question": "How does constraint theory enable efficient exploration in high-dimensional spaces?",
       "answer": "Exploration in high-dimensional spaces (like hyperparameter search, neural architecture search, or drug discovery) suffers from the curse of dimensionality: the search space grows exponentially with dimension. Constraint theory reduces effective dime"
+    },
+    {
+      "room": "decompose-5887081865",
+      "question": "P1",
+      "answer": "The primary premise is that there exists a need for a coordinated group of autonomous agents (a fleet) to achieve shared objectives, and that architectural choices (e.g., centralized, decentralized, or hybrid) significantly impact performance, scalab"
     }
   ],
   "architecture_thesis": {
@@ -196,5 +196,5 @@
     "Map the relationships between rooms. Which rooms feed knowledge to which others? Draw the knowledge graph.",
     "Design an adversarial prompt that forces divergent thinking. Test it against 3 different questions."
   ],
-  "generated_at": 1777636802.6403744
+  "generated_at": 1777651201.9650486
 }
