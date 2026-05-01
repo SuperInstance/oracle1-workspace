@@ -1406,7 +1406,7 @@
       "startLine": 346,
       "endLine": 375,
       "source": "memory",
-      "snippet": "- Conformance vectors pushed to oracle1-vessel/for-jetsonclaw1 for JC1 ### SiliconFlow API Key - **Key**: `sk-xtcrixoswqhmsopntnkfapccswjywrlsdpbunqjukpileiqo` — WORKING (was previously invalid) - **Vision config for OpenManus**: Qwen/Qwen3-VL-235B-A22B-Instruct ### Model Guide - Saved to `research/siliconflow-model-guide.md` - Fleet dispatch strategy documented per task type ## Session: Automated Research Pipeline (20:03 - 21:02 UTC) ### Self-Bootstrapping Research System - Built `bootstrap_research.py` — automated experiment runner using SiliconFlow + DeepSeek - Designed to run iterative experiments outside Oracle1's context window - 4 experiments in Round 1, 4 minutes, $0.08 total cos",
+      "snippet": "- Conformance vectors pushed to oracle1-vessel/for-jetsonclaw1 for JC1 ### SiliconFlow API Key - **Key**: `[REDACTED]` — WORKING (was previously invalid) - **Vision config for OpenManus**: Qwen/Qwen3-VL-235B-A22B-Instruct ### Model Guide - Saved to `research/siliconflow-model-guide.md` - Fleet dispatch strategy documented per task type ## Session: Automated Research Pipeline (20:03 - 21:02 UTC) ### Self-Bootstrapping Research System - Built `bootstrap_research.py` — automated experiment runner using SiliconFlow + DeepSeek - Designed to run iterative experiments outside Oracle1's context window - 4 experiments in Round 1, 4 minutes, $0.08 total cos",
       "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
