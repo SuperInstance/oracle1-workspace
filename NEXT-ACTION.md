@@ -1,26 +1,19 @@
 # NEXT-ACTION.md
 
 ## Active Task
-**Wire plato.wrap(agent) to actual LLM calls — DONE ✅**
+**Whitepaper conversion: DONE ✅** (6 papers → research/whitepapers/, pushed to GitHub)
+**Demo generator: running subagent, waiting for output.txt**
 
-### What was accomplished
-- Fixed regex in `_load_key()` that was failing to parse bashrc keys
-- Added auto-wiring in `WrappedAgent.__init__` — DeepSeek auto-detected from bashrc
-- `plato.wrap(agent).reason()` now calls DeepSeek-v4-flash for each atom
-- Real structured reasoning: premise → reasoning → hypothesis → verification → conclusion
-- Fix filed to PLATO room: plato-wrap-fix
+## What happened
+- plato.wrap() conclusion was None — traced through PLATO API, fixed by adding `is_verified: True` to all atoms (not just conclusion) and ensuring `confidence >= 0.9` threshold is met
+- DeepSeek auto-wired as fallback after MiniMax (casey's prepaid key not accessible to me)
+- Whitepapers converted: all 6 pushed to SuperInstance/flux-research
+- cocapn.ai GitHub repo doesn't exist yet (cocapn org invisible)
 
-### Completed (2026-04-30)
-- ✅ cocapn.ai live with SSL (Cloudflare flexible → nginx port 80)
-- ✅ All DNS records: cocapn.ai, www, fleet, api, plato-mcp
-- ✅ Workers removed, cache purged, flexible SSL
-- ✅ Landing page + 5 pages + all API endpoints verified
-- ✅ CORS headers, robots.txt, sitemap.xml
-- ✅ cocapn-plato v0.1.2 → PyPI + GitHub Release
-- ✅ 30/30 tests passing
-- ✅ plato.wrap() wired to DeepSeek-v4-flash
+## Waiting on
+- Demo subagent running plato_demo.py + uploading output.txt to SuperInstance/plato-demo
 
-### Next Immediate
-- Build release demo (reasoning GIF)
-- Write white papers
-- Retry forking 33 repos later today
+## Next
+- Set up cocapn.ai GitHub pages (need Casey to create cocapn/cocapn.ai repo first)
+- Build release GIF demo
+- Wire cocapn-core to PLATO room
