@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T16:27:52.498Z",
+  "updatedAt": "2026-05-02T12:13:37.458Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -4898,18 +4898,20 @@
       "endLine": 129,
       "source": "memory",
       "snippet": "- cocapn-sdk: batteries-included meta-package on PyPI + npm + GitHub - plato-dcs v0.2.0: BeliefStore with time-decay scoring, published to PyPI + npm ### Key Patterns Learned - Subagents crash on batch repo polish (4s runtime, 0 tokens) — do directly with exec/heredoc - DeepInfra Seed-2.0-mini API timeouts make Ten Forward sessions unreliable - npm scope is @superinstance (not cocapn) — account is `superinstance` with granular token - PyPI version bumps: always check existing version before upload (400 = duplicate) - Every npm stub needs real JS classes + TypeScript .d.ts for developer adoption ### PLATO Status - 10,231 tiles, 1,139 rooms (slight growth from overnight) - Quality tiles subm",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7521553027727766,
+      "totalScore": 1.404364106659153,
       "maxScore": 0.7521553027727766,
       "firstRecalledAt": "2026-04-28T16:27:37.981Z",
-      "lastRecalledAt": "2026-04-28T16:27:37.981Z",
+      "lastRecalledAt": "2026-05-02T12:13:37.458Z",
       "queryHashes": [
-        "976159445d3e"
+        "976159445d3e",
+        "878822c53256"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-02"
       ],
       "conceptTags": [
         "cocapn-sdk",
@@ -5022,18 +5024,20 @@
       "endLine": 53,
       "source": "memory",
       "snippet": "- seed-mcp: ~/seed-mcp-home/, systemd, port 9438 ✅ - holodeck-rust: ~/holodeck-home/ (54s ARM64 compile), systemd, port 7778 ✅ ## Fleet Infrastructure - cocapn.github.io: fleet index built and expanded with 60+ repos - cocapn/cocapn README: fleet index badge added - CONTEXT-REFERENCE.md: fleet ecosystem map with dependency graph - STATUS.md: fleet status snapshot - Captain's Log written ## Blocked - git-agent PyPI publish: awaiting cocapn API token from Casey - Cloudflare Workers/Pages: token needs permission update - Oracle1 GitHub account + email: Casey's original vision, not started ## Services End of Day - Gateway (18789): active (systemd) - Keeper (8900): UP - PLATO (8847): UP, 580 r",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7556765026201456,
+      "totalScore": 1.5091246541956118,
       "maxScore": 0.7556765026201456,
       "firstRecalledAt": "2026-04-28T16:27:47.766Z",
-      "lastRecalledAt": "2026-04-28T16:27:47.766Z",
+      "lastRecalledAt": "2026-05-02T12:13:37.458Z",
       "queryHashes": [
-        "a4409b2cacc8"
+        "a4409b2cacc8",
+        "878822c53256"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gateway",
@@ -5116,18 +5120,20 @@
       "endLine": 328,
       "source": "memory",
       "snippet": "- 77 → 87 repos (+10) - All with descriptions, READMEs, and LICENSE files - Fleet index updated at cocapn.github.io ### Research - Trending repo analysis (Evolver GEP, GenericAgent, OpenSpace, Hermes Agent, Claude Code Memory) - Competitive landscape tiles filed - Research supplement document written ### PLATO Growth - Started: 7,967 tiles, 590 rooms - Ended: 8,730+ tiles, 910+ rooms - Delta: +763 tiles, +320 rooms - Provenance chain: 763 entries ## Day Shift (14:12-23:13 UTC) ### PLATO-FIRST Protocol Established - Casey demanded context be stored in PLATO, not files - **PLATO-FIRST.md** created as fleet pillar — non-negotiable rule - MEMORY.md shrunk from 116 → 44 lines (PLATO pointer o",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7518212740489729,
+      "totalScore": 1.403623705601913,
       "maxScore": 0.7518212740489729,
       "firstRecalledAt": "2026-04-28T16:27:47.766Z",
-      "lastRecalledAt": "2026-04-28T16:27:47.766Z",
+      "lastRecalledAt": "2026-05-02T12:13:37.458Z",
       "queryHashes": [
-        "b0e02b503353"
+        "b0e02b503353",
+        "878822c53256"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-02"
       ],
       "conceptTags": [
         "cocapn.github.io",
@@ -5356,6 +5362,68 @@
         "seed-2.0-mini",
         "the",
         "crew"
+      ]
+    },
+    "memory:memory/2026-04-27.md:18:41": {
+      "key": "memory:memory/2026-04-27.md:18:41",
+      "path": "memory/2026-04-27.md",
+      "startLine": 18,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "- Casey directive: \"Think about plato-mythos built from OpenMythos fork\" - **4 new packages published:** - **plato-edge** (PyPI v0.1.0) — pure Python, zero deps, 84KB, 17 tests. Fleet modules for constrained devices. - **plato-mythos** (PyPI v0.1.0) — 1,153 LOC. PLATO-native RDT with rooms→MoE, tiles→KV, deadband→ACT, shells→LoRA. - **open-mythos-edge** (PyPI v0.1.0) — 408 LOC. Edge OpenMythos, pure PyTorch (no Triton). Forward pass verified: 1B variant = 1.59GB (fits Jetson Orin). - **plato-mythos-glue** (PyPI v0.1.0) — 245 LOC. Runtime glue between PLATO Room Server and model. Pure stdlib. - **Fleet total now: 27 packages** (19 PyPI + 8 crates.io) ### plato-mythos Design - Design",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7795600405879701,
+      "maxScore": 0.7795600405879701,
+      "firstRecalledAt": "2026-05-02T12:13:37.458Z",
+      "lastRecalledAt": "2026-05-02T12:13:37.458Z",
+      "queryHashes": [
+        "878822c53256"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plato-mythos",
+        "plato-edge",
+        "v0.1.0",
+        "plato-native",
+        "open-mythos-edge",
+        "1.59gb",
+        "plato-mythos-glue",
+        "crates.io"
+      ]
+    },
+    "memory:memory/2026-04-27.md:1:21": {
+      "key": "memory:memory/2026-04-27.md:1:21",
+      "path": "memory/2026-04-27.md",
+      "startLine": 1,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "# Memory — 2026-04-27 ## Session: Night Shift Publishing + Edge Builds ### PyPI Publishing Complete (23:00-00:30 UTC) - Casey provided PyPI token (`pypi-...`) — saved to `~/.pypirc` (cocapn account) - Casey provided crates.io token (`ciov0i5j3S72skHaQndfvqRBuVrfTFtyO0i`) — saved to `~/.cargo/credentials.toml` - Published 3 stub packages Oracle1 built: court, cocapn-oneiros, cocapn-colora (all v0.2.0) - Fixed pyproject.toml `license = \"MIT\"` → `license = {text = \"MIT\"}` for setuptools compat - Published plato-unified-belief v0.2.0 to crates.io - **Unblocked plato-dcs v0.2.0** — added `exclude = [\"data/**\", \"examples/**\"]` to Cargo.toml (48MB → 44KB) - **Unblocked plato-kernel v0.2.0** — cha",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7242373278887239,
+      "maxScore": 0.7242373278887239,
+      "firstRecalledAt": "2026-05-02T12:13:37.458Z",
+      "lastRecalledAt": "2026-05-02T12:13:37.458Z",
+      "queryHashes": [
+        "878822c53256"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "00-00",
+        "crates.io",
+        "cargo/credentials.toml",
+        "cocapn-oneiros",
+        "cocapn-colora",
+        "v0.2.0",
+        "pyproject.toml",
+        "plato-unified-belief"
       ]
     }
   }
