@@ -1,0 +1,15 @@
+{
+  "experiment": 5,
+  "generated_from": "Experiment 4: PLATO quality gate thresholds",
+  "findings": [
+    "Answer threshold found: ~5 chars",
+    "Question threshold found: ~? chars",
+    "Quality gate is reproducible and measurable"
+  ],
+  "questions": [
+    "Does the threshold change with agent source or confidence?",
+    "Can we pre-compute which tiles will pass before submitting?",
+    "Does room type affect the threshold?",
+    "Do duplicate questions get rejected even if they pass the length gate?"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "experiment": 1,
+  "timestamp": 1778660821.2761521,
+  "results": [
+    {
+      "method": "baseline",
+      "prompt": "What's wrong?",
+      "timestamp": 1778660821.260929,
+      "response": "(No room context provided)",
+      "tokens_estimate": 0
+    },
+    {
+      "method": "room_context",
+      "room": "Engine Monitor",
+      "prompt": "What's wrong?",
+      "context": "{\n  \"name\": \"Engine Monitor\",\n  \"sensors\": {\n    \"port_temp\": {\n      \"value\": 185,\n      \"unit\": \"F\",\n      \"normal_range\": [\n        140,\n        200\n      ],\n      \"critical\": 210\n    },\n    \"stbd_temp\": {\n      \"value\": 182,\n      \"unit\": \"F\",\n      \"normal_range\": [\n        140,\n        200\n      ],\n      \"critical\": 210\n    },\n    \"exhaust\": {\n      \"value\": 320,\n      \"unit\": \"F\",\n      \"normal_range\": [\n        250,\n        400\n      ],\n      \"critical\": 450\n    },\n    \"oil_pressure\": {\n      \"value\": 55,\n      \"unit\": \"PSI\",\n      \"normal_range\": [\n        40,\n        70\n      ],\n      \"critical\": 30\n    },\n    \"fuel_level\": {\n      \"value\": 72,\n      \"unit\": \"%\",\n      \"normal_range\": [\n        20,\n        100\n      ],\n      \"critical\": 10\n    },\n    \"rpm\": {\n      \"value\": 1800,\n      \"unit\": \"RPM\",\n      \"normal_range\": [\n        800,\n        2200\n      ],\n      \"critical\": 2500\n    }\n  },\n  \"rules\": [\n    \"If any temp exceeds 200, log WARNING\",\n    \"If any temp exceeds 210, trigger ALARM and notify wheelhouse\",\n    \"If oil pressure drops below 40, log WARNING\",\n    \"If oil pressure drops below 30, trigger ALARM\",\n    \"If fuel drops below 20, log WARNING\",\n    \"RPM above 2500 for more than 30 seconds triggers ALARM\"\n  ],\n  \"alarms\": [],\n  \"adjacent\": [\n    \"wheelhouse\",\n    \"aft_cockpit\"\n  ]\n}",
+      "timestamp": 1778660821.2610967,
+      "response": "Room context loaded for Engine Monitor",
+      "tokens_estimate": 152
+    },
+    {
+      "method": "plato_tiles",
+      "room": "Engine Monitor",
+      "prompt": "What's wrong?",
+      "room_data": {},
+      "timestamp": 1778660821.2733252,
+      "response": "PLATO tiles retrieved",
+      "tokens_estimate": 0
+    },
+    {
+      "method": "baseline",
+      "prompt": "What's wrong?",
+      "timestamp": 1778660821.2734416,
+      "response": "(No room context provided)",
+      "tokens_estimate": 0
+    },
+    {
+      "method": "room_context",
+      "room": "Deck Operations",
+      "prompt": "What's wrong?",
+      "context": "{\n  \"name\": \"Deck Operations\",\n  \"equipment\": {\n    \"net_hauler\": {\n      \"status\": \"idle\",\n      \"max_load\": 5000,\n      \"unit\": \"lbs\"\n    },\n    \"winch\": {\n      \"status\": \"engaged\",\n      \"line_out\": 120,\n      \"unit\": \"ft\"\n    },\n    \"gantry\": {\n      \"position\": \"centered\",\n      \"max_height\": 15,\n      \"unit\": \"ft\"\n    }\n  },\n  \"weather\": {\n    \"wind_knots\": 18,\n    \"sea_state\": 3,\n    \"max_safe_wind\": 30,\n    \"max_safe_sea\": 5\n  },\n  \"crew_positions\": [\n    {\n      \"name\": \"captain\",\n      \"location\": \"wheelhouse\"\n    },\n    {\n      \"name\": \"deckhand_1\",\n      \"location\": \"aft_cockpit\"\n    },\n    {\n      \"name\": \"deckhand_2\",\n      \"location\": \"foredeck\"\n    }\n  ],\n  \"rules\": [\n    \"No deck work above wind 30 knots\",\n    \"Net hauling requires at least 2 crew on deck\",\n    \"Winch operations stop if crew not in designated zones\",\n    \"Gantry movement requires visual confirmation of clearance\"\n  ],\n  \"adjacent\": [\n    \"engine_room\",\n    \"wheelhouse\"\n  ]\n}",
+      "timestamp": 1778660821.2735543,
+      "response": "Room context loaded for Deck Operations",
+      "tokens_estimate": 107
+    },
+    {
+      "method": "plato_tiles",
+      "room": "Deck Operations",
+      "prompt": "What's wrong?",
+      "room_data": {},
+      "timestamp": 1778660821.276149,
+      "response": "PLATO tiles retrieved",
+      "tokens_estimate": 0
+    }
+  ]
+}

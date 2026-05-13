@@ -1,0 +1,14 @@
+{
+  "experiment": 6,
+  "generated_from": "Experiment 5: Batch room building",
+  "findings": [
+    "Bulk loading achieved 100/100 tiles stored (100.0%)",
+    "Deduplication is the primary gate \u2014 avoid duplicate questions"
+  ],
+  "questions": [
+    "Does PLATO have rate limiting? How many tiles per minute can be submitted?",
+    "Can we update existing tiles (overwrite) or only create new ones?",
+    "What is the maximum room size before performance degrades?",
+    "Can we use keel sync to batch-load tiles instead of individual API calls?"
+  ]
+}

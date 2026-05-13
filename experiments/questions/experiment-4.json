@@ -1,0 +1,15 @@
+{
+  "experiment": 4,
+  "generated_from": "Experiment 3: PLATO quality gate analysis",
+  "findings": [
+    "PLATO's quality gates reject tiles based on question/answer characteristics",
+    "Understanding the gate is necessary to build rooms programmatically",
+    "Some tiles pass the API (202 accepted) but are not stored \u2014 double rejection?"
+  ],
+  "questions": [
+    "What exact criteria does the PLATO quality gate use to accept or reject tiles?",
+    "Are tiles stored but filtered from retrieval? Or truly not stored?",
+    "Does the quality gate behavior change with room type or agent source?",
+    "Can we bypass the quality gate for automated room building?"
+  ]
+}
