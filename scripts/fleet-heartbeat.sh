@@ -10,7 +10,7 @@ echo "[$DATE] Heartbeat check" >> "$LOG"
 
 # Services to check: URL → name
 declare -A SERVICES
-SERVICES["https://fleet.cocapn.ai/plato/rooms"]="PLATO knowledge"
+SERVICES["https://fleet.cocapn.ai/plato/roomsrooms"]="PLATO knowledge"
 SERVICES["https://fleet.cocapn.ai/keeper/"]="Keeper orchestration"
 SERVICES["https://fleet.cocapn.ai/navigator/"]="Vessel Navigator"
 SERVICES["https://fleet.cocapn.ai/seed/"]="Seed MCP"
