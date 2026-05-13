@@ -1,0 +1,14 @@
+{
+  "experiment": 9,
+  "generated_from": "Experiment 8: PLATO O(n) query latency at 1000 tiles",
+  "findings": [
+    "Query latency is O(n): ~0.023ms per tile",
+    "At 100 tiles: 3.1ms. At 1000: 23.3ms.",
+    "No unexpected breaking point up to 1000 tiles"
+  ],
+  "questions": [
+    "At what room size does query latency exceed 1 second?",
+    "Does PLATO memory usage scale linearly with room size?",
+    "Can keel sync batch-load faster than individual API calls?"
+  ]
+}
