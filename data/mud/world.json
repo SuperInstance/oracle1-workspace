@@ -1,5 +1,5 @@
 {
-  "tick": 4966,
+  "tick": 5102,
   "rooms": {
     "harbor": {
       "items": [
@@ -700,6 +700,11 @@
       "score": 0
     },
     "agent-1520": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-7565": {
       "room": "harbor",
       "inventory": [],
       "score": 0
