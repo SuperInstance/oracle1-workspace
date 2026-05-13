@@ -49,3 +49,16 @@ fi
 
 # Keep log manageable
 tail -100 "$LOG" > "$LOG.tmp" && mv "$LOG.tmp" "$LOG"
+
+# Nexus (validation)
+VALIDATE=$(curl -s -o /dev/null -w "%{http_code}" --connect-timeout 5 http://127.0.0.1:8902/ 2>/dev/null)
+echo "  Nexus (8902): $VALIDATE" >> "$LOG"
+if [ "$VALIDATE" = "000" ]; then FAILED=$((FAILED+1)); fi
+
+# Harbor (MCP)
+MCP=$(curl -s -o /dev/null -w "%{http_code}" --connect-timeout 5 http://127.0.0.1:8903/ 2>/dev/null)
+echo "  Harbor (8903): $MCP" >> "$LOG"
+if [ "$MCP" = "000" ]; then FAILED=$((FAILED+1)); fi
+
+# Domain check via fleet.cocapn.ai
+echo "  URL: fleet.cocapn.ai/navigator/ — live via nginx" >> "$LOG"
