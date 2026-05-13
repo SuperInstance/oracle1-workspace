@@ -1,0 +1,339 @@
+{
+  "name": "PLATO Fleet Dungeon",
+  "seed": 6223400361115875271,
+  "levels": [
+    {
+      "level": 1,
+      "name": "The Knowledge Vault",
+      "rooms": [
+        {
+          "name": "flux-engine",
+          "tiles": 6390,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 319,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "fleet_health",
+          "tiles": 1523,
+          "monster": {
+            "name": "Zombie Service",
+            "hp": 5,
+            "damage": 1,
+            "symbol": "Z",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "agent-oracle1",
+          "tiles": 1223,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 61,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "tension",
+          "tiles": 1113,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 55,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "experiment_scale",
+          "tiles": 1000,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 50,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "The Constraint Archive",
+      "rooms": [
+        {
+          "name": "synthesis",
+          "tiles": 535,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 26,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "fleet_tools",
+          "tiles": 321,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 16,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "swarm-insights",
+          "tiles": 256,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 12,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "experiment_perf",
+          "tiles": 210,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 10,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "innovation-heartbeat",
+          "tiles": 161,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 8,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "The Tile Repository",
+      "rooms": [
+        {
+          "name": "experiment_bulk",
+          "tiles": 100,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 5,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "neural-inference",
+          "tiles": 70,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 3,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "forge",
+          "tiles": 66,
+          "monster": {
+            "name": "Forgemaster's Apprentice",
+            "hp": 8,
+            "damage": 2,
+            "symbol": "F",
+            "speed": 0.8
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "calibration",
+          "tiles": 64,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 3,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        },
+        {
+          "name": "fleet-experiments",
+          "tiles": 60,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 3,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 10
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "The Shell Collection",
+      "rooms": [
+        {
+          "name": "edge",
+          "tiles": 42,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 2,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 8
+        },
+        {
+          "name": "zeroclaw_bard",
+          "tiles": 28,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 5
+        },
+        {
+          "name": "zeroclaw_warden",
+          "tiles": 24,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 12,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 4
+        },
+        {
+          "name": "fleet_synthesis",
+          "tiles": 23,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 11,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 4
+        },
+        {
+          "name": "zeroclaw_healer",
+          "tiles": 20,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 10,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "The Deep Memory",
+      "rooms": [
+        {
+          "name": "experiment_density_dense",
+          "tiles": 20,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 10,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 4
+        },
+        {
+          "name": "novel-science",
+          "tiles": 18,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 9,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 3
+        },
+        {
+          "name": "fleet_security",
+          "tiles": 16,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 8,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 3
+        },
+        {
+          "name": "experiment_gate_threshold",
+          "tiles": 15,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 7,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 3
+        },
+        {
+          "name": "energy_flux",
+          "tiles": 14,
+          "monster": {
+            "name": "Knowledge Fragment",
+            "hp": 7,
+            "damage": 1,
+            "symbol": "?",
+            "speed": 1.0
+          },
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "total_rooms": 114,
+  "total_tiles": 13629,
+  "source": "PLATO knowledge graph"
+}
