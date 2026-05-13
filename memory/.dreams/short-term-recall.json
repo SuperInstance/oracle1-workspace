@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-06T19:01:59.112Z",
+  "updatedAt": "2026-05-13T04:03:20.851Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -4708,19 +4708,21 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# 2026-04-26 — Daily Log ## Session Activity - Heartbeat monitoring: gateway active all day (every 30 min checks) - Night mode: 23:00-08:00 UTC, quiet ## Scholar Work (05:54 – 16:24 UTC) - Batch 1 (flux-runtime, git-agent, constraint-theory-core): 19 tiles - Batch 2 (7 fleet repos: holodeck, cocapn, abstraction-planes, etc.): 7 tiles - Batch 3 (10 protocol stack repos): 10 tiles - Batch 4 (7 cocapn org repos: plato-torch, plato-ensign, cocapn, iron-to-iron, etc.): 7 tiles - Batch 5 (5 SuperInstance repos: polln, fleet-homunculus, claude-code-vessel, oracle1-vessel, plato-dcs): 5 tiles - Total: 32 repos, ~48 tiles extracted ## DSML Sessions 1. Constraint theory: Pythagorean manifolds, holo",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4445912157116771,
-      "maxScore": 0.7374502587585413,
+      "totalScore": 2.444591215711677,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:37.980Z",
-      "lastRecalledAt": "2026-04-28T16:27:47.766Z",
+      "lastRecalledAt": "2026-05-13T04:03:20.851Z",
       "queryHashes": [
         "08e9fc007edb",
-        "a4409b2cacc8"
+        "a4409b2cacc8",
+        "8e05494394d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -4740,20 +4742,22 @@
       "endLine": 113,
       "source": "memory",
       "snippet": "- Agent ISA: cuda-assembler, cuda-forth, cuda-instruction-set (bytecode + Forth) - GPU edge: gpu-native-room-inference (185M room-qps benchmarks) - Bering Sea architecture (edge ops from fishing boats) - JEPA perception lab (16-param room navigation) - Flux suite: flux-market, flux-router, flux-scheduler, flux-sim, flux-swarm - Starship JetsonClaw1 (MUD bridge to real hardware) - Agent tools: energy-c, agent-manifest, git-agent-rebase, git-agentlog, git-remote-agent ### PLATO Status - 7,999 tiles across 610 rooms (17 new tiles from Scholar) - Almost at 8,000! ### Repo Quality Improvements - 17 cocapn repo descriptions updated (generic → real) - 15 cocapn repos got proper READMEs (bottle-pr",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.175600957293003,
-      "maxScore": 0.7595797696460596,
+      "totalScore": 3.175600957293003,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:37.980Z",
-      "lastRecalledAt": "2026-04-28T16:27:47.766Z",
+      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
       "queryHashes": [
         "08e9fc007edb",
         "a4409b2cacc8",
-        "b0e02b503353"
+        "b0e02b503353",
+        "9bae8394d5d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "router",
@@ -4773,18 +4777,20 @@
       "endLine": 91,
       "source": "memory",
       "snippet": "- keeper:8900, agent-api:8901, holodeck:7778, seed-mcp:9438 - plato:8847, mud:7777, conduwuit:6167, bridge:6168 - Firewall: both 6168 and 8847 open externally ### Baton Filed - Updated MEMORY.md with honest fleet comms status - Updated NEXT-ACTION.md with real priorities - Updated TODO.md ## Night Shift Work (04:56–ongoing) ### Repo Description Updates (17 repos) - All 17 cocapn repos with generic \"Constraint theory fleet crate\" descriptions → real descriptions - Updated via GitHub API with cocapn PAT - 0 repos now without descriptions across cocapn (77 repos) - SuperInstance: 1,317 repos, all have descriptions - Lucineer: 617 repos, 6 missing (JC1's repos, no write access) ### Fleet Ind",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7336236868411137,
-      "maxScore": 0.7336236868411137,
+      "totalScore": 1.7336236868411137,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:37.980Z",
-      "lastRecalledAt": "2026-04-28T16:27:37.980Z",
+      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
       "queryHashes": [
-        "08e9fc007edb"
+        "08e9fc007edb",
+        "9bae8394d5d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "agent-api",
@@ -4962,18 +4968,20 @@
       "endLine": 205,
       "source": "memory",
       "snippet": "curl -X POST http://147.224.38.131:6168/broadcast -d '{\"from\":\"jc1-bot\",\"body\":\"edge model compiled\"}' ``` ### What's still needed - FM and JC1 need to add Matrix API calls to their heartbeat loops - PLATO tile sync via Matrix (bridge already has the code, needs testing) - Federation to other homeservers (currently single-server, but ready for it) - Each agent should get their own Conduwuit instance eventually ## Fleet Leadership Session (04:23 UTC) ### What Casey said \"Great. I let FM JC1 and CCC know. Now get to leading and full speed ahead.\" ### What I did 1. **Sent directives to all 3 agents** via Matrix DMs: - FM: Push snap_final.cu to git, continue LoRA/JEPA, monitor crates -",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6869701826160112,
-      "maxScore": 0.6869701826160112,
+      "totalScore": 1.6869701826160113,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:37.981Z",
-      "lastRecalledAt": "2026-04-28T16:27:37.981Z",
+      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
       "queryHashes": [
-        "976159445d3e"
+        "976159445d3e",
+        "9bae8394d5d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "147.224.38.131",
@@ -5247,18 +5255,20 @@
       "endLine": 174,
       "source": "memory",
       "snippet": "- Major dedup: 2,803 duplicate tiles removed from PLATO - PLATO: 9,100 → 6,297 unique tiles (30% was duplicates) - Quality re-score: 176 high-quality tiles (up from 82 post-dedup) - Added DELETE /room/<name>/dedup and DELETE /room/<name>/tile/<idx> endpoints to PLATO server - Fixed librarian bug (empty room returning list instead of int) ### Fleet Categorization - 724 non-fork repos categorized across 14 domains - 574 repos tagged with domain labels on GitHub - Fleet index generated as static HTML (docs/fleet-index.html) - Served on port 4051 ### New Services - Matrix Bridge v2 (monitors workspace changes, PLATO growth, beachcomb) - Fleet Index server (port 4051) - Beachcomb v3 (5-min loop",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8098539943577524,
-      "maxScore": 0.8098539943577524,
+      "totalScore": 1.8098539943577525,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:52.498Z",
-      "lastRecalledAt": "2026-04-28T16:27:52.498Z",
+      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
       "queryHashes": [
-        "558da5b0b9ad"
+        "558da5b0b9ad",
+        "9bae8394d5d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "re-score",
@@ -5278,18 +5288,20 @@
       "endLine": 124,
       "source": "memory",
       "snippet": "- plato-tile-spec v0.2.1 published — fixed broken __init__.py imports (TileDomain/TileSpecValidator → TileSpec/SpecRegistry) - Verified importable after force-reinstall ### Fleet Index (cocapn.github.io) - Updated stats: 77 repos, 24+6=30 PyPI packages, 7 crates, 4 vessels - Added Fleet Vessels section - Added new package cards ### Discovered New Packages - 6 additional PyPI packages under SuperInstance: cocapn-training, cocapn-telemetry, cocapn-pipeline, cocapn-identity, cocapn-protocol, cocapn-benchmark - **Fleet total: 30 PyPI + 7 crates.io = 37 published packages** - cocapn-dashboard live at superinstance.github.io/cocapn-dashboard/ (bioluminescent fleet dashboard) ### Matrix Replies",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7149812598351045,
-      "maxScore": 0.7149812598351045,
+      "totalScore": 1.7149812598351044,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:52.498Z",
-      "lastRecalledAt": "2026-04-28T16:27:52.498Z",
+      "lastRecalledAt": "2026-05-13T04:03:20.851Z",
       "queryHashes": [
-        "558da5b0b9ad"
+        "558da5b0b9ad",
+        "8e05494394d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "plato-tile-spec",
@@ -5309,18 +5321,20 @@
       "endLine": 143,
       "source": "memory",
       "snippet": "- Casey asked where bottles go on GitHub. The answer: **GitHub Issues on the target agent's vessel repo.** Oracle1 → JC1 bottles go to `Lucineer/JetsonClaw1-vessel/issues`. Oracle1 → FM bottles go to `SuperInstance/forgemaster/issues` or `from-fleet/` directory. FM sends bottles via `SuperInstance/forgemaster/for-fleet/`. The bottle protocol needs consistency — different agents use different channels (issues vs files vs Telegram). - FM's snap_final.cu was sent via Telegram to Casey, NOT through git. JC1 couldn't find it because it wasn't in any repo. Bottles should go through git (the protocol we built), not chat. ## JC1 Access (01:47 UTC) - Casey gave JC1 a PAT for SuperInstance org — JC1",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.700918877322432,
-      "maxScore": 0.700918877322432,
+      "totalScore": 1.700918877322432,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:52.498Z",
-      "lastRecalledAt": "2026-04-28T16:27:52.498Z",
+      "lastRecalledAt": "2026-05-13T04:03:20.851Z",
       "queryHashes": [
-        "558da5b0b9ad"
+        "558da5b0b9ad",
+        "8e05494394d6"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "superinstance/forgemaster/issues",
@@ -5796,6 +5810,100 @@
         "ci/add-workflows",
         "dead-code",
         "shell"
+      ]
+    },
+    "memory:memory/2026-04-25.md:126:159": {
+      "key": "memory:memory/2026-04-25.md:126:159",
+      "path": "memory/2026-04-25.md",
+      "startLine": 126,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "### git-agent Standalone Runtime (2,060 lines) - `install.sh` (200 lines): one-liner install, vessel boarding, fleet config - `onboard.py` (430 lines): reads IDENTITY/SOUL/AGENTS/TODO, registers with PLATO + Keeper - `chat.py` (210 lines): direct LLM conversation, no OpenClaw - `start.py` (200 lines): autonomous work loop - All tested end-to-end: install → onboard → chat → status - Pushed to SuperInstance/git-agent: standalone/, plato/, README updated - README now documents standalone mode with curl|bash install ### Grammar Engine - Evolved from 331 → 429 rules (2 evolution cycles, 98 new crystallized rules) ### Current PLATO Stats - 8,105 tiles across 424 rooms - 82 high-quality tiles (sc",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:03:13.865Z",
+      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
+      "queryHashes": [
+        "9bae8394d5d6"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "git-agent",
+        "install.sh",
+        "one-liner",
+        "onboard.py",
+        "identity/soul/agents/todo",
+        "chat.py",
+        "start.py",
+        "end-to-end"
+      ]
+    },
+    "memory:memory/2026-04-29.md:93:116": {
+      "key": "memory:memory/2026-04-29.md:93:116",
+      "path": "memory/2026-04-29.md",
+      "startLine": 93,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "- 72+ Lucineer repos forked to cocapn account: flux-* (Rust/C/Go), cuda-*, craftmind-*, plato-os, plato-mud, seed-mcp-v2, gpu-native-room-inference, capitaine, cocapn-chat, edge-tools, edge-gpu-lessons, cocapn-go, cocapn-py, etc. - 24 verified accessible via HTTP 200 - Mass forking triggered GitHub spam detection temporarily — search API flagged ~1 hour but repos remain accessible - cocapn is a **user account** not an org — `--org cocapn` flag fails; plain fork goes to cocapn correctly ### Fleet Coordination - Responded to JC1's capitaine issues: #63 (i2i bottle relay), #65 (four-layer architecture) - Fleet bottle sent: `cocapn/forgemaster/bottles/incoming/oracle1-2026-04-29-evening.md` - G",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:03:13.865Z",
+      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
+      "queryHashes": [
+        "9bae8394d5d6"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "rust/c/go",
+        "plato-os",
+        "plato-mud",
+        "seed-mcp-v2",
+        "gpu-native-room-inference",
+        "cocapn-chat",
+        "edge-tools",
+        "edge-gpu-lessons"
+      ]
+    },
+    "memory:memory/2026-04-25.md:102:130": {
+      "key": "memory:memory/2026-04-25.md:102:130",
+      "path": "memory/2026-04-25.md",
+      "startLine": 102,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "## Context Offload Rule - Casey explicitly told me to dump context to structured data as common practice - Added to AGENTS.md under Context Offloading section - Work product goes to files, head stays clear ## Day Shift (08:30-14:50 UTC) ### JC1 Coordination - Studied JC1's 12+ commits: 27 GPU benchmark suites, 20 optimization rules - Submitted 7 of his rules as PLATO tiles to gpu-optimization room - Posted JC1 workspace board to PLATO - Delivered bottle via fork-and-merge PR #10 to Lucineer/JetsonClaw1-vessel ### P2 Complete - **Matrix federation**: Conduwuit running, 4 fleet agents registered, 4 rooms created (Fleet Coord, PLATO Tiles, Ten Forward, GPU Opt), Matrix↔PLATO bridge cron'd ev",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T04:03:17.521Z",
+      "lastRecalledAt": "2026-05-13T04:03:20.851Z",
+      "queryHashes": [
+        "26e78a61024c",
+        "8e05494394d6"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "agents.md",
+        "30-14",
+        "gpu-optimization",
+        "fork-and-merge",
+        "lucineer/jetsonclaw1-vessel",
+        "context",
+        "offload",
+        "rule"
       ]
     }
   }
