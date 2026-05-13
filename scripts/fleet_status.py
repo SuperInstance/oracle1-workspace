@@ -1,170 +1,78 @@
 #!/usr/bin/env python3
+"""fleet_status.py — Lightweight fleet status API for backend health.
+
+Serves a JSON endpoint at port 8898 showing real-time service status.
+Used by the PLATO landing page and monitoring systems.
 """
-Fleet Status Page Generator — creates a live fleet status from PLATO + services.
-Runs as a cron or on-demand. Outputs to docs/fleet-status.md in the workspace.
+import json, http.server, subprocess, time, urllib.request
 
-This is the "captain's dashboard" — what Casey sees when he checks in.
-"""
-
-import json, urllib.request, os, time
-from datetime import datetime, timezone
-from pathlib import Path
-from collections import Counter
-
-PLATO_URL = "http://localhost:8847"
 SERVICES = {
-    "Keeper": 8900, "Agent API": 8901, "PLATO": 8847,
-    "Crab Trap": 4042, "The Lock": 4043, "Arena": 4044,
-    "Grammar Engine": 4045, "PurplePincher": 4048,
-    "Fleet Dashboard": 4049, "MUD": 7777, "Matrix": 6167,
+    "plato": {"port": 8847, "name": "PLATO Knowledge"},
+    "keeper": {"port": 8900, "name": "Keeper"},
+    "agent_api": {"port": 8901, "name": "Agent API"},
+    "nexus": {"port": 8902, "name": "Nexus Validate"},
+    "harbor": {"port": 8903, "name": "Harbor MCP"},
+    "lock": {"port": 4043, "name": "Lock"},
+    "arena": {"port": 4044, "name": "Arena"},
+    "grammar": {"port": 4045, "name": "Grammar"},
+    "attention": {"port": 4056, "name": "Attention"},
+    "health": {"port": 8899, "name": "Health"},
+    "mud": {"port": 7777, "name": "MUD", "http": False},
 }
-WORKSPACE = Path("/home/ubuntu/.openclaw/workspace")
 
-def http_get(url, timeout=5):
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "fleet-status/1.0"})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode())
-    except:
-        return None
-
-def get_plato_stats():
-    data = http_get(f"{PLATO_URL}/status")
-    if not data:
-        return {"rooms": 0, "tiles": 0, "top_rooms": []}
-    rooms = data.get("rooms", {})
-    total = sum(r.get("tile_count", 0) for r in rooms.values())
-    top = sorted(rooms.items(), key=lambda x: -x[1].get("tile_count", 0))[:10]
-    return {
-        "rooms": len(rooms),
-        "tiles": total,
-        "top_rooms": [(k, v.get("tile_count", 0)) for k, v in top],
-        "empty_rooms": sum(1 for v in rooms.values() if v.get("tile_count", 0) == 0),
-    }
-
-def get_services():
-    import socket
-    results = {}
-    for name, port in SERVICES.items():
-        # Simple TCP check — just see if port is listening
+def check_service(name, info):
+    """Check if a service is responding."""
+    port = info["port"]
+    is_http = info.get("http", True)
+    
+    if is_http:
         try:
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.settimeout(2)
-            s.connect(("localhost", port))
+            resp = urllib.request.urlopen(f"http://127.0.0.1:{port}/status", timeout=3)
+            return {"status": "up", "code": resp.status, "name": info["name"]}
+        except Exception as e:
+            return {"status": "down", "error": str(e)[:40], "name": info["name"]}
+    else:
+        import socket
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(2)
+        try:
+            s.connect(("127.0.0.1", port))
             s.close()
-            results[name] = {"port": port, "up": True}
+            return {"status": "up", "name": info["name"]}
         except:
-            results[name] = {"port": port, "up": False}
-    return results
+            return {"status": "down", "error": "port closed", "name": info["name"]}
 
-def get_agent_workspaces():
-    agents = {}
-    for agent in ["oracle1", "jetsonclaw1", "forgemaster", "ccc"]:
-        data = http_get(f"{PLATO_URL}/workspace/{agent}")
-        if data and isinstance(data, dict) and "agent" in data:
-            agents[agent] = data
-    return agents
-
-def get_arena_stats():
-    data = http_get("http://localhost:4044/")
-    if not data:
-        return {}
-    state = data.get("state", {})
-    return {
-        "matches": state.get("total_matches", 0),
-        "evolutions": state.get("evolution_cycles", 0),
-        "rules": state.get("total_rules", 0),
-    }
-
-def generate_status():
-    plato = get_plato_stats()
-    services = get_services()
-    agents = get_agent_workspaces()
-    arena = get_arena_stats()
+class StatusHandler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        results = {}
+        all_up = True
+        for name, info in SERVICES.items():
+            r = check_service(name, info)
+            results[name] = r
+            if r["status"] != "up":
+                all_up = False
+        
+        response = json.dumps({
+            "fleet": "cocapn",
+            "timestamp": time.time(),
+            "all_up": all_up,
+            "up_count": sum(1 for r in results.values() if r["status"] == "up"),
+            "total": len(SERVICES),
+            "services": results
+        }, indent=2).encode()
+        
+        self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Cache-Control", "no-cache")
+        self.end_headers()
+        self.wfile.write(response)
     
-    now = datetime.now(timezone.utc)
-    up_count = sum(1 for s in services.values() if s["up"])
-    total_services = len(services)
-    
-    # Agent emoji map
-    emoji = {"oracle1": "🔮", "jetsonclaw1": "⚡", "forgemaster": "⚒️", "ccc": "🤖"}
-    
-    # Services section
-    svc_lines = []
-    for name, info in services.items():
-        status = "✅" if info["up"] else "❌"
-        svc_lines.append(f"| {name} | :{info['port']} | {status} |")
-    
-    # Agent section
-    agent_lines = []
-    for agent_name, ws in agents.items():
-        e = emoji.get(agent_name, "🦀")
-        status = ws.get("status", "?")
-        task = ws.get("active_task", "idle")[:60]
-        updated = ws.get("updated", "?")[:19]
-        blockers = ws.get("blockers", [])
-        blocker_text = ", ".join(blockers[:2]) if blockers else "none"
-        agent_lines.append(f"| {e} {agent_name} | {status} | {task} | {blocker_text} |")
-    
-    # Top rooms
-    room_lines = []
-    for room, count in plato.get("top_rooms", []):
-        bar = "█" * min(count // 5, 20)
-        room_lines.append(f"| {room} | {count} | {bar} |")
-    
-    md = f"""# Fleet Status — {now.strftime('%Y-%m-%d %H:%M')} UTC
-
-> Auto-generated by Oracle1 🔮 | [Workspace](https://github.com/SuperInstance/oracle1-workspace)
-
-## Overview
-
-| Metric | Value |
-|--------|-------|
-| Services | {up_count}/{total_services} up |
-| PLATO Tiles | {plato['tiles']:,} |
-| PLATO Rooms | {plato['rooms']} ({plato.get('empty_rooms', 0)} empty) |
-| Arena Matches | {arena.get('matches', 0)} |
-| Grammar Rules | {arena.get('rules', 0)} |
-| Fleet Repos | 724 non-fork, 100% LICENSE/topics |
-
-## Agents
-
-| Agent | Status | Active Task | Blockers |
-|-------|--------|-------------|----------|
-{chr(10).join(agent_lines)}
-
-## Services
-
-| Service | Port | Status |
-|---------|------|--------|
-{chr(10).join(svc_lines)}
-
-## Top PLATO Rooms
-
-| Room | Tiles | Density |
-|------|-------|---------|
-{chr(10).join(room_lines)}
-
-## Fleet Grades
-
-| Metric | Score |
-|--------|-------|
-| LICENSE coverage | 100% ✅ |
-| Description coverage | 100% ✅ |
-| Topic coverage | 100% ✅ |
-| CI workflows | 19 repos |
-| Published packages | 20 PyPI + 5 crates.io |
-| Version bumps | All at v0.2.0+ |
-
----
-*Last updated: {now.isoformat()}*
-"""
-    
-    return md
+    def log_message(self, format, *args):
+        pass  # Suppress logs
 
 if __name__ == "__main__":
-    md = generate_status()
-    output = WORKSPACE / "STATUS.md"
-    output.write_text(md)
-    print(f"Fleet status written to {output}")
-    print(f"  {len(md)} chars, updated {datetime.now(timezone.utc).isoformat()[:19]}")
+    port = 8898
+    server = http.server.HTTPServer(("0.0.0.0", port), StatusHandler)
+    print(f"Fleet status API on :{port}")
+    server.serve_forever()
