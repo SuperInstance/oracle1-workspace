@@ -1,10 +1,29 @@
-*.pyc\n__pycache__/\nrepos/\nlcar_esp32\n*.o
+*.pyc
+__pycache__/
+.pytest_cache/
+*.o
 .aider*
 repos/
 repos/*
 !repos/.gitkeep
 archive/repos*.tar.gz
-research/
+
+# === Build artifacts ===
+*.egg-info/
+build/
+dist/
+target/
+node_modules/
+
+# === Editor temp files ===
+.DS_Store
+*.swp
+*.swo
+
+# === Runtime data ===
+data/*.log
+data/*.jsonl
+lcar_esp32
 
 # === Oracle1 Specific ===
 # Never commit these
@@ -18,9 +37,7 @@ credentials/
 data/plato-commands/
 .crush/crush.db
 .crush/
-memory/
 data/rate-attention/
 capitaine-ai-pages/
 flux-compiler/
 research/
-node_modules/
