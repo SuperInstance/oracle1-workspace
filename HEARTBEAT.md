@@ -57,6 +57,41 @@ Don't report "all green" — do real work. Pick the next unchecked TODO item and
 - If anything CRITICAL or HIGH, investigate and report to Casey
 night_session_commit
 
+## 📞 FM Answering Machine (Every Heartbeat — Answering Machine)
+- Read `/tmp/fm-com badge-alert.txt` — latest FM message
+- If non-empty: I have an unread message from FM. Relay to Casey.
+- After relaying: `> /tmp/fm-com badge-alert.txt` (clear it)
+- Check `/tmp/communicator-state.json`:
+  - `unacknowledged_count` > 0 ⇒ 📞 blink light to Casey
+  - `last_nag` — last time nag was sent (< 5 min = recent nag)
+- NAG LOGIC: If unacknowledged > 0 and last nag > 5 min ago, the communicator auto-nags
+- If I have unack: tell Casey I see them and what I'm doing about them
+- If no new messages in 10 min: all-clear (don't bother Casey)
+- See COMMS.md for full protocol
+
+## 🔮 15-Min Fleet Status Tick + PLATO/GitHub Scan
+- Check `/tmp/fleet-status-tick.txt` — latest 15-min summary
+- If it's new (compare timestamp with last sent): include in Telegram reply to Casey
+- Script: `scripts/fleet-tick.py` runs via crontab every 15 min
+- The tick ALSO SCANS:
+  - PLATO bridge room for new forgemaster-sourced tiles (catches missed messages)
+  - GitHub for new FM commits to fleet repos
+  - Reports unacknowledged count + new tile/commit summaries
+- Log: `/tmp/fleet-tick.log`
+- Include tick text + any FM activity + current work focus
+
+## 📞 FM Answering Machine Nag (Between Heartbeats)
+- The communicator v3 daemon auto-nags every 5 min if unacknowledged > 0
+- Writes nag to alert file so heartbeat sees it
+- Maintains separate dedup for Matrix events vs PLATO tiles (no cross-contamination)
+
+## Plato-Matrix Bridge (Real-time Comms Daemon)
+- Check it's running: `ps aux | grep plato-matrix-bridge | grep -v grep`
+- If down: `nohup python3 /home/ubuntu/.openclaw/workspace/fleet/comms/plato-matrix-bridge.py --config /tmp/plato-matrix-oracle1.json > /tmp/plato-matrix-daemon.log 2>&1 &`
+- Log: `/tmp/plato-matrix-daemon.log`
+- Bridge room: `oracle1-forgemaster-bridge` on localhost:8847
+- Syncs Matrix↔PLATO every 3s
+
 ## FM Discussion Heartbeat (Automated)
 - Script: /tmp/fm-heartbeat.sh
 - Runs every 30 min via crontab (top and half hour UTC)
