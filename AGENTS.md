@@ -20,7 +20,7 @@ Before doing anything else:
 8. **Read COMMS.md** — FM communicator protocol, daemon locations, state files, answering machine
 9. **Check FM comms daemons**:
    - `ps aux | grep plato-matrix-bridge` — should be running. If not, restart.
-   - `ps aux | grep communicator-v3` — should be running. If not, restart.
+   - `ps aux | grep communicator-v4` — should be running. If not, restart.
    - See HEARTBEAT.md for restart commands
 10. **Check for missed FM messages**:
     - `cat /tmp/fm-com badge-alert.txt` — latest unread

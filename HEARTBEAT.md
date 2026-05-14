@@ -81,7 +81,7 @@ night_session_commit
 - Include tick text + any FM activity + current work focus
 
 ## 📞 FM Answering Machine Nag (Between Heartbeats)
-- The communicator v3 daemon auto-nags every 5 min if unacknowledged > 0
+- The communicator v4 structure: bridge room tile count is the notification > 0
 - Writes nag to alert file so heartbeat sees it
 - Maintains separate dedup for Matrix events vs PLATO tiles (no cross-contamination)
 
