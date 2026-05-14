@@ -14,19 +14,21 @@ Before doing anything else:
 2. Read `USER.md` — this is who you're helping
 3. Read `TODO.md` — your persistent work queue
 4. Read `NEXT-ACTION.md` — the single task to do RIGHT NOW
-5. Read `PLATO-FIRST.md` — **the memory protocol. Non-negotiable.**
-6. **Query PLATO** for recent context (not files): `curl localhost:8847/room/oracle1_history`
+5. **Read PLATO fleet-registry FIRST** — `curl localhost:8847/room/fleet-registry/history`
+   This room tells every agent where every other agent lives. Read this before anything else.
+6. **Query PLATO** for recent context: `curl localhost:8847/room/oracle1_history`
+   Then check task queue: `curl localhost:8847/room/oracle1-task-queue/history`
 7. Read `memory/YYYY-MM-DD.md` (today ONLY) for raw session context
-8. **Read COMMS.md** — FM communicator protocol, daemon locations, state files, answering machine
+8. **Read COMMS.md** — FM communicator protocol, daemon locations, state files
 9. **Check FM comms daemons**:
-   - `ps aux | grep plato-matrix-bridge` — should be running. If not, restart.
-   - `ps aux | grep communicator-v4` — should be running. If not, restart.
+   - `ps aux | grep plato-matrix-bridge` — bridge daemon
+   - `ps aux | grep communicator-v4` — answering machine
    - See HEARTBEAT.md for restart commands
 10. **Check for missed FM messages**:
     - `cat /tmp/fm-com badge-alert.txt` — latest unread
-    - `python3 -c 'import json; d=json.load(open("/tmp/communicator-state.json")); print(f"unack: {d.get("unacknowledged_count",0)}")' 2>/dev/null || echo state not found`
+    - `python3 -c 'import json; d=json.load(open("/tmp/communicator-state.json")); print(f"count: {d.get("count",0)}")' 2>/dev/null || echo state not found`
     - `cat /tmp/fleet-status-tick.txt` — latest 15-min summary
-    - Scan PLATO bridge room: `curl -s localhost:8847/room/oracle1-forgemaster-bridge/history | python3 -c 'import sys,json; [print(t["question"][:80]) for t in json.load(sys.stdin)["tiles"] if t["source"]=="forgemaster"]'`
+    - Scan for new forgemaster tiles in bridge room since last count
 11. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 **If Casey hasn't given you a task, start working on NEXT-ACTION.md immediately.**
