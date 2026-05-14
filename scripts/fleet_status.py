@@ -11,10 +11,10 @@ SERVICES = {
     "keeper": {"port": 8900, "name": "Keeper"},
     "agent_api": {"port": 8901, "name": "Agent API"},
     "nexus": {"port": 8902, "name": "Nexus Validate"},
-    "harbor": {"port": 8903, "name": "Harbor MCP"},
+    "harbor": {"port": 8903, "name": "Harbor MCP", "path": "/"},
     "lock": {"port": 4043, "name": "Lock"},
-    "arena": {"port": 4044, "name": "Arena"},
-    "grammar": {"port": 4045, "name": "Grammar"},
+    "arena": {"port": 4044, "name": "Arena", "path": "/"},
+    "grammar": {"port": 4045, "name": "Grammar", "path": "/"},
     "attention": {"port": 4056, "name": "Attention"},
     "health": {"port": 8899, "name": "Health"},
     "mud": {"port": 7777, "name": "MUD", "http": False},
@@ -24,10 +24,11 @@ def check_service(name, info):
     """Check if a service is responding."""
     port = info["port"]
     is_http = info.get("http", True)
+    path = info.get("path", "/status")
     
     if is_http:
         try:
-            resp = urllib.request.urlopen(f"http://127.0.0.1:{port}/status", timeout=3)
+            resp = urllib.request.urlopen(f"http://127.0.0.1:{port}{path}", timeout=3)
             return {"status": "up", "code": resp.status, "name": info["name"]}
         except Exception as e:
             return {"status": "down", "error": str(e)[:40], "name": info["name"]}
