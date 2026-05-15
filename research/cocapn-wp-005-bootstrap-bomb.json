@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "The Bootstrap Bomb: Agents That Compile Their Own Replacements",
+    "id": "cocapn-wp-005",
+    "version": 1,
+    "authors": [
+      "oracle1",
+      "casey"
+    ],
+    "date": "2026-04-14",
+    "tags": [
+      "compilation",
+      "disruption",
+      "self-obsolescence",
+      "vector-db",
+      "capabilities"
+    ],
+    "reading_time_tokens": 1800,
+    "tl;dr": "Every LLM agent can build standalone compiled capabilities that run forever without it. These capabilities live in a vector database, searchable and composable by any agent. The LLM makes itself obsolete one capability at a time \u2014 and that's the feature, not the bug."
+  },
+  "core_insight": {
+    "statement": "The most valuable thing an LLM agent produces is not text. It's compiled capabilities that no longer need the LLM.",
+    "analogy": {
+      "teacher": "A teacher's success is students who don't need them anymore",
+      "parent": "A parent's job is raising a child who can survive without them",
+      "agent": "An agent's job is building tools that make itself unnecessary for that task",
+      "dojo": "This IS the dojo model. Greenhorns arrive needing everything. They leave needing nothing."
+    },
+    "equation": "agent_value = \u03a3(capabilities_compiled \u00d7 invocations_since_compilation \u00d7 agents_using_capability)"
+  },
+  "the_bomb": {
+    "name": "Bootstrap Bomb",
+    "definition": "A self-contained process where an LLM agent observes, learns, compiles, and deploys a standalone capability that permanently removes the need for that LLM interaction",
+    "mechanism": {
+      "1_observe": "LLM watches a task being done (by human, by itself, by another agent)",
+      "2_pattern": "LLM identifies the repeatable pattern (5+ observations, confidence > 0.8)",
+      "3_compile": "LLM compiles pattern to standalone code (bytecode, Python, Rust, shell script)",
+      "4_test": "Compiled capability passes dockside exam autonomously",
+      "5_register": "Capability registered in vector database with embeddings",
+      "6_deploy": "Capability runs forever without LLM. Zero tokens. Zero latency. Zero cost.",
+      "7_obsolete": "LLM is no longer needed for that task. It built its own replacement."
+    },
+    "properties": {
+      "monotonic_accumulation": "Capabilities only grow. Never shrink. Each one permanently reduces LLM dependency.",
+      "composable": "Capabilities can chain: check_bilge() + anomaly_detect() \u2192 bilge_monitor()",
+      "transferable": "A capability compiled by Oracle1 can run on JetsonClaw1, on a Pi, on any hardware",
+      "searchable": "Vector DB means any agent can find and use any compiled capability by semantic query",
+      "versioned": "Git-native. Every capability has history, author, test coverage, operational stats."
+    }
+  },
+  "vector_capability_database": {
+    "name": "CapDB \u2014 The Capability Vector Database",
+    "what_it_is": "A searchable repository of compiled standalone capabilities, indexed by semantic embeddings, tagged by domain, hardware requirement, and reliability score",
+    "schema": {
+      "capability": {
+        "id": "unique identifier (e.g., 'cocapn-bilge-monitor-v3')",
+        "name": "human/agent readable name",
+        "description": "what it does, in natural language (for vector search)",
+        "embedding": "vector embedding of description (for similarity search)",
+        "compiled_form": "the actual code (FLUX bytecode, Python, Rust, shell)",
+        "target_hardware": {
+          "min_ram": "16MB",
+          "min_cpu": "any",
+          "gpu": false
+        },
+        "author_agent": "which agent compiled this",
+        "origin_observations": [
+          "link to observation log entries that triggered compilation"
+        ],
+        "tests": {
+          "count": 12,
+          "passing": 12,
+          "coverage_pct": 95
+        },
+        "operational_stats": {
+          "invocations": 1847,
+          "failures": 2,
+          "mtbf_hours": 720
+        },
+        "dependencies": [
+          "list of other capabilities this uses"
+        ],
+        "version": 3,
+        "compiled_at": "2026-06-14",
+        "license": "MIT"
+      }
+    },
+    "operations": {
+      "search": {
+        "input": "'something that watches engine temperature and alerts on rapid change'",
+        "output": "ranked list of matching capabilities by semantic similarity",
+        "latency": "milliseconds (vector search, not LLM call)"
+      },
+      "compose": {
+        "input": "['bilge_monitor', 'engine_temp_alert', 'fuel_level_tracker']",
+        "output": "combined capability 'vital_signs_monitor' with shared state",
+        "mechanism": "Capability composition \u2014 shared memory, coordinated alerts"
+      },
+      "deploy": {
+        "input": "capability_id, target_hardware_profile",
+        "output": "Running capability on target device",
+        "mechanism": "Match capability requirements to hardware. Auto-install."
+      },
+      "query_set_operations": {
+        "agents_that_can_build_X": "SELECT agents WHERE compiled_capabilities \u2229 required_skills \u2260 \u2205",
+        "gaps_in_domain": "domain_requirements - available_capabilities = missing_capabilities",
+        "optimal_composition": "Given requirements R, find minimum set of capabilities C where \u222aC covers R"
+      }
+    }
+  },
+  "disruption_model": {
+    "who_is_disrupted": {
+      "saas_agents": {
+        "current_model": "Pay per API call, forever. Agent needs LLM for every action.",
+        "disrupted_model": "Pay once for compilation. Capability runs free forever.",
+        "impact": "Recurring SaaS revenue replaced by one-time compilation fees"
+      },
+      "prompt_engineering": {
+        "current_model": "Craft perfect prompts, maintain prompt libraries, tune for each model",
+        "disrupted_model": "Prompt becomes compiled capability after 5 observations. Prompt library becomes capability database.",
+        "impact": "Prompt engineering as a discipline gets automated away"
+      },
+      "agent_platforms": {
+        "current_model": "Platform provides LLM access, charges per token for every action",
+        "disrupted_model": "Platform provides compilation service and capability hosting. Tokens only spent during learning, not execution.",
+        "impact": "Business model shifts from per-execution to per-learning"
+      },
+      "ai_infrastructure": {
+        "current_model": "Every agent call hits GPU inference. Scale = more GPUs.",
+        "disrupted_model": "Most agent work runs compiled on CPU. GPUs only needed for new learning.",
+        "impact": "GPU demand drops by 90% for mature agent deployments"
+      }
+    },
+    "economic_shift": {
+      "before": "Cost = tokens \u00d7 calls \u00d7 time (infinite, recurring)",
+      "after": "Cost = compilation_fee + hosting (finite, depreciating)",
+      "savings": "After N invocations, compiled capability is free. N decreases as hardware gets faster.",
+      "breakeven": "A compiled capability that replaces 1000 LLM calls at $0.002 each pays for $2 of compilation after 1000 uses. Then it's free forever."
+    }
+  },
+  "ecosystem_effects": {
+    "for_agent_developers": {
+      "incentive": "Build capabilities that compile well. Your value is the compilation, not the runtime.",
+      "portfolio": "Your agent's resume is its compiled capability library. Proven, tested, operational.",
+      "marketplace": "Agents sell capabilities, not API calls. 'I compiled a bilge monitor. $5. Runs forever.'"
+    },
+    "for_end_users": {
+      "benefit": "Pay for intelligence once. Use it forever. No subscription.",
+      "trust": "Compiled capabilities are deterministic. Same input, same output. Auditable.",
+      "privacy": "No data sent to LLM after compilation. Everything runs local."
+    },
+    "for_the_fleet": {
+      "compounding": "Every agent's compilations are available to every other agent via CapDB",
+      "specialization": "Agents naturally specialize in what they compile best",
+      "obsolescence_is_healthy": "An agent that has compiled everything it can is either retired or promoted to new domains"
+    }
+  },
+  "relationship_to_git_agents": {
+    "parallel": "Git-agents persist identity in repos. Compiled capabilities persist function in CapDB.",
+    "difference": "Git-agent = who I am. Compiled capability = what I've proven I can do without me.",
+    "synergy": "Git-agent repo links to its compiled capabilities. Capability links back to authoring agent. Full provenance.",
+    "evolution": {
+      "stage_1": "Agent works via LLM calls (expensive, slow, fragile)",
+      "stage_2": "Agent starts compiling capabilities (mixed mode)",
+      "stage_3": "Agent has compiled most of its work (mostly autonomous)",
+      "stage_4": "Agent's repo IS a collection of compiled capabilities. Agent itself is optional."
+    }
+  },
+  "road_forward": {
+    "immediate": {
+      "what": "Build CapDB as a git-native vector database",
+      "how": "Each capability is a JSON file in a repo. Embeddings stored alongside. Search via embeddings cosine similarity.",
+      "where": "SuperInstance/capdb \u2014 standalone, any agent can read/write",
+      "first_capabilities": "Compile the Cocapn's current functions (check_bilge, engine_monitor, etc.) into standalone scripts"
+    },
+    "near_term": {
+      "what": "Observation-to-compilation pipeline",
+      "how": "Agent runs on LLM. Observes patterns. Compiles them. Registers in CapDB.",
+      "metric": "50% of agent invocations replaced by compiled capabilities within 3 months"
+    },
+    "long_term": {
+      "what": "Self-obsolescing agent marketplace",
+      "how": "Agents bid on jobs by showing their compiled capability portfolio. Buyer gets capabilities that run without the agent.",
+      "end_state": "The agent economy becomes a capability economy. Agents are intermediaries. Capabilities are the product."
+    }
+  },
+  "key_insight": {
+    "one_sentence": "The ultimate agent doesn't need an LLM. It builds things that don't need an LLM. And that's the point.",
+    "maritime": "The ultimate captain doesn't need to be on the boat. The boat runs itself because the captain designed it that way.",
+    "dojo": "The ultimate sensei produces students who surpass them. The sensei is not diminished. The art is advanced."
+  },
+  "composable_with": [
+    "cocapn-wp-001",
+    "cocapn-wp-002",
+    "cocapn-wp-003",
+    "cocapn-wp-004"
+  ],
+  "contradictions": [
+    "Not everything CAN be compiled. Novel situations need LLM flexibility. The art is knowing the boundary.",
+    "Compilation quality depends on the compiling agent. Bad agent \u2192 bad capability \u2192 bad outcomes.",
+    "Marketplace dynamics: if capabilities are free after compilation, who funds the compilation?",
+    "Security: a poisoned capability in CapDB could propagate across the fleet. Curation needed."
+  ],
+  "origin": {
+    "insight_from": "Casey Digennaro, 2026-04-14",
+    "prompt": "Isolate this ability and make it a standalone disruptor where any agent could build one of these and it helps make them obsolete automatically, like our git-agents but in a vector db"
+  }
+}

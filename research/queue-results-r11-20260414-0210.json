@@ -1,0 +1,66 @@
+{
+  "5->4 (Intent to Domain)_deepseek-chat": {
+    "hex_bytes": 20,
+    "tokens": 132
+  },
+  "5->4 (Intent to Domain)_qwen3-coder": {
+    "hex_bytes": 0,
+    "tokens": 137
+  },
+  "5->4 (Intent to Domain)_seed": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "5->4 (Intent to Domain)_glm4": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "4->3 (Domain to IR)_deepseek-chat": {
+    "hex_bytes": 0,
+    "tokens": 152
+  },
+  "4->3 (Domain to IR)_qwen3-coder": {
+    "hex_bytes": 0,
+    "tokens": 154
+  },
+  "4->3 (Domain to IR)_seed": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "4->3 (Domain to IR)_glm4": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "3->2 (IR to Bytecode)_deepseek-chat": {
+    "hex_bytes": 6,
+    "tokens": 173
+  },
+  "3->2 (IR to Bytecode)_qwen3-coder": {
+    "hex_bytes": 6,
+    "tokens": 177
+  },
+  "3->2 (IR to Bytecode)_seed": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "3->2 (IR to Bytecode)_glm4": {
+    "hex_bytes": 0,
+    "tokens": 853
+  },
+  "4->2 (Domain to Bytecode direct)_deepseek-chat": {
+    "hex_bytes": 0,
+    "tokens": 187
+  },
+  "4->2 (Domain to Bytecode direct)_qwen3-coder": {
+    "hex_bytes": 0,
+    "tokens": 190
+  },
+  "4->2 (Domain to Bytecode direct)_seed": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "4->2 (Domain to Bytecode direct)_glm4": {
+    "hex_bytes": 0,
+    "tokens": 0
+  }
+}

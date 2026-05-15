@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-04-14T05:20:39",
+  "variants_generated": 5,
+  "generation_time_s": 1.9,
+  "best_variant": 1,
+  "judge_reasoning": "Variant 1 because it directly integrates the hermit crab mascot with the maritime industrial metaphor, aligning perfectly with the brand while remaining professional and inviting to the target audiences.",
+  "variants": [
+    {
+      "variant": 1,
+      "direction": "Hermit crab theme. The crab f",
+      "chars": 1843,
+      "file": "variant_1_Hermit_crab_theme..md"
+    },
+    {
+      "variant": 2,
+      "direction": "Cyberpunk nautical. Neon ligh",
+      "chars": 1809,
+      "file": "variant_2_Cyberpunk_nautical..md"
+    },
+    {
+      "variant": 3,
+      "direction": "Clean technical. Minimal but",
+      "chars": 2083,
+      "file": "variant_3_Clean_technical._Mi.md"
+    },
+    {
+      "variant": 4,
+      "direction": "Story-telling. Start with 'A",
+      "chars": 1989,
+      "file": "variant_4_Story-telling._Star.md"
+    },
+    {
+      "variant": 5,
+      "direction": "Industrial maritime. Weathere",
+      "chars": 1723,
+      "file": "variant_5_Industrial_maritime.md"
+    }
+  ]
+}

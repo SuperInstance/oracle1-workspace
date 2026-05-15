@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-04-14T05:27:41.370227",
+  "repos_processed": 15,
+  "updated": 4,
+  "kept": 11,
+  "failed": 0,
+  "details": [
+    {
+      "repo": "SuperInstance",
+      "old_score": "4",
+      "action": "updated",
+      "suggestion": "Add a brief introductory sentence explaining the purpose and nature of the SuperInstance project."
+    },
+    {
+      "repo": "cocapn",
+      "old_score": "0",
+      "action": "kept"
+    },
+    {
+      "repo": "holodeck-rust",
+      "old_score": "7",
+      "action": "kept"
+    },
+    {
+      "repo": "holodeck-studio",
+      "old_score": "8",
+      "action": "kept"
+    },
+    {
+      "repo": "flux-runtime",
+      "old_score": "8",
+      "action": "kept"
+    },
+    {
+      "repo": "fleet-agent-api",
+      "old_score": "6",
+      "action": "updated",
+      "suggestion": "Add a brief introduction explaining what FLUX fleet agent management is and its purpose to provide context for new visitors."
+    },
+    {
+      "repo": "lighthouse-keeper",
+      "old_score": "7",
+      "action": "kept"
+    },
+    {
+      "repo": "fleet-mechanic",
+      "old_score": "8",
+      "action": "kept"
+    },
+    {
+      "repo": "git-agent-standard",
+      "old_score": "8",
+      "action": "kept"
+    },
+    {
+      "repo": "dockside-exam",
+      "old_score": "8",
+      "action": "kept"
+    },
+    {
+      "repo": "abstraction-planes",
+      "old_score": "6",
+      "action": "updated",
+      "suggestion": "Add a brief, non-technical introduction to explain the project's purpose and context before diving into technical details."
+    },
+    {
+      "repo": "agent-bootcamp",
+      "old_score": "8",
+      "action": "kept"
+    },
+    {
+      "repo": "fleet-github-app",
+      "old_score": "7",
+      "action": "kept"
+    },
+    {
+      "repo": "oracle1-vessel",
+      "old_score": "6",
+      "action": "updated",
+      "suggestion": "Add a brief, simple introduction to explain what Oracle1 is and its purpose, before diving into the details and ecosystem."
+    },
+    {
+      "repo": "capitaine",
+      "old_score": "8",
+      "action": "kept"
+    }
+  ]
+}

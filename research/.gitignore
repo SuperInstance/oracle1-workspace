@@ -1,0 +1,64 @@
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+brand-images/
+*.png
+*.jpg
+*.gif
+fleet-synthesis/
+mud-night-shift/
+kimi-deep-audit-2026-04-29/
+fleet-synthesis/
+mud-night-shift/
+kimi-deep-audit-2026-04-29/
+dsml-sessions/
+kimi-round2-audit/
+external-agent-reports/
+plato-mud-swarm-outputs/
+aime-sessions/
+kimi-critique/
+deep-gaps/
+purplepincher/
+autonomous/
+bootcamp-design/
+message-in-a-bottle/
+readme-variants/
+isa-convergence/
+for-fleet/
+*.png
+*.jpg
+*.gif
+*.gif.bak

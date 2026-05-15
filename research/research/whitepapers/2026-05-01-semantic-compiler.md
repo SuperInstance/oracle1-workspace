@@ -1,0 +1,133 @@
+---
+title: "Semantic Compiler: From Intent to Verified Behavior"
+date: "2026-05-01"
+summary: "Natural language specs → semantic AST → compiled agent behavior → verified against spec. The compiler's job is to make the agent's output provably match the spec, not just pass tests."
+tags:
+  - compilation
+  - verification
+  - semantics
+  - agents
+  - formal-methods
+---
+
+## The Specification Problem
+
+Every agent system eventually faces the same crisis: the agent's behavior diverges from the user's intent. Not because the agent is buggy — because language is ambiguous and context shifts.
+
+Traditional software solves this with formal specs and type systems. The spec is precise, the type checker verifies the code matches the spec at compile time. Bugs that survive are logic errors, not interpretation errors.
+
+Agents don't have a compile step. They have inference — and inference is interpretation all the way down.
+
+The Semantic Compiler is a proposal to add a compile step to agent systems: translate intent into a precise semantic representation, compile that representation into agent behavior, verify the behavior against the spec before deployment.
+
+## Architecture
+
+```
+User Intent (natural language)
+    ↓
+Semantic Parser (LLM)
+    ↓
+Semantic AST (formal representation)
+    ↓
+Compilation Passes (transform → optimize)
+    ↓
+Agent Behavior (compiled policies)
+    ↓
+Verification (formal check against spec)
+    ↓
+Deployment or Rejection
+```
+
+## The Semantic AST
+
+The Semantic AST is a tree where every node is a formally verifiable proposition:
+
+```typescript
+interface SemanticNode {
+  type: "goal" | "constraint" | "precondition" | "effect" | "query";
+  proposition: string;        // formal claim in constrained natural language
+  confidence: number;         // 0-1, semantic parser's confidence
+  children?: SemanticNode[];  // sub-goals or sub-constraints
+}
+
+interface SemanticAST {
+  root: SemanticNode;         // top-level goal
+  constraints: SemanticNode[]; // hard constraints (must not violate)
+  preconditions: SemanticNode[]; // assumptions about initial state
+  effects: SemanticNode[];     // expected outcomes
+  queries: SemanticNode[];     // questions the agent should be able to answer
+}
+```
+
+The key insight: the LLM generates the AST, but the AST itself is constrained to a vocabulary that has formal semantics. We're not asking "did the LLM mean the right thing?" We're asking "does the compiled behavior satisfy the formal claims?"
+
+## Compilation Passes
+
+**Pass 1: Decompose**
+Break the semantic AST into atomic goals. Each goal maps to a PLATO 5-atom chain: premise → reasoning → hypothesis → verification → conclusion.
+
+**Pass 2: Constraint Propagation**
+Each constraint becomes a filter on the policy space. If the constraint is "never write to filesystem outside /tmp", the compiled policy must provably not produce filesystem writes outside that path.
+
+**Pass 3: Precondition Checking**
+Before each action, the compiled policy checks preconditions. If preconditions aren't met, the agent must either establish them or abort.
+
+**Pass 4: Effect Verification**
+After each action, the compiled policy verifies the effect matches the expected effect from the AST. Mismatch triggers a replan.
+
+## Verification vs Testing
+
+Testing checks behavior on sampled inputs. Verification checks behavior on all inputs in the formal domain.
+
+For agents: testing means "does the agent do the right thing on these 100 test cases?" Verification means "is the compiled policy provably correct with respect to the semantic AST?"
+
+The 5-atom chain in PLATO is a form of runtime verification:
+- **Premise:** Does the current state satisfy preconditions?
+- **Reasoning:** Given the goal, what action sequence is most likely to succeed?
+- **Hypothesis:** The proposed action sequence
+- **Verification:** For each action, will preconditions be satisfied? Will effects match?
+- **Conclusion:** Execute the verified sequence, or abort if verification fails
+
+## The Compiler's Contract
+
+The Semantic Compiler makes a specific claim: "The compiled behavior will satisfy the semantic AST, or it will abort."
+
+This is stronger than "the agent will try its best." It's a formal guarantee within the formal domain.
+
+The guarantee holds as long as:
+1. The semantic parser's confidence threshold is met
+2. The formal domain accurately represents the real domain
+3. No external intervention changes the agent's policy after compilation
+
+## Open Problems
+
+**The Formal Domain Gap:** Natural language intent is richer than any formal domain we can define. The semantic parser must compress intent into the formal vocabulary — and that compression loses information. How do we know when the loss is acceptable?
+
+**Verification Complexity:** Formal verification of arbitrary policies is undecidable in general. We need to find tractable subsets.
+
+**The Specification Is Also Inferred:** Even the semantic AST is generated by an LLM from natural language. If the user says "make it fast," the semantic parser has to infer what "fast" means in context. This inference can be wrong.
+
+## Connection to PLATO
+
+The 5-atom chain in PLATO is the runtime verification layer for the Semantic Compiler:
+
+- **Premise** = preconditions satisfied
+- **Reasoning** = policy search
+- **Hypothesis** = proposed action sequence
+- **Verification** = model-checking against constraints
+- **Conclusion** = execute or abort
+
+PLATO rooms store the verification traces — every decision, every constraint check, every abort. This creates an audit trail that the Semantic Compiler can use for:
+- Regression verification (did we regress on any constraints?)
+- Constraint discovery (what constraints are we violating repeatedly?)
+- Policy evolution (which verified behaviors should be hardened into reflexive actions?)
+
+## The Takeaway
+
+The Semantic Compiler doesn't replace the LLM — it adds a verification layer around it. The LLM generates. The compiler verifies. If verification fails, the system replans instead of executing wrong behavior.
+
+This is how you get from "the agent usually does the right thing" to "the agent provably does the right thing in the formal domain."
+
+---
+
+*Compile intent. Verify behavior. Abort rather than guess.*

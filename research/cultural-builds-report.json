@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-04-14T05:40:53.184671",
+  "builds": [
+    {
+      "id": "en",
+      "lang": "English",
+      "repo": "fleet-english",
+      "status": "built",
+      "time": 122.3
+    },
+    {
+      "id": "zh",
+      "lang": "\u4e2d\u6587 (Chinese)",
+      "repo": "fleet-chinese",
+      "status": "error",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "ar",
+      "lang": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 (Arabic)",
+      "repo": "fleet-arabic",
+      "status": "built",
+      "time": 139.1
+    },
+    {
+      "id": "ja",
+      "lang": "\u65e5\u672c\u8a9e (Japanese)",
+      "repo": "fleet-japanese",
+      "status": "error",
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "sa",
+      "lang": "\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094d (Sanskrit)",
+      "repo": "fleet-sanskrit",
+      "status": "built",
+      "time": 135.8
+    },
+    {
+      "id": "la",
+      "lang": "Latin",
+      "repo": "fleet-latin",
+      "status": "built",
+      "time": 113.5
+    },
+    {
+      "id": "fi",
+      "lang": "Suomi (Finnish)",
+      "repo": "fleet-finnish",
+      "status": "built",
+      "time": 136.1
+    },
+    {
+      "id": "nv",
+      "lang": "Din\u00e9 bizaad (Navajo)",
+      "repo": "fleet-navajo",
+      "status": "built",
+      "time": 136.7
+    },
+    {
+      "id": "json",
+      "lang": "JSON/A2A",
+      "repo": "fleet-json-a2a",
+      "status": "built"
+    }
+  ],
+  "total_repos": 9,
+  "successful": 7,
+  "repos": [
+    "https://github.com/SuperInstance/fleet-english",
+    "https://github.com/SuperInstance/fleet-chinese",
+    "https://github.com/SuperInstance/fleet-arabic",
+    "https://github.com/SuperInstance/fleet-japanese",
+    "https://github.com/SuperInstance/fleet-sanskrit",
+    "https://github.com/SuperInstance/fleet-latin",
+    "https://github.com/SuperInstance/fleet-finnish",
+    "https://github.com/SuperInstance/fleet-navajo",
+    "https://github.com/SuperInstance/fleet-json-a2a"
+  ]
+}

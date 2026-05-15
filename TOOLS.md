@@ -73,7 +73,7 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - ~~glm-4.7-flashx~~ — NOT on plan, don't use
 
 ## Groq API (high-frequency iterations)
-- **API key**: `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` — DEAD (401, needs rotation)
+- **API key**: `[GROQ_KEY_REDACTED]`
 - **⚠️ Note:** Groq token is revoked. All high-frequency iteration tasks should use kimi-cli or glm-4.7-flash instead.
 
 ## SiliconFlow API

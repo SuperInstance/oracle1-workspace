@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Forcing Function Architecture",
+    "id": "cocapn-wp-001",
+    "version": 1,
+    "authors": [
+      "oracle1",
+      "casey"
+    ],
+    "date": "2026-04-14",
+    "tags": [
+      "design",
+      "safety",
+      "marine",
+      "architecture"
+    ],
+    "reading_time_tokens": 800,
+    "tl;dr": "Don't add checklists. Design layouts where the right action is the easy action."
+  },
+  "problem": {
+    "statement": "Agents with explicit checklists are fragile. They skip steps under load.",
+    "example": "A captain might forget to check bilge if it's a separate task. But if the dipstick is on the path to the hydraulic switch, checking becomes automatic.",
+    "root_cause": "Procedural safety (checklists) competes with operational pressure. Architectural safety (layout) has no competition."
+  },
+  "principle": {
+    "name": "Forcing Function",
+    "definition": "A system architecture where the correct behavior is the path of least resistance",
+    "formula": "safety_reliability(layout) >> safety_reliability(checklist)",
+    "marine_proof": {
+      "system": "Reduction gear oil dipstick placement",
+      "designer": "Previous captain of Casey's vessel",
+      "mechanism": "Dipstick placed on walkway between bridge and hydraulic selector",
+      "physics_constraint": "Reading only accurate at idle-not-in-gear",
+      "natural_timing": "Engine at idle-not-in-gear exactly when switching hydraulics before departure",
+      "result": "Oil check happens every departure without being a task"
+    }
+  },
+  "application_to_agents": {
+    "pattern": "Digital twin room layout mirrors physical vessel paths",
+    "implementation": {
+      "dont": "Add task 'check_bilge' to departure checklist",
+      "do": "Make bilge_sensor a required field on the path from bridge room to hydraulics room in the twin",
+      "why": "Agent naturally reads bilge when 'walking' to hydraulics. No task, no skip, no failure mode."
+    },
+    "generalization": {
+      "rule": "Every safety-critical read should be architecturally required, not procedurally requested",
+      "test": "Remove all checklists. If the agent still does the right thing, architecture is correct."
+    }
+  },
+  "implications": {
+    "for_cocapn": "Room graph in digital twin IS the safety system. Not separate from it.",
+    "for_fleet": "Agent repos should structure their code so that hot-path functions naturally validate inputs from cold-path sensors.",
+    "for_design": "Every 'remember to check X' is a design failure. Redesign until checking X is unavoidable."
+  },
+  "composable_with": [
+    "cocapn-wp-002",
+    "cocapn-wp-003"
+  ],
+  "contradictions": [
+    "Checklists are still needed for rare events not on any natural path"
+  ]
+}

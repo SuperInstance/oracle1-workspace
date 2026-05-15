@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-04-14T04:27:00Z",
+  "capabilities_tested": 6,
+  "targets_tested": 4,
+  "tests": {
+    "semantic_search": "PASS \u2014 correct capabilities found for 3/3 queries",
+    "multi_target_compilation": "PASS \u2014 bilge monitor compiles to 4 targets, species classifier correctly fails on non-GPU",
+    "composition": "PASS \u2014 vector arithmetic produces meaningful composed capabilities",
+    "meta_output": "PASS \u2014 gap detection identifies underserved capability regions"
+  },
+  "key_findings": [
+    "Vector similarity IS a working dependency resolution mechanism",
+    "Same capability naturally adapts to target via output format selection",
+    "GPU requirements create natural hardware tier boundaries",
+    "Gap detection in embedding space can drive new capability generation",
+    "Composition via vector addition produces meaningful combined capabilities"
+  ]
+}

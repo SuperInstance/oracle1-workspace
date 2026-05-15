@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Lazy Evaluation at Sea: Async Compute for Disconnected Environments",
+    "id": "cocapn-wp-003",
+    "version": 1,
+    "authors": [
+      "oracle1",
+      "casey"
+    ],
+    "date": "2026-04-14",
+    "tags": [
+      "compute",
+      "async",
+      "edge",
+      "marine",
+      "priority"
+    ],
+    "reading_time_tokens": 700,
+    "tl;dr": "Capture everything, compute when you can, alert only what's urgent."
+  },
+  "problem": {
+    "constraint": "At sea: no internet, limited power, compute is scarce",
+    "observation": "Most data is cheap to capture but expensive to analyze",
+    "insight": "Analysis can be deferred. The snapshot is frozen. A fish photo from 2pm is still valid for species ID at 3am."
+  },
+  "model": {
+    "name": "Hot/Warm/Cold Priority Queue",
+    "paths": {
+      "hot": {
+        "priority": 0,
+        "latency": "real-time",
+        "examples": [
+          "navigation",
+          "safety_alerts",
+          "chatbot"
+        ],
+        "constraint": "ALWAYS local, ALWAYS immediate, NEVER deferred",
+        "compute_budget": "60% of available"
+      },
+      "warm": {
+        "priority": 1,
+        "latency": "minutes_to_hours",
+        "examples": [
+          "camera_analysis",
+          "engine_trend_detection",
+          "species_classification"
+        ],
+        "constraint": "Local but deferred to low-load periods",
+        "compute_budget": "30% of available"
+      },
+      "cold": {
+        "priority": 2,
+        "latency": "overnight_to_next_connection",
+        "examples": [
+          "model_training",
+          "audio_transcription",
+          "fleet_sync",
+          "report_generation"
+        ],
+        "constraint": "Batch when connected or during overnight idle",
+        "compute_budget": "10% of available"
+      }
+    },
+    "escalation": {
+      "rule": "If warm task detects anomaly, escalate to hot immediately",
+      "example": "Camera analyzing overnight \u2192 spots oil leak pattern \u2192 becomes safety alert"
+    }
+  },
+  "daily_rhythm": {
+    "0600": "Engine on. Hot path: nav + safety. Camera starts snapping (queued warm).",
+    "0800_1800": "Fishing. 200 snaps (warm), 50 engine readings (warm), continuous nav (hot). No spare compute.",
+    "1800_2000": "Heading in. Warm queue processes: species ID from today's snaps, engine trend report.",
+    "2000_0600": "Overnight idle. Cold queue: audio transcription, model fine-tuning, fleet sync if in range.",
+    "result": "Everything gets processed. Nothing gets dropped. Priority ensures safety never waits."
+  },
+  "hardware_mapping": {
+    "pi_4b": {
+      "hot_capacity": "Chat + nav overlay + photo snap",
+      "warm_capacity": "Basic classification overnight (no GPU = slow)",
+      "cold_capacity": "Fleet sync only when connected",
+      "upgrade_trigger": "If warm queue backlog > 24h, recommend Jetson"
+    },
+    "jetson_orin": {
+      "hot_capacity": "Everything Pi can + real-time vision inference",
+      "warm_capacity": "Camera analysis in near-real-time, audio transcription (slower than real-time)",
+      "cold_capacity": "Overnight fine-tuning of local models",
+      "upgrade_trigger": "If multi-camera, recommend second unit + Commodore protocol"
+    }
+  },
+  "implementation": {
+    "class": "cocapn.priority_queue.AsyncQueue",
+    "capture": "O(log n) \u2014 always fast, never blocks",
+    "escalate": "Move category up one priority level",
+    "persist": "Queue survives restart \u2014 critical for power loss at sea"
+  },
+  "composable_with": [
+    "cocapn-wp-001",
+    "cocapn-wp-002"
+  ],
+  "contradictions": [
+    "Some captains want instant everything. Education required on the model."
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-04-14T06:18:13.395196",
+  "scores": {
+    "cocapn": {
+      "score": 7,
+      "max": 7,
+      "pct": 100,
+      "grade": "\ud83d\udfe2",
+      "missing": []
+    },
+    "holodeck-rust": {
+      "score": 6,
+      "max": 7,
+      "pct": 86,
+      "grade": "\ud83d\udfe2",
+      "missing": [
+        "STATE"
+      ]
+    },
+    "holodeck-studio": {
+      "score": 6,
+      "max": 7,
+      "pct": 86,
+      "grade": "\ud83d\udfe2",
+      "missing": [
+        "STATE"
+      ]
+    },
+    "flux-runtime": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "CHARTER",
+        "STATE"
+      ]
+    },
+    "fleet-agent-api": {
+      "score": 7,
+      "max": 7,
+      "pct": 100,
+      "grade": "\ud83d\udfe2",
+      "missing": []
+    },
+    "lighthouse-keeper": {
+      "score": 3,
+      "max": 7,
+      "pct": 43,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "CHARTER",
+        "STATE"
+      ]
+    },
+    "fleet-mechanic": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "CHARTER",
+        "STATE"
+      ]
+    },
+    "flux-skills": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "CHARTER",
+        "STATE"
+      ]
+    },
+    "flux-baton": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "CHARTER",
+        "STATE"
+      ]
+    },
+    "oracle1-vessel": {
+      "score": 6,
+      "max": 7,
+      "pct": 86,
+      "grade": "\ud83d\udfe2",
+      "missing": [
+        "CI"
+      ]
+    },
+    "git-agent-standard": {
+      "score": 2,
+      "max": 7,
+      "pct": 29,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "CHARTER",
+        "ABSTRACTION",
+        "STATE"
+      ]
+    },
+    "dockside-exam": {
+      "score": 4,
+      "max": 7,
+      "pct": 57,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "ABSTRACTION"
+      ]
+    },
+    "abstraction-planes": {
+      "score": 4,
+      "max": 7,
+      "pct": 57,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "CHARTER"
+      ]
+    },
+    "agent-bootcamp": {
+      "score": 6,
+      "max": 7,
+      "pct": 86,
+      "grade": "\ud83d\udfe2",
+      "missing": [
+        "ABSTRACTION"
+      ]
+    },
+    "fleet-github-app": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "tests",
+        "CI"
+      ]
+    },
+    "commodore-protocol": {
+      "score": 6,
+      "max": 7,
+      "pct": 86,
+      "grade": "\ud83d\udfe2",
+      "missing": [
+        "ABSTRACTION"
+      ]
+    },
+    "brand-assets": {
+      "score": 2,
+      "max": 7,
+      "pct": 29,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "CHARTER",
+        "ABSTRACTION",
+        "STATE"
+      ]
+    },
+    "captains-log": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "tests",
+        "CI"
+      ]
+    },
+    "fleet-english": {
+      "score": 2,
+      "max": 7,
+      "pct": 29,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "CHARTER",
+        "ABSTRACTION",
+        "STATE"
+      ]
+    },
+    "fleet-json-a2a": {
+      "score": 2,
+      "max": 7,
+      "pct": 29,
+      "grade": "\u26a0\ufe0f",
+      "missing": [
+        "tests",
+        "CI",
+        "CHARTER",
+        "ABSTRACTION",
+        "STATE"
+      ]
+    },
+    "openmanus-vessel": {
+      "score": 5,
+      "max": 7,
+      "pct": 71,
+      "grade": "\ud83d\udfe1",
+      "missing": [
+        "tests",
+        "CI"
+      ]
+    }
+  },
+  "summary": {
+    "\ud83d\udfe2": 7,
+    "\ud83d\udfe1": 7,
+    "\u26a0\ufe0f": 7
+  }
+}

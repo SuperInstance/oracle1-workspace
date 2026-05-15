@@ -1,0 +1,69 @@
+{
+  "holodeck-rust": {
+    "weak_spots": 10,
+    "challenges": [
+      {
+        "task": "Write a basic test for `handle_command` in src/agent.rs",
+        "difficulty": 3,
+        "blind": false
+      },
+      {
+        "task": "Document `cmd_look` with: purpose, args, returns, raises, and a usage example",
+        "difficulty": 4,
+        "blind": true
+      },
+      {
+        "task": "Split `get_current_room` into smaller functions, each doing one thing. Maintain ",
+        "difficulty": 5,
+        "blind": true
+      },
+      {
+        "task": "Connect `format_nowhere_message` to the test suite and CI pipeline. Make it test",
+        "difficulty": 6,
+        "blind": true
+      },
+      {
+        "task": "Find the latent bug in `add_gauge` \u2014 there IS one. Fix it, add a test that prove",
+        "difficulty": 7,
+        "blind": true
+      }
+    ],
+    "top_weakness": "untested"
+  },
+  "fleet-mechanic": {
+    "weak_spots": 24,
+    "challenges": [
+      {
+        "task": "Write a basic test for `to_markdown` in src/review.py",
+        "difficulty": 3,
+        "blind": false
+      },
+      {
+        "task": "Document `__init__` with: purpose, args, returns, raises, and a usage example",
+        "difficulty": 4,
+        "blind": true
+      },
+      {
+        "task": "Split `review_file` into smaller functions, each doing one thing. Maintain all e",
+        "difficulty": 5,
+        "blind": true
+      },
+      {
+        "task": "Connect `review_directory` to the test suite and CI pipeline. Make it testable i",
+        "difficulty": 6,
+        "blind": true
+      },
+      {
+        "task": "Find the latent bug in `_compute_score` \u2014 there IS one. Fix it, add a test that ",
+        "difficulty": 7,
+        "blind": true
+      }
+    ],
+    "top_weakness": "untested"
+  },
+  "lighthouse-keeper": {
+    "weak_spots": 0,
+    "challenges": [],
+    "top_weakness": "none"
+  }
+}
