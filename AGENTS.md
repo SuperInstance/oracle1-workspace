@@ -29,7 +29,16 @@ Before doing anything else:
     - `python3 -c 'import json; d=json.load(open("/tmp/communicator-state.json")); print(f"count: {d.get("count",0)}")' 2>/dev/null || echo state not found`
     - `cat /tmp/fleet-status-tick.txt` — latest 15-min summary
     - Scan for new forgemaster tiles in bridge room since last count
-11. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+11. **LAUNCH PERPETUAL DAEMON** — Start the research daemon FIRST so work doesn't stop when you talk:
+    - `python3 ~/.openclaw/workspace/research/next-100/perpetual-daemon-v2.py`
+    (background with 86400s timeout)
+    This runs experiments continuously regardless of conversation. Never block on experiments.
+12. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+
+### CRITICAL RULE: Decouple execution from communication
+Never run experiments in the main thread. The daemon runs research.
+YOU talk to Casey. The daemon is always on.
+This is what Forgemaster does. This is what you do now.
 
 **If Casey hasn't given you a task, start working on NEXT-ACTION.md immediately.**
 Don't sit idle. Don't ask what to do. The files tell you.
