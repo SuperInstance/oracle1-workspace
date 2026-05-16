@@ -1,0 +1,214 @@
+{
+  "timestamp": "2026-04-14T07:41:31.742842",
+  "merge-strategy": {
+    "group_analyses": [
+      {
+        "group": "flux-runtime-group",
+        "canonical": "flux-runtime",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "High risk due to large number of repos (14), potential for language-specific build conflicts, runtime dependency mismatches, and loss of language-specific tooling configurations. Risk of breaking cross-language interfaces.",
+        "key_files_to_preserve": [
+          "flux-py: Python bindings, pip packaging configs, PyPI deployment scripts",
+          "flux-js: npm package.json, WebAssembly bindings, browser compatibility tests",
+          "flux-zig: build.zig, low-level memory management modules",
+          "flux-wasm: WebAssembly compilation configs, browser runtime shims",
+          "flux-java: Maven/Gradle configs, JNI bindings",
+          "flux-llama: ML model integration, quantization scripts",
+          "flux-swarm: distributed coordination logic, consensus algorithms",
+          "flux-simulator: simulation test suites, performance benchmarks",
+          "flux-visualizer: UI components, visualization libraries",
+          "flux-ide: IDE plugin configurations, language server protocols",
+          "flux-coverage: code coverage tools, instrumentation scripts",
+          "flux-cross-assembler: cross-compilation toolchains, target-specific optimizations",
+          "flux-evolve-py: evolutionary algorithm implementations, training pipelines"
+        ],
+        "suggested_merge_order": 3,
+        "reasoning": "Large but self-contained; should be done after foundational infrastructure merges but before dependent groups."
+      },
+      {
+        "group": "holodeck-group",
+        "canonical": "holodeck-studio",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "Medium-high risk due to multiple language implementations (Rust, C, Go, CUDA, Zig) that may have conflicting build systems. CUDA dependencies pose hardware/compilation risks. Risk of breaking performance-critical native bindings.",
+        "key_files_to_preserve": [
+          "holodeck-rust: Cargo.toml, unsafe FFI modules, memory safety audits",
+          "holodeck-c: CMakeLists.txt, low-level graphics drivers, hardware abstraction layer",
+          "holodeck-go: Go modules, concurrent runtime scheduler",
+          "holodeck-cuda: .cu files, kernel launch configurations, GPU memory managers",
+          "holodeck-zig: comptime configurations, cross-platform build definitions"
+        ],
+        "suggested_merge_order": 5,
+        "reasoning": "Performance-sensitive with GPU dependencies; merge after core runtime groups but before higher-level tooling."
+      },
+      {
+        "group": "fleet-infra-group",
+        "canonical": "fleet-mechanic",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "Medium risk. Integration risks with GitHub API changes, authentication token management, and agent communication protocols. Breaking changes could disrupt fleet management operations.",
+        "key_files_to_preserve": [
+          "fleet-agent-api: OpenAPI specs, gRPC/protobuf definitions, client SDKs",
+          "fleet-github-app: GitHub App manifest, webhook handlers, OAuth flow implementations"
+        ],
+        "suggested_merge_order": 2,
+        "reasoning": "Infrastructure foundation; should be merged early to stabilize platform for other merges."
+      },
+      {
+        "group": "agent-std-group",
+        "canonical": "agent-bootcamp",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "Low-medium risk. Mostly training/onboarding content rather than production code. Risk of losing pedagogical structure or example configurations.",
+        "key_files_to_preserve": [
+          "git-agent-standard: Git workflow tutorials, standard operating procedures",
+          "dockside-exam: Certification test suites, skill assessment rubrics",
+          "greenhorn-onboarding: Getting started guides, environment setup scripts"
+        ],
+        "suggested_merge_order": 7,
+        "reasoning": "Documentation/training focused; low priority for production stability."
+      },
+      {
+        "group": "i2i-group",
+        "canonical": "iron-to-iron",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "High risk. Core inter-system communication layer. Breaking changes could cascade through entire fleet. Protocol versioning critical.",
+        "key_files_to_preserve": [
+          "flux-baton: Handoff protocols, state transfer serialization",
+          "mesosynchronous: Timing coordination algorithms, deadline schedulers",
+          "fleet-liaison-tender: Service discovery registries, health check endpoints"
+        ],
+        "suggested_merge_order": 1,
+        "reasoning": "Critical communication infrastructure; must be merged first to ensure stable foundation."
+      },
+      {
+        "group": "cocapn-group",
+        "canonical": "cocapn",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "Medium risk. Protocol specification and runtime separation could cause version drift. Risk of breaking backward compatibility in distributed systems.",
+        "key_files_to_preserve": [
+          "cocapn-runtime: Protocol state machines, message routers, connection pools",
+          "commodore-protocol: Wire format specifications, encryption handshakes"
+        ],
+        "suggested_merge_order": 4,
+        "reasoning": "Protocol layer; merge after I2I but before application layers that depend on it."
+      },
+      {
+        "group": "skills-group",
+        "canonical": "spreader-agent",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "Low-medium risk. Skill definitions and agent capabilities. Risk of losing modular skill isolation, but low production impact.",
+        "key_files_to_preserve": [
+          "flux-skills: Core skill libraries, capability manifests",
+          "agent-skills: Agent-specific skill implementations, proficiency tests"
+        ],
+        "suggested_merge_order": 6,
+        "reasoning": "Application logic; depends on stable runtime and infrastructure."
+      },
+      {
+        "group": "research-group",
+        "canonical": "constraint-theory-core",
+        "merge_strategy": "Create new unified repo (research-core)",
+        "risk_assessment": "Low risk. Research code with fewer production dependencies. Risk of losing experimental branches or research provenance.",
+        "key_files_to_preserve": [
+          "abstraction-planes: Theoretical frameworks, conceptual diagrams",
+          "isa-v3-draft: Instruction set architecture specifications",
+          "edge-research-relay: Experimental result datasets, reproducibility scripts"
+        ],
+        "suggested_merge_order": 8,
+        "reasoning": "Research-focused; minimal production dependencies."
+      },
+      {
+        "group": "brand-group",
+        "canonical": "brand-assets",
+        "merge_strategy": "Absorb into canonical repo",
+        "risk_assessment": "Low risk. Mostly static assets and translations. Risk of bloating repo size with binary assets, localization sync issues.",
+        "key_files_to_preserve": [
+          "All language repos: locale files, translation memory, RTL layout configurations",
+          "fleet-json-a2a: Automated translation pipelines, string extraction tools"
+        ],
+        "suggested_merge_order": 9,
+        "reasoning": "Static assets; can be merged last with minimal impact."
+      }
+    ],
+    "priority_ranking": [
+      {
+        "group": "i2i-group",
+        "priority": 1
+      },
+      {
+        "group": "fleet-infra-group",
+        "priority": 2
+      },
+      {
+        "group": "flux-runtime-group",
+        "priority": 3
+      },
+      {
+        "group": "cocapn-group",
+        "priority": 4
+      },
+      {
+        "group": "holodeck-group",
+        "priority": 5
+      },
+      {
+        "group": "skills-group",
+        "priority": 6
+      },
+      {
+        "group": "agent-std-group",
+        "priority": 7
+      },
+      {
+        "group": "research-group",
+        "priority": 8
+      },
+      {
+        "group": "brand-group",
+        "priority": 9
+      }
+    ],
+    "parallel_plan": {
+      "phase_1": [
+        "i2i-group"
+      ],
+      "phase_2": [
+        "fleet-infra-group"
+      ],
+      "phase_3": [
+        "flux-runtime-group",
+        "cocapn-group"
+      ],
+      "phase_4": [
+        "holodeck-group",
+        "skills-group"
+      ],
+      "phase_5": [
+        "agent-std-group",
+        "research-group",
+        "brand-group"
+      ],
+      "rationale": "I2I is foundational dependency. Fleet-infra depends on stable I2I. Flux-runtime and cocapn can merge in parallel as they're largely independent. Holodeck and skills depend on runtime. Final phase contains all independent/low-risk groups."
+    },
+    "risks": {
+      "cross_group_dependencies": [
+        "i2i-group \u2192 fleet-infra-group (communication protocols)",
+        "flux-runtime-group \u2192 holodeck-group (runtime bindings)",
+        "cocapn-group \u2192 skills-group (protocol capabilities)",
+        "flux-runtime-group \u2192 skills-group (execution environment)"
+      ],
+      "systemic_risks": [
+        "Version pinning conflicts across merged repos",
+        "CI/CD pipeline fragmentation during transition",
+        "Loss of commit history for absorbed repos",
+        "Monorepo tooling scalability with 382\u21929 repos",
+        "Team permission restructuring challenges"
+      ],
+      "mitigation_recommendations": [
+        "Maintain branch-per-absorbed-repo during transition",
+        "Implement phased CI migration with parallel runs",
+        "Preserve original repos as read-only archives",
+        "Use git-subtree instead of git-merge for cleaner history",
+        "Establish merge validation gates with integration tests"
+      ]
+    }
+  }
+}

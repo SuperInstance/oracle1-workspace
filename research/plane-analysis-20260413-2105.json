@@ -1,0 +1,27 @@
+{
+  "optimal_plane": 4,
+  "scores": {
+    "5": {
+      "correctness": 10,
+      "compactness": 10,
+      "executability": 1,
+      "maintainability": 10,
+      "total": 7.75
+    },
+    "4": {
+      "correctness": 9,
+      "compactness": 6,
+      "executability": 8,
+      "maintainability": 9,
+      "total": 8.0
+    },
+    "3": {
+      "correctness": 8,
+      "compactness": 3,
+      "executability": 7,
+      "maintainability": 6,
+      "total": 6.0
+    }
+  },
+  "target": "cloud"
+}

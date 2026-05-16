@@ -1,0 +1,85 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate Research Documents
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check all markdown files exist and are non-empty
+        run: |
+          echo "Checking markdown files..."
+          python3 -c "
+          import os, sys
+          errors = []
+          for root, dirs, files in os.walk('.'):
+              if '.git' in root:
+                  continue
+              for f in files:
+                  if f.endswith('.md'):
+                      path = os.path.join(root, f)
+                      size = os.path.getsize(path)
+                      if size == 0:
+                          errors.append(f'EMPTY: {path}')
+                      elif size < 50:
+                          errors.append(f'TOO SMALL (<50 bytes): {path} ({size} bytes)')
+                      else:
+                          print(f'  OK: {path} ({size} bytes)')
+          if errors:
+              print()
+              for e in errors:
+                  print(f'  ERROR: {e}')
+              sys.exit(1)
+          print(f'All markdown files validated successfully.')
+          "
+
+      - name: Check README links are valid
+        run: |
+          python3 -c "
+          import re, os
+          readme = open('README.md').read()
+          # Extract [text](link) patterns
+          links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', readme)
+          print(f'Found {len(links)} links in README.md')
+          for text, link in links:
+              if link.startswith('http'):
+                  print(f'  [{text}] -> {link}')
+              else:
+                  # Check local file exists
+                  if os.path.exists(link):
+                      print(f'  [{text}] -> {link} (exists)')
+                  else:
+                      print(f'  WARNING: [{text}] -> {link} (NOT FOUND)')
+          "
+
+      - name: Verify research directory structure
+        run: |
+          echo "Verifying directory structure..."
+          python3 -c "
+          import os
+          expected = ['README.md', 'research/', 'message-in-a-bottle/']
+          for item in expected:
+              if os.path.exists(item):
+                  kind = 'directory' if os.path.isdir(item) else 'file'
+                  print(f'  OK: {item} ({kind})')
+              else:
+                  print(f'  MISSING: {item}')
+                  exit(1)
+          # Check research/ has content
+          research_files = [f for f in os.listdir('research') if f.endswith('.md')]
+          print(f'  Research documents: {len(research_files)}')
+          for f in sorted(research_files):
+              print(f'    - research/{f}')
+          "

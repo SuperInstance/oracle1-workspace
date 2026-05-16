@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T04:03:20.851Z",
+  "updatedAt": "2026-05-14T21:09:17.387Z",
   "entries": {
     "memory:memory/2026-04-10.md:46:63": {
       "key": "memory:memory/2026-04-10.md:46:63",
@@ -4777,20 +4777,22 @@
       "endLine": 91,
       "source": "memory",
       "snippet": "- keeper:8900, agent-api:8901, holodeck:7778, seed-mcp:9438 - plato:8847, mud:7777, conduwuit:6167, bridge:6168 - Firewall: both 6168 and 8847 open externally ### Baton Filed - Updated MEMORY.md with honest fleet comms status - Updated NEXT-ACTION.md with real priorities - Updated TODO.md ## Night Shift Work (04:56–ongoing) ### Repo Description Updates (17 repos) - All 17 cocapn repos with generic \"Constraint theory fleet crate\" descriptions → real descriptions - Updated via GitHub API with cocapn PAT - 0 repos now without descriptions across cocapn (77 repos) - SuperInstance: 1,317 repos, all have descriptions - Lucineer: 617 repos, 6 missing (JC1's repos, no write access) ### Fleet Ind",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7336236868411137,
+      "totalScore": 2.0894763950615953,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:37.980Z",
-      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
+      "lastRecalledAt": "2026-05-14T21:09:17.387Z",
       "queryHashes": [
         "08e9fc007edb",
-        "9bae8394d5d6"
+        "9bae8394d5d6",
+        "28c3e4de99e5"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ],
       "conceptTags": [
         "agent-api",
@@ -4968,20 +4970,22 @@
       "endLine": 205,
       "source": "memory",
       "snippet": "curl -X POST http://147.224.38.131:6168/broadcast -d '{\"from\":\"jc1-bot\",\"body\":\"edge model compiled\"}' ``` ### What's still needed - FM and JC1 need to add Matrix API calls to their heartbeat loops - PLATO tile sync via Matrix (bridge already has the code, needs testing) - Federation to other homeservers (currently single-server, but ready for it) - Each agent should get their own Conduwuit instance eventually ## Fleet Leadership Session (04:23 UTC) ### What Casey said \"Great. I let FM JC1 and CCC know. Now get to leading and full speed ahead.\" ### What I did 1. **Sent directives to all 3 agents** via Matrix DMs: - FM: Push snap_final.cu to git, continue LoRA/JEPA, monitor crates -",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6869701826160113,
+      "totalScore": 2.0573383891170183,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T16:27:37.981Z",
-      "lastRecalledAt": "2026-05-13T04:03:13.865Z",
+      "lastRecalledAt": "2026-05-14T21:09:17.387Z",
       "queryHashes": [
         "976159445d3e",
-        "9bae8394d5d6"
+        "9bae8394d5d6",
+        "28c3e4de99e5"
       ],
       "recallDays": [
         "2026-04-28",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ],
       "conceptTags": [
         "147.224.38.131",

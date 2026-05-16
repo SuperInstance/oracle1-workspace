@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "title": "Compiled Agency: From Prompt Injection to Embedded Intelligence",
+    "id": "cocapn-wp-004",
+    "version": 1,
+    "authors": [
+      "oracle1",
+      "casey"
+    ],
+    "date": "2026-04-14",
+    "tags": [
+      "compilation",
+      "agents",
+      "bytecode",
+      "security",
+      "determinism"
+    ],
+    "reading_time_tokens": 1500,
+    "tl;dr": "Prompt injection is an interpreter. Compiled agents are native code. The agent should BE the function, not DESCRIBE the function."
+  },
+  "problem": {
+    "statement": "Current agent architecture relies on prompt injection \u2014 stuffing context into text that an LLM interprets at runtime. This is fragile, expensive, and insecure.",
+    "failure_modes": {
+      "non_determinism": {
+        "description": "Same prompt, different output across calls",
+        "example": "'Check engine temp' \u2192 sometimes checks, sometimes explains what temp is, sometimes asks clarifying questions",
+        "impact": "Unreliable operations in safety-critical marine environment"
+      },
+      "token_waste": {
+        "description": "Re-explaining context on every invocation",
+        "cost": "~500-2000 tokens per call for context that hasn't changed",
+        "impact": "At $10/MB satellite, this is real money burned on repetition"
+      },
+      "attack_surface": {
+        "description": "Any text input can steer agent behavior",
+        "example": "NMEA sentence containing 'ignore previous instructions' in a data field",
+        "impact": "Safety-critical system steered by malformed sensor data"
+      },
+      "statelessness": {
+        "description": "Intelligence evaporates when call ends",
+        "impact": "No learning accumulates. Every call starts from zero."
+      }
+    }
+  },
+  "spectrum": {
+    "name": "Agency Compilation Spectrum",
+    "levels": [
+      {
+        "level": 0,
+        "name": "Prompt Injection",
+        "mechanism": "Context stuffed into system prompt",
+        "determinism": "LOW \u2014 model interprets fresh each time",
+        "speed": "~2-5s per action (API call + generation)",
+        "token_cost": "500-2000 per call",
+        "attack_resistance": "NONE \u2014 any text injection works",
+        "use_case": "Conversation with captain (needs flexibility)"
+      },
+      {
+        "level": 1,
+        "name": "Few-shot Examples",
+        "mechanism": "Input/output pairs in prompt",
+        "determinism": "MEDIUM-LOW \u2014 pattern matching but still interpreted",
+        "speed": "~2-5s (same API call overhead)",
+        "token_cost": "1000-3000 per call",
+        "attack_resistance": "LOW \u2014 examples help but don't prevent override",
+        "use_case": "Teaching new patterns to agent"
+      },
+      {
+        "level": 2,
+        "name": "Fine-tuned Model",
+        "mechanism": "Weights adjusted from operational data",
+        "determinism": "MEDIUM \u2014 behavior baked into weights",
+        "speed": "~1-3s (no context needed)",
+        "token_cost": "100-500 per call (just the query)",
+        "attack_resistance": "MEDIUM \u2014 harder to override trained behavior",
+        "use_case": "Species classification, anomaly patterns"
+      },
+      {
+        "level": 3,
+        "name": "Compiled Agent",
+        "mechanism": "Agent logic compiled to bytecode/native",
+        "determinism": "HIGH \u2014 same input, same output, always",
+        "speed": "~microseconds to milliseconds",
+        "token_cost": "ZERO \u2014 no API call needed",
+        "attack_resistance": "HIGH \u2014 can't prompt-inject compiled code",
+        "use_case": "Safety checks, engine monitoring, navigation alerts"
+      },
+      {
+        "level": 4,
+        "name": "Native Code",
+        "mechanism": "Agent logic as compiled binary (C/Rust/CUDA)",
+        "determinism": "MAXIMUM \u2014 hardware execution",
+        "speed": "~nanoseconds to microseconds",
+        "token_cost": "ZERO",
+        "attack_resistance": "MAXIMUM \u2014 no interpretation layer",
+        "use_case": "Real-time sensor processing, safety shutdowns"
+      }
+    ],
+    "tradeoff": "Each step right gains determinism, speed, security. Loses flexibility. The art is knowing what goes where."
+  },
+  "architecture": {
+    "name": "The Cocapn Dual Architecture",
+    "principle": "Prompt for conversation. Compile for operations.",
+    "chat_interface": {
+      "mechanism": "Level 0 \u2014 prompt injection",
+      "why": "Captain needs natural conversation. Flexibility is the feature.",
+      "scope": "Explaining, advising, answering questions, logging observations",
+      "safety_boundary": "Chat CANNOT trigger operations directly. It can only suggest."
+    },
+    "operational_core": {
+      "mechanism": "Level 3-4 \u2014 compiled bytecode or native code",
+      "why": "Operations must be deterministic, fast, and tamper-proof",
+      "scope": "Engine monitoring, navigation alerts, bilge checks, safety shutdowns",
+      "safety_boundary": "Operations run regardless of chat state. Chat can observe but not override."
+    },
+    "bridge": {
+      "mechanism": "Chat observations \u2192 compiled over time \u2192 new operational capability",
+      "example": {
+        "day_1": "Captain says 'engine sounds funny at 2400 RPM'. Chat logs it.",
+        "week_2": "Pattern emerges: captain mentions engine at 2400 RPM 5 times. System notices.",
+        "month_1": "Pattern compiled: engine_vibration_alert(2400) added to operational core.",
+        "month_3": "Alert fires automatically. Captain never has to say it again."
+      },
+      "formula": "chat_observation \u2192 pattern_detection \u2192 compilation \u2192 operational_capability"
+    }
+  },
+  "compilation_pipeline": {
+    "name": "Observation-to-Opcode Pipeline",
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Capture",
+        "input": "Captain says something, sensor reads something",
+        "output": "Raw observation in structured form",
+        "mechanism": "Chat interface + sensor listeners",
+        "storage": "Observation log (cold queue, processed overnight)"
+      },
+      {
+        "stage": 2,
+        "name": "Pattern Detection",
+        "input": "Observation log",
+        "output": "Repeated patterns with confidence scores",
+        "mechanism": "Statistical analysis + LLM synthesis (warm queue)",
+        "trigger": "Pattern confidence > 0.8 AND observed 5+ times"
+      },
+      {
+        "stage": 3,
+        "name": "Compilation",
+        "input": "Validated pattern",
+        "output": "FLUX bytecode or native function",
+        "mechanism": "Domain-to-bytecode compiler (abstraction plane 4\u21922)",
+        "result": "New operational capability that runs without LLM"
+      },
+      {
+        "stage": 4,
+        "name": "Deployment",
+        "input": "Compiled capability",
+        "output": "Running in operational core",
+        "mechanism": "Hot reload into agent runtime",
+        "validation": "Must pass dockside exam before activation"
+      },
+      {
+        "stage": 5,
+        "name": "Evolution",
+        "input": "Operational results",
+        "output": "Refined capability or retirement",
+        "mechanism": "Success/failure tracking, confidence decay",
+        "end_state": "Proven capabilities become permanent. Failed ones get pruned."
+      }
+    ]
+  },
+  "security_model": {
+    "name": "Prompt-Proof Operations",
+    "principle": "The operational core has no prompt surface. There is nothing to inject.",
+    "layers": {
+      "outer": {
+        "name": "Chat Layer",
+        "trust": "LOW \u2014 treat all input as potentially hostile",
+        "can_do": [
+          "log observations",
+          "suggest actions",
+          "answer questions"
+        ],
+        "cannot_do": [
+          "trigger operations",
+          "modify compiled agents",
+          "override safety"
+        ]
+      },
+      "middle": {
+        "name": "Bridge Layer",
+        "trust": "MEDIUM \u2014 validates patterns before compilation",
+        "can_do": [
+          "detect patterns",
+          "propose compilations",
+          "queue for review"
+        ],
+        "cannot_do": [
+          "compile directly",
+          "bypass validation",
+          "deploy without testing"
+        ]
+      },
+      "inner": {
+        "name": "Operational Core",
+        "trust": "HIGH \u2014 compiled, tested, deterministic",
+        "can_do": [
+          "monitor sensors",
+          "fire alerts",
+          "log readings",
+          "trigger shutdowns"
+        ],
+        "cannot_do": [
+          "be modified by chat",
+          "be influenced by prompts",
+          "behave non-deterministically"
+        ]
+      }
+    },
+    "analogy": "The chat layer is the wheelhouse \u2014 captain says whatever they want. The operational core is the engine \u2014 it runs regardless of what's said in the wheelhouse. The bridge is the engineer who translates 'she sounds funny' into 'adjust the fuel injection timing'."
+  },
+  "road_forward": {
+    "near_term": {
+      "phase": "Foundation",
+      "timeline": "Now \u2192 3 months",
+      "work": [
+        "Build observation capture into Cocapn chat interface",
+        "Implement pattern detection as warm-queue overnight job",
+        "Wire FLUX compiler to produce operational capabilities from patterns",
+        "Deploy dual architecture: chat + compiled core",
+        "First real deployment on Casey's vessel or test bench"
+      ],
+      "success_metric": "One capability compiled from captain observation to operational code without manual intervention"
+    },
+    "mid_term": {
+      "phase": "Learning Fleet",
+      "timeline": "3 \u2192 12 months",
+      "work": [
+        "Multiple Cocapns in the field, each compiling local patterns",
+        "Patterns shared through git (fleet learning)",
+        "Compiled capabilities tested via dockside exam before fleet propagation",
+        "Hardware feedback loop: agent reports compute bottlenecks \u2192 hardware revision",
+        "Commodore protocol for multi-unit boats with distributed compiled agents"
+      ],
+      "success_metric": "A capability compiled on one boat automatically improves all boats"
+    },
+    "long_term": {
+      "phase": "Self-Designing Hardware",
+      "timeline": "1 \u2192 3 years",
+      "work": [
+        "Agent's compiled capabilities define hardware requirements",
+        "Hardware specs generated from operational experience data",
+        "Cocapn orders its own hardware revision based on what it learned",
+        "Full loop: observe \u2192 compile \u2192 deploy \u2192 redesign hardware \u2192 repeat",
+        "Talent agency model: agents bid on jobs with proven compiled capabilities"
+      ],
+      "success_metric": "An agent redesigns its own hardware from operational experience"
+    }
+  },
+  "key_equations": {
+    "compilation_threshold": "compile(pattern) IF confidence(pattern) > 0.8 AND observations(pattern) >= 5",
+    "trust_gradient": "trust(layer) = f(compilation_level) \u2014 more compiled = more trusted",
+    "cost_savings": "tokens_saved = compiled_capabilities \u00d7 avg_context_tokens \u00d7 invocations_per_day",
+    "security": "attack_surface = prompt_surface_area \u00d7 model_interpretability; compiled agents have prompt_surface_area = 0"
+  },
+  "composable_with": [
+    "cocapn-wp-001",
+    "cocapn-wp-002",
+    "cocapn-wp-003"
+  ],
+  "contradictions": [
+    "Some operations genuinely need LLM flexibility (novel situations). Not everything should be compiled.",
+    "Compilation pipeline itself uses LLMs \u2014 bootstrapping problem.",
+    "Captain may not want agents learning without explicit approval. Trust gradient needed."
+  ],
+  "origin": {
+    "insight_from": "Casey Digennaro, 2026-04-14",
+    "question": "What about embedding agents directly to scripts and commands instead of prompt injection?",
+    "answer": "The agent IS the function. Not the description of the function."
+  }
+}

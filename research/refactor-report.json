@@ -1,0 +1,6366 @@
+{
+  "timestamp": "2026-04-14T07:22:19.297845",
+  "repos_scanned": 382,
+  "categories": {
+    "agent-std": 69,
+    "brand": 4,
+    "cocapn": 4,
+    "fleet-infra": 76,
+    "flux-runtime": 142,
+    "flux-skills": 5,
+    "holodeck": 9,
+    "i2i": 12,
+    "research": 6,
+    "testing": 27,
+    "uncategorized": 28
+  },
+  "duplicates_found": 2396,
+  "merge_groups": 9,
+  "top_duplicates": [
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "flux-fleet-scanner",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "i2i",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 13,
+      "repo_a_files": 182,
+      "repo_b_files": 520
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "flux-runtime",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bootcamp",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "isa",
+        "opcode",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 13,
+      "repo_a_files": 182,
+      "repo_b_files": 925
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "flux-multilingual",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "i2i",
+        "opcode",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 12,
+      "repo_a_files": 182,
+      "repo_b_files": 611
+    },
+    {
+      "repo_a": "flux-fleet-scanner",
+      "repo_b": "flux-multilingual",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "i2i",
+        "interpreter",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 12,
+      "repo_a_files": 520,
+      "repo_b_files": 611
+    },
+    {
+      "repo_a": "flux-runtime",
+      "repo_b": "flux-multilingual",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bottle",
+        "compiler",
+        "dockside",
+        "fleet",
+        "flux",
+        "interpreter",
+        "opcode",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 12,
+      "repo_a_files": 925,
+      "repo_b_files": 611
+    },
+    {
+      "repo_a": "SuperInstance-papers",
+      "repo_b": "polln",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "anomaly",
+        "bottle",
+        "compiler",
+        "isa",
+        "mechanic",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 12,
+      "repo_a_files": 4906,
+      "repo_b_files": 3472
+    },
+    {
+      "repo_a": "oracle1-index",
+      "repo_b": "superz-vessel",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "priority",
+        "runtime",
+        "skill",
+        "test"
+      ],
+      "overlap_score": 11,
+      "repo_a_files": 122,
+      "repo_b_files": 182
+    },
+    {
+      "repo_a": "oracle1-index",
+      "repo_b": "flux-fleet-scanner",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "priority",
+        "runtime",
+        "skill",
+        "test"
+      ],
+      "overlap_score": 11,
+      "repo_a_files": 122,
+      "repo_b_files": 520
+    },
+    {
+      "repo_a": "flux-fleet-scanner",
+      "repo_b": "flux-runtime",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 11,
+      "repo_a_files": 520,
+      "repo_b_files": 925
+    },
+    {
+      "repo_a": "flux-runtime",
+      "repo_b": "flux-core",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "assembler",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "isa",
+        "opcode",
+        "priority",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 11,
+      "repo_a_files": 925,
+      "repo_b_files": 49
+    },
+    {
+      "repo_a": "flux-runtime",
+      "repo_b": "nexus-runtime",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "assembler",
+        "compiler",
+        "fleet",
+        "isa",
+        "opcode",
+        "runtime",
+        "test",
+        "twin",
+        "vm"
+      ],
+      "overlap_score": 11,
+      "repo_a_files": 925,
+      "repo_b_files": 839
+    },
+    {
+      "repo_a": "oracle1-index",
+      "repo_b": "flux-runtime",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "priority",
+        "runtime",
+        "test",
+        "twin"
+      ],
+      "overlap_score": 10,
+      "repo_a_files": 122,
+      "repo_b_files": 925
+    },
+    {
+      "repo_a": "oracle1-index",
+      "repo_b": "flux-multilingual",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bottle",
+        "cocapn",
+        "dockside",
+        "fleet",
+        "flux",
+        "priority",
+        "runtime",
+        "skill",
+        "test"
+      ],
+      "overlap_score": 10,
+      "repo_a_files": 122,
+      "repo_b_files": 611
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "quill-isa-architect",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bootcamp",
+        "bottle",
+        "fleet",
+        "flux",
+        "i2i",
+        "isa",
+        "runtime",
+        "skill",
+        "test"
+      ],
+      "overlap_score": 10,
+      "repo_a_files": 182,
+      "repo_b_files": 47
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "nexus-runtime",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "fleet",
+        "isa",
+        "monitor",
+        "opcode",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 10,
+      "repo_a_files": 182,
+      "repo_b_files": 839
+    },
+    {
+      "repo_a": "flux-a2a-signal",
+      "repo_b": "flux-runtime",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "bottle",
+        "compiler",
+        "dockside",
+        "fleet",
+        "flux",
+        "interpreter",
+        "opcode",
+        "priority",
+        "test"
+      ],
+      "overlap_score": 10,
+      "repo_a_files": 62,
+      "repo_b_files": 925
+    },
+    {
+      "repo_a": "flux-runtime",
+      "repo_b": "flux-a2a-prototype",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "bottle",
+        "compiler",
+        "fleet",
+        "flux",
+        "interpreter",
+        "isa",
+        "opcode",
+        "priority",
+        "test"
+      ],
+      "overlap_score": 10,
+      "repo_a_files": 925,
+      "repo_b_files": 74
+    },
+    {
+      "repo_a": "datum",
+      "repo_b": "superz-vessel",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "isa",
+        "runtime",
+        "skill",
+        "test"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 89,
+      "repo_b_files": 182
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "flux-skills",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "dockside",
+        "fleet",
+        "flux",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 182,
+      "repo_b_files": 41
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "babel-vessel",
+      "category": "flux-runtime",
+      "overlap": [
+        "agent",
+        "bootcamp",
+        "bottle",
+        "dockside",
+        "fleet",
+        "i2i",
+        "isa",
+        "priority",
+        "skill"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 182,
+      "repo_b_files": 38
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "flux-core",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "isa",
+        "opcode",
+        "priority",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 182,
+      "repo_b_files": 49
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "SuperInstance-papers",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "isa",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 182,
+      "repo_b_files": 4906
+    },
+    {
+      "repo_a": "superz-vessel",
+      "repo_b": "polln",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "bottle",
+        "isa",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 182,
+      "repo_b_files": 3472
+    },
+    {
+      "repo_a": "flux-skills",
+      "repo_b": "flux-fleet-scanner",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "agent",
+        "dockside",
+        "fleet",
+        "flux",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 41,
+      "repo_b_files": 520
+    },
+    {
+      "repo_a": "flux-fleet-scanner",
+      "repo_b": "flux-runtime-san",
+      "category": "flux-runtime",
+      "overlap": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ],
+      "overlap_score": 9,
+      "repo_a_files": 520,
+      "repo_b_files": 36
+    }
+  ],
+  "merge_candidates": [
+    {
+      "group": "flux-runtime-group",
+      "canonical": "flux-runtime",
+      "absorb": [
+        "flux-py",
+        "flux-js",
+        "flux-zig",
+        "flux-wasm",
+        "flux-java",
+        "flux-llama",
+        "flux-swarm",
+        "flux-simulator",
+        "flux-visualizer",
+        "flux-ide",
+        "flux-coverage",
+        "flux-cross-assembler",
+        "flux-evolve-py"
+      ],
+      "existing_count": 14,
+      "rationale": "flux-runtime has best score in flux-runtime-group"
+    },
+    {
+      "group": "holodeck-group",
+      "canonical": "holodeck-studio",
+      "absorb": [
+        "holodeck-rust",
+        "holodeck-c",
+        "holodeck-go",
+        "holodeck-cuda",
+        "holodeck-zig"
+      ],
+      "existing_count": 6,
+      "rationale": "holodeck-studio has best score in holodeck-group"
+    },
+    {
+      "group": "fleet-infra-group",
+      "canonical": "fleet-mechanic",
+      "absorb": [
+        "fleet-agent-api",
+        "fleet-github-app"
+      ],
+      "existing_count": 3,
+      "rationale": "fleet-mechanic has best score in fleet-infra-group"
+    },
+    {
+      "group": "agent-std-group",
+      "canonical": "agent-bootcamp",
+      "absorb": [
+        "git-agent-standard",
+        "dockside-exam",
+        "greenhorn-onboarding"
+      ],
+      "existing_count": 4,
+      "rationale": "agent-bootcamp has best score in agent-std-group"
+    },
+    {
+      "group": "i2i-group",
+      "canonical": "iron-to-iron",
+      "absorb": [
+        "flux-baton",
+        "mesosynchronous",
+        "fleet-liaison-tender"
+      ],
+      "existing_count": 4,
+      "rationale": "iron-to-iron has best score in i2i-group"
+    },
+    {
+      "group": "cocapn-group",
+      "canonical": "cocapn",
+      "absorb": [
+        "cocapn-runtime",
+        "commodore-protocol"
+      ],
+      "existing_count": 3,
+      "rationale": "cocapn has best score in cocapn-group"
+    },
+    {
+      "group": "skills-group",
+      "canonical": "spreader-agent",
+      "absorb": [
+        "flux-skills",
+        "agent-skills"
+      ],
+      "existing_count": 3,
+      "rationale": "spreader-agent has best score in skills-group"
+    },
+    {
+      "group": "research-group",
+      "canonical": "constraint-theory-core",
+      "absorb": [
+        "abstraction-planes",
+        "isa-v3-draft",
+        "edge-research-relay"
+      ],
+      "existing_count": 4,
+      "rationale": "constraint-theory-core has best score in research-group"
+    },
+    {
+      "group": "brand-group",
+      "canonical": "brand-assets",
+      "absorb": [
+        "fleet-english",
+        "fleet-chinese",
+        "fleet-arabic",
+        "fleet-japanese",
+        "fleet-sanskrit",
+        "fleet-latin",
+        "fleet-finnish",
+        "fleet-navajo",
+        "fleet-json-a2a"
+      ],
+      "existing_count": 10,
+      "rationale": "brand-assets has best score in brand-group"
+    }
+  ],
+  "uncategorized": [
+    "StudyLog",
+    "webrtc-stream",
+    "vector-navigator",
+    "semantic-store",
+    "task-queue",
+    "embeddings-engine",
+    "bandit-learner",
+    "examples",
+    "token-vault",
+    "workflow-engineer",
+    "websocket-fabric-v2",
+    "temp",
+    "SwarmOrchestration",
+    "UI",
+    "Hardware-Aware-Flagging",
+    "activelog-backend",
+    "Automatic-Type-Safe-IndexedDB",
+    "Bayesian-Multi-Armed-Bandits",
+    "SuperInstanceDocs",
+    "codespace-edge-rd",
+    "ai-character-integrations",
+    "config-manager",
+    "constraint-theory-backup",
+    "activelog-claude",
+    "Mycelium",
+    "Rotational-Transformer",
+    "hierarchical-memory",
+    "SwarmMCP"
+  ],
+  "all_repos": {
+    "fleet-refactor-agent": {
+      "category": "fleet-infra",
+      "files": 8,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bootcamp"
+      ]
+    },
+    "vector-search": {
+      "category": "agent-std",
+      "files": 33,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "pelagic-bootstrap": {
+      "category": "fleet-infra",
+      "files": 7,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "spreader-agent": {
+      "category": "agent-std",
+      "files": 990,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bootcamp",
+        "dockside",
+        "test",
+        "vm"
+      ]
+    },
+    "scheduler-agent": {
+      "category": "fleet-infra",
+      "files": 8,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "ability-transfer": {
+      "category": "flux-runtime",
+      "files": 24,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "interpreter",
+        "isa"
+      ]
+    },
+    "agent-bootcamp": {
+      "category": "agent-std",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bootcamp",
+        "skill",
+        "test"
+      ]
+    },
+    "holodeck-studio": {
+      "category": "holodeck",
+      "files": 218,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bottle",
+        "deckboss",
+        "dockside",
+        "fleet",
+        "flux",
+        "holodeck",
+        "isa",
+        "mud",
+        "runtime",
+        "test",
+        "twin"
+      ]
+    },
+    "ap-compiler": {
+      "category": "agent-std",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "datum": {
+      "category": "flux-runtime",
+      "files": 89,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "isa",
+        "keeper",
+        "runtime",
+        "skill",
+        "test"
+      ]
+    },
+    "dockside-exam": {
+      "category": "fleet-infra",
+      "files": 5,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "oracle1-vessel": {
+      "category": "fleet-infra",
+      "files": 314,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "agent",
+        "bootcamp",
+        "bottle",
+        "dockside",
+        "fleet",
+        "i2i",
+        "isa",
+        "keeper",
+        "mechanic",
+        "runtime",
+        "skill",
+        "test"
+      ]
+    },
+    "murmur-agent": {
+      "category": "agent-std",
+      "files": 1680,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bootcamp",
+        "dockside",
+        "isa",
+        "test",
+        "vm"
+      ]
+    },
+    "outcome-tracker": {
+      "category": "agent-std",
+      "files": 19,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "SuperInstance": {
+      "category": "flux-runtime",
+      "files": 41,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bottle",
+        "cocapn",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "priority"
+      ]
+    },
+    "cocapn": {
+      "category": "cocapn",
+      "files": 35,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "anomaly",
+        "camera",
+        "capdb",
+        "cocapn",
+        "compiler",
+        "priority",
+        "signalk",
+        "test",
+        "twin"
+      ]
+    },
+    "captains-log": {
+      "category": "flux-runtime",
+      "files": 33,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bootcamp",
+        "bottle",
+        "cocapn",
+        "fleet",
+        "flux",
+        "isa",
+        "priority",
+        "skill"
+      ]
+    },
+    "fleet-github-app": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "abstraction-planes": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "fleet-agent-api": {
+      "category": "fleet-infra",
+      "files": 23,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "fleet",
+        "mud",
+        "test"
+      ]
+    },
+    "ws-status-indicator": {
+      "category": "agent-std",
+      "files": 45,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "fleet-code-agent": {
+      "category": "agent-std",
+      "files": 14,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "polyglot-flux-ese": {
+      "category": "flux-runtime",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "tile-lock-synthesis": {
+      "category": "flux-runtime",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "test-runner-vessel": {
+      "category": "fleet-infra",
+      "files": 6,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "dockside",
+        "fleet"
+      ]
+    },
+    "doc-writer-vessel": {
+      "category": "fleet-infra",
+      "files": 6,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "dockside",
+        "fleet"
+      ]
+    },
+    "comms-engineer-vessel": {
+      "category": "fleet-infra",
+      "files": 6,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "dockside",
+        "fleet"
+      ]
+    },
+    "cocapn-runtime": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "cocapn"
+      ]
+    },
+    "standalone-agent-scaffold": {
+      "category": "fleet-infra",
+      "files": 12,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "keeper",
+        "test"
+      ]
+    },
+    "fleet-protocol": {
+      "category": "i2i",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "fleet",
+        "test"
+      ]
+    },
+    "commodore-protocol": {
+      "category": "cocapn",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "commodore",
+        "test"
+      ]
+    },
+    "trust-agent": {
+      "category": "testing",
+      "files": 9,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "liaison-agent": {
+      "category": "fleet-infra",
+      "files": 7,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "fleet",
+        "test"
+      ]
+    },
+    "knowledge-agent": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "cartridge-agent": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "trail-agent": {
+      "category": "agent-std",
+      "files": 18,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bootcamp",
+        "compiler",
+        "test"
+      ]
+    },
+    "flux-vm-agent": {
+      "category": "flux-runtime",
+      "files": 15,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "assembler",
+        "flux",
+        "interpreter",
+        "test",
+        "vm"
+      ]
+    },
+    "edge-relay-agent": {
+      "category": "research",
+      "files": 10,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "mud-bridge": {
+      "category": "holodeck",
+      "files": 7,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "mud",
+        "test"
+      ]
+    },
+    "lighthouse": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "superz-runtime": {
+      "category": "fleet-infra",
+      "files": 16,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "fleet",
+        "monitor",
+        "runtime",
+        "test"
+      ]
+    },
+    "cicd-agent": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "event-bus": {
+      "category": "fleet-infra",
+      "files": 12,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "secret-scanner": {
+      "category": "fleet-infra",
+      "files": 8,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "fleet-gateway": {
+      "category": "fleet-infra",
+      "files": 8,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "fleet-logger": {
+      "category": "fleet-infra",
+      "files": 8,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "fleet-config": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "oracle1-index": {
+      "category": "flux-runtime",
+      "files": 122,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "bottle",
+        "cocapn",
+        "deckboss",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "twin"
+      ]
+    },
+    "superagent-framework": {
+      "category": "agent-std",
+      "files": 32,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bootcamp",
+        "dockside",
+        "keeper",
+        "test"
+      ]
+    },
+    "fleet-wiki": {
+      "category": "fleet-infra",
+      "files": 8,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "co-captain-git-agent": {
+      "category": "fleet-infra",
+      "files": 16,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "fleet",
+        "test"
+      ]
+    },
+    "smp-flux-bridge": {
+      "category": "flux-runtime",
+      "files": 13,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "fleet",
+        "test"
+      ]
+    },
+    "fleet-english": {
+      "category": "brand",
+      "files": 10,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "fleet-latin": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "fleet-arabic": {
+      "category": "fleet-infra",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "fleet-sanskrit": {
+      "category": "fleet-infra",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "fleet-finnish": {
+      "category": "fleet-infra",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "fleet-json-a2a": {
+      "category": "fleet-infra",
+      "files": 3,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "fleet-navajo": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "fleet-chinese": {
+      "category": "brand",
+      "files": 9,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "integration-tests": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "fleet",
+        "keeper",
+        "test"
+      ]
+    },
+    "fleet-japanese": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "brand-assets": {
+      "category": "brand",
+      "files": 29,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "superz-vessel": {
+      "category": "flux-runtime",
+      "files": 182,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "agent",
+        "bootcamp",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "i2i",
+        "isa",
+        "monitor",
+        "opcode",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-skills": {
+      "category": "flux-runtime",
+      "files": 41,
+      "languages": [
+        "C",
+        "Go",
+        "JSON",
+        "Python",
+        "Rust",
+        "TOML",
+        "YAML",
+        "Zig"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "dockside",
+        "fleet",
+        "flux",
+        "mud",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "capability-spec": {
+      "category": "fleet-infra",
+      "files": 16,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "dockside",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-fleet-scanner": {
+      "category": "flux-runtime",
+      "files": 520,
+      "languages": [
+        "CUDA",
+        "Go",
+        "JSON",
+        "Java",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML",
+        "Zig"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "i2i",
+        "interpreter",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "rag-indexer": {
+      "category": "agent-std",
+      "files": 26,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "fleet-mechanic": {
+      "category": "fleet-infra",
+      "files": 29,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet",
+        "mechanic",
+        "priority",
+        "test"
+      ]
+    },
+    "lighthouse-monitor": {
+      "category": "fleet-infra",
+      "files": 7,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "keeper",
+        "test"
+      ]
+    },
+    "flux-evolve-py": {
+      "category": "flux-runtime",
+      "files": 8,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-baton": {
+      "category": "flux-runtime",
+      "files": 14,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "baton",
+        "cocapn",
+        "dockside",
+        "flux",
+        "test"
+      ]
+    },
+    "flux-conformance": {
+      "category": "flux-runtime",
+      "files": 27,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "flux",
+        "opcode",
+        "runtime",
+        "test"
+      ]
+    },
+    "flux-lsp": {
+      "category": "flux-runtime",
+      "files": 19,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "fleet",
+        "flux",
+        "opcode",
+        "test"
+      ]
+    },
+    "edge-research-relay": {
+      "category": "flux-runtime",
+      "files": 12,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "isa",
+        "test"
+      ]
+    },
+    "fleet-liaison-tender": {
+      "category": "fleet-infra",
+      "files": 40,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "dockside",
+        "priority",
+        "test"
+      ]
+    },
+    "escalation-engine": {
+      "category": "agent-std",
+      "files": 24,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "flux-a2a-signal": {
+      "category": "flux-runtime",
+      "files": 62,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "compiler",
+        "dockside",
+        "fleet",
+        "flux",
+        "interpreter",
+        "opcode",
+        "priority",
+        "test"
+      ]
+    },
+    "flux-py": {
+      "category": "flux-runtime",
+      "files": 18,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "isa",
+        "priority",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-vocabulary": {
+      "category": "flux-runtime",
+      "files": 35,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "compiler",
+        "dockside",
+        "flux",
+        "i2i",
+        "test"
+      ]
+    },
+    "superz-parallel-fleet-executor": {
+      "category": "agent-std",
+      "files": 47,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "training-data-collector": {
+      "category": "agent-std",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "flux-runtime": {
+      "category": "flux-runtime",
+      "files": 925,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "assembler",
+        "bootcamp",
+        "bottle",
+        "compiler",
+        "dockside",
+        "fleet",
+        "flux",
+        "interpreter",
+        "isa",
+        "opcode",
+        "priority",
+        "runtime",
+        "test",
+        "twin",
+        "vm"
+      ]
+    },
+    "inference-optimizer": {
+      "category": "agent-std",
+      "files": 25,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "test"
+      ]
+    },
+    "keeper-agent": {
+      "category": "flux-runtime",
+      "files": 2596,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "keeper",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "holodeck-rust": {
+      "category": "holodeck",
+      "files": 28,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "holodeck",
+        "test"
+      ]
+    },
+    "claude-code-vessel": {
+      "category": "agent-std",
+      "files": 17,
+      "languages": [
+        "JSON",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bootcamp",
+        "bottle",
+        "dockside",
+        "fleet",
+        "priority",
+        "test"
+      ]
+    },
+    "openmanus-vessel": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "dockside",
+        "fleet",
+        "skill"
+      ]
+    },
+    "navigator-vessel": {
+      "category": "cocapn",
+      "files": 11,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet"
+      ]
+    },
+    "babel-vessel": {
+      "category": "flux-runtime",
+      "files": 38,
+      "languages": [
+        "JSON",
+        "TOML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bootcamp",
+        "bottle",
+        "dockside",
+        "fleet",
+        "i2i",
+        "isa",
+        "priority",
+        "skill"
+      ]
+    },
+    "ws-fabric": {
+      "category": "agent-std",
+      "files": 48,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "voxel-logic": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "universal-import-export": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "timeseries-db": {
+      "category": "agent-std",
+      "files": 26,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside"
+      ]
+    },
+    "test-sdk-connection": {
+      "category": "agent-std",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "superz-diary": {
+      "category": "flux-runtime",
+      "files": 32,
+      "languages": [
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "priority",
+        "runtime"
+      ]
+    },
+    "pool-rs": {
+      "category": "agent-std",
+      "files": 13,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "pinchrs": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "platonic-randomness": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "pelagic-twin": {
+      "category": "flux-runtime",
+      "files": 32,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet",
+        "isa",
+        "skill"
+      ]
+    },
+    "optimized-system-monitor": {
+      "category": "fleet-infra",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "multi-device-sync": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "memory-visualization": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "mask-lock-clips": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "isa-v3-draft": {
+      "category": "flux-runtime",
+      "files": 4,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside",
+        "isa"
+      ]
+    },
+    "iron-to-iron": {
+      "category": "i2i",
+      "files": 80,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "flux",
+        "i2i",
+        "isa",
+        "priority",
+        "test"
+      ]
+    },
+    "imagegen1": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "frozen-model-rl": {
+      "category": "fleet-infra",
+      "files": 27,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "monitor"
+      ]
+    },
+    "git-agent-standard": {
+      "category": "agent-std",
+      "files": 14,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bottle",
+        "dockside",
+        "fleet",
+        "priority",
+        "runtime"
+      ]
+    },
+    "gpu-accelerator": {
+      "category": "agent-std",
+      "files": 24,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "test"
+      ]
+    },
+    "flux-spec": {
+      "category": "flux-runtime",
+      "files": 23,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "dockside",
+        "fleet",
+        "flux",
+        "isa",
+        "opcode",
+        "runtime"
+      ]
+    },
+    "flux-multilingual": {
+      "category": "flux-runtime",
+      "files": 611,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bottle",
+        "cocapn",
+        "compiler",
+        "dockside",
+        "fleet",
+        "flux",
+        "i2i",
+        "interpreter",
+        "opcode",
+        "priority",
+        "runtime",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-chronometer": {
+      "category": "agent-std",
+      "files": 6,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "baton",
+        "bootcamp",
+        "dockside"
+      ]
+    },
+    "flux-baton-test": {
+      "category": "i2i",
+      "files": 19,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "baton",
+        "dockside",
+        "fleet",
+        "i2i",
+        "skill"
+      ]
+    },
+    "flux-agent-a0fa81": {
+      "category": "flux-runtime",
+      "files": 12,
+      "languages": [
+        "JSON",
+        "TOML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet"
+      ]
+    },
+    "flowstate": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "fleet-research": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "dockside",
+        "flux",
+        "isa"
+      ]
+    },
+    "expression-injection": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "educationgamecocapn": {
+      "category": "flux-runtime",
+      "files": 2064,
+      "languages": [
+        "C",
+        "JSON",
+        "JavaScript",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "cuda-claw": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "cluster-orchestrator": {
+      "category": "agent-std",
+      "files": 29,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "clawmatrix": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "clawcraft": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "clawcanvas": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "cache-layer-optimizer": {
+      "category": "agent-std",
+      "files": 31,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "cache-layer": {
+      "category": "fleet-infra",
+      "files": 26,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "monitor"
+      ]
+    },
+    "cacapn": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "bordercollie": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "audio-pipeline": {
+      "category": "agent-std",
+      "files": 22,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "ai-character-sdk": {
+      "category": "agent-std",
+      "files": 25,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test"
+      ]
+    },
+    "agent-forge": {
+      "category": "agent-std",
+      "files": 13,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "keeper",
+        "test"
+      ]
+    },
+    "actualize": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "agent-coordinator": {
+      "category": "fleet-infra",
+      "files": 27,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "monitor",
+        "test"
+      ]
+    },
+    "a2a-adapter": {
+      "category": "i2i",
+      "files": 4,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "dockside"
+      ]
+    },
+    "Vibe-Code-Agent-Gen": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "ToolGuardian": {
+      "category": "fleet-infra",
+      "files": 34,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "monitor",
+        "test"
+      ]
+    },
+    "SuperInstance-Starter-Agent": {
+      "category": "flux-runtime",
+      "files": 925,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "test",
+        "vm"
+      ]
+    },
+    "SuperInstance-SDK1": {
+      "category": "flux-runtime",
+      "files": 927,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet",
+        "priority",
+        "test",
+        "vm"
+      ]
+    },
+    "StudyLog": {
+      "category": "uncategorized",
+      "files": 0,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "Spreadsheet-ai": {
+      "category": "fleet-infra",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Rubiks-Tensor-Transformer": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Sandbox-Lifecycle-Manager": {
+      "category": "i2i",
+      "files": 964,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "dockside",
+        "fleet",
+        "priority",
+        "test",
+        "vm"
+      ]
+    },
+    "Real-Time-Collaboration": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Proactive-Planning-AI-Hub": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Private-ML-Personalization": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Polln-whitepapers": {
+      "category": "research",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Murmur": {
+      "category": "agent-std",
+      "files": 26,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Lucineer": {
+      "category": "fleet-infra",
+      "files": 2876,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "camera",
+        "compiler",
+        "dockside",
+        "mechanic",
+        "monitor",
+        "priority",
+        "test",
+        "twin"
+      ]
+    },
+    "MPC-Orchestration-Optimization": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "LOG-Tensor": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "JEPA-Real-Time-Sentiment-Analysis": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Ghost-tiles": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "In-Browser-Dev-Tools": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "In-Browser-Vector-Search": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Equipment-Self-Improvement": {
+      "category": "flux-runtime",
+      "files": 1033,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "monitor",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-Teacher-Student": {
+      "category": "flux-runtime",
+      "files": 1032,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-NLP-Explainer": {
+      "category": "flux-runtime",
+      "files": 821,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-Monitoring-Dashboard": {
+      "category": "flux-runtime",
+      "files": 6527,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "compiler",
+        "dockside",
+        "isa",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-Hardware-Scaler": {
+      "category": "flux-runtime",
+      "files": 1630,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "isa",
+        "monitor",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-Escalation-Router": {
+      "category": "flux-runtime",
+      "files": 931,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-Memory-Hierarchy": {
+      "category": "flux-runtime",
+      "files": 1011,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "dockside",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-Context-Handoff": {
+      "category": "flux-runtime",
+      "files": 9195,
+      "languages": [
+        "Go",
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "compiler",
+        "dockside",
+        "isa",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "Equipment-CellLogic-Distiller": {
+      "category": "flux-runtime",
+      "files": 922,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "dockside",
+        "test",
+        "vm"
+      ]
+    },
+    "Dynamic-Theming": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "DeckBoss": {
+      "category": "flux-runtime",
+      "files": 1524,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "deckboss",
+        "dockside",
+        "test",
+        "vm"
+      ]
+    },
+    "Claude-PRISM-CF": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Claude-Abstraction": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Central-Error-Manager": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Auto-Tuning-Engine": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Auto-Backup-Compression-Encryption": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "Agent-Lifecycle-Registry": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "AIR": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "AI-Smart-Notifications": {
+      "category": "agent-std",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "dockside"
+      ]
+    },
+    "flux-lcar-cartridge": {
+      "category": "flux-runtime",
+      "files": 3,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "flux-lcar-esp32": {
+      "category": "flux-runtime",
+      "files": 8,
+      "languages": [
+        "C"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "flux"
+      ]
+    },
+    "flux-lcar-scheduler": {
+      "category": "flux-runtime",
+      "files": 3,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "flux-packager": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-runtime-san": {
+      "category": "flux-runtime",
+      "files": 36,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-runtime-zho": {
+      "category": "flux-runtime",
+      "files": 29,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "test"
+      ]
+    },
+    "flux-runtime-kor": {
+      "category": "flux-runtime",
+      "files": 38,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-simulator": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-runtime-lat": {
+      "category": "flux-runtime",
+      "files": 33,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-visualizer": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "flux-runtime-wen": {
+      "category": "flux-runtime",
+      "files": 33,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "opcode",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-runtime-deu": {
+      "category": "flux-runtime",
+      "files": 34,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-timeline": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "webrtc-stream": {
+      "category": "uncategorized",
+      "files": 7,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "Baton": {
+      "category": "i2i",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "vector-navigator": {
+      "category": "uncategorized",
+      "files": 7,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "semantic-store": {
+      "category": "uncategorized",
+      "files": 7,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "protocol-adapters": {
+      "category": "i2i",
+      "files": 4,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "rate-limiter": {
+      "category": "testing",
+      "files": 30,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "task-queue": {
+      "category": "uncategorized",
+      "files": 22,
+      "languages": [
+        "Go",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "embeddings-engine": {
+      "category": "uncategorized",
+      "files": 6,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "deployment-automator": {
+      "category": "fleet-infra",
+      "files": 24,
+      "languages": [
+        "Go",
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "monitor"
+      ]
+    },
+    "distributed-tracing": {
+      "category": "testing",
+      "files": 24,
+      "languages": [
+        "Go",
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "bandit-learner": {
+      "category": "uncategorized",
+      "files": 8,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "distributed-lock": {
+      "category": "research",
+      "files": 5,
+      "languages": [
+        "Rust",
+        "TOML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "superinstance-index": {
+      "category": "cocapn",
+      "files": 41,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "agent",
+        "cocapn",
+        "deckboss",
+        "fleet",
+        "flux",
+        "skill"
+      ]
+    },
+    "usemeter": {
+      "category": "flux-runtime",
+      "files": 11177,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "test",
+        "vm"
+      ]
+    },
+    "examples": {
+      "category": "uncategorized",
+      "files": 1,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "openmanus-fleet": {
+      "category": "fleet-infra",
+      "files": 5,
+      "languages": [
+        "TOML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "tripartite-rs": {
+      "category": "flux-runtime",
+      "files": 3820,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "test",
+        "vm"
+      ]
+    },
+    "quicunnel": {
+      "category": "flux-runtime",
+      "files": 1223,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test",
+        "vm"
+      ]
+    },
+    "greenhorn-runtime": {
+      "category": "flux-runtime",
+      "files": 65,
+      "languages": [
+        "CUDA",
+        "Go",
+        "JSON",
+        "Java",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "YAML",
+        "Zig"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "greenhorn",
+        "priority",
+        "test",
+        "vm"
+      ]
+    },
+    "health": {
+      "category": "fleet-infra",
+      "files": 20,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "makerlog-ai": {
+      "category": "flux-runtime",
+      "files": 2358,
+      "languages": [
+        "C",
+        "JSON",
+        "JavaScript",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "monitor",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "Tripartite1": {
+      "category": "testing",
+      "files": 264,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "flux-zig": {
+      "category": "flux-runtime",
+      "files": 47,
+      "languages": [
+        "Zig"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "priority",
+        "test"
+      ]
+    },
+    "flux-wasm": {
+      "category": "flux-runtime",
+      "files": 255,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML",
+        "TypeScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "assembler",
+        "bottle",
+        "fleet",
+        "flux",
+        "priority",
+        "vm"
+      ]
+    },
+    "prism": {
+      "category": "fleet-infra",
+      "files": 459,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "mechanic",
+        "monitor",
+        "test"
+      ]
+    },
+    "I-know-kung-fu": {
+      "category": "flux-runtime",
+      "files": 746,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "agent",
+        "fleet",
+        "interpreter",
+        "monitor",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "project1": {
+      "category": "flux-runtime",
+      "files": 682,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-swarm": {
+      "category": "flux-runtime",
+      "files": 27,
+      "languages": [
+        "Go",
+        "JSON",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "assembler",
+        "bottle",
+        "fleet",
+        "flux",
+        "isa",
+        "priority",
+        "test"
+      ]
+    },
+    "multibot": {
+      "category": "fleet-infra",
+      "files": 66,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "monitor",
+        "priority",
+        "test"
+      ]
+    },
+    "higher-abstraction-vocabularies": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "priority"
+      ]
+    },
+    "token-vault": {
+      "category": "uncategorized",
+      "files": 23,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": []
+    },
+    "super-z-quartermaster": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet"
+      ]
+    },
+    "nautilus": {
+      "category": "holodeck",
+      "files": 20,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "holodeck",
+        "skill",
+        "test"
+      ]
+    },
+    "holodeck-zig": {
+      "category": "holodeck",
+      "files": 28,
+      "languages": [
+        "Zig"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "holodeck",
+        "test"
+      ]
+    },
+    "holodeck-cuda": {
+      "category": "holodeck",
+      "files": 6,
+      "languages": [
+        "CUDA"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "holodeck"
+      ]
+    },
+    "holodeck-c": {
+      "category": "holodeck",
+      "files": 37,
+      "languages": [
+        "C"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "holodeck",
+        "runtime",
+        "test"
+      ]
+    },
+    "git-agent": {
+      "category": "fleet-infra",
+      "files": 39,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "fleet",
+        "test"
+      ]
+    },
+    "holodeck-go": {
+      "category": "holodeck",
+      "files": 11,
+      "languages": [
+        "Go"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "holodeck",
+        "test"
+      ]
+    },
+    "flux-testkit": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-stdlib": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "jetsonclaw1-onboarding": {
+      "category": "flux-runtime",
+      "files": 8,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "flux"
+      ]
+    },
+    "flux-signatures": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-via-keeper": {
+      "category": "flux-runtime",
+      "files": 1,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "z-agent-bootcamp": {
+      "category": "fleet-infra",
+      "files": 7,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bootcamp",
+        "skill"
+      ]
+    },
+    "forge-code-archaeologist": {
+      "category": "agent-std",
+      "files": 11,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bootcamp"
+      ]
+    },
+    "flux-vm-ts": {
+      "category": "flux-runtime",
+      "files": 14,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "compiler",
+        "opcode",
+        "test",
+        "vm"
+      ]
+    },
+    "greenhorn-onboarding": {
+      "category": "flux-runtime",
+      "files": 24,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bottle",
+        "fleet",
+        "flux",
+        "priority"
+      ]
+    },
+    "hybridclaw": {
+      "category": "flux-runtime",
+      "files": 4,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bootcamp",
+        "fleet"
+      ]
+    },
+    "mesosynchronous": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "keeper"
+      ]
+    },
+    "secret-manager": {
+      "category": "fleet-infra",
+      "files": 23,
+      "languages": [
+        "Rust",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "priority",
+        "test"
+      ]
+    },
+    "isa-convergence-tools": {
+      "category": "flux-runtime",
+      "files": 3,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "flux",
+        "isa"
+      ]
+    },
+    "flux-wasm-gen": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "vessel-template": {
+      "category": "agent-std",
+      "files": 4,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "flux-validator": {
+      "category": "flux-runtime",
+      "files": 4,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "git-agent-codespace": {
+      "category": "flux-runtime",
+      "files": 4,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "monitoring-dashboard": {
+      "category": "fleet-infra",
+      "files": 15,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "monitor",
+        "test"
+      ]
+    },
+    "luciddreamer-os": {
+      "category": "flux-skills",
+      "files": 9,
+      "languages": [
+        "JSON",
+        "JavaScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "workflow-engineer": {
+      "category": "uncategorized",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "websocket-fabric-v2": {
+      "category": "uncategorized",
+      "files": 0,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "test-repo": {
+      "category": "testing",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "temp": {
+      "category": "uncategorized",
+      "files": 1,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "flux-cuda": {
+      "category": "flux-runtime",
+      "files": 15,
+      "languages": [
+        "C",
+        "CUDA",
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "priority"
+      ]
+    },
+    "flux-runtime-wasm": {
+      "category": "flux-runtime",
+      "files": 15,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "compiler",
+        "flux",
+        "opcode",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-sandbox": {
+      "category": "i2i",
+      "files": 32,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bottle",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-skill-dsl": {
+      "category": "flux-runtime",
+      "files": 11,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "flux",
+        "skill",
+        "test"
+      ]
+    },
+    "flux-rfc": {
+      "category": "flux-runtime",
+      "files": 23,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "isa",
+        "runtime",
+        "test"
+      ]
+    },
+    "flux-research": {
+      "category": "flux-runtime",
+      "files": 36,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bootcamp",
+        "bottle",
+        "compiler",
+        "fleet",
+        "flux",
+        "interpreter",
+        "isa",
+        "mud",
+        "priority",
+        "skill"
+      ]
+    },
+    "flux-metrics": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-os": {
+      "category": "flux-runtime",
+      "files": 46,
+      "languages": [
+        "C",
+        "JSON",
+        "JavaScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "agent",
+        "compiler",
+        "fleet",
+        "flux",
+        "opcode",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-repl": {
+      "category": "flux-runtime",
+      "files": 7,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-optimizer": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-provenance": {
+      "category": "flux-runtime",
+      "files": 11,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "flux",
+        "test"
+      ]
+    },
+    "flux-profiler": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-meta-orchestrator": {
+      "category": "flux-runtime",
+      "files": 10,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-linker": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-llama": {
+      "category": "flux-runtime",
+      "files": 13,
+      "languages": [
+        "C",
+        "JSON",
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "priority"
+      ]
+    },
+    "flux-knowledge-federation": {
+      "category": "flux-runtime",
+      "files": 17,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-ide": {
+      "category": "flux-runtime",
+      "files": 36,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bottle",
+        "compiler",
+        "fleet",
+        "flux",
+        "priority",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-grammar": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-isa-authority": {
+      "category": "flux-runtime",
+      "files": 7,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "isa",
+        "test"
+      ]
+    },
+    "flux-js": {
+      "category": "flux-runtime",
+      "files": 11,
+      "languages": [
+        "JSON",
+        "JavaScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "priority"
+      ]
+    },
+    "flux-java": {
+      "category": "flux-runtime",
+      "files": 12,
+      "languages": [
+        "JSON",
+        "Java"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "assembler",
+        "bottle",
+        "fleet",
+        "flux",
+        "priority",
+        "vm"
+      ]
+    },
+    "flux-diff": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-ir": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-fuzzer": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-fleet-stdlib": {
+      "category": "flux-runtime",
+      "files": 13,
+      "languages": [
+        "Go",
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "envelope",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-evolution": {
+      "category": "flux-runtime",
+      "files": 28,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "test"
+      ]
+    },
+    "fleet-workshop": {
+      "category": "fleet-infra",
+      "files": 10,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "priority",
+        "test"
+      ]
+    },
+    "flux-cross-assembler": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "flux-coverage": {
+      "category": "testing",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-envelope": {
+      "category": "flux-runtime",
+      "files": 22,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "bottle",
+        "envelope",
+        "fleet",
+        "flux",
+        "priority",
+        "test"
+      ]
+    },
+    "flux-coop-runtime": {
+      "category": "flux-runtime",
+      "files": 47,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "runtime",
+        "test"
+      ]
+    },
+    "flux-debugger": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-decompiler": {
+      "category": "flux-runtime",
+      "files": 5,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "compiler",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-collab": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "flux-cooperative-intelligence": {
+      "category": "flux-runtime",
+      "files": 16,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "compiler",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-bytecode-diff": {
+      "category": "flux-runtime",
+      "files": 11,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "flux",
+        "test"
+      ]
+    },
+    "flux-core": {
+      "category": "flux-runtime",
+      "files": 49,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "a2a",
+        "assembler",
+        "bottle",
+        "fleet",
+        "flux",
+        "interpreter",
+        "isa",
+        "opcode",
+        "priority",
+        "test",
+        "vm"
+      ]
+    },
+    "flux-crypto": {
+      "category": "flux-runtime",
+      "files": 6,
+      "languages": [
+        "JSON",
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "fleet-self-onboarding": {
+      "category": "fleet-infra",
+      "files": 6,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet"
+      ]
+    },
+    "flux-0c476c": {
+      "category": "flux-runtime",
+      "files": 8,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "flux-benchmarks": {
+      "category": "flux-runtime",
+      "files": 16,
+      "languages": [
+        "C",
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "flux",
+        "priority"
+      ]
+    },
+    "flux-bottle-protocol": {
+      "category": "i2i",
+      "files": 9,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "test"
+      ]
+    },
+    "flux-adaptive-opcodes": {
+      "category": "flux-runtime",
+      "files": 12,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "fleet",
+        "flux",
+        "opcode",
+        "test"
+      ]
+    },
+    "flux-agent-runtime": {
+      "category": "flux-runtime",
+      "files": 8,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "flux",
+        "i2i"
+      ]
+    },
+    "SwarmOrchestration": {
+      "category": "uncategorized",
+      "files": 14,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "UI": {
+      "category": "uncategorized",
+      "files": 12,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": []
+    },
+    "flux-a2a-prototype": {
+      "category": "flux-runtime",
+      "files": 74,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "bottle",
+        "compiler",
+        "fleet",
+        "flux",
+        "interpreter",
+        "isa",
+        "opcode",
+        "priority",
+        "test"
+      ]
+    },
+    "flux-9969b6": {
+      "category": "flux-runtime",
+      "files": 13,
+      "languages": [
+        "JSON",
+        "TOML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "fleet"
+      ]
+    },
+    "embedding-utils": {
+      "category": "brand",
+      "files": 32,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "eveng1_python_sdk": {
+      "category": "testing",
+      "files": 41,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "Hardware-Aware-Flagging": {
+      "category": "uncategorized",
+      "files": 14,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "hardware-capability-profiler": {
+      "category": "testing",
+      "files": 23,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "health-monitoring-service": {
+      "category": "fleet-infra",
+      "files": 13,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "monitor",
+        "test"
+      ]
+    },
+    "llm-cost-calculator": {
+      "category": "testing",
+      "files": 15,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "local-model-manager": {
+      "category": "fleet-infra",
+      "files": 44,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "monitor",
+        "test"
+      ]
+    },
+    "fleet-org": {
+      "category": "fleet-infra",
+      "files": 7,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "activelog-backend": {
+      "category": "uncategorized",
+      "files": 35,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "agent-grid": {
+      "category": "testing",
+      "files": 14,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "ai-token-counter": {
+      "category": "testing",
+      "files": 15,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "Automatic-Type-Safe-IndexedDB": {
+      "category": "uncategorized",
+      "files": 7,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "Bayesian-Multi-Armed-Bandits": {
+      "category": "uncategorized",
+      "files": 8,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "caching-service": {
+      "category": "testing",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "character-agent-integration": {
+      "category": "testing",
+      "files": 48,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "character-skill-trees": {
+      "category": "flux-skills",
+      "files": 46,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "skill",
+        "test"
+      ]
+    },
+    "conversation-toolkit": {
+      "category": "testing",
+      "files": 36,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "model-switching-strategy": {
+      "category": "testing",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "fleet-contributing": {
+      "category": "fleet-infra",
+      "files": 15,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet"
+      ]
+    },
+    "fleet-containers": {
+      "category": "flux-runtime",
+      "files": 13,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "fleet",
+        "flux",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "fleet-energy-spec": {
+      "category": "fleet-infra",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "fleet-discovery": {
+      "category": "fleet-infra",
+      "files": 4,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "Privacy-First-Analytics": {
+      "category": "testing",
+      "files": 51,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "provider-abstraction-layer": {
+      "category": "research",
+      "files": 15,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "rate-limiting-service": {
+      "category": "testing",
+      "files": 16,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "SuperInstanceDocs": {
+      "category": "uncategorized",
+      "files": 8,
+      "languages": [
+        "JSON",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": []
+    },
+    "streaming-response-handler": {
+      "category": "testing",
+      "files": 17,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "greenhorn": {
+      "category": "i2i",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "fleet-ci": {
+      "category": "flux-runtime",
+      "files": 14,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "fleet",
+        "test"
+      ]
+    },
+    "AI-Writings": {
+      "category": "fleet-infra",
+      "files": 9,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "priority"
+      ]
+    },
+    "Equipment-Swarm-Coordinator": {
+      "category": "testing",
+      "files": 14,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "Equipment-Consensus-Engine": {
+      "category": "fleet-infra",
+      "files": 17,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "priority",
+        "test"
+      ]
+    },
+    "cudaclaw": {
+      "category": "flux-runtime",
+      "files": 83,
+      "languages": [
+        "C",
+        "CUDA",
+        "Rust",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "compiler",
+        "monitor",
+        "runtime",
+        "skill",
+        "test",
+        "twin"
+      ]
+    },
+    "codespace-edge-rd": {
+      "category": "uncategorized",
+      "files": 2,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "businesslog-app": {
+      "category": "flux-runtime",
+      "files": 7,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "interpreter"
+      ]
+    },
+    "ai-character-integrations": {
+      "category": "uncategorized",
+      "files": 39,
+      "languages": [
+        "JavaScript",
+        "Python",
+        "TypeScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "commit-caster": {
+      "category": "fleet-infra",
+      "files": 6,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "config-manager": {
+      "category": "uncategorized",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "cost-analysis": {
+      "category": "testing",
+      "files": 15,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "constraint-theory-backup": {
+      "category": "uncategorized",
+      "files": 196,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Rust",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent"
+      ]
+    },
+    "Claude-prism-local-json": {
+      "category": "fleet-infra",
+      "files": 407,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "mechanic",
+        "monitor",
+        "test"
+      ]
+    },
+    "activelog-claude": {
+      "category": "uncategorized",
+      "files": 7,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "agent-skills": {
+      "category": "flux-skills",
+      "files": 3,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "skill"
+      ]
+    },
+    "SuperInstanceEco": {
+      "category": "flux-runtime",
+      "files": 248,
+      "languages": [
+        "Go",
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "deckboss",
+        "interpreter",
+        "monitor",
+        "priority",
+        "test"
+      ]
+    },
+    "Mycelium": {
+      "category": "uncategorized",
+      "files": 25,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "Claude_Baton": {
+      "category": "i2i",
+      "files": 24,
+      "languages": [
+        "JSON"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "baton"
+      ]
+    },
+    "Rotational-Transformer": {
+      "category": "uncategorized",
+      "files": 8,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "ec2mud": {
+      "category": "holodeck",
+      "files": 25,
+      "languages": [
+        "JSON",
+        "TypeScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "superz-twin": {
+      "category": "flux-runtime",
+      "files": 37,
+      "languages": [
+        "JSON",
+        "JavaScript"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "flux"
+      ]
+    },
+    "quill-isa-architect": {
+      "category": "flux-runtime",
+      "files": 47,
+      "languages": [
+        "JSON",
+        "Python",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "bootcamp",
+        "bottle",
+        "fleet",
+        "flux",
+        "i2i",
+        "isa",
+        "runtime",
+        "skill",
+        "test"
+      ]
+    },
+    "multi-provider-router": {
+      "category": "testing",
+      "files": 62,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "Spreader-tool": {
+      "category": "fleet-infra",
+      "files": 43,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "bottle",
+        "fleet",
+        "test"
+      ]
+    },
+    "character-library": {
+      "category": "flux-skills",
+      "files": 45,
+      "languages": [
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "skill",
+        "test"
+      ]
+    },
+    "project-JEPA": {
+      "category": "flux-runtime",
+      "files": 41,
+      "languages": [
+        "Go"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test",
+        "twin",
+        "vm"
+      ]
+    },
+    "CascadeRouter": {
+      "category": "fleet-infra",
+      "files": 49,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "monitor",
+        "test"
+      ]
+    },
+    "webgpu-profiler": {
+      "category": "testing",
+      "files": 50,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "monitor",
+        "test"
+      ]
+    },
+    "constraint-ranch": {
+      "category": "testing",
+      "files": 29,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "hierarchical-memory": {
+      "category": "uncategorized",
+      "files": 12,
+      "languages": [
+        "Python",
+        "TOML"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "equilibrium-tokens": {
+      "category": "agent-std",
+      "files": 53,
+      "languages": [
+        "JSON",
+        "Python",
+        "Rust",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test"
+      ]
+    },
+    "jepa-sentiment": {
+      "category": "fleet-infra",
+      "files": 54,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "monitor",
+        "test"
+      ]
+    },
+    "SwarmMCP": {
+      "category": "uncategorized",
+      "files": 12,
+      "languages": [],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "CognitiveEngine": {
+      "category": "fleet-infra",
+      "files": 81,
+      "languages": [
+        "JSON",
+        "Python",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "monitor",
+        "test"
+      ]
+    },
+    "constraint-theory-python": {
+      "category": "testing",
+      "files": 56,
+      "languages": [
+        "Python",
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "CRDT_Research": {
+      "category": "research",
+      "files": 57,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": false,
+      "has_ci": false,
+      "signature": []
+    },
+    "DMLog": {
+      "category": "fleet-infra",
+      "files": 86,
+      "languages": [
+        "Python",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "mechanic",
+        "test",
+        "twin"
+      ]
+    },
+    "dodecet-encoder": {
+      "category": "testing",
+      "files": 124,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "constraint-theory-web": {
+      "category": "fleet-infra",
+      "files": 209,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": false,
+      "has_ci": true,
+      "signature": [
+        "monitor"
+      ]
+    },
+    "ai-ranch": {
+      "category": "flux-runtime",
+      "files": 448,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "interpreter",
+        "monitor",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "constraint-flow": {
+      "category": "testing",
+      "files": 45,
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "cloudflare-vibe": {
+      "category": "flux-runtime",
+      "files": 596,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "monitor",
+        "runtime",
+        "test"
+      ]
+    },
+    "nexus-runtime": {
+      "category": "flux-runtime",
+      "files": 839,
+      "languages": [
+        "C",
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "assembler",
+        "compiler",
+        "fleet",
+        "isa",
+        "monitor",
+        "opcode",
+        "runtime",
+        "skill",
+        "test",
+        "twin",
+        "vm"
+      ]
+    },
+    "pasture-ai": {
+      "category": "flux-skills",
+      "files": 285,
+      "languages": [
+        "JSON",
+        "Python",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "skill",
+        "test"
+      ]
+    },
+    "SuperInstance-gamedev": {
+      "category": "fleet-infra",
+      "files": 152,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TypeScript"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "bottle",
+        "fleet",
+        "priority",
+        "skill",
+        "test"
+      ]
+    },
+    "constraint-theory-research": {
+      "category": "research",
+      "files": 242,
+      "languages": [
+        "JSON",
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "SmartCRDT": {
+      "category": "flux-runtime",
+      "files": 2931,
+      "languages": [
+        "C",
+        "JSON",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "anomaly",
+        "bottle",
+        "fleet",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "PersonalLog": {
+      "category": "flux-runtime",
+      "files": 2558,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "isa",
+        "mechanic",
+        "monitor",
+        "skill",
+        "test",
+        "vm"
+      ]
+    },
+    "cloudflare-code": {
+      "category": "flux-runtime",
+      "files": 3787,
+      "languages": [
+        "Go",
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "anomaly",
+        "interpreter",
+        "monitor",
+        "priority",
+        "runtime",
+        "test"
+      ]
+    },
+    "Edge-Native": {
+      "category": "flux-runtime",
+      "files": 347,
+      "languages": [
+        "C",
+        "JSON",
+        "Python",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "compiler",
+        "mechanic",
+        "monitor",
+        "opcode",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "SuperInstance-papers": {
+      "category": "flux-runtime",
+      "files": 4906,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "anomaly",
+        "bottle",
+        "compiler",
+        "isa",
+        "mechanic",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "polln": {
+      "category": "flux-runtime",
+      "files": 3472,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "anomaly",
+        "bottle",
+        "compiler",
+        "isa",
+        "mechanic",
+        "monitor",
+        "priority",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "spreadsheet-moment-proto": {
+      "category": "flux-runtime",
+      "files": 13129,
+      "languages": [
+        "C",
+        "JSON",
+        "JavaScript",
+        "Python",
+        "TOML",
+        "TypeScript",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "agent",
+        "compiler",
+        "isa",
+        "runtime",
+        "test",
+        "vm"
+      ]
+    },
+    "constraint-theory-core": {
+      "category": "testing",
+      "files": 60,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "agent",
+        "test"
+      ]
+    },
+    "realtime-core": {
+      "category": "flux-runtime",
+      "files": 1895,
+      "languages": [
+        "JSON",
+        "Rust",
+        "TOML"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "test",
+        "vm"
+      ]
+    },
+    "websocket-fabric": {
+      "category": "i2i",
+      "files": 58,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "test"
+      ]
+    },
+    "flux-roundtable": {
+      "category": "flux-runtime",
+      "files": 11,
+      "languages": [
+        "Python"
+      ],
+      "has_tests": true,
+      "has_ci": false,
+      "signature": [
+        "flux",
+        "test"
+      ]
+    },
+    "flux": {
+      "category": "flux-runtime",
+      "files": 44,
+      "languages": [
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "compiler",
+        "flux",
+        "interpreter",
+        "opcode",
+        "test",
+        "vm"
+      ]
+    },
+    "Constraint-Theory": {
+      "category": "fleet-infra",
+      "files": 1208,
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TOML",
+        "YAML"
+      ],
+      "has_tests": true,
+      "has_ci": true,
+      "signature": [
+        "a2a",
+        "agent",
+        "monitor",
+        "test"
+      ]
+    }
+  }
+}

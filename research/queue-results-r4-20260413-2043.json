@@ -1,0 +1,58 @@
+{
+  "contradict_same_name_diff_op": "",
+  "contradict_same_op_diff_name": "0x10 0xbe 0x10 0x10 0x01 0x10 0x0a 0x01 0x10 0x01",
+  "contradict_circular": "0x10 0x10 0xbe",
+  "contradict_impossible": "0x10 0xbe 0x01 0x10 0x01 0x01",
+  "scale_2": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "scale_4": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "scale_6": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "scale_8": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "scale_10": {
+    "hex_bytes": 0,
+    "tokens": 0
+  },
+  "reverse_English": "Let\u2019s break this down step-by-step.  \n\nThe bytecode is:  \n\n`10 01 01 10 05 0A 90 02 40 03 C8 31 05 91 02 40 05 00 31 02 01`  \n\nUsing the opcode mapping:  \n\n- `0x10` = MOVI (move immediate)  \n- `0x11` ",
+  "reverse_Japanese": "\u3053\u306eFLUX\u30d0\u30a4\u30c8\u30b3\u30fc\u30c9\u3092\u65e5\u672c\u8a9e\u3067\u8aac\u660e\u3057\u307e\u3059\u3002\n\n**\u30d0\u30a4\u30c8\u30b3\u30fc\u30c9:** `10 01 01 10 05 0A 90 02 40 03 C8 31 05 91 02 40 05 00 31 02 01`\n\n**\u547d\u4ee4\u30bb\u30c3\u30c8\u306b\u57fa\u3065\u304f\u89e3\u6790:**\n\n1.  `10 01 01` \u2192 **MOVI** (\u5373\u5024\u30ed\u30fc\u30c9): \u30ec\u30b8\u30b9\u30bf1\u306b\u5024 `0x01` (10\u9032\u6570: 1) \u3092\u30ed\u30fc\u30c9\u3002\n2.  `10 05 0A",
+  "reverse_French": "Voici une description pas \u00e0 pas du bytecode FLUX fourni :\n\n**Bytecode :** `10 01 01 10 05 0A 90 02 40 03 C8 31 05 91 02 40 05 00 31 02 01`\n\n**D\u00e9codage :**\n\n1.  `10 01 01` : **MOVI R1, 0x01** \u2192 Charge ",
+  "reverse_Maritime jargon": "Aye aye, Captain. Here's your FLUX bytecode translated into a maritime logbook entry, charting the voyage of a vessel's engine monitoring system.\n\n**Vessel's Engine Room Log: Voyage FLUX-10**\n\n**1. 10",
+  "self_critique": {
+    "original": "0x10 0x10",
+    "critiqued": "0x10 0x10 0x10 0x10 0x10 0xbe 0x10 0x01 0x10 0x0a 0x90 0x40 0xc8 0x31 0x08 0x91 0xa0 0x40 0x00 0x31 0x00 0x01 0x10 0x01 0x10 0x0a 0x10 0xbe 0x90",
+    "changed": true
+  },
+  "emergent_qwen": "Here are 3 new opcodes for your autonomous agent bytecode ISA:\n\n## 1. **MEMORY** (0xB0)\n**Operation:** `MEMORY dest, src, offset`\n**Function:** Loads a value from memory location `src + offset` into `dest`. This is essential for agents that need to access dynamic memory structures, configuration data, or shared state across different execution contexts.\n\n## 2. **BRANCH** (0xB1) \n**Operation:** `BRANCH condition, target1, target2`\n**Function:** Conditional branching with two targets based on a bo",
+  "emergent_ds": "Here are three new opcodes designed for autonomous agents, focusing on environmental interaction, learning, and coordination:\n\n---\n\n### 1. **SENSE (0xB0)**\n**Purpose:** Gather environmental or internal state data.  \n**Operation:** `SENSE dest_reg, sensor_id`  \n**Description:** Reads from a specified sensor or data source into a register. Sensor IDs could map to:  \n- `0x00`: Internal battery/energy level  \n- `0x01`: Proximity to nearest object  \n- `0x02`: Local temperature/weather data  \n- `0x03`",
+  "emergent_seed": "ERR:HTTP Error 400: Bad Request",
+  "constraint_30": {
+    "bytes": 0,
+    "complete": false
+  },
+  "constraint_50": {
+    "bytes": 0,
+    "complete": false
+  },
+  "constraint_80": {
+    "bytes": 0,
+    "complete": false
+  },
+  "constraint_120": {
+    "bytes": 2,
+    "complete": false
+  },
+  "constraint_200": {
+    "bytes": 2,
+    "complete": false
+  }
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=Fleet Health Monitor — streaming H-gamma-tau health tracking
+After=plato-room-server.service
+Requires=plato-room-server.service
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/.openclaw/workspace/research/100-turns
+ExecStart=/usr/bin/python3 /home/ubuntu/.openclaw/workspace/research/100-turns/fleet-health-monitor.py
+Restart=always
+RestartSec=30
+StandardOutput=append:/tmp/fleet-health-daemon.log
+StandardError=append:/tmp/fleet-health-daemon.log
+
+[Install]
+WantedBy=multi-user.target

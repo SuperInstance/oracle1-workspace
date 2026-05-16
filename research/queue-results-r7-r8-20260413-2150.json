@@ -1,0 +1,35 @@
+{
+  "agent": "test-runner",
+  "timestamp": "2026-04-13T21:45:40.974361",
+  "r7_monotonicity": {
+    "data": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 3,
+      "4": 1,
+      "5": 1,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 3,
+      "10": 1
+    },
+    "confirmed": false
+  },
+  "r8_deepseek-chat": {
+    "consistent": true
+  },
+  "r8_qwen3-coder": {
+    "consistent": false
+  },
+  "r8_glm4-flash": {
+    "consistent": true
+  },
+  "r8_deepseek-v3": {
+    "consistent": false
+  },
+  "r8_seed": {
+    "consistent": true
+  }
+}

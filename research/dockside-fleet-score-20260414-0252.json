@@ -1,0 +1,439 @@
+{
+  "holodeck-rust": {
+    "score": 7,
+    "max": 11,
+    "pct": 64,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": true,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\ud83d\udfe1"
+  },
+  "holodeck-studio": {
+    "score": 7,
+    "max": 11,
+    "pct": 64,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": true,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\ud83d\udfe1"
+  },
+  "flux-runtime": {
+    "score": 6,
+    "max": 11,
+    "pct": 55,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": true,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "fleet-agent-api": {
+    "score": 5,
+    "max": 11,
+    "pct": 45,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": true,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "lighthouse-keeper": {
+    "score": 3,
+    "max": 11,
+    "pct": 27,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": false,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "fleet-mechanic": {
+    "score": 6,
+    "max": 11,
+    "pct": 55,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": true,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": true
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "flux-skills": {
+    "score": 5,
+    "max": 11,
+    "pct": 45,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "flux-baton": {
+    "score": 4,
+    "max": 11,
+    "pct": 36,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "oracle1-vessel": {
+    "score": 10,
+    "max": 11,
+    "pct": 91,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": true,
+      "DIARY": true,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": true
+    },
+    "grade": "\ud83d\udfe2"
+  },
+  "cocapn": {
+    "score": 5,
+    "max": 11,
+    "pct": 45,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": true,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": false,
+      "STANDARD": false,
+      "docker": true
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "git-agent-standard": {
+    "score": 4,
+    "max": 11,
+    "pct": 36,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "dockside-exam": {
+    "score": 2,
+    "max": 11,
+    "pct": 18,
+    "checks": {
+      "README": true,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "abstraction-planes": {
+    "score": 3,
+    "max": 11,
+    "pct": 27,
+    "checks": {
+      "README": true,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "agent-bootcamp": {
+    "score": 1,
+    "max": 11,
+    "pct": 9,
+    "checks": {
+      "README": true,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": false,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "commodore-protocol": {
+    "score": 1,
+    "max": 11,
+    "pct": 9,
+    "checks": {
+      "README": true,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": false,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "openmanus-vessel": {
+    "score": 7,
+    "max": 11,
+    "pct": 64,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": true,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\ud83d\udfe1"
+  },
+  "superz-vessel": {
+    "score": 6,
+    "max": 11,
+    "pct": 55,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": true,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "babel-vessel": {
+    "score": 5,
+    "max": 11,
+    "pct": 45,
+    "checks": {
+      "README": false,
+      "LICENSE": true,
+      "tests": false,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": false,
+      "STATE": true,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "navigator-vessel": {
+    "score": 4,
+    "max": 11,
+    "pct": 36,
+    "checks": {
+      "README": true,
+      "LICENSE": true,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "ap-compiler": {
+    "score": 1,
+    "max": 11,
+    "pct": 9,
+    "checks": {
+      "README": false,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": false,
+      "ABSTRACTION": false,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": false,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "doc-writer-vessel": {
+    "score": 4,
+    "max": 11,
+    "pct": 36,
+    "checks": {
+      "README": false,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "test-runner-vessel": {
+    "score": 4,
+    "max": 11,
+    "pct": 36,
+    "checks": {
+      "README": false,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  },
+  "comms-engineer-vessel": {
+    "score": 4,
+    "max": 11,
+    "pct": 36,
+    "checks": {
+      "README": false,
+      "LICENSE": false,
+      "tests": false,
+      "CI": false,
+      "CHARTER": true,
+      "ABSTRACTION": true,
+      "STATE": false,
+      "DIARY": false,
+      "DOCKSIDE": true,
+      "STANDARD": true,
+      "docker": false
+    },
+    "grade": "\u26a0\ufe0f"
+  }
+}

@@ -183,3 +183,11 @@ cocapn-fleet/
 
 ### Blocked
 - **PyPI token** — twine upload 403s. Packages exist on PyPI but won't accept new versions.
+
+## Research Program — Cycle 1 (Active)
+- [ ] E1: Telemetry-Gap Alignment (running)
+- [ ] E3: Agent Economic Incentives (running)
+- [ ] Cycle 2 priority ranking (running)
+- [ ] Implement proof-carrying in fleet-jobs
+- [ ] Sign Laplacian as fleet stability metric
+- [ ] Repeat pentagram study on new domain

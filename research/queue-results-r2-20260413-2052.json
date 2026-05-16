@@ -1,0 +1,72 @@
+{
+  "semantic_vs_syntactic": {
+    "semantic_unique": 2,
+    "syntactic_unique": 6,
+    "syntactic_better": false
+  },
+  "transfer_deepseek-chat": {
+    "without": 1,
+    "with": 2,
+    "improved": false
+  },
+  "transfer_glm4-flash": {
+    "without": 1,
+    "with": 1,
+    "improved": true
+  },
+  "complexity_trivial": 3,
+  "complexity_simple": 3,
+  "complexity_medium": 2,
+  "complexity_complex": 1,
+  "complexity_very_complex": 2,
+  "ablation_heading": 2,
+  "ablation_speed": 2,
+  "ablation_loop": 2,
+  "ablation_gauge": 3,
+  "ablation_alert": 3,
+  "ablation_evolve": 3,
+  "ablation_halt": 3,
+  "format_imperative": 3,
+  "format_declarative": 2,
+  "format_question": 1,
+  "format_assembly": 1,
+  "error_recovery": {
+    "broken": "10 01 XX 10 0A 90 ZZ 40 C8 31 FF A0 00 40 00 31 EE 01",
+    "fixed": "0x10 0x10 0x00 0x01 0x10 0x10 0x01 0x0a 0x00 0x90"
+  },
+  "chain_lengths": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "context_minimal": {
+    "unique": 3,
+    "chars": 96
+  },
+  "context_with_ops": {
+    "unique": 1,
+    "chars": 277
+  },
+  "context_with_locks": {
+    "unique": 3,
+    "chars": 501
+  },
+  "context_verbose": {
+    "unique": 1,
+    "chars": 576
+  },
+  "reasoner_analysis": "Let\u2019s break this down step by step.\n\n---\n\n## **1. Restating the observations**\n\n1. **Locks compress compilation output by 82%**  \n   This suggests that when some kind of \u201clock\u201d mechanism is applied to the LLM\u2019s generation process (perhaps fixing certain internal representations or states), the compiled output (maybe bytecode or intermediate representation) becomes much smaller \u2014 82% smaller means a ~5.5\u00d7 compression ratio.\n\n2. **Temperature breaks consistency above 0.0**  \n   Normally, temperature 0 means deterministic sampling (greedy or argmax). Here, any temperature > 0.0 breaks \u201cconsistency\u201d \u2014 meaning the output varies in a way that disrupts some property (maybe the compression effect, or the exact compiled form).\n\n3. **All models compile differently**  \n   Different LLMs produce different compiled outputs for the same source, implying the mapping from natural language (or high-level description) to bytecode is model-dependent.\n\n---\n\n## **2. What \u201clocks\u201d might mean**\n\nIn LLM context, a \u201clock\u201d could refer to:\n\n- **Fixed latent codes**: Forcing the model to use the same internal representation path each time.\n- **Constrained decoding**: Limiting vocabulary or state space during generation of the bytecode.\n- **Freezing certain attention patterns or hidden states** during generation.\n\nIf \u201clocks\u201d compress output dramatically, it suggests that without locks, the",
+  "generalize_prog1": {
+    "without": 2,
+    "with": 1
+  },
+  "generalize_prog2": {
+    "without": 2,
+    "with": 1
+  },
+  "generalize_prog3": {
+    "without": 1,
+    "with": 1
+  }
+}

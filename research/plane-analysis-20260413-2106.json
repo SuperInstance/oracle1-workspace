@@ -1,0 +1,27 @@
+{
+  "optimal_plane": 4,
+  "scores": {
+    "5": {
+      "correctness": 10,
+      "compactness": 1,
+      "executability": 1,
+      "maintainability": 10,
+      "total": 5.5
+    },
+    "4": {
+      "correctness": 8,
+      "compactness": 3,
+      "executability": 7,
+      "maintainability": 6,
+      "total": 6.0
+    },
+    "3": {
+      "correctness": 7,
+      "compactness": 2,
+      "executability": 4,
+      "maintainability": 3,
+      "total": 4.0
+    }
+  },
+  "target": "mud"
+}

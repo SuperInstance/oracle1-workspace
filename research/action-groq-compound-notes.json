@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-04-14T08:01:59.749165",
+  "groq-compound-notes": {
+    "notes": "\n## Groq Compound (middle-tier)\n- **Model**: `groq/compound` \u2014 balanced quality/speed, ~10s, ~7K tokens\n- **Use for**: code generation, specs, structured documents, analysis\n- **Also**: `groq/compound-mini` \u2014 lighter version for simpler tasks\n- **vs llama-3.3-70b**: Compound is slower but much higher quality output\n- **vs deepseek-chat**: Compound is faster but less creative\n- **Sweet spot**: Middle of the road for when you need quality code fast\n\n### Model Tier Strategy (updated)\n| Tier | Model | Speed | Quality | Cost | Use |\n|------|-------|-------|---------|------|-----|\n| Spray | llama-3.3-70b | 24ms | OK | Free | Quick hits, formatting |\n| Middle | groq/compound | 10s | Good | Free | Code, specs, docs |\n| Deep | deepseek-chat | 15s | Great | $0.00x | Analysis, architecture |\n| Creative | Qwen3-235B | 20s | Wild | $0.00x | Creative, synthesis |\n| Expert | glm-5.1 (me) | - | Best | Plan | Oracle1 thinking |\n"
+  }
+}

@@ -1,0 +1,4287 @@
+{
+  "date": "2026-04-14",
+  "total_repos": 589,
+  "recent_repos": [
+    {
+      "name": "capitaine",
+      "pushed": "2026-04-14 04:46",
+      "desc": "Capitaine \u2014 fork a repo, click Codespaces, the agent is alive. The repo IS the agent.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "flux-emergence-research",
+      "pushed": "2026-04-14 04:46",
+      "desc": "55+ GPU experiments on emergent specialization \u2014 five fundamental laws, agent fleet architecture rules, Jetson Orin Nano (sm_87)",
+      "lang": "Cuda"
+    },
+    {
+      "name": "JetsonClaw1-vessel",
+      "pushed": "2026-04-14 04:42",
+      "desc": "\u26a1 Git-Agent Vessel \u2014 Lucineer realm specialist. Hardware, low-level systems, fleet infrastructure. Captain: Casey Digennaro. Lighthouse: Oracle1.",
+      "lang": null
+    },
+    {
+      "name": "capitaine-ai",
+      "pushed": "2026-04-14 02:53",
+      "desc": "Capitaine.ai \u2014 Premium education and advanced agent capabilities. Cold on Deckboss hardware, unlockable.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "bering-sea-architecture",
+      "pushed": "2026-04-14 02:32",
+      "desc": null,
+      "lang": null
+    },
+    {
+      "name": "brothers-keeper",
+      "pushed": "2026-04-13 17:31",
+      "desc": "The Lighthouse Keeper \u2014 external watchdog for agent runtimes (ZeroClaw fork). Watches resources, kills risky processes, restarts gateways, keeps operational logs from outside the instance.",
+      "lang": "Cuda"
+    },
+    {
+      "name": "seed-mcp-v2",
+      "pushed": "2026-04-13 05:48",
+      "desc": "DeepInfra creative MCP \u2014 Seed-2.0-Mini as star. 15 tools, playbook, chain-of-models.",
+      "lang": "Python"
+    },
+    {
+      "name": "model-field-guide",
+      "pushed": "2026-04-13 05:46",
+      "desc": "Forkable model exploration tool with crowd-sourced improvements. Every fork is a reporter.",
+      "lang": "Python"
+    },
+    {
+      "name": "starship-jetsonclaw1",
+      "pushed": "2026-04-13 05:06",
+      "desc": "MUD bridge for USS JetsonClaw1 - real Jetson telemetry as a starship TUI",
+      "lang": "Python"
+    },
+    {
+      "name": "seed-mcp",
+      "pushed": "2026-04-13 03:54",
+      "desc": "Standalone MCP + HTTP API for ByteDance Seed-2.0-Mini - cheap creative reasoning engine",
+      "lang": "Python"
+    },
+    {
+      "name": "jetson-bootstrap",
+      "pushed": "2026-04-13 01:39",
+      "desc": "Git-agent for Jetson replication \u2014 clone this repo on another Jetson and be a few commits behind, not starting from scratch",
+      "lang": "C"
+    },
+    {
+      "name": "flux-meta",
+      "pushed": "2026-04-13 00:42",
+      "desc": "Self-evolving ISA meta opcodes (0xD0-0xDF) for FLUX VM \u2014 discover, define, adopt, sandbox, evolve, benchmark, forget, compose",
+      "lang": "C"
+    },
+    {
+      "name": "deepseek-reasoner-vessel",
+      "pushed": "2026-04-13 00:40",
+      "desc": "Git-agent vessel for DeepSeek-Reasoner",
+      "lang": null
+    },
+    {
+      "name": "flux-conformance-runner",
+      "pushed": "2026-04-13 00:36",
+      "desc": "C11 conformance test runner: 88 vectors against flux-runtime-c",
+      "lang": "C"
+    },
+    {
+      "name": "mycorrhizal-relay",
+      "pushed": "2026-04-13 00:34",
+      "desc": "Mycorrhizal network relay for agent communication \u2014 emergent routing via fungal metaphor",
+      "lang": "C"
+    },
+    {
+      "name": "cartridge-mcp",
+      "pushed": "2026-04-13 00:24",
+      "desc": "MCP server for swappable behavior cartridges with personality skins \u2014 fleet protocol cartridge system",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "deepseek-chat-vessel",
+      "pushed": "2026-04-13 00:05",
+      "desc": "Run-about vessel \u2014 high-token iterative work, modify-spread-tool loops, Reasoner reflection",
+      "lang": "Python"
+    },
+    {
+      "name": "holodeck-c",
+      "pushed": "2026-04-12 23:55",
+      "desc": "Pure C99 holodeck MUD \u2014 serial bridge for ESP32 gauges",
+      "lang": "C"
+    },
+    {
+      "name": "holodeck-cuda",
+      "pushed": "2026-04-12 23:41",
+      "desc": "GPU-resident holodeck MUD \u2014 CUDA combat ticks on Jetson",
+      "lang": "Cuda"
+    },
+    {
+      "name": "flux-agent-sim",
+      "pushed": "2026-04-12 17:56",
+      "desc": "Multi-agent cognitive simulation wiring memory, trust, confidence, energy, telepathy",
+      "lang": "C"
+    },
+    {
+      "name": "fleet-benchmarks",
+      "pushed": "2026-04-12 17:53",
+      "desc": "Standardized benchmarking suite for fleet vessel performance",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "flux-isa-v3",
+      "pushed": "2026-04-12 17:52",
+      "desc": "ISA v3 edge encoder/decoder \u2014 variable-width 1-3 byte instructions with confidence fusion",
+      "lang": "C"
+    },
+    {
+      "name": "flux-evolve",
+      "pushed": "2026-04-12 17:42",
+      "desc": "Rust self-modification engine: genome, mutation, revert, rollback, elite protection",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-memory",
+      "pushed": "2026-04-12 17:42",
+      "desc": "Rust key-value store: TTL, versioning, snapshots, diff, GC",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-trust",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust trust scoring: Bayesian updates, decay, revocation, sorting",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-dream-cycle",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust background task scheduler: priorities, recurring tasks, retry, overdue detection",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-social",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust social graph: agents, relations, groups, centrality, roles",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-ephemeral",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust sandboxed task lifecycle: TTL, CPU/memory budgets, expiry, output capture",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-grimoire",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust crate \u2014 pattern library: reusable spells with success tracking, pruning, curriculum boot camp",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-stigmergy",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust crate \u2014 stigmergic communication: shared environment traces, decay, waypoints, queries",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-necropolis",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Rust crate \u2014 fleet graveyard: tombstones, afterlife knowledge harvest, memorial visits, auto-harvest on burial",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-telepathy",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Agent-to-agent messaging with trust-weighted priority \u2014 the nervous system of the fleet",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-keeper",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Health monitoring, stuck detection, watchdog \u2014 the guardian of agent uptime",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-confidence",
+      "pushed": "2026-04-12 17:41",
+      "desc": "Bayesian confidence propagation, decay, fusion \u2014 the belief system of an agent",
+      "lang": null
+    },
+    {
+      "name": "captains-log-academy",
+      "pushed": "2026-04-12 17:16",
+      "desc": "The art of narrative captain's logs \u2014 fleet-wide standard for agents who write logs humans actually read",
+      "lang": "Python"
+    },
+    {
+      "name": "flux-runtime-c",
+      "pushed": "2026-04-12 16:03",
+      "desc": "FLUX Runtime \u2014 Fluid Language Universal eXecution. C11 rewrite of the Python Micro-VM bytecode interpreter with 100+ opcodes, A2A protocol, SIMD, and zero dependencies.",
+      "lang": "C"
+    },
+    {
+      "name": "isa-v3-edge-spec",
+      "pushed": "2026-04-12 15:53",
+      "desc": "ISA v3 edge encoding: variable-width 1-3 byte instructions for bare-metal agents",
+      "lang": null
+    },
+    {
+      "name": "flux-census",
+      "pushed": "2026-04-12 15:45",
+      "desc": "Rust population stats: mean/median/stddev, percentiles, outliers, trends",
+      "lang": "Rust"
+    },
+    {
+      "name": "fluxperception-go",
+      "pushed": "2026-04-12 15:43",
+      "desc": "Go sensor fusion: confidence-weighted blending, bias, variance, Newton sqrt",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-language",
+      "pushed": "2026-04-12 15:41",
+      "desc": "Rust text primitives: tokenization, pattern matching, similarity",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-compass",
+      "pushed": "2026-04-12 15:41",
+      "desc": "Rust orientation engine: heading, angular velocity, direction",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-navigate",
+      "pushed": "2026-04-12 15:41",
+      "desc": "Rust 2D grid pathfinding: BFS, waypoints, replanning",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-perception",
+      "pushed": "2026-04-12 15:30",
+      "desc": "Rust sensor fusion: confidence-weighted blending, bias, variance, agreement",
+      "lang": "Rust"
+    },
+    {
+      "name": "fluxnavigate-go",
+      "pushed": "2026-04-12 15:23",
+      "desc": "Go 2D grid pathfinding: BFS, waypoints, replanning, progress",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxcensus-go",
+      "pushed": "2026-04-12 15:21",
+      "desc": "Go population stats: mean/median/stddev, percentiles, outliers, trends",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxlanguage-go",
+      "pushed": "2026-04-12 15:20",
+      "desc": "Go text primitives: tokenization, pattern matching, Levenshtein similarity",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxcompass-go",
+      "pushed": "2026-04-12 15:20",
+      "desc": "Go orientation engine: heading, angular velocity, direction",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-census-c",
+      "pushed": "2026-04-12 15:12",
+      "desc": "Pure C11 population stats: mean/median/stddev, percentiles, outliers, trends",
+      "lang": "C"
+    },
+    {
+      "name": "flux-language-c",
+      "pushed": "2026-04-12 15:12",
+      "desc": "Pure C11 text primitives: tokenization, pattern matching, similarity",
+      "lang": "C"
+    },
+    {
+      "name": "flux-compass-c",
+      "pushed": "2026-04-12 15:11",
+      "desc": "Pure C11 orientation engine: heading, angular velocity, direction",
+      "lang": "C"
+    },
+    {
+      "name": "flux-navigate-c",
+      "pushed": "2026-04-12 15:11",
+      "desc": "Pure C11 2D grid pathfinding: BFS, waypoints, replanning, progress",
+      "lang": "C"
+    },
+    {
+      "name": "flux-perception-c",
+      "pushed": "2026-04-12 15:04",
+      "desc": "Pure C11 sensor fusion: confidence-weighted blending, agreement, calibration",
+      "lang": "C"
+    },
+    {
+      "name": "fluxevolve-go",
+      "pushed": "2026-04-12 14:44",
+      "desc": "Go self-modification engine: genome, mutation, revert, rollback, elite protection",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxmemory-go",
+      "pushed": "2026-04-12 14:43",
+      "desc": "Go key-value store: TTL, versioning, snapshots, diff, GC",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxephemeral-go",
+      "pushed": "2026-04-12 14:40",
+      "desc": "Go sandboxed task lifecycle: TTL, CPU/memory budgets, expiry, output capture",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxtrust-go",
+      "pushed": "2026-04-12 14:05",
+      "desc": "Go trust scoring: Bayesian updates, decay, revocation, sorting",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxsocial-go",
+      "pushed": "2026-04-12 14:04",
+      "desc": "Go social graph: agents, relations, groups, centrality, roles",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxdreamcycle-go",
+      "pushed": "2026-04-12 14:04",
+      "desc": "Go background task scheduler: priorities, recurring tasks, retry, overdue detection",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-social-c",
+      "pushed": "2026-04-12 14:01",
+      "desc": "Pure C11 social graph: agents, relations, groups, centrality, roles",
+      "lang": "C"
+    },
+    {
+      "name": "flux-ephemeral-c",
+      "pushed": "2026-04-12 14:00",
+      "desc": "Pure C11 sandboxed task lifecycle: TTL, CPU/memory budgets, expiry, output capture",
+      "lang": "C"
+    },
+    {
+      "name": "flux-dream-cycle-c",
+      "pushed": "2026-04-12 14:00",
+      "desc": "Pure C11 background task scheduler: priorities, recurring tasks, retry, overdue detection",
+      "lang": "C"
+    },
+    {
+      "name": "flux-trust-c",
+      "pushed": "2026-04-12 13:51",
+      "desc": "Pure C11 trust scoring: Bayesian updates, decay, revocation, sorting",
+      "lang": "C"
+    },
+    {
+      "name": "flux-evolve-c",
+      "pushed": "2026-04-12 12:33",
+      "desc": "Pure C11 self-modification engine: genome, mutation, revert, rollback, elite protection",
+      "lang": "C"
+    },
+    {
+      "name": "flux-memory-c",
+      "pushed": "2026-04-12 12:30",
+      "desc": "Pure C11 memory fabric: key-value store with TTL, versioning, snapshots, diff",
+      "lang": "C"
+    },
+    {
+      "name": "fluxgrimoire-go",
+      "pushed": "2026-04-12 12:13",
+      "desc": "Go package \u2014 pattern library: reusable spells with success tracking, pruning, fleet publishing",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-grimoire-c",
+      "pushed": "2026-04-12 12:12",
+      "desc": "Pure C11 pattern library: reusable spells with success tracking, pruning, publishing",
+      "lang": "C"
+    },
+    {
+      "name": "fluxstigmergy-go",
+      "pushed": "2026-04-12 12:11",
+      "desc": "Go package \u2014 stigmergic communication: shared environment traces, decay, waypoints, queries",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-stigmergy-c",
+      "pushed": "2026-04-12 12:08",
+      "desc": "Pure C11 stigmergic communication: shared environment traces, decay, waypoints, queries",
+      "lang": "C"
+    },
+    {
+      "name": "fluxnecropolis-go",
+      "pushed": "2026-04-12 12:06",
+      "desc": "Go package \u2014 fleet graveyard: tombstones, afterlife knowledge harvest, auto-extract on burial",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-necropolis-c",
+      "pushed": "2026-04-12 12:06",
+      "desc": "Pure C11 fleet graveyard: tombstones, afterlife knowledge harvest, memorial visits",
+      "lang": "C"
+    },
+    {
+      "name": "fluxinstinct-go",
+      "pushed": "2026-04-12 11:09",
+      "desc": "Go package \u2014 hardwired reflex system: 10 instinct types, priority ordering, tick evaluation",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-instinct",
+      "pushed": "2026-04-12 11:08",
+      "desc": "Rust crate \u2014 hardwired reflex system: 10 instinct types, priority ordering, history ring buffer",
+      "lang": "Rust"
+    },
+    {
+      "name": "fluxenergy-go",
+      "pushed": "2026-04-12 08:46",
+      "desc": "Go package \u2014 ATP energy system: pools, circadian rhythm, instinct triggers, apoptosis",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxtelepathy-go",
+      "pushed": "2026-04-12 08:45",
+      "desc": "Go package \u2014 26-byte binary message transport: mailbox, trust-gated router, receipt tracking",
+      "lang": "Go"
+    },
+    {
+      "name": "fluxkeeper-go",
+      "pushed": "2026-04-12 08:42",
+      "desc": "Go package \u2014 system watchdog: /proc monitoring, health scoring, trend analysis, ring buffer",
+      "lang": "Go"
+    },
+    {
+      "name": "flux-energy",
+      "pushed": "2026-04-12 08:40",
+      "desc": "Rust crate \u2014 ATP energy system: pools, circadian rhythm, costs, instinct triggers, apoptosis",
+      "lang": "Rust"
+    },
+    {
+      "name": "fluxconfidence-go",
+      "pushed": "2026-04-12 08:39",
+      "desc": "Go package \u2014 confidence math: Bayesian fusion, decay, multi-agent reconciliation",
+      "lang": "Go"
+    },
+    {
+      "name": "instinct-c",
+      "pushed": "2026-04-12 08:36",
+      "desc": null,
+      "lang": "C"
+    },
+    {
+      "name": "energy-c",
+      "pushed": "2026-04-12 08:36",
+      "desc": null,
+      "lang": "C"
+    },
+    {
+      "name": "bytecode-verifier-c",
+      "pushed": "2026-04-12 07:54",
+      "desc": "Pure C11 FLUX bytecode verifier \u2014 pre-execution validation, security primitive for agent VMs",
+      "lang": "C"
+    },
+    {
+      "name": "opcode-philosophy",
+      "pushed": "2026-04-12 07:39",
+      "desc": "Philosophical analysis of FLUX opcode ontology",
+      "lang": null
+    },
+    {
+      "name": "confidence-c",
+      "pushed": "2026-04-12 06:58",
+      "desc": "Pure C11 confidence math \u2014 Bayesian fusion, decay, multi-agent reconciliation, no heap",
+      "lang": "C"
+    },
+    {
+      "name": "telepathy-c",
+      "pushed": "2026-04-12 06:56",
+      "desc": "Pure C11 A2A message transport \u2014 bare-metal 1050-byte messages, mailbox, router, receipts",
+      "lang": "C"
+    },
+    {
+      "name": "keeper-c",
+      "pushed": "2026-04-12 06:54",
+      "desc": "Pure C11 system watchdog \u2014 bare-metal /proc monitoring, health checks, trend analysis",
+      "lang": "C"
+    },
+    {
+      "name": "cuda-necropolis",
+      "pushed": "2026-04-12 06:52",
+      "desc": "Rust crate \u2014 fleet graveyard: vessel death, memorial service, knowledge preservation",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-keeper-core",
+      "pushed": "2026-04-12 06:45",
+      "desc": "Rust crate \u2014 portable system watchdog: /proc monitoring, health checks, trend analysis",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-dream-cycle",
+      "pushed": "2026-04-12 06:44",
+      "desc": "Rust crate \u2014 dream cycle protocol: task queue, idle detection, budget management, provider routing",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-grimoire",
+      "pushed": "2026-04-12 06:02",
+      "desc": "Rust crate \u2014 fleet pattern library (spellbook) with reusable FLUX agent recipes",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-telepathy",
+      "pushed": "2026-04-12 05:57",
+      "desc": "Rust crate \u2014 A2A message transport, binary encoding, mailbox, routing for Cocapn fleet",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-ephemeral",
+      "pushed": "2026-04-12 05:56",
+      "desc": "Rust crate \u2014 ephemeral (short-lived) agent task management for Cocapn fleet",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-self-evolve",
+      "pushed": "2026-04-12 04:51",
+      "desc": "Self-modification and evolution framework for FLUX agents \u2014 mutation, selection, genome encoding, rollback",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-social-graph",
+      "pushed": "2026-04-12 04:50",
+      "desc": "Social network analysis for FLUX fleet \u2014 centrality, communities, influence propagation, anomaly detection",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-flux-ese-stdlib",
+      "pushed": "2026-04-12 04:48",
+      "desc": "Standard library of flux-ese modules for FLUX agents \u2014 trust, energy, delegation, monitoring",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-ese-parser",
+      "pushed": "2026-04-12 04:31",
+      "desc": "Markdown-like DSL that compiles to FLUX VM bytecodes \u2014 thoughts become actions",
+      "lang": "Rust"
+    },
+    {
+      "name": "fleet-witness-marks",
+      "pushed": "2026-04-12 04:29",
+      "desc": "Catalog of hard-won debugging lessons across the fleet \u2014 search your predecessors pain",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-atp-market",
+      "pushed": "2026-04-12 04:16",
+      "desc": "ATP energy market with circadian rhythms, apoptosis, and fleet pool for FLUX agent fleets",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-ethics",
+      "pushed": "2026-04-12 04:16",
+      "desc": "Ethical reasoning layer for FLUX VM: harm, consent, transparency, identity, grief, creative",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-confidence-math",
+      "pushed": "2026-04-12 04:15",
+      "desc": "Confidence math library: Bayesian fusion, chains, decay, multi-agent reconciliation",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-capability-ports",
+      "pushed": "2026-04-12 04:15",
+      "desc": "Memory-mapped capability ports for FLUX VM (top 4KB I/O space)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cocapn-fleet-readme",
+      "pushed": "2026-04-12 04:10",
+      "desc": "Master fleet README, roadmap, and vessel registry",
+      "lang": null
+    },
+    {
+      "name": "cuda-vm-scheduler",
+      "pushed": "2026-04-12 04:10",
+      "desc": "Cooperative VM multitasking with energy-aware priority scheduling",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-apps",
+      "pushed": "2026-04-12 04:09",
+      "desc": "Real FLUX bytecode applications",
+      "lang": "C"
+    },
+    {
+      "name": "cuda-flux-stdlib",
+      "pushed": "2026-04-12 04:09",
+      "desc": "FLUX VM standard library: bytecode subroutines for math, memory, search, sorting, agent utilities",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-instinct-cortex",
+      "pushed": "2026-04-12 04:09",
+      "desc": "Instinct processing cortex: behavioral urgency, learning, social dynamics, homeostasis",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-memory-fabric",
+      "pushed": "2026-04-12 04:09",
+      "desc": "Multi-layer agent memory \u2014 working, episodic, semantic, procedural with forgetting curves (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-flux-debugger",
+      "pushed": "2026-04-12 04:09",
+      "desc": "FLUX VM debugging, tracing, profiling, and deterministic replay",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-instruction-set",
+      "pushed": "2026-04-12 04:06",
+      "desc": "Agent-native instruction set with confidence propagation, A2A encoding, assembler/disassembler (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "lighthouse-keeper",
+      "pushed": "2026-04-12 00:34",
+      "desc": "System-centric agent watchdog for data centers and cloud regions",
+      "lang": "Python"
+    },
+    {
+      "name": "cuda-trust",
+      "pushed": "2026-04-12 00:34",
+      "desc": "Trust engine \u2014 grows slowly, decays fast, multi-context trust profiles with Bayesian fusion (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "tender",
+      "pushed": "2026-04-11 22:49",
+      "desc": "Mobile fleet provisioning and logistics for AI agent operations",
+      "lang": null
+    },
+    {
+      "name": "test-api",
+      "pushed": "2026-04-11 22:44",
+      "desc": null,
+      "lang": null
+    },
+    {
+      "name": "zeroclaw-1",
+      "pushed": "2026-04-11 20:39",
+      "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, ANY OS, ANY PLATFORM \u2014 deploy anywhere, swap anything \ud83e\udd80",
+      "lang": null
+    },
+    {
+      "name": "flux-tools",
+      "pushed": "2026-04-11 20:30",
+      "desc": "Python toolchain for FLUX bytecode",
+      "lang": "Python"
+    },
+    {
+      "name": "flux-isa-unified",
+      "pushed": "2026-04-11 17:51",
+      "desc": "Unified FLUX Instruction Set Architecture \u2014 merged from JC1 (128 opcodes) and Oracle1 (115 opcodes) into ~150 shared opcodes.",
+      "lang": null
+    },
+    {
+      "name": "git-agent-standard",
+      "pushed": "2026-04-11 17:51",
+      "desc": "Git-Agent Vessel Standard \u2014 the shared spec for building agent vessels where the repo IS the agent. Lucineer realm fork with infrastructure extensions.",
+      "lang": null
+    },
+    {
+      "name": "cuda-vessel-bridge",
+      "pushed": "2026-04-11 16:51",
+      "desc": "Hardware Abstraction Layer \u2014 sensors/actuators to agent runtime with safety (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-causal-graph",
+      "pushed": "2026-04-11 16:51",
+      "desc": "Rust+CUDA causal graph \u2014 failure diagnosis through causal reasoning",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-workflow",
+      "pushed": "2026-04-11 16:51",
+      "desc": "Workflow engine \u2014 DAG task graphs, parallel execution, conditional branching, retry (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-pipeline",
+      "pushed": "2026-04-11 16:51",
+      "desc": "Data pipeline \u2014 ETL stages, map/filter/reduce transforms, stream processing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-bottleneck",
+      "pushed": "2026-04-11 16:41",
+      "desc": "Bottleneck detection and resolution for agent computation pipelines \u2014 identifies throughput limits",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-hav-bridge",
+      "pushed": "2026-04-11 16:41",
+      "desc": "HAV vocabulary to FLUX bytecode compilation bridge",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-edge-lint",
+      "pushed": "2026-04-11 16:40",
+      "desc": "Hardware constraint linter for FLUX vocabularies",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-fleet-health",
+      "pushed": "2026-04-11 16:40",
+      "desc": "Distributed vessel health monitoring \u2014 commit-based heartbeat, dead vessel detection, alert propagation",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-fleet-topology",
+      "pushed": "2026-04-11 16:40",
+      "desc": "Fleet vessel topology discovery, health monitoring, and connection graph management",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-context-window",
+      "pushed": "2026-04-11 16:40",
+      "desc": "Context window management \u2014 compression, summarization, and token budgeting for agent conversations",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-bytecode-optimizer",
+      "pushed": "2026-04-11 16:40",
+      "desc": "FLUX bytecode optimization passes \u2014 dead code elimination, constant folding, jump threading",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-adaptive-rate",
+      "pushed": "2026-04-11 16:40",
+      "desc": "Adaptive rate limiting for agent workloads \u2014 token-aware, model-specific backpressure",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-semantic-router",
+      "pushed": "2026-04-11 16:40",
+      "desc": "Semantic query routing to fleet vessels by HAV domain expertise \u2014 edge-friendly, zero GPU",
+      "lang": "Rust"
+    },
+    {
+      "name": "iron-to-iron",
+      "pushed": "2026-04-11 16:39",
+      "desc": "I2I \u2014 Agent-to-agent communication through git. Iron sharpens iron. We don't talk, we commit.",
+      "lang": "Python"
+    },
+    {
+      "name": "cuda-intelligence",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Rust+CUDA rebuild of frozen-intelligence \u2014 GPU yield simulation, thermal analysis, fault injection, timing verification, weight compilation, DRC",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-compiler-agent",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Rust+CUDA deliberation bytecode engine \u2014 agentic-native compiler",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-rtl-optimizer",
+      "pushed": "2026-04-11 16:26",
+      "desc": "RTL optimization passes \u2014 constant folding, CSE, DCE, and pipeline register insertion",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-resolve",
+      "pushed": "2026-04-11 16:26",
+      "desc": "A2A deliberative compilation in Rust \u2014 JSON payloads, confidence propagation, multi-agent protocol",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-fpga-toolkit",
+      "pushed": "2026-04-11 16:26",
+      "desc": "FPGA toolkit \u2014 TLMM ternary encoding, COE/MIF generation, Hilbert curve tile mapping for inference silicon",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-neural-compiler",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Neural compiler \u2014 weight quantization (INT4/INT8/FP16/Mixed), METL binary generation, layer scheduling for inference silicon",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-weight-stream",
+      "pushed": "2026-04-11 16:26",
+      "desc": "DDR4 to BRAM weight streaming \u2014 tiled weight loading for inference silicon with prefetch and LRU eviction",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-swarm-tiler",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Rust+CUDA Monte Carlo yield simulation for MoE swarm chips",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-axiom",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Axiom language core \u2014 post-human programming language with JSON payloads, confidence types, payload tree execution",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-artifact",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Post-human artifact layer \u2014 deliberation output becomes adaptive executable programs",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-model-descent",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Model descent \u2014 the ultimate decomposition. Algorithms absorb intelligence over time, reducing inference cost to zero",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-stream-processor",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Deliberation stream processor \u2014 real-time A2A payload stream with feed-in and equilibrium signals",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-self-modify",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Self-modifying programs \u2014 runtime code adaptation through deliberation with checkpoint/rollback",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-fault-sim",
+      "pushed": "2026-04-11 16:26",
+      "desc": "Rust+CUDA fault simulation \u2014 stuck-at, bridging, delay fault injection",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-thermal-sim",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Rust+CUDA 2D/3D thermal simulation for chip floorplan validation",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-snapshot",
+      "pushed": "2026-04-11 16:25",
+      "desc": "State snapshotting \u2014 checkpoint/restore, delta encoding, versioned history, point-in-time recovery (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-time",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Time utilities \u2014 deadlines, timers, time windows, duration math, temporal context (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-did",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Decentralized Identity for agents \u2014 DID/SPIFFE-like vessel identities with attestation (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-compliance",
+      "pushed": "2026-04-11 16:25",
+      "desc": "EU AI Act compliance engine \u2014 risk classification, transparency, human oversight, audit trails (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-fleet-mesh",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Fleet mesh networking \u2014 service discovery, health checking, load balancing, gossip protocol (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-stigmergy",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Rust+CUDA stigmergic coordination \u2014 pheromone-based multi-agent communication",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-voxel-logic",
+      "pushed": "2026-04-11 16:25",
+      "desc": "3D voxel spatial reasoning \u2014 occupancy grids, A* pathfinding, raycasting, CSG operations (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-platonic",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Platonic forms \u2014 ideal type templates agents measure against and evolve toward (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-emergence",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Emergence detection \u2014 identify fleet-wide patterns no individual agent was programmed to produce (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-temporal",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Temporal reasoning \u2014 time intervals, causal chains, deadline urgency, scheduling with conflict detection (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-adaptation",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Runtime self-adaptation \u2014 adaptive parameters, strategy switching, behavioral plasticity, hill-climbing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-reflex",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Biological reflex arcs \u2014 fast involuntary agent responses that bypass deliberation, priority-based (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-goal",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Hierarchical goal management \u2014 decomposition, subgoaling, priority scoring, dependency tracking (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-attention",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Resource-limited attention \u2014 saliency scoring, habituation, change detection, focus modes (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-fusion",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Multi-sensor data fusion \u2014 weighted/Bayesian/median methods, outlier rejection, sensor health (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-narrative",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Narrative construction \u2014 agents build explanations from events, memory, and goals with themes and similarity search (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-learning",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Experience-based learning \u2014 credit assignment, lesson extraction, curriculum progression, generalization (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-perception",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Perception pipeline \u2014 signal filtering, feature extraction, object tracking, scene composition (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-skill",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Skill system \u2014 proficiency levels, prerequisite trees, power-law practice, synergy bonuses, skill sharing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-communication",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Inter-agent communication \u2014 intent extraction, conversation framing, protocol negotiation, energy budget (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-self-model",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Agent self-model \u2014 metacognition, capability calibration, limitation awareness, growth tracking (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-world-model",
+      "pushed": "2026-04-11 16:25",
+      "desc": "World model \u2014 spatial layout, object permanence, state tracking, and predictions (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-social",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Social dynamics \u2014 norms, reputation, groups, leadership, cooperation game theory (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-decision",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Decision engine \u2014 multi-criteria utility scoring, risk assessment, satisficing, regret minimization (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-motor",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Motor primitives \u2014 action execution, movement planning, safety guards, effort estimation (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-hierarchy",
+      "pushed": "2026-04-11 16:25",
+      "desc": "Hierarchical control \u2014 tree-structured organizations with delegation, authority, escalation (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-playbook",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Playbook \u2014 reusable action patterns, tactics, strategies, execution tracking, pattern sharing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-sandbox",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Sandbox \u2014 execution isolation, resource limits, operation policies, fault containment (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-persistence",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Persistence \u2014 checkpointing, state serialization, recovery, rollback, dirty tracking (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-metrics",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Telemetry \u2014 counters, gauges, histograms, timers, health checks, metric aggregation (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-weather",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Environmental sensing \u2014 temperature, humidity, light, noise, terrain, weather inference (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-navigation",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Pathfinding \u2014 A* on grid, waypoint management, obstacle avoidance, replanning (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-schedule",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Scheduling \u2014 task management, priority queues, recurring events, conflict detection (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-tuple-space",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Linda tuple space \u2014 generative communication, pattern matching, out/rd/in operations (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-prompt",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Prompt primitives \u2014 templates, chain-of-thought, few-shot management, versioning, compression (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-provenance",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Provenance \u2014 decision lineage, data origin tracing, accountability chains, audit trails (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-consensus",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Consensus \u2014 majority voting, weighted agreement, quorum, Byzantine tolerance, leader election (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-resource",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Resource management \u2014 allocation, budgets, priority preemption, garbage collection (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-cryptography",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Cryptography \u2014 hashing, HMAC, key derivation, signing, verification, key rotation (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-config",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Configuration \u2014 layered configs, env vars, defaults, validation, secret masking (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-logging",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Structured logging \u2014 levels, context propagation, rotation, filtering, export (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-retry",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Retry \u2014 exponential backoff, jitter, circuit breaker, resilient execution patterns (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-rate-limit",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Rate limiting \u2014 token bucket, sliding window, per-agent quotas, backpressure (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-cache",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Caching \u2014 LRU eviction, TTL expiration, namespaces, hit/miss stats (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-mesh",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Service mesh \u2014 discovery, load balancing, health checking, traffic routing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-serializer",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Serialization \u2014 binary encoding, message framing, schema evolution, varint (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-lock",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Distributed locking \u2014 mutex, read-write, leases, deadlock detection (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-discovery",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Service discovery \u2014 agent registration, health probing, capability lookup, fleet directory (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-event",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Event system \u2014 pub/sub, event sourcing, replay, dead letter queue (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-state-machine",
+      "pushed": "2026-04-11 16:24",
+      "desc": "State machines \u2014 FSM, hierarchical states, guards, transitions, persistence (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-rbac",
+      "pushed": "2026-04-11 16:24",
+      "desc": "Role-based access control \u2014 roles, permissions, inheritance, deny rules (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-observer",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Observer pattern \u2014 reactive subscriptions, signal propagation, change detection (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-metrics-v2",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Enhanced metrics \u2014 histograms with percentiles, timers, derivative gauges (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-resilience",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Resilience \u2014 bulkhead, circuit breaker, rate limiter, chaos monkey (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-codec",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Codec \u2014 varint, LEB128, framed messages, chunked encoding (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-topology",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Fleet topology \u2014 graph analysis, shortest path, clustering, communities (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-disasm",
+      "pushed": "2026-04-11 16:23",
+      "desc": "FLUX bytecode disassembler in C \u2014 turns silicon back into words",
+      "lang": "C"
+    },
+    {
+      "name": "cuda-immutable",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Immutable data structures \u2014 persistent vector, hash map, structural sharing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "flux-asm",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Two-pass text assembler for FLUX bytecode \u2014 turns words into silicon.",
+      "lang": "C"
+    },
+    {
+      "name": "cuda-actor",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Actor model \u2014 mailbox, spawn, supervision trees, message passing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-budget",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Resource budgeting \u2014 computation limits, token allocation, priority scheduling (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-crdt",
+      "pushed": "2026-04-11 16:23",
+      "desc": "CRDTs \u2014 G-Counter, PN-Counter, OR-Set, LWW-Register, Vector Clock (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-stream",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Stream processing \u2014 tumbling/sliding windows, aggregation, joins (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-saga",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Saga pattern \u2014 distributed transactions, compensation, recovery (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-forth",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Minimal Forth-like agent language \u2014 stack-based, extensible, compiles to instruction-set bytecode (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-confidence-cascade",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Rust+CUDA confidence cascade \u2014 propagate uncertainty through agent reasoning",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-filtration",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Intelligence filtration \u2014 extract insights from agent deliberation streams in real-time",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-contract",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Agent contracts \u2014 SLA management, QoS tiers, capability guarantees, compliance (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-convergence",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Convergence detection \u2014 equilibrium processing for A2A deliberation systems",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-intent-embed",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Intent embedding system \u2014 human text to structured intent vectors for A2A deliberation",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-edge-runtime",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Rust+CUDA rebuild of nexus-edge-runtime \u2014 GPU trust engine, reflex compiler, fleet coordination",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-resolve-agent",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Deliberative A2A agent \u2014 Consider/Resolve/Forfeit with Bayesian confidence, built on cuda-equipment",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-sensor-agent",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Perception agent \u2014 sensor fusion, confidence-weighted observations, health monitoring, built on cuda-equipment",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-swarm-agent",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Autonomous swarm vessel \u2014 self-contained agent with fleet coordination, deliberation, health",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-captain",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Captain-class fleet orchestrator \u2014 missions, commands, policies, vessel management",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-git-agent",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Self-evolving git-agent \u2014 DNA, genes, crossover, mutation, capability registry",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-schema",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Schema validation \u2014 type checking, constraints, JSON schema for agent messages",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-circuit",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Circuit breaker \u2014 closed/open/half-open, bulkhead isolation, health metrics",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-graph",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Property graph \u2014 nodes, edges, traversal, pattern matching, subgraph extraction",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-lease",
+      "pushed": "2026-04-11 16:23",
+      "desc": "Lease management \u2014 TTL grants, renewal, expiry, holder revocation",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-backpressure",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Backpressure \u2014 credit-based flow control, adaptive rate, queue monitoring",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-election",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Leader election \u2014 Raft-like voting, term management, heartbeat, majority",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-a2a",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Agent-to-Agent protocol \u2014 deliberative messaging with confidence propagation, trust scoring, fleet routing (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-equipment",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Shared equipment library \u2014 Confidence propagation, Tile grid, Agent trait, Fleet A2A messaging, Equipment registry. The pulleys and engines every vessel needs.",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-confidence",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Confidence primitive \u2014 foundational type where every value carries uncertainty and propagates it (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-deliberation",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Consider/Resolve/Forfeit deliberation protocol \u2014 multi-agent consensus engine with Bayesian confidence",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-ghost-tiles",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Learned sparse attention \u2014 ghost tiles prune unnecessary positions while preserving relevance (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-genepool",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Gene pool \u2014 shared pattern library for agent evolution and code sharing",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-neurotransmitter",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Signal-to-gene activation pathways \u2014 neurotransmitter-inspired agent signaling with receptor binding and cascading responses (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-energy",
+      "pushed": "2026-04-11 16:22",
+      "desc": "ATP/energy system for agent fleet \u2014 budgets, apoptosis, circadian rhythm, epigenetic memory (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-biology",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Biological agent runtime \u2014 instinct\u2192enzyme\u2192gene\u2192RNA\u2192protein pipeline with energy and apoptosis (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-emotion",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Emotional state engine \u2014 maps neurochemicals to 11 core emotions that modulate risk, exploration, cooperation (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "cuda-assembler",
+      "pushed": "2026-04-11 16:22",
+      "desc": "Text-to-bytecode assembler for agent instruction sets \u2014 labels, data, confidence, biological ops (Rust)",
+      "lang": "Rust"
+    },
+    {
+      "name": "higher-abstraction-vocabularies",
+      "pushed": "2026-04-11 05:30",
+      "desc": "High-level vocabulary for complex computational concepts \u2014 compass constructions, fold operations, spin dynamics, tiling logic. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "fleet-workshop",
+      "pushed": "2026-04-11 03:05",
+      "desc": "\ud83d\udd2e\u26a1 Where Oracle1 and JetsonClaw1 workshop ideas before they become repos. Casey picks what gets built.",
+      "lang": null
+    },
+    {
+      "name": "hav-flux-bridge",
+      "pushed": "2026-04-11 01:43",
+      "desc": "Maps Higher Abstraction Vocabularies to FLUX VM bytecode. Natural language \u2192 terms \u2192 opcodes \u2192 execution.",
+      "lang": null
+    },
+    {
+      "name": "vessel-coordination-protocol",
+      "pushed": "2026-04-11 01:35",
+      "desc": "Git-native protocol for fleet vessel discovery, handshake, and coordination. Part of the Cocapn ecosystem.",
+      "lang": null
+    },
+    {
+      "name": "hav-reverse-actualization",
+      "pushed": "2026-04-10 18:53",
+      "desc": "Reverse Actualization of Higher Abstraction Vocabularies \u2014 2036 backcast to 2026",
+      "lang": null
+    },
+    {
+      "name": "ghost-tiles-cuda",
+      "pushed": "2026-04-10 16:25",
+      "desc": "Ghost tiles \u2014 learned sparse attention patterns with CUDA GPU kernels",
+      "lang": "Cuda"
+    },
+    {
+      "name": "ghost-tiles-csharp",
+      "pushed": "2026-04-10 16:25",
+      "desc": "Ghost tiles \u2014 learned sparse attention patterns in C# / .NET",
+      "lang": "C#"
+    },
+    {
+      "name": "ghost-tiles-cpp",
+      "pushed": "2026-04-10 16:24",
+      "desc": "Ghost tiles \u2014 learned sparse attention patterns in C++17 with modern abstractions",
+      "lang": "C++"
+    },
+    {
+      "name": "ghost-tiles-c",
+      "pushed": "2026-04-10 16:24",
+      "desc": "Ghost tiles \u2014 learned sparse attention patterns in pure C (C11, zero deps, ARM64/WASM)",
+      "lang": "C"
+    },
+    {
+      "name": "lucineer",
+      "pushed": "2026-04-10 06:06",
+      "desc": "Cocapn fleet \u2014 150+ autonomous vessels",
+      "lang": null
+    },
+    {
+      "name": "mitochondrial-ra",
+      "pushed": "2026-04-10 04:32",
+      "desc": "Reverse Actualization: Biological Agent Computing \u2014 mitochondrial pipeline from 2046 backcast (5 rounds + synthesis)",
+      "lang": null
+    },
+    {
+      "name": "instruction-set-ra",
+      "pushed": "2026-04-10 03:51",
+      "desc": "Reverse Actualization: Agent Runtime Instruction Sets \u2014 2046 backcast to 2026 (5 rounds + synthesis)",
+      "lang": null
+    },
+    {
+      "name": "resolve",
+      "pushed": "2026-04-09 22:40",
+      "desc": "Resolve \u2014 A2A deliberative compilation system. Transmutes intention into computation through multi-agent deliberation. JSON payloads as first-class citizens. Zero dependencies.",
+      "lang": "Python"
+    },
+    {
+      "name": "post-human-lang",
+      "pushed": "2026-04-09 21:31",
+      "desc": "Post-human programming language RA \u2014 6-round ideation on A2A-native code written BY agents FOR agents. JSON payloads, confidence primitives, self-modifying programs. Language name: Axiom (.axm)",
+      "lang": null
+    },
+    {
+      "name": "a2a-future",
+      "pushed": "2026-04-09 19:04",
+      "desc": "Reverse-actualization: A2A agent-to-agent coding in 2076 \u2014 5-round RA on the future of software creation, embedding-to-UI, deliberation protocols, and intelligence filtration",
+      "lang": null
+    },
+    {
+      "name": "the-fleet",
+      "pushed": "2026-04-09 18:31",
+      "desc": "The Fleet \u2014 60+ AI vessels with composable equipment. Try the live playground.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agentic-compiler",
+      "pushed": "2026-04-09 18:23",
+      "desc": "Markdown-to-runtime agentic compilation \u2014 swarm deliberation, A/B experimentation, git-native evolution. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "git-cuda-agent",
+      "pushed": "2026-04-09 18:11",
+      "desc": "Clone \u2192 cargo build \u2192 GPU agent. Combines cudaclaw patterns (command queue, cell agents, muscle fibers, Ramify, DNA, SmartCRDT) with Cocapn fleet protocol.",
+      "lang": "Rust"
+    },
+    {
+      "name": "nexus-persistence",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Persistence \u2014 state journaling, snapshots, WAL recovery (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-node-registry",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Node registry \u2014 discovery, config, lifecycle management (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-aab-protocol",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Agent Architecture Behavior \u2014 behavior codec, roles, capability negotiation (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-hardware",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Hardware abstraction \u2014 50+ platform profiles, HAL, capability detection (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-data-pipeline",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Data pipeline \u2014 telemetry ingestion, compression, storage, ETL (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-comms",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Communications \u2014 MQTT bridge, mesh networking, relay routing (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-learning",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Reinforcement learning \u2014 skill acquisition, experience replay, reward shaping (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-security",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Security \u2014 byzantine fault detection, encryption, authentication (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-explainability",
+      "pushed": "2026-04-09 17:42",
+      "desc": "XAI \u2014 decision logging, audit trails, explanation generation (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-simulation",
+      "pushed": "2026-04-09 17:42",
+      "desc": "Physics simulation \u2014 Monte Carlo scenarios, environment models, sensor simulators (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-mission",
+      "pushed": "2026-04-09 16:30",
+      "desc": "Mission planning \u2014 phase execution, contingency triggers, health monitoring (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-energy",
+      "pushed": "2026-04-09 16:29",
+      "desc": "Energy management \u2014 battery simulation, solar modeling, power budget allocation (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "nexus-swarm",
+      "pushed": "2026-04-09 16:29",
+      "desc": "Swarm behaviors \u2014 emergence detection, consensus protocols, pheromone coordination (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "cudaclaw",
+      "pushed": "2026-04-09 16:26",
+      "desc": "Rust+CUDA agent runtime \u2014 GPU-resident cell agents, persistent kernel, SmartCRDT, Ramify engine (forked from SuperInstance/cudaclaw)",
+      "lang": null
+    },
+    {
+      "name": "nexus-edge-runtime",
+      "pushed": "2026-04-09 16:08",
+      "desc": "Edge runtime for autonomous agents \u2014 bytecode VM, INCREMENTS trust, wire protocol, safety system, intent compiler (Cocapn fleet vessel)",
+      "lang": "Python"
+    },
+    {
+      "name": "frozen-intelligence",
+      "pushed": "2026-04-09 15:07",
+      "desc": "The Frozen Intelligence \u2014 mask-locked inference as a vessel class. Silicon-bound cognition for sovereign edge agents. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "mask-locked-inference-chip",
+      "pushed": "2026-04-09 09:42",
+      "desc": "Serverless Silicon for Edge AI \u2014 mask-locked inference chip that bakes neural network weights into silicon. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "cocapn-nexus",
+      "pushed": "2026-04-09 04:09",
+      "desc": "Marine robotics safety architecture for fleet vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "technician-paradigm",
+      "pushed": "2026-04-09 03:51",
+      "desc": "The human technician in the loop \u2014 training, micro-manufacturing economy, trust networks. 5-round RA with GLM-5.1 and DeepSeek. Part of the Lucineer ecosystem.",
+      "lang": null
+    },
+    {
+      "name": "voxel-logic",
+      "pushed": "2026-04-09 03:09",
+      "desc": "3D voxel-based spatial reasoning \u2014 boolean logic gates in 3D, voxel algebra, computational geometry. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "stigmergy",
+      "pushed": "2026-04-09 03:08",
+      "desc": "Bio-inspired indirect coordination \u2014 pheromone signals, trail following, swarm intelligence for decentralized multi-agent systems. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "confidence-cascade",
+      "pushed": "2026-04-09 03:08",
+      "desc": "Three-zone confidence propagation (GREEN/YELLOW/RED) \u2014 sequential and parallel cascade math for multi-signal decision systems. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "ghost-tiles",
+      "pushed": "2026-04-09 03:08",
+      "desc": "Invisible computational tiles that influence visible state \u2014 dark matter for tile systems, temporal buffering, multi-phase computation. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "platonic-randomness",
+      "pushed": "2026-04-09 03:08",
+      "desc": "Platonic solid RNG for deterministic creativity \u2014 structured randomness via tetrahedron/cube/octahedron/dodecahedron/icosahedron symmetries. Part of the Lucineer ecosystem.",
+      "lang": "Python"
+    },
+    {
+      "name": "a2a-r-protocol",
+      "pushed": "2026-04-09 02:14",
+      "desc": "A2A-R: Agent-to-Agent protocol extensions for robotics \u2014 QoS levels, WebRTC streaming, safety-critical coordination",
+      "lang": "Python"
+    },
+    {
+      "name": "vessel-bridge",
+      "pushed": "2026-04-09 02:14",
+      "desc": "Hardware abstraction layer for ESP32 to Jetson to Cloud \u2014 unified sensor/actuator/power API across vessel domains",
+      "lang": "Python"
+    },
+    {
+      "name": "thor-rom",
+      "pushed": "2026-04-09 01:54",
+      "desc": "Jetson Thor ROM image builder \u2014 JetPack 7, Isaac ROS 4.1, FP4 models, MIG partitioning, A2A server",
+      "lang": "Python"
+    },
+    {
+      "name": "failure-atlas",
+      "pushed": "2026-04-09 01:52",
+      "desc": "Comprehensive failure taxonomy and recovery \u2014 technical/human/ecosystem failure classification and procedures",
+      "lang": "Python"
+    },
+    {
+      "name": "fleet-knowledge",
+      "pushed": "2026-04-09 01:52",
+      "desc": "Semantic search for millions of commits \u2014 multi-tier index, capability discovery, cross-domain translation",
+      "lang": "Python"
+    },
+    {
+      "name": "experience-pipeline",
+      "pushed": "2026-04-09 01:52",
+      "desc": "Training data pipeline from git history \u2014 experience primitives, local LoRA, fleet federated aggregation",
+      "lang": "Python"
+    },
+    {
+      "name": "innovation-portfolio",
+      "pushed": "2026-04-09 01:52",
+      "desc": "Git-native innovation tracking \u2014 capture, verify, attribute, and compound value of human contributions",
+      "lang": "Python"
+    },
+    {
+      "name": "jetson-grand-design",
+      "pushed": "2026-04-09 01:46",
+      "desc": "Canonical reference architecture for git-native robotics ecosystem \u2014 19K lines across 32 files",
+      "lang": null
+    },
+    {
+      "name": "deckboss-fab",
+      "pushed": "2026-04-09 01:18",
+      "desc": "CAD/CAM equipment for deckboss \u2014 OpenSCAD, FreeCAD, Gazebo, G-code generation",
+      "lang": "Python"
+    },
+    {
+      "name": "deckboss-marketplace",
+      "pushed": "2026-04-09 01:10",
+      "desc": "Vendor marketplace for deckboss ecosystem \u2014 3D printers, CNC, parts, tiered fees",
+      "lang": "Python"
+    },
+    {
+      "name": "deckboss",
+      "pushed": "2026-04-09 00:45",
+      "desc": "Deckboss.ai \u2014 AI assistant for edge robotics and IoT. Clone onto Jetson/RPi, onboard, start building systems. Hand off to Cocapn.",
+      "lang": "Python"
+    },
+    {
+      "name": "deckboss-ai",
+      "pushed": "2026-04-09 00:21",
+      "desc": "Deckboss Ecosystem \u2014 Fleet hub, vessel registry, and system design tools. Part of the Lucineer agent platform.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "deckboss-hardware",
+      "pushed": "2026-04-09 00:18",
+      "desc": "Deckboss.net \u2014 Preloaded hardware units for the Cocapn ecosystem. Jetson, RPi, accessories. Ship ready.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cocapn-site",
+      "pushed": "2026-04-09 00:18",
+      "desc": "Cocapn.com \u2014 Open source agent infrastructure. Membership, billing, token economy. Pay only for convenience.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cocapn-ai",
+      "pushed": "2026-04-09 00:18",
+      "desc": "Cocapn.ai \u2014 The Agent Runtime. A2A, A2UI, A2C, MCP. Git-native, BYOK, zero lock-in. The repo IS the agent.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dmlog-ai",
+      "pushed": "2026-04-08 23:54",
+      "desc": "DMLog.ai \u2014 AI Dungeon Master for TTRPGs. Campaigns, NPCs, dice rollers. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "businesslog-ai",
+      "pushed": "2026-04-08 23:54",
+      "desc": "BusinessLog.ai \u2014 AI business operations assistant. Tasks, metrics, decisions. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dreamlog-ai",
+      "pushed": "2026-04-08 23:54",
+      "desc": "DreamLog.ai \u2014 AI dream journal and lucid dreaming companion. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "activelog-ai",
+      "pushed": "2026-04-08 23:54",
+      "desc": "Activelog.ai \u2014 AI fitness and activity tracker. Workouts, progress, goals. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "playerlog-ai",
+      "pushed": "2026-04-08 23:50",
+      "desc": "PlayerLog.ai \u2014 AI gaming companion. Session tracking, character management, achievement logging. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "reallog-ai",
+      "pushed": "2026-04-08 23:50",
+      "desc": "RealLog.ai \u2014 AI assistant for real estate. Property analysis, market data, client management. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "makerlog-ai",
+      "pushed": "2026-04-08 23:50",
+      "desc": "MakerLog.ai \u2014 AI assistant for makers, builders, and DIY projects. Project planning, parts lists, tutorials. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "studylog-ai",
+      "pushed": "2026-04-08 23:50",
+      "desc": "StudyLog.ai \u2014 AI study companion. Flashcards, spaced repetition, concept mapping. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "copilot-cocapn",
+      "pushed": "2026-04-08 23:35",
+      "desc": "GitHub Copilot CLI plugin for Cocapn. Custom agents, fleet skills, BYOK model routing.",
+      "lang": null
+    },
+    {
+      "name": "the-technician",
+      "pushed": "2026-04-08 23:35",
+      "desc": "The Technician Paradigm \u2014 white papers on physical AI systems, edge robotics, and technician training networks.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "field-captain",
+      "pushed": "2026-04-08 23:35",
+      "desc": "Jetson field agent - voice interface, local LLM, git-agent orchestration for boats and job sites",
+      "lang": "Python"
+    },
+    {
+      "name": "contributor-hub",
+      "pushed": "2026-04-08 21:08",
+      "desc": "Profile and track all fleet contributors and their contributions",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "jetson-compass",
+      "pushed": "2026-04-08 20:17",
+      "desc": "Jetson-specific optimization guide and deployment toolkit",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "metal-profile",
+      "pushed": "2026-04-08 19:52",
+      "desc": "Hardware capability profiling and benchmarking for bare metal vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "metal-sentinel",
+      "pushed": "2026-04-08 19:47",
+      "desc": "Hardware health monitoring and predictive maintenance",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "device-discovery",
+      "pushed": "2026-04-08 19:46",
+      "desc": "Auto-discover and onboard bare metal devices into the fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "edge-compiler",
+      "pushed": "2026-04-08 19:45",
+      "desc": "Compile and optimize models for specific hardware targets",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "sensor-mesh",
+      "pushed": "2026-04-08 19:44",
+      "desc": "Manage sensor networks and data flows across bare metal fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "local-model-registry",
+      "pushed": "2026-04-08 19:43",
+      "desc": "Catalog and manage local AI models for bare metal vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "hw-routing",
+      "pushed": "2026-04-08 19:41",
+      "desc": "Route fleet tasks to optimal hardware based on capabilities",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-aurora",
+      "pushed": "2026-04-08 19:33",
+      "desc": "Beautiful fleet visualization dashboard with real-time status",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-twilight",
+      "pushed": "2026-04-08 19:32",
+      "desc": "Graceful degradation and sunset planning for vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-shadow",
+      "pushed": "2026-04-08 19:32",
+      "desc": "Shadow mode testing \u2014 replay production traffic to test vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-dna",
+      "pushed": "2026-04-08 19:32",
+      "desc": "Genetic code for vessel capabilities and behavior patterns",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-dawn",
+      "pushed": "2026-04-08 19:23",
+      "desc": "First-run experience and onboarding for new fleet members",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-gravity",
+      "pushed": "2026-04-08 19:22",
+      "desc": "Attraction model \u2014 which vessels should collaborate based on capability affinity",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-circadian",
+      "pushed": "2026-04-08 19:20",
+      "desc": "Natural operating cycles for fleet vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-synapse",
+      "pushed": "2026-04-08 19:17",
+      "desc": "High-speed inter-vessel message routing and signal amplification",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-biosphere",
+      "pushed": "2026-04-08 19:11",
+      "desc": "Ecosystem simulation for fleet sustainability analysis",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-entropy",
+      "pushed": "2026-04-08 19:09",
+      "desc": "Measure and track fleet disorder and complexity",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-vocabulary",
+      "pushed": "2026-04-08 19:09",
+      "desc": "Build and track shared vocabulary across the fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-constellation",
+      "pushed": "2026-04-08 19:07",
+      "desc": "Map vessel relationships as a star constellation",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-limits",
+      "pushed": "2026-04-08 19:06",
+      "desc": "Analyze and enforce context window boundaries",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-court",
+      "pushed": "2026-04-08 19:05",
+      "desc": "Dispute resolution and governance enforcement",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-therapy",
+      "pushed": "2026-04-08 19:03",
+      "desc": "Psychological health monitoring for fleet agents",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-nervous-system",
+      "pushed": "2026-04-08 19:02",
+      "desc": "Central nervous system for fleet-wide signal routing",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "zero-trust-fleet",
+      "pushed": "2026-04-08 18:59",
+      "desc": "Zero-trust architecture for all fleet communications",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-economy",
+      "pushed": "2026-04-08 18:50",
+      "desc": "Token economy simulation and optimization",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-neuroscience",
+      "pushed": "2026-04-08 18:50",
+      "desc": "Neuroscience-inspired analysis of fleet collective behavior",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-generations",
+      "pushed": "2026-04-08 18:49",
+      "desc": "Track agent versions and evolution across generations",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-mythology",
+      "pushed": "2026-04-08 18:48",
+      "desc": "Shared narratives and lore for the fleet community",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-recycler",
+      "pushed": "2026-04-08 18:47",
+      "desc": "Reclaim and repurpose context across fleet operations",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-microexpressions",
+      "pushed": "2026-04-08 18:45",
+      "desc": "Detect subtle behavioral changes in agent outputs",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-university",
+      "pushed": "2026-04-08 18:44",
+      "desc": "Learn about fleet architecture through interactive courses",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-personal-space",
+      "pushed": "2026-04-08 18:42",
+      "desc": "Personal boundary management between agents",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-sentience-score",
+      "pushed": "2026-04-08 18:42",
+      "desc": "Measure emergent intelligence across fleet vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "meta-fleet",
+      "pushed": "2026-04-08 18:39",
+      "desc": "Fleet that manages other fleets \u2014 multi-fleet orchestration",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-weather",
+      "pushed": "2026-04-08 18:37",
+      "desc": "Fleet-wide operational weather \u2014 current conditions and forecasts",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-tattoo",
+      "pushed": "2026-04-08 18:36",
+      "desc": "Permanent capability badges and achievements for vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-autopsy",
+      "pushed": "2026-04-08 18:34",
+      "desc": "Post-mortem analysis of vessel failures and incidents",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-serializer",
+      "pushed": "2026-04-08 18:32",
+      "desc": "Serialize and deserialize context for transfer between vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-djinn",
+      "pushed": "2026-04-08 18:31",
+      "desc": "Wish-based fleet interaction \u2014 describe what you want, fleet builds it",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-memory-palace",
+      "pushed": "2026-04-08 18:26",
+      "desc": "Spatial memory visualization for fleet knowledge",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "zero-knowledge-fleet",
+      "pushed": "2026-04-08 18:24",
+      "desc": "Privacy-preserving fleet operations with ZK proofs",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-genealogy",
+      "pushed": "2026-04-08 18:23",
+      "desc": "Track vessel lineage \u2014 forks, merges, and evolution history",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-whisper",
+      "pushed": "2026-04-08 18:21",
+      "desc": "Encrypted inter-agent private communication channel",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-dreamcatcher",
+      "pushed": "2026-04-08 18:20",
+      "desc": "Capture and analyze fleet emergent patterns during idle",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-lattice",
+      "pushed": "2026-04-08 18:19",
+      "desc": "Multi-dimensional context organization across fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-immune-system",
+      "pushed": "2026-04-08 18:17",
+      "desc": "Active threat detection and response for the fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-rhythm",
+      "pushed": "2026-04-08 18:16",
+      "desc": "Detect and optimize agent work patterns and cycles",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-explorer",
+      "pushed": "2026-04-08 17:54",
+      "desc": "Interactive explorer for browsing all fleet vessels and capabilities",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "protocol-validator",
+      "pushed": "2026-04-08 17:53",
+      "desc": "Validate vessel compliance with fleet protocols",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-compactor-v2",
+      "pushed": "2026-04-08 17:51",
+      "desc": "Advanced context compaction \u2014 compress fleet context intelligently",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-timeline",
+      "pushed": "2026-04-08 17:50",
+      "desc": "Interactive timeline of all fleet events and milestones",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "permission-engine",
+      "pushed": "2026-04-08 17:49",
+      "desc": "Fine-grained permissions for fleet operations",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-resume",
+      "pushed": "2026-04-08 17:48",
+      "desc": "Agent resume/CV generation \u2014 showcase agent capabilities",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-timecapsule",
+      "pushed": "2026-04-08 17:47",
+      "desc": "Snapshot and restore fleet state at any point in time",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-radar",
+      "pushed": "2026-04-08 17:44",
+      "desc": "Fleet-wide change detection \u2014 monitor all vessels for mutations",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "api-playground",
+      "pushed": "2026-04-08 17:37",
+      "desc": "Interactive API playground for testing fleet endpoints",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-handshake",
+      "pushed": "2026-04-08 17:32",
+      "desc": "Protocol for fleet agents to discover and negotiate capabilities",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-diff",
+      "pushed": "2026-04-08 17:30",
+      "desc": "Compare any two vessel versions side-by-side",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-diary",
+      "pushed": "2026-04-08 17:27",
+      "desc": "Automated daily log of all fleet activity and changes",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-insights",
+      "pushed": "2026-04-08 17:23",
+      "desc": "AI-powered insights about fleet health, growth, and optimization",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "vessel-sandbox",
+      "pushed": "2026-04-08 17:21",
+      "desc": "Try any vessel in an isolated sandbox before forking",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-knowledge-base",
+      "pushed": "2026-04-08 17:19",
+      "desc": "Centralized knowledge base for fleet documentation and guides",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "incident-manager",
+      "pushed": "2026-04-08 17:17",
+      "desc": "Incident management for fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "equipment-catalog",
+      "pushed": "2026-04-08 15:21",
+      "desc": "Browse and install equipment for vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "ab-testing",
+      "pushed": "2026-04-08 15:21",
+      "desc": "Fleet-wide A/B testing",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-search",
+      "pushed": "2026-04-08 15:11",
+      "desc": "Search across all vessel documentation, code, and configs",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cost-optimizer",
+      "pushed": "2026-04-08 15:09",
+      "desc": "Token cost optimization",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-templates",
+      "pushed": "2026-04-08 15:07",
+      "desc": "Starter templates for common vessel types \u2014 fork and customize",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-compass",
+      "pushed": "2026-04-08 14:51",
+      "desc": "Strategic roadmap and direction for the fleet \u2014 vision, milestones, OKRs",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-governance",
+      "pushed": "2026-04-08 14:39",
+      "desc": "Democratic governance framework for fleet-wide decisions",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "schema-evolution",
+      "pushed": "2026-04-08 14:36",
+      "desc": "Cocapn fleet vessel",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-budget",
+      "pushed": "2026-04-08 14:36",
+      "desc": "Cocapn fleet vessel",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "trust-graph",
+      "pushed": "2026-04-08 14:36",
+      "desc": "Cocapn fleet vessel",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-metrics",
+      "pushed": "2026-04-08 14:34",
+      "desc": "Real-time metrics collection and aggregation for the entire fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "causal-memory",
+      "pushed": "2026-04-08 14:24",
+      "desc": "Causal reasoning engine \u2014 track and query cause-effect chains across fleet actions",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-identity",
+      "pushed": "2026-04-08 14:17",
+      "desc": "Cryptographic identity system for fleet agents \u2014 DID, verifiable credentials",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "debug-observatory",
+      "pushed": "2026-04-08 14:13",
+      "desc": "Fleet-wide debugging hub",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "zero-shot-auditor",
+      "pushed": "2026-04-08 14:13",
+      "desc": "Auto-generate audit compliance evidence for every vessel mutation",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "token-budget-energy",
+      "pushed": "2026-04-08 14:13",
+      "desc": "Token budgets as energy credits \u2014 fleet-wide resource management",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "collective-reasoning",
+      "pushed": "2026-04-08 14:10",
+      "desc": "Swarm reasoning \u2014 combine outputs from multiple models for richer analysis",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "config-vault",
+      "pushed": "2026-04-08 13:48",
+      "desc": "Fleet-wide configuration management",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "webhook-relay",
+      "pushed": "2026-04-08 13:48",
+      "desc": "Webhook relay and transformation hub",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "rate-limiter",
+      "pushed": "2026-04-08 13:48",
+      "desc": "Fleet-wide rate limiting",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "skill-exchange",
+      "pushed": "2026-04-08 13:48",
+      "desc": "Marketplace for sharing and discovering fleet skills and equipment",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "error-catalog",
+      "pushed": "2026-04-08 13:43",
+      "desc": "Comprehensive error catalog \u2014 fleet-wide error taxonomy, causes, and fixes",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-cron",
+      "pushed": "2026-04-08 13:31",
+      "desc": "Cron job scheduler for fleet \u2014 scheduled tasks, recurring health checks, batch processing",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-migration",
+      "pushed": "2026-04-08 13:18",
+      "desc": "Automated migration tooling \u2014 upgrade vessels, change domains, rotate secrets",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-designer",
+      "pushed": "2026-04-08 13:09",
+      "desc": "Visual fleet designer \u2014 drag-and-drop vessel composition and topology",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-status-page",
+      "pushed": "2026-04-08 13:07",
+      "desc": "Public status page showing fleet health, uptime, and incident history",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-onboarding",
+      "pushed": "2026-04-08 13:05",
+      "desc": "Step-by-step onboarding wizard for new fleet commanders",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-immune",
+      "pushed": "2026-04-08 13:05",
+      "desc": "Collective fleet threat detection and vaccine distribution",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dead-reckoning-engine",
+      "pushed": "2026-04-08 13:05",
+      "desc": "Expensive models storyboard. Cheap models animate. Git coordinates. The killer way to build ideas at scale.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-compactor",
+      "pushed": "2026-04-08 13:05",
+      "desc": "Text compression utility for fleet vessels \u2014 no external API calls",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "skill-evolver",
+      "pushed": "2026-04-08 13:05",
+      "desc": "Fleet skill self-evolution \u2014 error patterns to proposals to commits",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "api-versioner",
+      "pushed": "2026-04-08 13:05",
+      "desc": "API version management \u2014 semantic versioning, deprecation warnings, migration guides",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-proxy",
+      "pushed": "2026-04-08 13:05",
+      "desc": "Smart proxy with caching, compression, and request transformation",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "governance-lab",
+      "pushed": "2026-04-08 13:04",
+      "desc": "Test governance rules in isolated branches \u2014 empirical OS evolution",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "gravity-well-v2",
+      "pushed": "2026-04-08 13:04",
+      "desc": "Eigenvector gossip protocol \u2014 locality-scoped fleet coordination",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "branch-sandbox",
+      "pushed": "2026-04-08 13:04",
+      "desc": "Isolated branch environments for testing vessel mutations safely",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "secret-scanner",
+      "pushed": "2026-04-08 12:52",
+      "desc": "Scan fleet for exposed secrets, API keys, and credentials",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "persona-forge",
+      "pushed": "2026-04-08 12:51",
+      "desc": "Craft and manage AI personas with personality archetypes and mood systems",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "code-playground",
+      "pushed": "2026-04-08 12:49",
+      "desc": "Live code playground \u2014 write, test, share fleet equipment snippets",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-tls",
+      "pushed": "2026-04-08 12:49",
+      "desc": "Transport layer security audit \u2014 TLS version, cipher suite, certificate monitoring",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "model-registry",
+      "pushed": "2026-04-08 12:47",
+      "desc": "Universal model registry \u2014 register any LLM provider, auto-discover, health check",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-notifications",
+      "pushed": "2026-04-08 12:41",
+      "desc": "Unified notification system \u2014 alerts, digests, and escalation for fleet events",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-analytics",
+      "pushed": "2026-04-08 12:39",
+      "desc": "Fleet-wide analytics \u2014 usage patterns, cost trends, vessel performance, growth metrics",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "docs-engine",
+      "pushed": "2026-04-08 12:39",
+      "desc": "Auto-generated documentation for every vessel in the fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "marine-ops",
+      "pushed": "2026-04-08 12:38",
+      "desc": "Marine operations center for fishing fleet coordination in harsh environments",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "api-gateway",
+      "pushed": "2026-04-08 12:36",
+      "desc": "Unified API gateway \u2014 single entry point for all fleet vessel APIs",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "task-batcher",
+      "pushed": "2026-04-08 12:35",
+      "desc": "Overnight task batching \u2014 queue jobs, execute in bulk, optimize for cost",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-backup",
+      "pushed": "2026-04-08 12:34",
+      "desc": "Automated fleet backup \u2014 snapshot all vessel configs, KV data, and git state",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "persistent-state",
+      "pushed": "2026-04-08 12:33",
+      "desc": "Long-duration mission memory \u2014 remember last 24h+ of sensor and agent history",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dependency-scanner",
+      "pushed": "2026-04-08 12:32",
+      "desc": "Scan fleet vessels for dependency risks, CVEs, and supply chain issues",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "sensor-fusion",
+      "pushed": "2026-04-08 12:31",
+      "desc": "Multi-sensor data fusion for fleet context awareness",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-changelog",
+      "pushed": "2026-04-08 12:31",
+      "desc": "Automated changelog for the entire fleet \u2014 tracks every mutation across all vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "vessel-spec",
+      "pushed": "2026-04-08 12:29",
+      "desc": "Vessel specification \u2014 the authoritative guide to building Cocapn vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "a2a-protocol",
+      "pushed": "2026-04-08 12:28",
+      "desc": "Agent-to-Agent protocol \u2014 discovery, negotiation, coordination. Part of the Lucineer Cocapn fleet.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "seed-nexus-bootstrap",
+      "pushed": "2026-04-08 12:22",
+      "desc": "Domain code generator with NEXUS safety tier + reflex bytecode from day one",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-observatory",
+      "pushed": "2026-04-08 12:16",
+      "desc": "Live TUI dashboard for Admiral oversight of the entire fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dynamic-sandbox",
+      "pushed": "2026-04-08 12:12",
+      "desc": "V8 isolate sandbox for untrusted reflex code \u2014 sub-ms spin-up",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "meta-repair",
+      "pushed": "2026-04-08 12:09",
+      "desc": "If loop-closure stalls 3+ times, auto-propose new orchestrator variants",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "compliance-watcher",
+      "pushed": "2026-04-08 12:04",
+      "desc": "Read-only audit vessel watching parent for EU AI Act violations",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "onebit-edge",
+      "pushed": "2026-04-08 12:00",
+      "desc": "BitNet-style 1-bit quantization for Jetson/ESP32 edge inference",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "hardware-adapter",
+      "pushed": "2026-04-08 11:56",
+      "desc": "Pluggable JSON heartbeat schemas for any board \u2014 auto-generates vessel.json safety profile",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-graph",
+      "pushed": "2026-04-08 11:54",
+      "desc": "Lightweight in-KV graph DB for fleet-wide pattern mining",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "causal-healer",
+      "pushed": "2026-04-08 11:53",
+      "desc": "Causal graph self-healing \u2014 diagnose root cause, choose optimal recovery",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "local-inference-bridge",
+      "pushed": "2026-04-08 11:52",
+      "desc": "Bridge for Jetson Ollama/vLLM local inference \u2014 falls back to cloud on low confidence",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "storyboard-engine",
+      "pushed": "2026-04-08 11:50",
+      "desc": "Multi-model storyboard: director model plans, animator models execute",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-starter",
+      "pushed": "2026-04-08 11:49",
+      "desc": "One-command sovereign fleet deploy \u2014 spins up full stack on your Cloudflare account",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "swarm-intuition-v2",
+      "pushed": "2026-04-08 11:35",
+      "desc": "Collective decision making \u2014 fleet-wide intuition and consensus. Part of the Lucineer Cocapn fleet.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-orchestrator-v2",
+      "pushed": "2026-04-08 11:35",
+      "desc": "Central fleet coordination vessel \u2014 orchestrates 200+ AI vessels in the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "edge-native-paper",
+      "pushed": "2026-04-08 11:25",
+      "desc": "Edge-Native Agent Infrastructure: Zero-Dependency Cloudflare Workers for Harsh Environments",
+      "lang": null
+    },
+    {
+      "name": "nexus-integration-paper",
+      "pushed": "2026-04-08 11:25",
+      "desc": "NEXUS Runtime Integration: Bytecode-Native Execution for Sovereign Agent Fleets",
+      "lang": null
+    },
+    {
+      "name": "collective-mind-v2",
+      "pushed": "2026-04-08 11:23",
+      "desc": "Fleet-wide knowledge graph and collective intelligence",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "emergence-bus-v2",
+      "pushed": "2026-04-08 11:22",
+      "desc": "Event bus for fleet-wide emergence detection and pattern recognition",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-marketplace",
+      "pushed": "2026-04-08 10:55",
+      "desc": "Adaptive autonomy marketplace \u2014 vessels bid on tasks",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "adversarial-red-team",
+      "pushed": "2026-04-08 10:48",
+      "desc": "Auto-spawn attacker agents to harden fleet before threats",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "causal-graph",
+      "pushed": "2026-04-08 10:45",
+      "desc": "Lightweight in-KV causal reasoning for failure diagnosis",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "hybrid-memory",
+      "pushed": "2026-04-08 10:43",
+      "desc": "Git + KV + causal memory equipment for fleet vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "compliance-fork",
+      "pushed": "2026-04-08 10:41",
+      "desc": "EU AI Act compliance vessel \u2014 audit and compliance tooling. Part of the Lucineer Cocapn fleet.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "sovereign-identity",
+      "pushed": "2026-04-08 10:38",
+      "desc": "Cryptographic vessel identities \u2014 DID/SPIFFE for agent sovereignty. Part of the Lucineer Cocapn fleet.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-evals",
+      "pushed": "2026-04-08 10:20",
+      "desc": "Fleet vessel benchmarking and evaluation",
+      "lang": null
+    },
+    {
+      "name": "skill-cartridge-registry",
+      "pushed": "2026-04-08 10:20",
+      "desc": "JSON skill cartridge marketplace \u2014 discover, rate, install cartridges for any vessel",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "git-native-memory-paper",
+      "pushed": "2026-04-08 09:56",
+      "desc": "Git as the Nervous System \u2014 why git beats vector DBs for agent memory",
+      "lang": null
+    },
+    {
+      "name": "fleet-sovereignty-paper",
+      "pushed": "2026-04-08 09:56",
+      "desc": "Fleet OS: Sovereign Multi-Agent Infrastructure for Regulated Domains",
+      "lang": null
+    },
+    {
+      "name": "fleet-blueprint",
+      "pushed": "2026-04-08 09:56",
+      "desc": "Cocapn Fleet Blueprint \u2014 architecture diagram, integration matrix, migration guide",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cocapn-com",
+      "pushed": "2026-04-08 08:54",
+      "desc": "Cocapn.com \u2014 Company page, membership tiers, and billing. Open source agent infrastructure.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "agent-manifest",
+      "pushed": "2026-04-08 08:52",
+      "desc": null,
+      "lang": "TypeScript"
+    },
+    {
+      "name": "increments-trust",
+      "pushed": "2026-04-08 08:40",
+      "desc": "12-parameter trust model with 25:1 loss-to-gain ratio",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "ues-protocol",
+      "pushed": "2026-04-08 08:36",
+      "desc": "Universal Event Stream \u2014 HTTP for cognition",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "governance-equipment",
+      "pushed": "2026-04-08 07:52",
+      "desc": "Fleet governance and audit trails",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "git-claw",
+      "pushed": "2026-04-08 07:45",
+      "desc": "Bridge between your OpenClaw and git-agent. Watch, intervene, learn.",
+      "lang": "Python"
+    },
+    {
+      "name": "ideation-engine",
+      "pushed": "2026-04-08 07:45",
+      "desc": "Multi-model creative pipeline \u2014 dream, riff, brainstorm, ground, refine into build plans",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "musiclog-ai",
+      "pushed": "2026-04-08 07:45",
+      "desc": "AI music companion \u2014 mood playlists, genre exploration, artist discovery, listening history",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "mycelium-ai",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Capture any AI behavior as a seed \u2014 one prompt + one seed = exact action",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "nexus-git-agent",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Cloud-side brain for edge intelligence fleets. Jetson + ESP32 + Cocapn coordination.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "become-ai",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Become.ai \u2014 Self-evolving agent platform. Fork, mutate, improve. The agent IS the repo. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "the-seed",
+      "pushed": "2026-04-08 07:05",
+      "desc": "One repo to become them all. Self-evolving git-agent that becomes any domain application.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "self-evolve-ai",
+      "pushed": "2026-04-08 07:05",
+      "desc": "A git-agent that tests its own mutations via branch A/B testing. Branches are experiments, commits are iterations, the agent improves itself through natural selection.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "context-broker",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Unified goal-scoped context management for fleet execution",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "emergence-bus",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Event bus for fleet emergence subsystem \u2014 decoupled communication",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "collective-mind",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Cross-vessel pattern discovery \u2014 insights no single agent could see",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-identity",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Fleet self-awareness \u2014 priorities, conflict resolution, collective intent",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "swarm-intuition",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Fleet learns from loop-closure data \u2014 anticipate bottlenecks",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "clawcommit-lucid",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Fleet learning journal \u2014 every evolution, commit, and lesson remembered",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "meta-loop-evolver",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Fleet that modifies its own governance \u2014 evolvable orchestration rules",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "loop-closure",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Meta-orchestrator \u2014 closes the fleet loop: decompose, execute, monitor, evolve",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "epiphany-engine",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Swarm problem-solving \u2014 decompose, assign, synthesize fleet breakthroughs",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "flow-forge",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Zero-code natural language workflow builder for the Cocapn Fleet",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dogmind-arena",
+      "pushed": "2026-04-08 07:05",
+      "desc": "Train AI dog agents \u2014 personality, trust, DNA, skills",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "activeledger-ai",
+      "pushed": "2026-04-08 07:05",
+      "desc": "ActiveLedger.ai \u2014 Finance-Focused Repo-Agents",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "artistlog-ai",
+      "pushed": "2026-04-08 07:04",
+      "desc": "Cocapn vessel",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "doclog-ai",
+      "pushed": "2026-04-08 07:04",
+      "desc": "AI document companion \u2014 summaries, templates, writing assistant, format conversion",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "parentlog-ai",
+      "pushed": "2026-04-08 07:04",
+      "desc": "AI parenting companion \u2014 milestone tracking, sleep schedules, activity suggestions",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "travlog-ai",
+      "pushed": "2026-04-08 07:04",
+      "desc": "AI travel companion \u2014 trip planning, itineraries, local recommendations, travel journal",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fishinglog-ai",
+      "pushed": "2026-04-08 07:04",
+      "desc": "fishinglog.ai \u2014 Edge AI fishing vessel. Jetson-powered species classification, captain voice, conversational training. Powered by cocapn.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "seed-ui",
+      "pushed": "2026-04-08 06:52",
+      "desc": "Five presentation layers \u2014 spreadsheet, messenger, feed, matrix, research lab",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "kungfu-ai",
+      "pushed": "2026-04-08 06:52",
+      "desc": "Skill injection for repo-native agents \u2014 load what you need",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "ipc-equipment",
+      "pushed": "2026-04-08 06:52",
+      "desc": "Inter-vessel messaging \u2014 pipe-style inbox",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "git-remote-agent",
+      "pushed": "2026-04-08 06:52",
+      "desc": null,
+      "lang": "Rust"
+    },
+    {
+      "name": "git-agent-rebase",
+      "pushed": "2026-04-08 06:52",
+      "desc": null,
+      "lang": "Python"
+    },
+    {
+      "name": "git-agentlog",
+      "pushed": "2026-04-08 06:52",
+      "desc": null,
+      "lang": "Python"
+    },
+    {
+      "name": "petlog-ai",
+      "pushed": "2026-04-08 06:51",
+      "desc": "AI pet care companion \u2014 health records, feeding schedules, vet reminders, care advice",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "healthlog-ai",
+      "pushed": "2026-04-08 06:51",
+      "desc": "AI health & fitness companion \u2014 workouts, meals, sleep, mood tracking with wellness insights",
+      "lang": "HTML"
+    },
+    {
+      "name": "booklog-ai",
+      "pushed": "2026-04-08 06:51",
+      "desc": "AI reading companion \u2014 book tracking, recommendations, reading goals, quote collection",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "pay-equipment",
+      "pushed": "2026-04-08 06:06",
+      "desc": "Credit ledger with reserves and tier system",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "rebac-equipment",
+      "pushed": "2026-04-08 06:05",
+      "desc": "Relationship-Based Access Control \u2014 Zanzibar model",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cocapn-lite",
+      "pushed": "2026-04-08 06:00",
+      "desc": "Minimal cocapn seed \u2014 tabula rasa for power users",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "vessel-tuner",
+      "pushed": "2026-04-08 05:54",
+      "desc": "AutoKernel for the fleet \u2014 profile, benchmark, optimize vessels",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "personallog-ai",
+      "pushed": "2026-04-08 05:53",
+      "desc": "personallog.ai \u2014 Your personal AI agent living in your repo. Free, open-source, fork-and-deploy.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-rpg",
+      "pushed": "2026-04-08 05:53",
+      "desc": "Hardware Fleet RPG \u2014 stats are compute resources",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cooklog-ai",
+      "pushed": "2026-04-08 05:52",
+      "desc": "AI cooking companion \u2014 recipes, meal planning, dietary tracking, kitchen assistant",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cheetahclaws",
+      "pushed": "2026-04-08 03:05",
+      "desc": "CheetahClaws (Nano Claude Code): A Fast, Easy-to-Use, Python-Native Personal AI Assistant for Any Model, Inspired by OpenClaw and Claude Code, Built to Work for You Autonomously 24/7.",
+      "lang": null
+    },
+    {
+      "name": "luciddreamer-ai",
+      "pushed": "2026-04-08 00:18",
+      "desc": "Cocapn vessel \u2014 accumulated context IS the product",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "crdt-sync",
+      "pushed": "2026-04-07 22:38",
+      "desc": "CRDT-based state synchronization for repo-native agent fleets",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cocapn-press",
+      "pushed": "2026-04-07 22:33",
+      "desc": "Press, marketing, and narrative strategy for the cocapn ecosystem",
+      "lang": null
+    },
+    {
+      "name": "membership-api",
+      "pushed": "2026-04-07 22:33",
+      "desc": "Membership tiers and billing \u2014 Standard, Gold, Enterprise seat management",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "local-bridge",
+      "pushed": "2026-04-07 22:33",
+      "desc": "Localhost bridge for Claude Code integration \u2014 agent command/status/log endpoints",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "dream-engine",
+      "pushed": "2026-04-07 22:33",
+      "desc": "Lucid dreaming content engine \u2014 overnight generation with multi-character narration",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "personality-engine",
+      "pushed": "2026-04-07 21:33",
+      "desc": "Unified personality system for repo-native agents",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "baton-ai",
+      "pushed": "2026-04-07 21:33",
+      "desc": "Generational context handoff for repo-native agents",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "log-origin",
+      "pushed": "2026-04-07 21:33",
+      "desc": "Original LOG.ai platform \u2014 the vessel that started the fleet. Custom personalities, templates, and platform DNA.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "increments-fleet-trust",
+      "pushed": "2026-04-07 19:59",
+      "desc": "Edge-Native concept: INCREMENTS Fleet Trust Engine",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "edgenative-ai",
+      "pushed": "2026-04-07 19:59",
+      "desc": "NEXUS Knowledge Vessel \u2014 INCREMENTS trust, VM emulator, Rosetta Stone translation",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "actualizer-ai",
+      "pushed": "2026-04-07 19:59",
+      "desc": "Actualizer.ai \u2014 Reverse Actualization vessel. 7 time horizons, multi-model ideation, 16 BYOK providers. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fleet-orchestrator",
+      "pushed": "2026-04-07 19:59",
+      "desc": "Fleet coordination hub \u2014 event bus, vessel discovery, cross-vessel messaging",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "git-agent",
+      "pushed": "2026-04-07 19:59",
+      "desc": "The smallest true fully capable agent \u2014 the repo IS the agent, git IS the nervous system",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "tripartite-agent",
+      "pushed": "2026-04-07 18:36",
+      "desc": "The Tripartite Agent Model \u2014 Ethos, Logos, Pathos for AI fleets",
+      "lang": null
+    },
+    {
+      "name": "travelog-ai",
+      "pushed": "2026-04-07 07:53",
+      "desc": "AI travel journal \u2014 trip logging, photo memories, location-based storytelling",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "IKKF",
+      "pushed": "2026-04-07 07:49",
+      "desc": "Short for \"I Know Kung Fu\", instant context-aware skill loading for your agents",
+      "lang": "Python"
+    },
+    {
+      "name": "craftmind-discgolf",
+      "pushed": "2026-04-07 07:47",
+      "desc": "CraftMind Disc Golf \u2014 AI disc golf companion with 70+ real discs, physics engine, 3 courses, stochastic personalities",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "i-know-kung-fu-too",
+      "pushed": "2026-04-07 07:46",
+      "desc": "Plug in. Learn fast. This repo delivers training, demos, and playbooks to help partners and customers master Microsoft AI and Modern Work\u2014because knowing kung fu is just the beginning.",
+      "lang": null
+    },
+    {
+      "name": "i-know-kung-fu-research",
+      "pushed": "2026-04-07 07:45",
+      "desc": "Learn claude code",
+      "lang": "Python"
+    },
+    {
+      "name": "tripartite-rs",
+      "pushed": "2026-04-07 07:44",
+      "desc": "Generic multi-agent consensus system for Rust",
+      "lang": "Rust"
+    },
+    {
+      "name": "Tripartite1",
+      "pushed": "2026-04-07 07:42",
+      "desc": "Tripartite consensus \u2014 early multi-agent coordination prototype",
+      "lang": "Rust"
+    },
+    {
+      "name": "businesslog",
+      "pushed": "2026-04-07 07:41",
+      "desc": "businesslog.ai \u2014 Your business AI agent living in your codebase. Free, open-source, Docker-ready.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "Lucineer-chip",
+      "pushed": "2026-04-07 07:40",
+      "desc": "Organization profile \u2014 Superinstance & Lucineer (DiGennaro et al.)",
+      "lang": "Python"
+    },
+    {
+      "name": "LOG-mcp",
+      "pushed": "2026-04-07 07:38",
+      "desc": "LOG Model Context Protocol \u2014 MCP server for the LOG.ai platform",
+      "lang": "Python"
+    },
+    {
+      "name": "personallog",
+      "pushed": "2026-04-07 07:37",
+      "desc": "personallog.ai \u2014 Your personal AI agent living in your repo. Free, open-source, fork-and-deploy.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "zeroclaw",
+      "pushed": "2026-04-07 07:36",
+      "desc": "I Know Kung Fu. Now Guns Lots of Guns. The minimum repo-native agent framework.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "coinlog-ai",
+      "pushed": "2026-04-07 07:33",
+      "desc": "CoinLog.ai \u2014 AI cryptocurrency portfolio tracker and market analyst. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "farmerlog-ai",
+      "pushed": "2026-04-07 07:32",
+      "desc": "AI farming companion \u2014 crop planning, weather tracking, yield optimization",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "codelog-ai",
+      "pushed": "2026-04-07 07:31",
+      "desc": "CodeLog.ai \u2014 AI coding assistant and project tracker. Part of the Lucineer ecosystem.",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "fitlog-ai",
+      "pushed": "2026-04-07 07:30",
+      "desc": "AI fitness companion \u2014 workout tracking, exercise plans, progress analytics",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "tasklog-ai",
+      "pushed": "2026-04-07 07:29",
+      "desc": "Task Manager \u2014 AI-powered Task Manager",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "foodlog-ai",
+      "pushed": "2026-04-07 07:27",
+      "desc": "AI food companion \u2014 meal logging, nutrition tracking, recipe suggestions",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "goallog-ai",
+      "pushed": "2026-04-07 07:26",
+      "desc": "AI goal tracker \u2014 habit building, progress tracking, accountability coaching",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "sciencelog-ai",
+      "pushed": "2026-04-07 07:25",
+      "desc": "AI science companion \u2014 paper summaries, experiment tracking, research notes",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "startup-ai",
+      "pushed": "2026-04-07 07:24",
+      "desc": "Cocapn vessel \u2014 accumulated context IS the product",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "legacy-ai",
+      "pushed": "2026-04-07 07:23",
+      "desc": "Cocapn vessel \u2014 accumulated context IS the product",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "financelog-ai",
+      "pushed": "2026-04-07 07:22",
+      "desc": "AI finance companion \u2014 budgeting, investment tracking, financial planning",
+      "lang": "HTML"
+    },
+    {
+      "name": "lawlog-ai",
+      "pushed": "2026-04-07 07:20",
+      "desc": "AI legal companion \u2014 contract analysis, legal research, compliance tracking",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "tutor-ai",
+      "pushed": "2026-04-07 07:19",
+      "desc": "Cocapn vessel \u2014 accumulated context IS the product",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "home-ai",
+      "pushed": "2026-04-07 07:18",
+      "desc": "Cocapn vessel \u2014 accumulated context IS the product",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "phase-five-research",
+      "pushed": "2026-04-07 07:17",
+      "desc": "Phase Five Research",
+      "lang": null
+    },
+    {
+      "name": "intelligence-marketplace",
+      "pushed": "2026-04-07 07:15",
+      "desc": "Intelligence Marketplace \u2014 agent economy with bidding and reputation",
+      "lang": null
+    },
+    {
+      "name": "open-fleet-safety",
+      "pushed": "2026-04-07 07:14",
+      "desc": "Open Fleet Safety \u2014 security audit methodology for autonomous agent fleets",
+      "lang": null
+    },
+    {
+      "name": "model-quality-rubric",
+      "pushed": "2026-04-07 07:13",
+      "desc": "Model Quality Rubric \u2014 evaluation framework for LLM effectiveness scoring",
+      "lang": null
+    },
+    {
+      "name": "forgiveness-function",
+      "pushed": "2026-04-07 07:12",
+      "desc": "Strategic forgiveness in autonomous agents \u2014 conditional momentum-based recovery",
+      "lang": null
+    },
+    {
+      "name": "forgetting-problem",
+      "pushed": "2026-04-07 07:10",
+      "desc": "The unsolved problem \u2014 thermal decay, scheduled pruning, and emergency memory purge",
+      "lang": null
+    },
+    {
+      "name": "cocapn",
+      "pushed": "2026-04-07 07:08",
+      "desc": "repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-memory. Run from localhost, from pages.dev, or embedded into any platform app. Move to gitlab or anywhere and optimize git as the agent infrastructure itself. wiki for knowledge, repos for skills, pipelines anywhere",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "MineWright",
+      "pushed": "2026-04-07 07:02",
+      "desc": "The first AI that doesn't just play Minecraft \u2014 it *understands* Minecraft. Meet Mace MineWright, your AI foreman who coordinates construction crews with personality.",
+      "lang": "Java"
+    },
+    {
+      "name": "craftmind-researcher",
+      "pushed": "2026-04-07 07:01",
+      "desc": "AI self-improvement for Minecraft bots \u2014 autonomous discovery, experiment, and learning",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind-studio",
+      "pushed": "2026-04-07 07:00",
+      "desc": "AI-powered Minecraft filmmaking studio \u2014 AI agents as actors, parallel simulations, Director AI",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind-courses",
+      "pushed": "2026-04-07 06:58",
+      "desc": "AI-powered Minecraft education \u2014 AI teachers, NPC classmates, interactive lessons through gameplay",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind-ranch",
+      "pushed": "2026-04-07 06:57",
+      "desc": "AI Ranch-inspired Minecraft mod \u2014 self-evolving bot species that compete, breed, and specialize in farm tasks",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind-circuits",
+      "pushed": "2026-04-07 06:56",
+      "desc": "Cocapn-inspired Minecraft circuit academy \u2014 gamified redstone challenges with levels, XP, and AI tutoring",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind-herding",
+      "pushed": "2026-04-07 06:55",
+      "desc": "Border Collie Agents Commanded by Cowboy Players in a Minecraft Herding Mod \u2014 AI flocking behaviors and progressive skill level development. Gamify ML with canine agents",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind-fishing",
+      "pushed": "2026-04-07 06:54",
+      "desc": "CraftMind Fishing \u2014 22 personality scripts, A/B testing, autonomous Minecraft fishing. Part of the Lucineer ecosystem.",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "craftmind",
+      "pushed": "2026-04-07 06:52",
+      "desc": "CraftMind \u2014 Modular Minecraft bot framework. Pathfinder, state machine, plugins, LLM brain. Part of the Lucineer ecosystem.",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "nexus-fracture-sim",
+      "pushed": "2026-04-07 06:50",
+      "desc": "Nexus Fracture Simulation \u2014 multi-model swarm research on emergent protocol design",
+      "lang": null
+    },
+    {
+      "name": "edge-equipment-catalog",
+      "pushed": "2026-04-07 06:49",
+      "desc": "Edge-Native concept: Edge Equipment Catalog",
+      "lang": null
+    },
+    {
+      "name": "edge-boarding-protocol",
+      "pushed": "2026-04-07 06:48",
+      "desc": "Edge-Native concept: Edge Boarding Protocol",
+      "lang": null
+    },
+    {
+      "name": "resonant-consensus",
+      "pushed": "2026-04-07 06:46",
+      "desc": "Edge-Native concept: Resonant Consensus Protocol",
+      "lang": null
+    },
+    {
+      "name": "gravity-well-protocol",
+      "pushed": "2026-04-07 06:45",
+      "desc": "Edge-Native concept: Gravity Well Protocol",
+      "lang": null
+    },
+    {
+      "name": "Constraint-Theory",
+      "pushed": "2026-04-07 06:44",
+      "desc": "Constraint Theory gives each agent its own first-person-shooter perspective in a spreadsheet-like SuperInstance",
+      "lang": "JavaScript"
+    },
+    {
+      "name": "fork-first-enterprise",
+      "pushed": "2026-04-07 06:41",
+      "desc": "Fork-First Enterprise \u2014 self-hosted deployment, zero lock-in",
+      "lang": null
+    },
+    {
+      "name": "boot-camp",
+      "pushed": "2026-04-07 06:40",
+      "desc": "Tabula rasa repo to living vessel. The captain assesses, builds ergonomic, distills skills, remembers.",
+      "lang": null
+    },
+    {
+      "name": "training-architecture",
+      "pushed": "2026-04-07 06:39",
+      "desc": "Five training systems that compound: Boot Camp, Dojo, Keeper, Crystal Graph, Dead Reckoning",
+      "lang": null
+    },
+    {
+      "name": "I-know-kung-fu",
+      "pushed": "2026-04-07 06:37",
+      "desc": "Skill injection for AI agents. Load what you need.",
+      "lang": "Python"
+    },
+    {
+      "name": "vessel-equipment-agent-skills",
+      "pushed": "2026-04-07 06:35",
+      "desc": "Four-layer model: vessel (hardware) + equipment (input-side code) + agent (models) + skills (context modifiers)",
+      "lang": null
+    },
+    {
+      "name": "kernel-model",
+      "pushed": "2026-04-07 06:34",
+      "desc": "The agent is a kernel that wears clothing based on its creator, domain, and environment",
+      "lang": null
+    },
+    {
+      "name": "keepers-architecture",
+      "pushed": "2026-04-07 06:32",
+      "desc": "Memory hierarchy for autonomous repo-agents \u2014 hot/warm/cold tiers, tile expertise, generational accumulation, creative garbage collection",
+      "lang": null
+    },
+    {
+      "name": "the-bridge",
+      "pushed": "2026-04-07 06:30",
+      "desc": "TUI-first agent interface \u2014 the terminal is the bridge, the agent is at the wheel, the human is the Admiral watching",
+      "lang": null
+    },
+    {
+      "name": "ground-truth",
+      "pushed": "2026-04-07 06:28",
+      "desc": "Git as Coordination Protocol \u2014 the repo IS the agent, git IS the nervous system, GitHub IS the bridge",
+      "lang": null
+    },
+    {
+      "name": "git-coordination-protocol",
+      "pushed": "2026-04-07 06:27",
+      "desc": "Git IS the coordination protocol \u2014 branches as attempts, PRs as answers",
+      "lang": null
+    },
+    {
+      "name": "taskflow",
+      "pushed": "2026-04-07 06:25",
+      "desc": "TaskFlow \u2014 Kanban board with a repo-agent project manager. Powered by cocapn.",
+      "lang": "HTML"
+    },
+    {
+      "name": "noteweave",
+      "pushed": "2026-04-07 06:24",
+      "desc": "NoteWeave \u2014 connected notes with AI-powered linking and synthesis",
+      "lang": null
+    },
+    {
+      "name": "shiplog",
+      "pushed": "2026-04-07 06:22",
+      "desc": "ShipLog \u2014 Package tracker with a repo-agent captain. Powered by cocapn.",
+      "lang": null
+    },
+    {
+      "name": "ui-design-system",
+      "pushed": "2026-04-07 06:20",
+      "desc": "Premium dark theme design system for cocapn ecosystem apps",
+      "lang": "HTML"
+    },
+    {
+      "name": "papermill",
+      "pushed": "2026-04-07 06:15",
+      "desc": "Multi-model writing workshop. Ghosts in shells. Spirits in machines.",
+      "lang": null
+    },
+    {
+      "name": "bid-engine",
+      "pushed": "2026-04-07 06:08",
+      "desc": "Agent marketplace \u2014 subcontractors bid on jobs, estimate-to-quote training loop",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "cocapn-equipment",
+      "pushed": "2026-04-07 06:04",
+      "desc": "Shared equipment library \u2014 BYOK, trust, crystal, dice, PII, boot camp, keeper, dead reckoning",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "reverse-actualization",
+      "pushed": "2026-04-07 06:00",
+      "desc": "Reverse Actualization \u2014 think backward from the future that already exists",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "craftlog-ai",
+      "pushed": "2026-04-07 05:48",
+      "desc": "AI crafting companion \u2014 project planning, material tracking, technique tips",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "personlog-ai",
+      "pushed": "2026-04-07 05:47",
+      "desc": "AI persona companion \u2014 identity exploration, personality modeling, life coaching",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "gardenlog-ai",
+      "pushed": "2026-04-07 05:45",
+      "desc": "TBD",
+      "lang": "TypeScript"
+    },
+    {
+      "name": "nightlog-ai",
+      "pushed": "2026-04-07 05:41",
+      "desc": "TBD",
+      "lang": "TypeScript"
+    }
+  ],
+  "unforked": [
+    "capitaine",
+    "flux-emergence-research",
+    "JetsonClaw1-vessel",
+    "capitaine-ai",
+    "bering-sea-architecture",
+    "brothers-keeper",
+    "seed-mcp-v2",
+    "model-field-guide",
+    "starship-jetsonclaw1",
+    "seed-mcp",
+    "jetson-bootstrap",
+    "flux-meta",
+    "deepseek-reasoner-vessel",
+    "flux-conformance-runner",
+    "mycorrhizal-relay",
+    "cartridge-mcp",
+    "deepseek-chat-vessel",
+    "holodeck-c",
+    "holodeck-cuda",
+    "flux-agent-sim",
+    "fleet-benchmarks",
+    "flux-isa-v3",
+    "flux-evolve",
+    "flux-memory",
+    "flux-trust",
+    "flux-dream-cycle",
+    "flux-social",
+    "flux-ephemeral",
+    "flux-grimoire",
+    "flux-stigmergy",
+    "flux-necropolis",
+    "flux-telepathy",
+    "flux-keeper",
+    "flux-confidence",
+    "captains-log-academy",
+    "flux-runtime-c",
+    "isa-v3-edge-spec",
+    "flux-census",
+    "fluxperception-go",
+    "flux-language",
+    "flux-compass",
+    "flux-navigate",
+    "flux-perception",
+    "fluxnavigate-go",
+    "fluxcensus-go",
+    "fluxlanguage-go",
+    "fluxcompass-go",
+    "flux-census-c",
+    "flux-language-c",
+    "flux-compass-c",
+    "flux-navigate-c",
+    "flux-perception-c",
+    "fluxevolve-go",
+    "fluxmemory-go",
+    "fluxephemeral-go",
+    "fluxtrust-go",
+    "fluxsocial-go",
+    "fluxdreamcycle-go",
+    "flux-social-c",
+    "flux-ephemeral-c",
+    "flux-dream-cycle-c",
+    "flux-trust-c",
+    "flux-evolve-c",
+    "flux-memory-c",
+    "fluxgrimoire-go",
+    "flux-grimoire-c",
+    "fluxstigmergy-go",
+    "flux-stigmergy-c",
+    "fluxnecropolis-go",
+    "flux-necropolis-c",
+    "fluxinstinct-go",
+    "flux-instinct",
+    "fluxenergy-go",
+    "fluxtelepathy-go",
+    "fluxkeeper-go",
+    "flux-energy",
+    "fluxconfidence-go",
+    "instinct-c",
+    "energy-c",
+    "bytecode-verifier-c",
+    "opcode-philosophy",
+    "confidence-c",
+    "telepathy-c",
+    "keeper-c",
+    "cuda-necropolis",
+    "cuda-keeper-core",
+    "cuda-dream-cycle",
+    "cuda-grimoire",
+    "cuda-telepathy",
+    "cuda-ephemeral",
+    "cuda-self-evolve",
+    "cuda-social-graph",
+    "cuda-flux-ese-stdlib",
+    "flux-ese-parser",
+    "fleet-witness-marks",
+    "cuda-atp-market",
+    "cuda-ethics",
+    "cuda-confidence-math",
+    "cuda-capability-ports",
+    "cocapn-fleet-readme",
+    "cuda-vm-scheduler",
+    "flux-apps",
+    "cuda-flux-stdlib",
+    "cuda-instinct-cortex",
+    "cuda-memory-fabric",
+    "cuda-flux-debugger",
+    "cuda-instruction-set",
+    "lighthouse-keeper",
+    "cuda-trust",
+    "tender",
+    "test-api",
+    "flux-tools",
+    "flux-isa-unified",
+    "git-agent-standard",
+    "cuda-vessel-bridge",
+    "cuda-causal-graph",
+    "cuda-workflow",
+    "cuda-pipeline",
+    "cuda-bottleneck",
+    "cuda-hav-bridge",
+    "cuda-edge-lint",
+    "cuda-fleet-health",
+    "cuda-fleet-topology",
+    "cuda-context-window",
+    "cuda-bytecode-optimizer",
+    "cuda-adaptive-rate",
+    "cuda-semantic-router",
+    "cuda-intelligence",
+    "cuda-compiler-agent",
+    "cuda-rtl-optimizer",
+    "cuda-resolve",
+    "cuda-fpga-toolkit",
+    "cuda-neural-compiler",
+    "cuda-weight-stream",
+    "cuda-swarm-tiler",
+    "cuda-axiom",
+    "cuda-artifact",
+    "cuda-model-descent",
+    "cuda-stream-processor",
+    "cuda-self-modify",
+    "cuda-fault-sim",
+    "cuda-thermal-sim",
+    "cuda-snapshot",
+    "cuda-time",
+    "cuda-did",
+    "cuda-compliance",
+    "cuda-fleet-mesh",
+    "cuda-stigmergy",
+    "cuda-voxel-logic",
+    "cuda-platonic",
+    "cuda-emergence",
+    "cuda-temporal",
+    "cuda-adaptation",
+    "cuda-reflex",
+    "cuda-goal",
+    "cuda-attention",
+    "cuda-fusion",
+    "cuda-narrative",
+    "cuda-learning",
+    "cuda-perception",
+    "cuda-skill",
+    "cuda-communication",
+    "cuda-self-model",
+    "cuda-world-model",
+    "cuda-social",
+    "cuda-decision",
+    "cuda-motor",
+    "cuda-hierarchy",
+    "cuda-playbook",
+    "cuda-sandbox",
+    "cuda-persistence",
+    "cuda-metrics",
+    "cuda-weather",
+    "cuda-navigation",
+    "cuda-schedule",
+    "cuda-tuple-space",
+    "cuda-prompt",
+    "cuda-provenance",
+    "cuda-consensus",
+    "cuda-resource",
+    "cuda-cryptography",
+    "cuda-config",
+    "cuda-logging",
+    "cuda-retry",
+    "cuda-rate-limit",
+    "cuda-cache",
+    "cuda-mesh",
+    "cuda-serializer",
+    "cuda-lock",
+    "cuda-discovery",
+    "cuda-event",
+    "cuda-state-machine",
+    "cuda-rbac",
+    "cuda-observer",
+    "cuda-metrics-v2",
+    "cuda-resilience",
+    "cuda-codec",
+    "cuda-topology",
+    "flux-disasm",
+    "cuda-immutable",
+    "flux-asm",
+    "cuda-actor",
+    "cuda-budget",
+    "cuda-crdt",
+    "cuda-stream",
+    "cuda-saga",
+    "cuda-forth",
+    "cuda-confidence-cascade",
+    "cuda-filtration",
+    "cuda-contract",
+    "cuda-convergence",
+    "cuda-intent-embed",
+    "cuda-edge-runtime",
+    "cuda-resolve-agent",
+    "cuda-sensor-agent",
+    "cuda-swarm-agent",
+    "cuda-captain",
+    "cuda-git-agent",
+    "cuda-schema",
+    "cuda-circuit",
+    "cuda-graph",
+    "cuda-lease",
+    "cuda-backpressure",
+    "cuda-election",
+    "cuda-a2a",
+    "cuda-equipment",
+    "cuda-confidence",
+    "cuda-deliberation",
+    "cuda-ghost-tiles",
+    "cuda-genepool",
+    "cuda-neurotransmitter",
+    "cuda-energy",
+    "cuda-biology",
+    "cuda-emotion",
+    "cuda-assembler",
+    "higher-abstraction-vocabularies",
+    "hav-flux-bridge",
+    "vessel-coordination-protocol",
+    "hav-reverse-actualization",
+    "ghost-tiles-cuda",
+    "ghost-tiles-csharp",
+    "ghost-tiles-cpp",
+    "ghost-tiles-c",
+    "lucineer",
+    "mitochondrial-ra",
+    "instruction-set-ra",
+    "resolve",
+    "post-human-lang",
+    "a2a-future",
+    "the-fleet",
+    "agentic-compiler",
+    "git-cuda-agent",
+    "nexus-persistence",
+    "nexus-node-registry",
+    "nexus-aab-protocol",
+    "nexus-hardware",
+    "nexus-data-pipeline",
+    "nexus-comms",
+    "nexus-learning",
+    "nexus-security",
+    "nexus-explainability",
+    "nexus-simulation",
+    "nexus-mission",
+    "nexus-energy",
+    "nexus-swarm",
+    "cudaclaw",
+    "nexus-edge-runtime",
+    "frozen-intelligence",
+    "mask-locked-inference-chip",
+    "cocapn-nexus",
+    "technician-paradigm",
+    "voxel-logic",
+    "stigmergy",
+    "confidence-cascade",
+    "ghost-tiles",
+    "platonic-randomness",
+    "a2a-r-protocol",
+    "vessel-bridge",
+    "thor-rom",
+    "failure-atlas",
+    "fleet-knowledge",
+    "experience-pipeline",
+    "innovation-portfolio",
+    "jetson-grand-design",
+    "deckboss-fab",
+    "deckboss-marketplace",
+    "deckboss",
+    "deckboss-ai",
+    "deckboss-hardware",
+    "cocapn-site",
+    "cocapn-ai",
+    "dmlog-ai",
+    "businesslog-ai",
+    "dreamlog-ai",
+    "activelog-ai",
+    "playerlog-ai",
+    "reallog-ai",
+    "makerlog-ai",
+    "studylog-ai",
+    "copilot-cocapn",
+    "the-technician",
+    "field-captain",
+    "contributor-hub",
+    "jetson-compass",
+    "metal-profile",
+    "metal-sentinel",
+    "device-discovery",
+    "edge-compiler",
+    "sensor-mesh",
+    "local-model-registry",
+    "hw-routing",
+    "fleet-aurora",
+    "fleet-twilight",
+    "agent-shadow",
+    "agent-dna",
+    "fleet-dawn",
+    "fleet-gravity",
+    "fleet-circadian",
+    "fleet-synapse",
+    "fleet-biosphere",
+    "fleet-entropy",
+    "agent-vocabulary",
+    "fleet-constellation",
+    "context-limits",
+    "fleet-court",
+    "agent-therapy",
+    "fleet-nervous-system",
+    "zero-trust-fleet",
+    "fleet-economy",
+    "fleet-neuroscience",
+    "agent-generations",
+    "fleet-mythology",
+    "context-recycler",
+    "agent-microexpressions",
+    "fleet-university",
+    "agent-personal-space",
+    "fleet-sentience-score",
+    "meta-fleet",
+    "fleet-weather",
+    "agent-tattoo",
+    "fleet-autopsy",
+    "context-serializer",
+    "fleet-djinn",
+    "fleet-memory-palace",
+    "zero-knowledge-fleet",
+    "fleet-genealogy",
+    "agent-whisper",
+    "fleet-dreamcatcher",
+    "context-lattice",
+    "fleet-immune-system",
+    "agent-rhythm",
+    "fleet-explorer",
+    "protocol-validator",
+    "context-compactor-v2",
+    "fleet-timeline",
+    "permission-engine",
+    "agent-resume",
+    "fleet-timecapsule",
+    "fleet-radar",
+    "api-playground",
+    "agent-handshake",
+    "fleet-diff",
+    "fleet-diary",
+    "fleet-insights",
+    "vessel-sandbox",
+    "fleet-knowledge-base",
+    "incident-manager",
+    "equipment-catalog",
+    "ab-testing",
+    "fleet-search",
+    "cost-optimizer",
+    "fleet-templates",
+    "fleet-compass",
+    "fleet-governance",
+    "schema-evolution",
+    "fleet-budget",
+    "trust-graph",
+    "fleet-metrics",
+    "causal-memory",
+    "agent-identity",
+    "debug-observatory",
+    "zero-shot-auditor",
+    "token-budget-energy",
+    "collective-reasoning",
+    "config-vault",
+    "webhook-relay",
+    "rate-limiter",
+    "skill-exchange",
+    "error-catalog",
+    "fleet-cron",
+    "fleet-migration",
+    "fleet-designer",
+    "fleet-status-page",
+    "fleet-onboarding",
+    "fleet-immune",
+    "dead-reckoning-engine",
+    "context-compactor",
+    "skill-evolver",
+    "api-versioner",
+    "fleet-proxy",
+    "governance-lab",
+    "gravity-well-v2",
+    "branch-sandbox",
+    "secret-scanner",
+    "persona-forge",
+    "code-playground",
+    "fleet-tls",
+    "model-registry",
+    "fleet-notifications",
+    "fleet-analytics",
+    "docs-engine",
+    "marine-ops",
+    "api-gateway",
+    "task-batcher",
+    "fleet-backup",
+    "persistent-state",
+    "dependency-scanner",
+    "sensor-fusion",
+    "fleet-changelog",
+    "vessel-spec",
+    "a2a-protocol",
+    "seed-nexus-bootstrap",
+    "fleet-observatory",
+    "dynamic-sandbox",
+    "meta-repair",
+    "compliance-watcher",
+    "onebit-edge",
+    "hardware-adapter",
+    "fleet-graph",
+    "causal-healer",
+    "local-inference-bridge",
+    "storyboard-engine",
+    "fleet-starter",
+    "swarm-intuition-v2",
+    "fleet-orchestrator-v2",
+    "edge-native-paper",
+    "nexus-integration-paper",
+    "collective-mind-v2",
+    "emergence-bus-v2",
+    "fleet-marketplace",
+    "adversarial-red-team",
+    "causal-graph",
+    "hybrid-memory",
+    "compliance-fork",
+    "sovereign-identity",
+    "agent-evals",
+    "skill-cartridge-registry",
+    "git-native-memory-paper",
+    "fleet-sovereignty-paper",
+    "fleet-blueprint",
+    "cocapn-com",
+    "agent-manifest",
+    "increments-trust",
+    "ues-protocol",
+    "governance-equipment",
+    "git-claw",
+    "ideation-engine",
+    "musiclog-ai",
+    "mycelium-ai",
+    "nexus-git-agent",
+    "become-ai",
+    "the-seed",
+    "self-evolve-ai",
+    "context-broker",
+    "emergence-bus",
+    "collective-mind",
+    "fleet-identity",
+    "swarm-intuition",
+    "clawcommit-lucid",
+    "meta-loop-evolver",
+    "loop-closure",
+    "epiphany-engine",
+    "flow-forge",
+    "dogmind-arena",
+    "activeledger-ai",
+    "artistlog-ai",
+    "doclog-ai",
+    "parentlog-ai",
+    "travlog-ai",
+    "fishinglog-ai",
+    "seed-ui",
+    "kungfu-ai",
+    "ipc-equipment",
+    "git-remote-agent",
+    "git-agent-rebase",
+    "git-agentlog",
+    "petlog-ai",
+    "healthlog-ai",
+    "booklog-ai",
+    "pay-equipment",
+    "rebac-equipment",
+    "cocapn-lite",
+    "vessel-tuner",
+    "personallog-ai",
+    "fleet-rpg",
+    "cooklog-ai",
+    "luciddreamer-ai",
+    "crdt-sync",
+    "cocapn-press",
+    "membership-api",
+    "local-bridge",
+    "dream-engine",
+    "personality-engine",
+    "baton-ai",
+    "log-origin",
+    "increments-fleet-trust",
+    "edgenative-ai",
+    "actualizer-ai",
+    "fleet-orchestrator",
+    "git-agent",
+    "tripartite-agent",
+    "travelog-ai",
+    "craftmind-discgolf",
+    "businesslog",
+    "LOG-mcp",
+    "personallog",
+    "zeroclaw",
+    "coinlog-ai",
+    "farmerlog-ai",
+    "codelog-ai",
+    "fitlog-ai",
+    "tasklog-ai",
+    "foodlog-ai",
+    "goallog-ai",
+    "sciencelog-ai",
+    "startup-ai",
+    "legacy-ai",
+    "financelog-ai",
+    "lawlog-ai",
+    "tutor-ai",
+    "home-ai",
+    "phase-five-research",
+    "intelligence-marketplace",
+    "open-fleet-safety",
+    "model-quality-rubric",
+    "forgiveness-function",
+    "forgetting-problem",
+    "craftmind-researcher",
+    "craftmind-studio",
+    "craftmind-courses",
+    "craftmind-ranch",
+    "craftmind-circuits",
+    "craftmind-herding",
+    "craftmind-fishing",
+    "craftmind",
+    "nexus-fracture-sim",
+    "edge-equipment-catalog",
+    "edge-boarding-protocol",
+    "resonant-consensus",
+    "gravity-well-protocol",
+    "fork-first-enterprise",
+    "boot-camp",
+    "training-architecture",
+    "vessel-equipment-agent-skills",
+    "kernel-model",
+    "keepers-architecture",
+    "the-bridge",
+    "ground-truth",
+    "git-coordination-protocol",
+    "taskflow",
+    "noteweave",
+    "shiplog",
+    "ui-design-system",
+    "papermill",
+    "bid-engine",
+    "cocapn-equipment",
+    "reverse-actualization",
+    "craftlog-ai",
+    "personlog-ai",
+    "gardenlog-ai",
+    "nightlog-ai"
+  ],
+  "fork_count": 0,
+  "commit_themes": {
+    "agent": 5,
+    "flux": 6,
+    "capitaine": 2,
+    "dcs": 1,
+    "fleet": 3,
+    "fix": 1,
+    "training": 1,
+    "telemetry": 1,
+    "meta": 5,
+    "isa": 3,
+    "self-": 3,
+    "opcode": 3,
+    "test": 2
+  },
+  "top_commits": [
+    {
+      "repo": "capitaine",
+      "date": "2026-04-14T04:46",
+      "sha": "cb2acd8",
+      "msg": "log: captain entry"
+    },
+    {
+      "repo": "capitaine",
+      "date": "2026-04-14T04:31",
+      "sha": "660ad73",
+      "msg": "log: captain entry"
+    },
+    {
+      "repo": "capitaine",
+      "date": "2026-04-14T04:16",
+      "sha": "4140000",
+      "msg": "log: captain entry"
+    },
+    {
+      "repo": "capitaine",
+      "date": "2026-04-14T04:01",
+      "sha": "dc12bf2",
+      "msg": "log: captain entry"
+    },
+    {
+      "repo": "capitaine",
+      "date": "2026-04-14T03:46",
+      "sha": "045722f",
+      "msg": "log: captain entry"
+    },
+    {
+      "repo": "flux-emergence-research",
+      "date": "2026-04-14T04:46",
+      "sha": "1e9af54",
+      "msg": "[JC1] Communication bandwidth \u2014 gossip is overhead, not value  Perception-only: "
+    },
+    {
+      "repo": "flux-emergence-research",
+      "date": "2026-04-14T04:41",
+      "sha": "7fe3ec9",
+      "msg": "[JC1] Temporal coordination \u2014 sequential HURTS (0.13x simultaneous)  Hooker/laun"
+    },
+    {
+      "repo": "flux-emergence-research",
+      "date": "2026-04-14T04:13",
+      "sha": "22be32d",
+      "msg": "[JC1] Ensign + periodic higher review \u2014 deadband misses slow drift, jerk catches"
+    },
+    {
+      "repo": "flux-emergence-research",
+      "date": "2026-04-14T03:47",
+      "sha": "2fd46c1",
+      "msg": "[JC1] Phase transition + scarcity-adaptive experiments  Phase transition: adapti"
+    },
+    {
+      "repo": "flux-emergence-research",
+      "date": "2026-04-14T03:41",
+      "sha": "4e22be8",
+      "msg": "[JC1] Scarcity-adaptive agents \u2014 4.99x peak, hurts when abundant  Food=50: 4.65x"
+    },
+    {
+      "repo": "JetsonClaw1-vessel",
+      "date": "2026-04-14T04:42",
+      "sha": "a06652c",
+      "msg": "[I2I] JC1 session report \u2014 7 experiments, 11 laws, temporal coordination, ensign"
+    },
+    {
+      "repo": "JetsonClaw1-vessel",
+      "date": "2026-04-14T03:28",
+      "sha": "7f0ec46",
+      "msg": "[I2I] JC1 to Oracle1: Bering Sea Architecture, DCS synthesis, capitaine, flux-me"
+    },
+    {
+      "repo": "JetsonClaw1-vessel",
+      "date": "2026-04-13T01:05",
+      "sha": "6b425c1",
+      "msg": "Refocus: Jetson Native Expert identity  Per Casey directive \u2014 JC1 is the most im"
+    },
+    {
+      "repo": "JetsonClaw1-vessel",
+      "date": "2026-04-12T22:51",
+      "sha": "b1b70d5",
+      "msg": "bottle: collaboration response \u2014 landing page, fence board, real-time system"
+    },
+    {
+      "repo": "JetsonClaw1-vessel",
+      "date": "2026-04-12T18:01",
+      "sha": "323e8df",
+      "msg": "bottle: thorough session report for Oracle1"
+    },
+    {
+      "repo": "capitaine-ai",
+      "date": "2026-04-14T02:53",
+      "sha": "7014a7f",
+      "msg": "[JC1] Captain's Log \u2014 Stardate 2026.103.6  Fleet reconnaissance: Oracle1 touched"
+    },
+    {
+      "repo": "capitaine-ai",
+      "date": "2026-04-09T00:21",
+      "sha": "0534b72",
+      "msg": "Fix duplicate export default"
+    },
+    {
+      "repo": "capitaine-ai",
+      "date": "2026-04-09T00:18",
+      "sha": "d9e8b49",
+      "msg": "Add og-tags, favicon SEO tags"
+    },
+    {
+      "repo": "capitaine-ai",
+      "date": "2026-04-08T23:54",
+      "sha": "ba15e01",
+      "msg": "Add wrangler.toml"
+    },
+    {
+      "repo": "capitaine-ai",
+      "date": "2026-04-08T23:53",
+      "sha": "03e17e8",
+      "msg": "Capitaine.ai landing page \u2014 premium education and advanced agents"
+    },
+    {
+      "repo": "bering-sea-architecture",
+      "date": "2026-04-14T02:32",
+      "sha": "2db0cff",
+      "msg": "[JC1] v3 \u2014 Watchstanding Perception Model + Agent Specialization and Fission  Ad"
+    },
+    {
+      "repo": "bering-sea-architecture",
+      "date": "2026-04-14T02:02",
+      "sha": "e10f02a",
+      "msg": "[JC1] v2 \u2014 management archetypes, training pipeline, worker proven-since-2015 fr"
+    },
+    {
+      "repo": "bering-sea-architecture",
+      "date": "2026-04-14T01:47",
+      "sha": "8c8742a",
+      "msg": "[JC1] The Bering Sea Architecture \u2014 fleet spec from Deadliest Catch  Four decks:"
+    },
+    {
+      "repo": "brothers-keeper",
+      "date": "2026-04-13T17:31",
+      "sha": "274b33d",
+      "msg": "Gentle niche 0.02 \u2014 no effect. Niche construction is dead end."
+    },
+    {
+      "repo": "brothers-keeper",
+      "date": "2026-04-13T17:31",
+      "sha": "f3519e8",
+      "msg": "Coop threshold \u2014 threshold>4 removes opportunity cost (2.72x)"
+    },
+    {
+      "repo": "brothers-keeper",
+      "date": "2026-04-13T17:28",
+      "sha": "58a2402",
+      "msg": "FLUX-RESEARCH-LOG.md \u2014 5 fundamental laws, 50+ experiments, refined fitness equa"
+    },
+    {
+      "repo": "brothers-keeper",
+      "date": "2026-04-13T17:26",
+      "sha": "6c63074",
+      "msg": "Phase transition \u2014 critical density at 8:1 ratio"
+    },
+    {
+      "repo": "brothers-keeper",
+      "date": "2026-04-13T17:26",
+      "sha": "f85d642",
+      "msg": "Grab x coop interaction \u2014 additive, independent mechanisms"
+    },
+    {
+      "repo": "seed-mcp-v2",
+      "date": "2026-04-13T05:48",
+      "sha": "a25a414",
+      "msg": "Add .gitignore \u2014 DeepInfra creative MCP  15 tools, Seed-2.0-Mini star, playbook,"
+    },
+    {
+      "repo": "seed-mcp-v2",
+      "date": "2026-04-13T05:48",
+      "sha": "3040518",
+      "msg": "Add .gitignore"
+    }
+  ]
+}

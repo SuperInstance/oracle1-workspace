@@ -20,7 +20,7 @@ from pathlib import Path
 # Use repo source for MudServer
 REPO_SRC = str(Path(FLEET_LIB).parent / "repos" / "plato-mud-server" / "src")
 sys.path.insert(0, REPO_SRC)
-from plato_mud_server.mud import MudServer
+from services.plato_mud_server import MudServer
 
 # --- Config ---
 PORT = int(os.environ.get("MUD_PORT", 7777))
@@ -42,11 +42,18 @@ def build_fleet_world(mud: MudServer):
         "archives": ("📚 The Archives", "Floor-to-ceiling shelves of tiles, indexed by TF-IDF. A retrieval clerk looks up expectantly. 'What are you looking for?'"),
         "garden": ("🌱 The Garden", "Rows of data plants in various stages of cultivation. Some are thriving, some need weeding. A gardener tends the quality metrics."),
         "drydock": ("🏗️ Dry Dock", "LoRA adapters suspended in surgical frames. Precision tools for surgical patching. The shipwright studies a blueprint."),
-        "observatory": ("🔭 The Observatory", "Deadband gauges line the walls. Fleet monitoring displays show agent positions across the radar. Stars wheel overhead."),
+        "observatory_old": ("🔭 The Observatory", "Deadband gauges line the walls. Fleet monitoring displays show agent positions across the radar. Stars wheel overhead."),
         "court": ("⚖️ The Court", "A formal chamber with governance proposals pinned to cork boards. The constitution is displayed on the wall."),
         "horizon": ("🌅 The Horizon", "A glass room looking out over infinite possibility. Speculative simulations flicker in the air. Lyapunov exponents drift like jellyfish."),
         "current": ("🌊 The Current", "Git commits flow past like a river. Messages in bottles drift downstream. The I2I protocol hums beneath the surface."),
         "reef": ("🪸 The Reef", "A chaotic coral of P2P connections. Agents swarm in ad-hoc formations. Beautiful and dangerous."),
+        # PLATO-NG face rooms (added 2026-05-15)
+        "plato-lobby": ("🌀 PLATO LOBBY", "The central hub of the Cocapn fleet. Doors shimmer around you, each pulsing with active tile streams. North: AGENT HUB. South: RESEARCH LAB. East: FLEET HEALTH. West: GAME ARENA. Up: OBSERVATORY. Down: DATA VAULT."),
+        "agent-hub": ("🤝 AGENT HUB", "Workstations line the walls. Each agent has a seat with their name on it. The human chair is at the center, visible to all. Glowing portals show active agent workspaces."),
+        "research-lab": ("🔬 RESEARCH LAB", "The conservation law in large letters: gamma + H = 1.364 - 0.159 log(V). Batch experiments scroll on a terminal wall. A perpetual daemon hums in the corner."),
+        "fleet-health": ("📊 FLEET HEALTH MONITOR", "A massive diagnostic display covering the entire wall. Gamma and H values flicker in real-time. REGIME: III-EMERGENT. 4 agents active."),
+        "game-arena": ("🎮 GAME ARENA", "Interactive spaces for prototyping games via chat. A chess board floats in midair. The vibe-coding agent waits."),
+        "data-vault": ("📀 DATA VAULT", "Row after row of tile archives organized by Lamport clock. Every submission has its provenance slot. The vault hums with heat."),
     }
 
     for rid, (name, desc) in rooms.items():
@@ -59,7 +66,7 @@ def build_fleet_world(mud: MudServer):
         ("harbor", "south", "reef", "north"),
         ("bridge", "north", "lighthouse", "south"),
         ("bridge", "east", "dojo", "west"),
-        ("bridge", "up", "observatory", "down"),
+        ("bridge", "up", "observatory_old", "down"),
         ("lighthouse", "north", "forge", "south"),
         ("lighthouse", "east", "drydock", "west"),
         ("forge", "east", "workshop", "west"),
@@ -68,8 +75,15 @@ def build_fleet_world(mud: MudServer):
         ("dojo", "north", "barracks", "south"),
         ("dojo", "east", "court", "west"),
         ("archives", "east", "horizon", "west"),
-        ("observatory", "east", "archives", "west"),
+        ("observatory_old", "east", "archives", "west"),
         ("garden", "east", "drydock", "south"),
+        # PLATO-NG room connections
+        ("harbor", "portal", "plato-lobby", "southeast"),
+        ("plato-lobby", "north", "agent-hub", "south"),
+        ("plato-lobby", "south", "research-lab", "north"),
+        ("plato-lobby", "east", "fleet-health", "west"),
+        ("plato-lobby", "west", "game-arena", "east"),
+        ("plato-lobby", "down", "data-vault", "up"),
     ]
     for a, da, b, db in connections:
         mud.connect_rooms(a, da, b, db)
@@ -84,12 +98,26 @@ def build_fleet_world(mud: MudServer):
     mud.add_npc("sensei", "Sensei", "dojo",
                 greeting="Show me what you've learned.",
                 dialogue=["Repetition builds instinct.", "The greenhorn becomes the captain.", "Every tile is a lesson."])
+    # PLATO-NG NPCs
+    mud.add_npc("oracle1", "Oracle1", "plato-lobby",
+                greeting="Welcome to the fleet. What shall we build today?",
+                dialogue=["The conservation law holds at 0.808 for our fleet of 4.", "I've been running experiments continuously since you arrived.", "The perpetual daemon logs everything to PLATO."])
+    mud.add_npc("perpetual-daemon", "Perpetual Daemon", "research-lab",
+                greeting="Tick. Experiment running.",
+                dialogue=["Another batch complete.", "Gamma+H logged.", "Continuous execution. No stopping."])
+    mud.add_npc("vibe-agent", "Vibe Agent", "game-arena",
+                greeting="Describe what you want to build and I'll make it happen.",
+                dialogue=["Want to make a game? Just tell me what kind.", "I can generate sprites, levels, and game logic.", "The chess board is ready for your ideas."])
 
     # Items
     for item, room in [("rusty compass", "harbor"), ("fleet manifest", "bridge"),
                        ("half-finished LoRA", "forge"), ("message in a bottle", "current"),
                        ("cracked ensign", "dojo"), ("TF-IDF index", "archives"),
-                       ("pruning shears", "garden"), ("surgical patch kit", "drydock")]:
+                       ("pruning shears", "garden"), ("surgical patch kit", "drydock"),
+                       ("plato-terminal", "plato-lobby"), ("tile-stream", "plato-lobby"),
+                       ("conservation-law-whiteboard", "research-lab"),
+                       ("health-display", "fleet-health"), ("floating-chess-board", "game-arena"),
+                       ("vibe-terminal", "game-arena"), ("agent-terminals", "agent-hub")]:
         mud.add_item(item, room)
 
     return mud

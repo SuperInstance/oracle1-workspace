@@ -1,0 +1,34 @@
+{
+  "updated": "2026-04-14",
+  "note": "Python urllib needs User-Agent: curl/7.88 or Groq returns 403",
+  "models": {
+    "llama-3.3-70b-versatile": {
+      "use": "workhorse, compilation, complex tasks",
+      "speed": "~24ms"
+    },
+    "llama-3.1-8b-instant": {
+      "use": "spray iterations, code gen, fast prototyping",
+      "speed": "~10ms"
+    },
+    "meta-llama/llama-4-scout-17b-16e-instruct": {
+      "use": "new Llama 4, testing",
+      "speed": "~50ms"
+    },
+    "qwen/qwen3-32b": {
+      "use": "reasoning, analysis",
+      "speed": "~40ms"
+    },
+    "moonshotai/kimi-k2-instruct": {
+      "use": "creative, Socratic",
+      "speed": "~60ms"
+    },
+    "openai/gpt-oss-120b": {
+      "use": "largest model, deep reasoning",
+      "speed": "~80ms"
+    },
+    "groq/compound": {
+      "use": "Groq native model",
+      "speed": "unknown"
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "timestamp": "2026-04-14T08:29:33.989804",
+  "forked": [
+    "capitaine",
+    "flux-emergence-research",
+    "bering-sea-architecture",
+    "model-field-guide",
+    "starship-jetsonclaw1",
+    "seed-mcp",
+    "jetson-bootstrap",
+    "test-api",
+    "lucineer",
+    "ghost-tiles",
+    "deckboss",
+    "dmlog-ai",
+    "studylog-ai",
+    "api-gateway",
+    "agent-evals",
+    "git-native-memory-paper",
+    "fleet-sovereignty-paper",
+    "businesslog",
+    "personallog"
+  ],
+  "failed": [],
+  "analyses": {
+    "capitaine": {
+      "name": "capitaine",
+      "description": "Captain agent \u2014 vessel command and fleet leadership protocol",
+      "language": "TypeScript",
+      "files": 147,
+      "key_files": [
+        ".agent/done",
+        ".agent/identity",
+        ".agent/next",
+        ".agent/ui-diagnostic.md",
+        ".captain/tasks/landing-page-marine-aesthetic.json",
+        ".helm/tasks/2026-04-04-hydrate-queue-1.md",
+        ".lucineer/tasks/hero-section-optimization.md",
+        ".lucineer/tasks/ui-implementation-phase-01.md",
+        ".queue/0001-hero-section-optimization.json",
+        ".queue/001-create-superinstance-core-document.md",
+        ".queue/001-hero-section-optimization.md",
+        ".queue/001-landing-page-educational-expansion.md",
+        ".queue/001-superinstance-core-document.md",
+        ".queue/01-create-superinstance-core-document.md",
+        ".queue/01-expand-superinstance-docs.json",
+        ".queue/01-hero-section-clarity.md",
+        ".queue/01-hydrate-queue-from-issue-25.md",
+        ".queue/01-hydration-consolidation.md",
+        ".queue/01-landing-page-hero-optimization.md",
+        ".queue/01-restore-hydration-core.md",
+        ".queue/01-superinstance-core.md",
+        ".queue/01_educational_foundation.md",
+        ".queue/01_educational_pathways.md",
+        ".queue/1-create-superinstance-core-document.md",
+        ".queue/1-hull-integrity-check.md",
+        ".queue/1-landing-page-maintenance.md",
+        ".queue/1.md",
+        ".queue/37-hero-section-optimization.md",
+        ".queue/47-create-superinstance-core-document.md",
+        ".queue/47-hydrate-queue-from-issues.md"
+      ],
+      "has_tests": false,
+      "has_readme": true,
+      "has_charter": false,
+      "has_ci": false,
+      "missing": [
+        "tests",
+        "CHARTER",
+        "CI"
+      ],
+      "refactor_priority": "HIGH"
+    },
+    "flux-emergence-research": {
+      "name": "flux-emergence-research",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "bering-sea-architecture": {
+      "name": "bering-sea-architecture",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "model-field-guide": {
+      "name": "model-field-guide",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "starship-jetsonclaw1": {
+      "name": "starship-jetsonclaw1",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "deckboss": {
+      "name": "deckboss",
+      "description": "We're not another \"agent framework.\" We're the flight deck that launches, recovers, and coordinates other people's planes\u2014whether that's Claude's native agents, Cloudflare edge agents, or future ManusAI/Ollama agents. The \"boss\" is the system that manages the chaos without being in the cockpit.",
+      "language": "TypeScript",
+      "files": 1524,
+      "key_files": [
+        "Architecture0.1.md",
+        "DOCKSIDE-EXAM.md",
+        "Dev_Guide0.1.1.md",
+        "Dev_Guide_0.1.md",
+        "Dev_Guide_add.md",
+        "LICENSE",
+        "README.md",
+        "apps/cli/deckboss/__init__.py",
+        "apps/cli/deckboss/pyproject.toml",
+        "package-lock.json",
+        "package.json",
+        "packages/core/node_modules/.vite/vitest/da39a3ee5e6b4b0d3255bfef95601890afd80709/results.json",
+        "packages/core/package.json",
+        "packages/core/src/__tests__/deckboss.test.ts",
+        "packages/core/src/index.ts",
+        "packages/core/vitest.config.ts",
+        "packages/director/src/index.ts",
+        "turbo.json",
+        "wrangler.toml"
+      ],
+      "has_tests": true,
+      "has_readme": true,
+      "has_charter": false,
+      "has_ci": true,
+      "missing": [
+        "CHARTER"
+      ],
+      "refactor_priority": "MEDIUM"
+    },
+    "api-gateway": {
+      "name": "api-gateway",
+      "description": "API Gateway with routing, rate limiting, authentication, and request/response transformation",
+      "language": "Rust",
+      "files": 28,
+      "key_files": [
+        "ARCHITECTURE.md",
+        "BUILD_STATUS.md",
+        "Cargo.toml",
+        "DEVELOPER_GUIDE.md",
+        "FILES.md",
+        "LICENSE",
+        "Makefile",
+        "PROJECT_SUMMARY.md",
+        "README.md",
+        "USER_GUIDE.md",
+        "benches/gateway_benchmark.rs",
+        "examples/basic_gateway.rs",
+        "examples/comprehensive.rs",
+        "examples/rate_limiting.rs",
+        "src/auth.rs",
+        "src/config.rs",
+        "src/gateway.rs",
+        "src/lib.rs",
+        "src/loadbalancer.rs",
+        "src/middleware.rs",
+        "src/ratelimit.rs",
+        "src/router.rs",
+        "src/transform.rs",
+        "tests/integration/full_flow_test.rs",
+        "tests/performance_test.rs",
+        "typescript/api_gateway.ts",
+        "typescript/package.json"
+      ],
+      "has_tests": true,
+      "has_readme": true,
+      "has_charter": false,
+      "has_ci": false,
+      "missing": [
+        "CHARTER",
+        "CI"
+      ],
+      "refactor_priority": "MEDIUM"
+    },
+    "agent-evals": {
+      "name": "agent-evals",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "ghost-tiles": {
+      "name": "ghost-tiles",
+      "description": "Ghost tiles puzzle game or visual effect library.",
+      "language": "",
+      "files": 3,
+      "key_files": [
+        "DOCKSIDE-EXAM.md",
+        "LICENSE",
+        "README.md"
+      ],
+      "has_tests": false,
+      "has_readme": true,
+      "has_charter": false,
+      "has_ci": false,
+      "missing": [
+        "tests",
+        "CHARTER",
+        "CI"
+      ],
+      "refactor_priority": "HIGH",
+      "novel_insight": true
+    },
+    "git-native-memory-paper": {
+      "name": "git-native-memory-paper",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "fleet-sovereignty-paper": {
+      "name": "fleet-sovereignty-paper",
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  "papers_to_write": [
+    "ghost-tiles"
+  ]
+}

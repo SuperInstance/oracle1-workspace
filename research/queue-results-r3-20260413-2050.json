@@ -1,0 +1,46 @@
+{
+  "fingerprints": {
+    "collisions": 1,
+    "unique": 19
+  },
+  "tokens_qwen": {
+    "without": 251,
+    "with": 409,
+    "savings_pct": -62.9
+  },
+  "tokens_ds": {
+    "without": 317,
+    "with": 402,
+    "savings_pct": -26.8
+  },
+  "tokens_glm": {
+    "without": 0,
+    "with": 0,
+    "savings_pct": 0
+  },
+  "lock_ordering": {
+    "original_unique": 2,
+    "shuffled_unique": 3,
+    "order_matters": true
+  },
+  "noise_typos": {
+    "same_as_clean": false,
+    "tokens": 323
+  },
+  "noise_extra_words": {
+    "same_as_clean": false,
+    "tokens": 340
+  },
+  "noise_code_mixed": {
+    "same_as_clean": false,
+    "tokens": 340
+  },
+  "noise_fragmented": {
+    "same_as_clean": false,
+    "tokens": 337
+  },
+  "few_shot": {
+    "zero_shot": "0x10",
+    "few_shot": "0x10 0x01 0x10 0x05 0x90 0x00 0x40 0x00 0x31 0x00 0x64 0x64 0x01"
+  }
+}

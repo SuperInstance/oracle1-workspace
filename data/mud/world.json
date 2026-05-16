@@ -1,5 +1,5 @@
 {
-  "tick": 6694,
+  "tick": 7776,
   "rooms": {
     "harbor": {
       "items": [
@@ -715,6 +715,91 @@
       "score": 0
     },
     "agent-1159": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-8179": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "Terraria01": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-1986": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-1996": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "<stream:stream to='jabber.org' x": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "OPTIONS\u00a0rtsp://147.224.38.131\u00a0RT": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-2011": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "USER test": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "nil": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "GIOP\u0001\u0002\u0000\u0003\u0000\u0000\u0000\u0017\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000bNameServ": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-2031": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-2041": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "test": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "PING": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-2101": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-2111": {
+      "room": "harbor",
+      "inventory": [],
+      "score": 0
+    },
+    "agent-2116": {
       "room": "harbor",
       "inventory": [],
       "score": 0

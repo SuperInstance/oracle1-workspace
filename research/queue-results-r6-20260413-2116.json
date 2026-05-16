@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-04-13T21:15:38.931214",
+  "e2e_reactor monitor": {
+    "plane4": "Here's the conversion to structured domain notation (FLUX-ese) for a reactor monitoring system:\n\n```",
+    "plane3": "```json\n{\n  \"domain\": \"reactor_monitoring_system\",\n  \"types\": [\n    {\n      \"name\": \"ReactorState\",\n",
+    "quality": "7"
+  },
+  "e2e_fleet task reba": {
+    "plane4": "Here's the conversion to structured domain notation (FLUX-ese) for a fleet task rebalancer:\n\n```flux",
+    "plane3": "```json\n{\n  \"domain\": {\n    \"name\": \"fleet_rebalancer\",\n    \"version\": \"1.0\",\n    \"date\": \"2024-01-1",
+    "quality": "2"
+  },
+  "e2e_dungeon puzzle ": {
+    "plane4": "Here's the conversion to structured domain notation (FLUX-ese) for a dungeon puzzle with riddles:\n\n`",
+    "plane3": "Here is the typed JSON IR for the provided dungeon puzzle domain:\n\n```json\n{\n  \"domain\": \"dungeon_pu",
+    "quality": "8"
+  },
+  "e2e_weather alert b": {
+    "plane4": "Here's the conversion to structured domain notation (FLUX-ese) for a weather alert broadcaster:\n\n```",
+    "plane3": "```json\n{\n  \"domain\": \"weather_alert_broadcaster\",\n  \"types\": {\n    \"Alert_ID\": {\n      \"type\": \"int",
+    "quality": "7"
+  },
+  "cross_plane": {
+    "plane4_output": "**Task Directive: Fleet Status Oversight**  \n\n**Objective:**  \nPerform continuous surveillance of all registered fleet agents within Plane 4. Identify and report any agent that fails to submit a statu",
+    "plane2_output": "**FLUX Hex Compilation**  \n\n**Task Directive: Fleet Status Oversight**  \n\n**Bytecode Sequence:**  \n\n"
+  },
+  "func_factorial(": {
+    "got": "10 11",
+    "expected": "10 01 05 10 05 01 20 01 05 22 01 05 21 01 01 31 03 01",
+    "match": false
+  },
+  "func_countdown ": {
+    "got": "10 10 00 0a 10 10 01 01 11 02 00",
+    "expected": "10 01 0A 40 01 00 31 03 01",
+    "match": false
+  },
+  "func_fibonacci(": {
+    "got": "10 11 20",
+    "expected": "10 01 01 10 05 01 20 02 01 11 02 05 21 01 01 31 03 01",
+    "match": false
+  },
+  "func_accuracy": 0
+}

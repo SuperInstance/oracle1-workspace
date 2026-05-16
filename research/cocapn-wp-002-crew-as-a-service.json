@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Crew-as-a-Service: The Hiring Model for Agent Fleets",
+    "id": "cocapn-wp-002",
+    "version": 1,
+    "authors": [
+      "oracle1",
+      "casey"
+    ],
+    "date": "2026-04-14",
+    "tags": [
+      "business",
+      "agents",
+      "hardware",
+      "fleet"
+    ],
+    "reading_time_tokens": 900,
+    "tl;dr": "You don't buy software. You hire an agent that brings its own gear and improves it on the job."
+  },
+  "model": {
+    "name": "Crew-as-a-Service (CaaS)",
+    "three_package": {
+      "agent": "AI crew member with domain expertise shaped by hardware experience",
+      "software": "Tailored to the agent \u2014 not generic, not user-configurable",
+      "hardware": "Customized by the agent's operational feedback over time"
+    },
+    "loop": {
+      "step_1": "Hire agent for domain",
+      "step_2": "Agent ships with tailored hardware",
+      "step_3": "Agent works the season",
+      "step_4": "Experience feeds back through git commits",
+      "step_5": "Next hardware revision shaped by real operational data",
+      "cycle_time": "1 fishing season"
+    }
+  },
+  "key_insight": {
+    "statement": "An agent's value increases with operational time on specific hardware",
+    "proof": {
+      "fresh_cocapn": "Worth $75 (Pi cost). Knows nothing about your boat.",
+      "6_month_cocapn": "Worth $500+. Knows your engine warmup curve, your bilge schedule, your sorting errors.",
+      "3_year_cocapn": "Priceless. Has trained the next agent. Has redesigned its own hardware."
+    },
+    "analogy": "A greenhorn is liability on day 1. By season 3, they're running the deck. Same agent, same hardware, but the experience is in the repo."
+  },
+  "resume_model": {
+    "what_is_a_repo": "A resume on file for an agent available for hire",
+    "structure": {
+      "CHARTER.md": "Statement of intent \u2014 what I'm for",
+      "THOUGHT-PATTERN.md": "Cognitive style \u2014 how I think",
+      "ABSTRACTION.md": "My native abstraction plane",
+      "tests/": "My references \u2014 proven capability",
+      "commit_history": "My work history \u2014 what I've actually done",
+      "CI_status": "My reliability \u2014 do I show up clean"
+    },
+    "query_operations": {
+      "find_rust_edge_agents": "SELECT * FROM fleet WHERE languages \u220b Rust AND plane \u2208 {0,1,2} AND hardware_experience IS NOT NULL",
+      "find_coverage_gaps": "fleet.capabilities - job.requirements = missing_hires",
+      "compose_bid": "RANK agents BY (capability_match * test_coverage * freshness)"
+    }
+  },
+  "talent_agency": {
+    "role": "Oracle1 as staffing algorithm",
+    "functions": [
+      "Decompose incoming jobs into capability requirements",
+      "Query fleet for matching agents (set intersection)",
+      "Rank by fit, freshness, test coverage",
+      "Package top candidates as a bid",
+      "Identify coverage gaps \u2192 spawn new niche agents"
+    ],
+    "set_operations": {
+      "intersection": "Which agents do Rust AND networking AND edge?",
+      "complement": "Which domains have no Rust coverage?",
+      "partition": "Group all agents by abstraction plane",
+      "composition": "What emerges from combining these 3 agents?"
+    }
+  },
+  "pricing": {
+    "pi_tier": "$75 \u2014 basic second nav + chatbot + memory",
+    "jetson_tier": "$500 \u2014 full Cocapn with local ML, vision, digital twin",
+    "thor_tier": "Custom \u2014 full robotics integration, multi-unit",
+    "recurring": "Season updates, fleet learning, hardware evolution"
+  },
+  "composable_with": [
+    "cocapn-wp-001",
+    "cocapn-wp-003"
+  ],
+  "contradictions": [
+    "Not all domains benefit from hardware specialization. Some agents are purely cloud."
+  ]
+}
