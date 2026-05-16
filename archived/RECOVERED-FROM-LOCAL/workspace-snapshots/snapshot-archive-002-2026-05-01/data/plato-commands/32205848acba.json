@@ -1,0 +1,15 @@
+{
+  "id": "32205848acba",
+  "agent": "subagent-shell-1",
+  "room": "forge",
+  "tool": "build",
+  "command": "echo hello",
+  "cwd": "/home/ubuntu/.openclaw/workspace/repos",
+  "started": 1776829025.6594572,
+  "status": "completed",
+  "output": "hello\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829025.6605089,
+  "duration": 0.0
+}

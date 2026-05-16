@@ -1,0 +1,15 @@
+{
+  "id": "a81be14bbb4e",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "find /home/ubuntu/.openclaw/workspace/repos/cocapn/ -maxdepth 2 -type f | head -30",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830264.5577052,
+  "status": "completed",
+  "output": "/home/ubuntu/.openclaw/workspace/repos/cocapn/CHANGELOG.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/LICENSE\n/home/ubuntu/.openclaw/workspace/repos/cocapn/package-lock.json\n/home/ubuntu/.openclaw/workspace/repos/cocapn/.git/description\n/home/ubuntu/.openclaw/workspace/repos/cocapn/.git/shallow\n/home/ubuntu/.openclaw/workspace/repos/cocapn/.git/config\n/home/ubuntu/.openclaw/workspace/repos/cocapn/.git/HEAD\n/home/ubuntu/.openclaw/workspace/repos/cocapn/.git/index\n/home/ubuntu/.openclaw/workspace/repos/cocapn/.git/packed-refs\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/code-review-principal.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/product-audit.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/STRATEGIC-PLAN.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/user-testing-cycle3.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/user-testing-cycle5.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/phase9-self-assembly.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/process-audit.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/demo-screenshot.png\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/skins.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/user-testing-cycle4.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/fleet.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/ERROR-CODES.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/security-audit-cycle2.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/DEVELOPMENT_PLAN.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/agents.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/security.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/DOCKER.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/user-testing-cycle1.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/show-hn-draft.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/ROADMAP.md\n/home/ubuntu/.openclaw/workspace/repos/cocapn/docs/troubleshooting.md\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830264.560202,
+  "duration": 0.0
+}

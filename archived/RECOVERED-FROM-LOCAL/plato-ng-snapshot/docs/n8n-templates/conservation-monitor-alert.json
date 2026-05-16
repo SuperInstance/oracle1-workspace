@@ -1,0 +1,128 @@
+{
+  "name": "Conservation Monitor → Alert",
+  "description": "Monitor PLATO tiles for conservation law violations (gamma/H/V spectral norms). Alert governance if compliance degrades below threshold.",
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node_fetch_tiles",
+      "name": "Fetch Tiles",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [0, 300],
+      "parameters": {
+        "method": "GET",
+        "url": "http://localhost:8847/room/research_log/history?limit=100"
+      },
+      "inputs": [],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_conservation_check",
+      "name": "Conservation Monitor",
+      "type": "plato_conservation",
+      "position": [250, 300],
+      "parameters": {
+        "tiles": "={{$json.tiles}}",
+        "room": "research_log"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_status_switch",
+      "name": "Check Status",
+      "type": "n8n-nodes-base.switch",
+      "position": [500, 300],
+      "parameters": {
+        "rules": {
+          "rules": [
+            {
+              "output": 0,
+              "operation": "equals",
+              "value1": "={{$json.status}}",
+              "value2": "DEGRADED"
+            },
+            {
+              "output": 1,
+              "operation": "equals",
+              "value1": "={{$json.status}}",
+              "value2": "HEALTHY"
+            }
+          ]
+        },
+        "fallbackOutput": 2
+      },
+      "inputs": ["main"],
+      "outputs": ["main", "main", "main"]
+    },
+    {
+      "id": "node_log_violation",
+      "name": "Log Violation",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "position": [750, 150],
+      "parameters": {
+        "fileName": "/tmp/conservation-violation-{{$now}}.json",
+        "dataPropertyName": "={{$json}}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_submit_tile",
+      "name": "Submit Alert Tile",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1000, 150],
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8847/submit",
+        "specification": "json",
+        "jsonBody": "={\n  \"domain\": \"research_log\",\n  \"question\": \"conservation/alert/{{$json.status}}\",\n  \"answer\": \"{{$json.violations}}\",\n  \"tags\": [\"conservation\", \"alert\", \"{{$json.status}}\"]\n}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_refiner_feedback",
+      "name": "Refiner Feedback",
+      "type": "plato_governance",
+      "position": [1250, 150],
+      "parameters": {
+        "operation": "check_permission",
+        "role": "refiner",
+        "room": "loop/refiner",
+        "action": "edit_harness"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_healthy_log",
+      "name": "Log Healthy",
+      "type": "n8n-nodes-base.noOp",
+      "position": [750, 450],
+      "parameters": {},
+      "inputs": ["main"],
+      "outputs": ["main"]
+    }
+  ],
+  "connections": {
+    "Fetch Tiles": {
+      "main": [["Conservation Monitor", "main"]]
+    },
+    "Conservation Monitor": {
+      "main": [["Check Status", "main"]]
+    },
+    "Check Status": {
+      "main": [["Log Violation", "main"]],
+      "main_1": [["Log Healthy", "main"]]
+    },
+    "Log Violation": {
+      "main": [["Submit Alert Tile", "main"]]
+    },
+    "Submit Alert Tile": {
+      "main": [["Refiner Feedback", "main"]]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "conservation-monitor-alert"
+}

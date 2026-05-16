@@ -1,0 +1,488 @@
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+Task exception was never retrieved
+future: <Task finished name='Task-211' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x16\x03\x03\x01\xa7\x01\x00\x01\xa3\x03\x030\xadq\xccp\x9c\xf6\x8e,\x1e!\x19=\xf6Q)\xe3\xae&\xef\x11\xf3-\xb8Y\x1b\xe0(\n', 4, 5, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa7 in position 4: invalid start byte
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+Task exception was never retrieved
+future: <Task finished name='Task-439' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x16\x03\x01\x00\xfc\x01\x00\x00\xf8\x03\x03$\xa7\xe9\xdb^\xd4\xf9\xf4j\x07\xfb.\xe1\x9c\xda\x10\xed\xe6(\x17b\xc3T\xa7\xc06\xf0\\/_\x90\x9b \xc7\xd3\xa5mb\x12\xa0Y\xbe\xae}%\n', 4, 5, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfc in position 4: invalid start byte
+Task exception was never retrieved
+future: <Task finished name='Task-446' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\xc2\xe5\xe5\xe5\x9e\xa0\xd7\xa4\xa6\xd0\xd5\xdd\xdc\xc8\xd6\xdd\xd7\xd5\xc8\xd1\xd6\x83\x80\xc8\xdd\xa4\xd1\xa1\xc8\xa4\xd2\xd5\xd7\xdd\xa3\xa4\xa1\xdd\xa6\xd7\xdd\x98\xe5', 0, 1, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 0: invalid continuation byte
+Task exception was never retrieved
+future: <Task finished name='Task-459' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03\n', 5, 6, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 5: invalid start byte
+Task exception was never retrieved
+future: <Task finished name='Task-461' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'{\x01\x00\x1613911111112\xc0\xa8\x01\x01\x13\x90{', 15, 16, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 15: invalid start byte
+Task exception was never retrieved
+future: <Task finished name='Task-463' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x03\x00\x00\x0b\x06\xe0\x00\x00\x00\x00\x00', 5, 6, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe0 in position 5: invalid continuation byte
+Task exception was never retrieved
+future: <Task finished name='Task-465' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x03\x00\x003.\xe0\x00\x00\x00\x00\x00Cookie: mstshash=Administrator\r\n', 5, 6, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe0 in position 5: invalid continuation byte
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+Task exception was never retrieved
+future: <Task finished name='Task-481' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'+.\x85L\xbe\x85\x8dR,\x9d\x08\xfa\xc1"\xc1\t\xbbx\xcc\x91\xf6\xf9\xa0\x0e{;\xa1\xc7\xc7\x16\xb9\x93\x84\x11\x9dV\x99\xe7~8|uB|\xf3\xb7s\xff\x07\xf1\xfa\xb1\x0f47\x9e\xa7\xd4\rd\xa17\xb2x\x93j\x8c\x8c\xd8\xfe\x05x\xc9J\x93\xb8X~\xc6t\x02\x0f\xc8\xcb\xfe2\xcco\xd2\x17 *\xbfK\xc0\x10\xf4p2\x8cz\xf4%\x03\xbcP\x99\xee\x80\x9e\xfe\xc7c5\x8a*\xb9?\xc4\xe6\xa5+\xa4', 2, 3, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x85 in position 2: invalid start byte
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+Task exception was never retrieved
+future: <Task finished name='Task-622' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xa2%6\xc2\x8e!\xf5%zg\xb1\xce\xc8X\x9c\xcc\xf1XGN\xf4r\x97\xf3\x9d=\x17\x105L|\xc9\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\t\xc0\x14\xc0\n', 11, 12, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa2 in position 11: invalid start byte
+socket.send() raised exception.
+socket.send() raised exception.
+Task exception was never retrieved
+future: <Task finished name='Task-629' coro=<handle_client() done, defined at /home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py:140> exception=UnicodeDecodeError('utf-8', b'\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xde\xc9\x8d\xb2\x0eh6|$\xe9\xa0\xd0f\xb3\xe3\xa5\xdb`5h4\xe3\xdf\x91\x81\x93\x01\r\x87\x8f\xd3\\\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\t\xc0\x14\xc0\n', 11, 12, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/fleet/services/mud_telnet.py", line 157, in handle_client
+    name = name_data.decode().strip()[:32]
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xde in position 11: invalid continuation byte
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.
+socket.send() raised exception.

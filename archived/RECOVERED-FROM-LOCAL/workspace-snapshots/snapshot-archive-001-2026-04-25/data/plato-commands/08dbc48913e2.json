@@ -1,0 +1,15 @@
+{
+  "id": "08dbc48913e2",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/credentials/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830012.8575623,
+  "status": "completed",
+  "output": "total 16\ndrwx------  2 ubuntu ubuntu 4096 Apr 10 03:11 .\ndrwx------ 18 ubuntu ubuntu 4096 Apr 21 20:03 ..\n-rw-------  1 ubuntu ubuntu   58 Apr 10 03:09 telegram-default-allowFrom.json\n-rw-------  1 ubuntu ubuntu   37 Apr 10 03:09 telegram-pairing.json\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830012.8597422,
+  "duration": 0.0
+}

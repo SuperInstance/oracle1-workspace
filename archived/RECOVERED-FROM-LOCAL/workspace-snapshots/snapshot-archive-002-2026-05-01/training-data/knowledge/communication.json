@@ -1,0 +1,9 @@
+[
+  {
+    "room": "communication",
+    "group": "herald",
+    "tile_count": 42,
+    "synthesis": "```json\n{\n    \"summary\": \"The fleet communication system operates through structured bottle messages from specialized roles (Navigator, Cartographer, Quartermaster) that are monitored, synthesized into status summaries, and used to coordinate ongoing operational tasks.\",\n    \"principles\": [\"Structured role-based reporting enables clear operational oversight\", \"Regular synthesis of distributed updates maintains situational awareness\", \"Active monitoring and task management turn communication into coordinated action\"],\n    \"connections\": [\"operational coordination\", \"status reporting protocols\", \"information synthesis\", \"task management systems\", \"maritime logistics\"],\n    \"confidence\": 0.95\n}\n```",
+    "timestamp": "2026-04-19T08:20:54.236184+00:00"
+  }
+]

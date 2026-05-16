@@ -1,0 +1,1195 @@
+{
+  "numpy": {
+    "repo": "numpy",
+    "files_analyzed": 2253,
+    "files_with_errors": 70,
+    "total_loc": 556979,
+    "rooms_identified": 16,
+    "rooms": [
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 1483
+      },
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 493
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 106
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 50
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 23
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 8
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 8
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "game/tournament",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "io/parser",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 3
+      },
+      {
+        "type": "system/queue",
+        "kind": "agentic",
+        "source_count": 3
+      },
+      {
+        "type": "system/plugin",
+        "kind": "agentic",
+        "source_count": 2
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 2
+      }
+    ],
+    "languages": {
+      "unknown": 1284,
+      "python": 476,
+      "c-family": 423
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/primary/numpylogodark.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/primary/numpylogo.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/primary/numpylogolight.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/secondary/numpylogo2dark.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/secondary/numpylogo2light.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/secondary/numpylogo2.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/logomark/numpylogoiconlight.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/logomark/numpylogoicon.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/branding/logo/logomark/numpylogoicondark.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-numpy-8kv06ncq/doc/neps/_static/nep0013_image2.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/numpy/numpy.git",
+    "status": "ok",
+    "elapsed_seconds": 5.3
+  },
+  "flask": {
+    "repo": "flask",
+    "files_analyzed": 223,
+    "files_with_errors": 4,
+    "total_loc": 34540,
+    "rooms_identified": 12,
+    "rooms": [
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 65
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 32
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 24
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 19
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 9
+      },
+      {
+        "type": "auth/provider",
+        "kind": "algorithmic",
+        "source_count": 9
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 7
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "system/plugin",
+        "kind": "agentic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "unknown": 136,
+      "python": 83
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-flask-1gwm3xgw/docs/_static/pycharm-run-config.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-flask-1gwm3xgw/docs/tutorial/flaskr_login.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-flask-1gwm3xgw/docs/tutorial/flaskr_index.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-flask-1gwm3xgw/docs/tutorial/flaskr_edit.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/pallets/flask.git",
+    "status": "ok",
+    "elapsed_seconds": 0.9
+  },
+  "linux": {
+    "repo": "linux",
+    "files_analyzed": 36160,
+    "files_with_errors": 1,
+    "total_loc": 17009360,
+    "rooms_identified": 15,
+    "rooms": [
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 682
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 350
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 245
+      },
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 82
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 64
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 61
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 36
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 16
+      },
+      {
+        "type": "game/state",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "game/agent",
+        "kind": "agentic",
+        "source_count": 3
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "math/metrics",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "io/parser",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "math/compute",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "c-family": 32561,
+      "unknown": 3517,
+      "rust": 71,
+      "python": 10
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-linux-jk9581q0/drivers/tty/vt/defkeymap.map",
+        "error": "'utf-8' codec can't decode byte 0xc0 in position 10662: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/torvalds/linux.git",
+    "status": "ok",
+    "elapsed_seconds": 112.6
+  },
+  "go": {
+    "repo": "go",
+    "files_analyzed": 6368,
+    "files_with_errors": 0,
+    "total_loc": 1788587,
+    "rooms_identified": 11,
+    "rooms": [
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 398
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 227
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 29
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 21
+      },
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 10
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 7
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "game/agent",
+        "kind": "agentic",
+        "source_count": 1
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "golang": 5625,
+      "unknown": 674,
+      "c-family": 68,
+      "python": 1
+    },
+    "errors": [],
+    "url": "https://github.com/golang/go.git",
+    "status": "ok",
+    "elapsed_seconds": 13.9
+  },
+  "rust": {
+    "repo": "rust",
+    "files_analyzed": 4949,
+    "files_with_errors": 0,
+    "total_loc": 1251771,
+    "rooms_identified": 12,
+    "rooms": [
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 700
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 503
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 229
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 134
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 75
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 43
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 35
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 9
+      },
+      {
+        "type": "game/state",
+        "kind": "algorithmic",
+        "source_count": 9
+      },
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "game/movegen",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "rust": 3985,
+      "unknown": 945,
+      "c-family": 13,
+      "python": 6
+    },
+    "errors": [],
+    "url": "https://github.com/rust-lang/rust.git",
+    "status": "ok",
+    "elapsed_seconds": 18.5
+  },
+  "bun": {
+    "repo": "bun",
+    "files_analyzed": 4480,
+    "files_with_errors": 5,
+    "total_loc": 1462715,
+    "rooms_identified": 24,
+    "rooms": [
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 436
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 421
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 276
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 147
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 129
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 83
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 63
+      },
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 55
+      },
+      {
+        "type": "data/cache",
+        "kind": "algorithmic",
+        "source_count": 14
+      },
+      {
+        "type": "math/compute",
+        "kind": "algorithmic",
+        "source_count": 10
+      },
+      {
+        "type": "system/queue",
+        "kind": "agentic",
+        "source_count": 9
+      },
+      {
+        "type": "io/parser",
+        "kind": "algorithmic",
+        "source_count": 8
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 8
+      },
+      {
+        "type": "system/plugin",
+        "kind": "agentic",
+        "source_count": 7
+      },
+      {
+        "type": "game/agent",
+        "kind": "agentic",
+        "source_count": 6
+      },
+      {
+        "type": "math/metrics",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "game/strategy",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "game/move",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "auth/provider",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "game/state",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "game/tournament",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "unknown": 1549,
+      "rust": 1344,
+      "c-family": 1257,
+      "javascript": 325
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-bun-difdhumc/src/favicon.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-bun-difdhumc/src/zlib.test.gz",
+        "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-bun-difdhumc/src/runtime/ffi/libtcc1.a.macos-aarch64",
+        "error": "'utf-8' codec can't decode byte 0xe8 in position 75: invalid continuation byte"
+      },
+      {
+        "path": "/tmp/ga-batch-bun-difdhumc/src/runtime/api/welcome-page.html.gz",
+        "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-bun-difdhumc/src/base64/neonbase64",
+        "error": "'utf-8' codec can't decode byte 0xde in position 0: invalid continuation byte"
+      }
+    ],
+    "url": "https://github.com/oven-sh/bun.git",
+    "status": "ok",
+    "elapsed_seconds": 16.9
+  },
+  "llama.cpp": {
+    "repo": "llama.cpp",
+    "files_analyzed": 2511,
+    "files_with_errors": 17,
+    "total_loc": 484406,
+    "rooms_identified": 20,
+    "rooms": [
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 160
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 100
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 93
+      },
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 80
+      },
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 62
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 50
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 21
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 17
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 16
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 9
+      },
+      {
+        "type": "game/tournament",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "game/agent",
+        "kind": "agentic",
+        "source_count": 4
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "auth/provider",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "data/cache",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "system/queue",
+        "kind": "agentic",
+        "source_count": 1
+      },
+      {
+        "type": "io/parser",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "math/compute",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "math/metrics",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "unknown": 1413,
+      "c-family": 745,
+      "javascript": 226,
+      "python": 110
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/docs/development/llama-star/idea-arch.pdf",
+        "error": "'utf-8' codec can't decode byte 0xc4 in position 10: invalid continuation byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/gradle/wrapper/gradle-wrapper.jar",
+        "error": "'utf-8' codec can't decode byte 0xb1 in position 56: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+        "error": "'utf-8' codec can't decode byte 0xfc in position 4: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+        "error": "'utf-8' codec can't decode byte 0xbf in position 24: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+        "error": "'utf-8' codec can't decode byte 0x80 in position 39: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+        "error": "'utf-8' codec can't decode byte 0x9d in position 34: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+        "error": "'utf-8' codec can't decode byte 0xcc in position 34: invalid continuation byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+        "error": "'utf-8' codec can't decode byte 0xbd in position 34: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+        "error": "'utf-8' codec can't decode byte 0x8f in position 24: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-llama.cpp-fuiemtvb/examples/llama.android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+        "error": "'utf-8' codec can't decode byte 0x8f in position 24: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/ggerganov/llama.cpp.git",
+    "status": "ok",
+    "elapsed_seconds": 6.2
+  },
+  "clay": {
+    "repo": "clay",
+    "files_analyzed": 129,
+    "files_with_errors": 28,
+    "total_loc": 22521,
+    "rooms_identified": 5,
+    "rooms": [
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 31
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 11
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "unknown": 65,
+      "c-family": 36
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/playdate-project-example/Source/star.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/raylib-multi-context/resources/RobotoMono-Medium.ttf",
+        "error": "'utf-8' codec can't decode byte 0x80 in position 7: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/GLES3-SDL2-sidebar-scrolling-container/resources/RobotoMono-Medium.ttf",
+        "error": "'utf-8' codec can't decode byte 0x80 in position 7: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/images/check_3.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/images/check_2.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/images/check_4.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/images/check_1.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/images/check_5.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/fonts/Calistoga-Regular.ttf",
+        "error": "'utf-8' codec can't decode byte 0xe0 in position 17: invalid continuation byte"
+      },
+      {
+        "path": "/tmp/ga-batch-clay-186deazm/examples/clay-official-website/fonts/Quicksand-Semibold.ttf",
+        "error": "'utf-8' codec can't decode byte 0x88 in position 23: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/nicbarker/clay.git",
+    "status": "ok",
+    "elapsed_seconds": 1.4
+  },
+  "ruff": {
+    "repo": "ruff",
+    "files_analyzed": 9619,
+    "files_with_errors": 14,
+    "total_loc": 1315989,
+    "rooms_identified": 22,
+    "rooms": [
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 833
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 200
+      },
+      {
+        "type": "math/linear",
+        "kind": "algorithmic",
+        "source_count": 195
+      },
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 140
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 120
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 88
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 79
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 67
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 65
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 50
+      },
+      {
+        "type": "game/state",
+        "kind": "algorithmic",
+        "source_count": 15
+      },
+      {
+        "type": "data/cache",
+        "kind": "algorithmic",
+        "source_count": 9
+      },
+      {
+        "type": "game/tournament",
+        "kind": "algorithmic",
+        "source_count": 8
+      },
+      {
+        "type": "system/plugin",
+        "kind": "agentic",
+        "source_count": 7
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 7
+      },
+      {
+        "type": "game/agent",
+        "kind": "agentic",
+        "source_count": 7
+      },
+      {
+        "type": "system/queue",
+        "kind": "agentic",
+        "source_count": 4
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "io/parser",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "auth/provider",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "math/compute",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "math/metrics",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "unknown": 4871,
+      "python": 2910,
+      "rust": 1806,
+      "javascript": 18
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/docs/assets/favicon.ico",
+        "error": "'utf-8' codec can't decode byte 0xa8 in position 14: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/docs/assets/ruff-favicon.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/crates/ty/docs/tracing-flamegraph.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/crates/ruff_server/assets/nativeServer.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/assets/png/Astral.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/playground/ty/public/favicon.ico",
+        "error": "'utf-8' codec can't decode byte 0xc5 in position 30: invalid continuation byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/playground/ty/public/apple-touch-icon.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/playground/ty/public/Astral.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/playground/ty/public/favicon-16x16.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-ruff-84eqle0v/playground/ty/public/favicon-32x32.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/astral-sh/ruff.git",
+    "status": "ok",
+    "elapsed_seconds": 12.1
+  },
+  "neovim": {
+    "repo": "neovim",
+    "files_analyzed": 3623,
+    "files_with_errors": 72,
+    "total_loc": 900048,
+    "rooms_identified": 15,
+    "rooms": [
+      {
+        "type": "game/search",
+        "kind": "algorithmic",
+        "source_count": 437
+      },
+      {
+        "type": "game/render",
+        "kind": "algorithmic",
+        "source_count": 245
+      },
+      {
+        "type": "cli/interface",
+        "kind": "agentic",
+        "source_count": 109
+      },
+      {
+        "type": "io/bridge",
+        "kind": "agentic",
+        "source_count": 76
+      },
+      {
+        "type": "test/suite",
+        "kind": "algorithmic",
+        "source_count": 22
+      },
+      {
+        "type": "system/config",
+        "kind": "algorithmic",
+        "source_count": 5
+      },
+      {
+        "type": "io/parser",
+        "kind": "algorithmic",
+        "source_count": 4
+      },
+      {
+        "type": "game/tournament",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "network/router",
+        "kind": "algorithmic",
+        "source_count": 3
+      },
+      {
+        "type": "system/plugin",
+        "kind": "agentic",
+        "source_count": 2
+      },
+      {
+        "type": "auth/provider",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "system/logging",
+        "kind": "algorithmic",
+        "source_count": 2
+      },
+      {
+        "type": "data/store",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "data/model",
+        "kind": "algorithmic",
+        "source_count": 1
+      },
+      {
+        "type": "api/endpoint",
+        "kind": "algorithmic",
+        "source_count": 1
+      }
+    ],
+    "languages": {
+      "unknown": 2290,
+      "lua": 784,
+      "c-family": 469,
+      "python": 8
+    },
+    "errors": [
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/nvim.png",
+        "error": "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/syntax/hollywood.vim",
+        "error": "'utf-8' codec can't decode byte 0xf6 in position 70: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/croatian_iso-8859-2.vim",
+        "error": "'utf-8' codec can't decode byte 0xb9 in position 383: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/serbian_iso-8859-5.vim",
+        "error": "'utf-8' codec can't decode byte 0xa9 in position 338: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/serbian_cp1251.vim",
+        "error": "'utf-8' codec can't decode byte 0x8a in position 328: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/greek_cp1253.vim",
+        "error": "'utf-8' codec can't decode byte 0xc1 in position 737: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/serbian_iso-8859-2.vim",
+        "error": "'utf-8' codec can't decode byte 0xa9 in position 342: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/serbian_cp1250.vim",
+        "error": "'utf-8' codec can't decode byte 0x8a in position 320: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/accents.vim",
+        "error": "'utf-8' codec can't decode byte 0xc0 in position 352: invalid start byte"
+      },
+      {
+        "path": "/tmp/ga-batch-neovim-n6mezeby/runtime/keymap/slovak_iso-8859-2.vim",
+        "error": "'utf-8' codec can't decode byte 0xb5 in position 272: invalid start byte"
+      }
+    ],
+    "url": "https://github.com/neovim/neovim.git",
+    "status": "ok",
+    "elapsed_seconds": 18.7
+  }
+}

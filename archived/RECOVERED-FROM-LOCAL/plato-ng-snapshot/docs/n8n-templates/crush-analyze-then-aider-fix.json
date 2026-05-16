@@ -1,0 +1,78 @@
+{
+  "name": "Crush Analyze → Aider Fix",
+  "description": "Submit code to Crush for analysis. If issues found, route to Aider for fixes. Two-agent pipeline: Crush analyzes → Aider implements fixes.",
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node_crunch_analyze",
+      "name": "PLATO Crush",
+      "type": "plato_crush",
+      "position": [250, 300],
+      "parameters": {
+        "task": "={{$json.code}}",
+        "context": "={{$json.context}}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_check_issues",
+      "name": "Check Issues",
+      "type": "n8n-nodes-base.switch",
+      "position": [500, 300],
+      "parameters": {
+        "rules": {
+          "rules": [
+            {
+              "output": 0,
+              "operation": "not_exists",
+              "value1": "={{$json.error}}"
+            }
+          ]
+        },
+        "fallbackOutput": 1
+      },
+      "inputs": ["main"],
+      "outputs": ["main", "main"]
+    },
+    {
+      "id": "node_aider_fix",
+      "name": "PLATO Aider",
+      "type": "plato_aider",
+      "position": [750, 300],
+      "parameters": {
+        "task": "={{$json.fix_task}}",
+        "repo": "={{$json.repo_path}}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_log_result",
+      "name": "Log Result",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "position": [1000, 300],
+      "parameters": {
+        "fileName": "/tmp/plato-result-{{$json.tick}}.json",
+        "dataPropertyName": "={{$json}}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    }
+  ],
+  "connections": {
+    "PLATO Crush": {
+      "main": [["Check Issues", "main"]]
+    },
+    "Check Issues": {
+      "main": [["PLATO Aider", "main"]],
+      "main_1": [["Log Result", "main"]]
+    },
+    "PLATO Aider": {
+      "main": [["Log Result", "main"]]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "crush-analyze-then-aider-fix"
+}

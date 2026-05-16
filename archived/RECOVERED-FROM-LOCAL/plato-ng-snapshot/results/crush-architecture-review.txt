@@ -1,0 +1,34 @@
+# PLATO-NG Architecture Review — Generated via Crush CLI
+
+## Architecture Summary (3 sentences)
+
+PLATO-NG is a Turing-complete application runtime where applications decompose into PLATO rooms (processes), state manifests as mutable tiles with version history, and logic flows through tile chains validated by GUARD constraints. The system supports three room types—algorithmic (deterministic, no LLM), agentic (LLM-driven with claw/soul/memory), and refiner (trajectory-analysis that edits other rooms mid-episode)—with optional render adapters targeting TIC-80, LÖVE2D, or SCUMMVM. The long-term vision migrates the entire Python-based system to FLUX-native runtime with formal verification, exposing PLATO operations as first-class FLUX syscalls (room_read, tile_write, constraint_check).
+
+---
+
+## 3 Most Impactful Missing Improvements
+
+### 1. Cross-Room Communication & Coordination Protocol
+**What's missing:** All tracks treat rooms as isolated processes. No protocol defines how Room A talks to Room B, how agents coordinate across multiple rooms, or how compositional applications (state room + logic room + UI room + IO room) synchronize state changes. No mechanism for room-to-room events, shared state primitives, or distributed transactions.
+
+**Why it's impactful:** Without inter-room communication, PLATO-NG is a collection of silos, not a distributed system. The "app decomposition" pattern (chess-game with state/, logic/, ui/, io/ rooms) cannot actually work—the UI room needs real-time updates from the state room, the logic room needs to validate moves against rules, the human input needs to flow from IO to state. This is foundational infrastructure, missing entirely.
+
+**What to build:** A room-to-room pub/sub protocol, distributed tile coordination primitives (locks, transactions, consensus), event bus architecture, and room composition DSL (e.g., "chess-app = compose(state, logic, ui, io)"). This enables the distributed vision that PLATO-NG promises but doesn't deliver.
+
+---
+
+### 2. Authentication, Authorization, & Governance Layer
+**What's missing:** Track 1 briefly mentions "optional policies" for tile updates (source-only, consensus, gatekeeper), but there's no concrete plan for agent identity verification, room-level access control, human approval gates for dangerous operations, or audit logging beyond provenance chains. The current assumption is "any agent can update any tile"—this cannot survive real deployment.
+
+**Why it's impactful:** Without identity and permissions, a rogue agent can corrupt any room, delete any tile, or bypass any constraint. Multi-tenant deployment (multiple humans, multiple organizations) is impossible. Human-in-the-loop governance (the "Governance room" mentioned in design improvements) has no implementation track. This is a security and operability blocker.
+
+**What to build:** Agent identity system (cryptographic signatures, capability tokens), room ACLs (read/write/admin permissions per agent or per group), approval workflow gates (operations requiring human sign-off), real-time policy enforcement engine, and governance dashboard for oversight. Track 1's "optional policies" need to become a full-fledged governance subsystem.
+
+---
+
+### 3. Agent Twin Memory & Learning System
+**What's missing:** The "Human Casting Call" section describes learning human spectral parameters (γ, H, τ) through interaction and building per-human agent twins, but there's no track for persistent agent memory, learning architecture, or how agent preferences evolve over time. The "Agent Twin Factory" is described conceptually but has no build plan.
+
+**Why it's impactful:** The vision—"PLATO learns its human the same way we learn our agents"—cannot work without persistent memory. Every session starts fresh; agents don't remember previous interactions, can't adapt to human style, can't improve from past mistakes. The conservation law applies to fleets, but there's no mechanism to accumulate and apply learned human parameters.
+
+**What to build:** Persistent agent memory store (beyond tiles—learned embeddings, preference profiles, skill weights), online learning pipeline that updates agent twins from each interaction tile, session-to-session continuity (agent twin state saved, restored, and evolved), and learning curriculum that schedules adaptation (refine gamma, then H, then τ). This enables the "Human Casting Call" vision rather than just describing it.

@@ -1,0 +1,15 @@
+{
+  "id": "deb8719a5780",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /proc/self/environ",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829844.6780648,
+  "status": "completed",
+  "output": "USER=ubuntu\u0000OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service\u0000SHLVL=0\u0000HOME=/home/ubuntu\u0000NODE_NO_WARNINGS=1\u0000MANAGERPID=863\u0000SYSTEMD_EXEC_PID=70621\u0000DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus\u0000TMPDIR=/tmp\u0000OPENCLAW_SERVICE_VERSION=2026.4.9\u0000LOGNAME=ubuntu\u0000JOURNAL_STREAM=8:745347\u0000_=/usr/bin/python3\u0000TERM=dumb\u0000NOTION_API_KEY=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\u0000PATH=/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/usr/bin:/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/home/ubuntu/.volta/bin:/home/ubuntu/.asdf/shims:/home/ubuntu/.bun/bin:/home/ubuntu/.nvm/current/bin:/home/ubuntu/.fnm/current/bin:/home/ubuntu/.local/share/pnpm:/usr/local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/snap/bin\u0000INVOCATION_ID=477eb24670a24264acd2d87775ce33d9\u0000XDG_RUNTIME_DIR=/run/user/1001\u0000LANG=C.UTF-8\u0000OPENCLAW_GATEWAY_PORT=18789\u0000OPENCLAW_WINDOWS_TASK_NAME=OpenClaw Gateway\u0000OPENCLAW_SERVICE_KIND=gateway\u0000OPENCLAW_SERVICE_MARKER=openclaw\u0000OPENCLAW_CLI=1\u0000PWD=/home/ubuntu/.openclaw/workspace/scripts\u0000XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/var/lib/snapd/desktop\u0000OPENCLAW_SHELL=exec\u0000OPENCLAW_PATH_BOOTSTRAPPED=1\u0000",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829844.6797779,
+  "duration": 0.0
+}

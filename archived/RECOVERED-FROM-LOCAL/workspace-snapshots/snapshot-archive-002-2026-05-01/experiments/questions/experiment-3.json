@@ -1,0 +1,10 @@
+{
+  "experiment": 3,
+  "generated_from": "Experiment 2: Room context with real LLM calls",
+  "questions": [
+    "Does denser room structure (20+ tiles) flip the advantage from RAG to PLATO for small models?",
+    "Does PLATO round-trip latency dominate over context quality when using keel probe?",
+    "What is the minimum room density for room context to outperform baseline?",
+    "Does the advantage hold for different prompt formulations?"
+  ]
+}

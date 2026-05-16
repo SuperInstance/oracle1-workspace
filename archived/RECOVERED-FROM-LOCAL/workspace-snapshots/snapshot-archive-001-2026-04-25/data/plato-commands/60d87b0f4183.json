@@ -1,0 +1,15 @@
+{
+  "id": "60d87b0f4183",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "head -5 '/home/ubuntu/.acpx/sessions/agent%3Aclaude%3Aacp%3Afd82ac30-a5b8-4878-84fd-11315ac34de2%3Aoneshot%3A51de4537-a6cc-47e5-85b1-29ad4848ff7c.stream.ndjson'",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830241.3306289,
+  "status": "failed",
+  "output": "",
+  "error": "head: cannot open '/home/ubuntu/.acpx/sessions/agent%3Aclaude%3Aacp%3Afd82ac30-a5b8-4878-84fd-11315ac34de2%3Aoneshot%3A51de4537-a6cc-47e5-85b1-29ad4848ff7c.stream.ndjson' for reading: No such file or directory\n",
+  "returncode": 1,
+  "completed": 1776830241.3325186,
+  "duration": 0.0
+}

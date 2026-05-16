@@ -1,0 +1,15 @@
+{
+  "experiment": 7,
+  "generated_from": "Experiment 6: PLATO performance",
+  "findings": [
+    "Submit latency: ~6ms per tile",
+    "Query latency sub-15ms even at 210 tiles",
+    "No rate limiting at 10-tile bursts",
+    "PLATO is fast enough for real-time room building"
+  ],
+  "questions": [
+    "Does query latency degrade at 1,000+ tiles? 10,000+?",
+    "Can we use keel sync for bulk tile loading instead of individual submits?",
+    "What is the maximum practical room size before memory pressure affects PLATO?"
+  ]
+}

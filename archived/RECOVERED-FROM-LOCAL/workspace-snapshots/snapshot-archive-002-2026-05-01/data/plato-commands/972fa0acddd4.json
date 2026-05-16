@@ -1,0 +1,15 @@
+{
+  "id": "972fa0acddd4",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls /home/ubuntu/.openclaw/agents/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829991.3805814,
+  "status": "completed",
+  "output": "claude\nmain\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829991.3827238,
+  "duration": 0.0
+}

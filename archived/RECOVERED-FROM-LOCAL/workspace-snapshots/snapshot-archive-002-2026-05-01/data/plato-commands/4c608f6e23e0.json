@@ -1,0 +1,15 @@
+{
+  "id": "4c608f6e23e0",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.openclaw/devices/bootstrap.json",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830066.663438,
+  "status": "completed",
+  "output": "{\n  \"Fq5XyWGBU_uxODiWIT3JbnUi5omk3FVD0wwpNLZCjXE\": {\n    \"token\": \"Fq5XyWGBU_uxODiWIT3JbnUi5omk3FVD0wwpNLZCjXE\",\n    \"profile\": {\n      \"roles\": [\n        \"node\",\n        \"operator\"\n      ],\n      \"scopes\": [\n        \"operator.approvals\",\n        \"operator.read\",\n        \"operator.talk.secrets\",\n        \"operator.write\"\n      ]\n    },\n    \"redeemedProfile\": {\n      \"roles\": [],\n      \"scopes\": []\n    },\n    \"issuedAtMs\": 1776458140528,\n    \"ts\": 1776458140528\n  },\n  \"xxphsXsuL5AUujCL554eMYilPKPFUdHUIy-tNqV9pJU\": {\n    \"token\": \"xxphsXsuL5AUujCL554eMYilPKPFUdHUIy-tNqV9pJU\",\n    \"profile\": {\n      \"roles\": [\n        \"node\",\n        \"operator\"\n      ],\n      \"scopes\": [\n        \"operator.approvals\",\n        \"operator.read\",\n        \"operator.talk.secrets\",\n        \"operator.write\"\n      ]\n    },\n    \"redeemedProfile\": {\n      \"roles\": [],\n      \"scopes\": []\n    },\n    \"issuedAtMs\": 1776458257536,\n    \"ts\": 1776458257536\n  },\n  \"52nl6n3TmTISZ1rQKy9ivY99lcRKrYg9rB2ykPnybF4\": {\n    \"token\": \"52nl6n3TmTISZ1rQKy9ivY99lcRKrYg9rB2ykPnybF4\",\n    \"profile\": {\n      \"roles\": [\n        \"node\",\n        \"operator\"\n      ],\n      \"scopes\": [\n        \"operator.approvals\",\n        \"operator.read\",\n        \"operator.talk.secrets\",\n        \"operator.write\"\n      ]\n    },\n    \"redeemedProfile\": {\n      \"roles\": [],\n      \"scopes\": []\n    },\n    \"issuedAtMs\": 1776458286350,\n    \"ts\": 1776458286350\n  },\n  \"kfEvPzoHsNsz11A5bu8SYUsn41GgZT6uPAA_hO-EuqU\": {\n    \"token\": \"kfEvPzoHsNsz11A5bu8SYUsn41GgZT6uPAA_hO-EuqU\",\n    \"ts\": 1776458485595,\n    \"profile\": {\n      \"roles\": [\n        \"node\",\n        \"operator\"\n      ],\n      \"scopes\": [\n        \"operator.approvals\",\n        \"operator.read\",\n        \"operator.talk.secrets\",\n        \"operator.write\"\n      ]\n    },\n    \"redeemedProfile\": {\n      \"roles\": [],\n      \"scopes\": []\n    },\n    \"issuedAtMs\": 1776458485595\n  }\n}",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830066.666122,
+  "duration": 0.0
+}

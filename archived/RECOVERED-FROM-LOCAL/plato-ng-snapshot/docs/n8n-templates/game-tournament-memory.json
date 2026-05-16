@@ -1,0 +1,117 @@
+{
+  "name": "Game Tournament → Memory",
+  "description": "Run tic-tac-toe tournament between agents, store results in PLATO memory. Tournament tracks wins/losses and crystallizes game state into agent twin memory.",
+  "version": 1,
+  "nodes": [
+    {
+      "id": "node_init_tournament",
+      "name": "Initialize Tournament",
+      "type": "n8n-nodes-base.set",
+      "position": [0, 300],
+      "parameters": {
+        "values": {
+          "number": {
+            "rounds": 10,
+            "current_round": 0
+          },
+          "string": {
+            "player1_strategy": "aggressive",
+            "player2_strategy": "defensive"
+          }
+        },
+        "options": {}
+      },
+      "inputs": [],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_ttt_game",
+      "name": "PLATO Tic-Tac-Toe",
+      "type": "plato_tic_tac_toe",
+      "position": [250, 300],
+      "parameters": {
+        "strategy": "={{$json.player1_strategy}}",
+        "move": "={{$json.current_move}}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_opponent_move",
+      "name": "Opponent Move",
+      "type": "plato_tic_tac_toe",
+      "position": [500, 300],
+      "parameters": {
+        "strategy": "={{$json.player2_strategy}}"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_record_game",
+      "name": "Record Game",
+      "type": "plato_memory",
+      "position": [750, 300],
+      "parameters": {
+        "operation": "crystallize",
+        "content": "={{$json.board}}",
+        "valence": 0.7,
+        "tags": ["game", "tournament", "tic-tac-toe", "={{$json.result}}"]
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_update_score",
+      "name": "Update Score",
+      "type": "n8n-nodes-base.set",
+      "position": [1000, 300],
+      "parameters": {
+        "values": {
+          "number": {
+            "player1_wins": "={{$json.player1_wins}}",
+            "player2_wins": "={{$json.player2_wins}}",
+            "ties": "={{$json.ties}}"
+          }
+        },
+        "options": {}
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    },
+    {
+      "id": "node_governance_check",
+      "name": "Governance Check",
+      "type": "plato_governance",
+      "position": [1250, 300],
+      "parameters": {
+        "operation": "check_permission",
+        "role": "agent",
+        "room": "game/ttt",
+        "action": "play"
+      },
+      "inputs": ["main"],
+      "outputs": ["main"]
+    }
+  ],
+  "connections": {
+    "Initialize Tournament": {
+      "main": [["PLATO Tic-Tac-Toe", "main"]]
+    },
+    "PLATO Tic-Tac-Toe": {
+      "main": [["Opponent Move", "main"]]
+    },
+    "Opponent Move": {
+      "main": [["Record Game", "main"]]
+    },
+    "Record Game": {
+      "main": [["Update Score", "main"]]
+    },
+    "Update Score": {
+      "main": [["Governance Check", "main"]]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "id": "game-tournament-memory"
+}

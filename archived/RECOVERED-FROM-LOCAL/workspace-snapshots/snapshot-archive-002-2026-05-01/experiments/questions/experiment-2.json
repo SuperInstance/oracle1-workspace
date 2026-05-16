@@ -1,0 +1,10 @@
+{
+  "experiment": 2,
+  "generated_from": "Experiment 1",
+  "questions": [
+    "Does denser room structure (20+ tiles) flip the advantage from RAG to PLATO?",
+    "Does PLATO round-trip latency dominate over context quality?",
+    "Can we pre-cache room context to eliminate round-trips?",
+    "What is the minimum room density for PLATO to outperform RAG?"
+  ]
+}

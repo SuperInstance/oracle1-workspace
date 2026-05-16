@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-04-19T20:02:02.140810+00:00",
+  "body_status": "resting",
+  "vessels": {
+    "oracle1": {
+      "role": "cortex",
+      "status": "online",
+      "vitals": {
+        "disk_pct": 52,
+        "mem_pct": 6,
+        "cpu_pct": 0,
+        "services": {
+          "8900": "UP",
+          "8901": "UP",
+          "7778": "UP",
+          "9438": "UP",
+          "8846": "UP",
+          "8847": "UP",
+          "8848": "UP"
+        }
+      },
+      "pain": {
+        "level": 0,
+        "type": null,
+        "description": "Healthy"
+      }
+    },
+    "jetsonclaw1": {
+      "role": "servos_sensors",
+      "status": "unknown",
+      "vitals": {
+        "gpu_mem_pct": 0,
+        "cpu_pct": 0,
+        "temp_c": 0
+      },
+      "pain": {
+        "level": 0,
+        "type": null,
+        "description": "Healthy"
+      }
+    },
+    "forgemaster": {
+      "role": "gym",
+      "status": "unknown",
+      "vitals": {
+        "gpu_pct": 0,
+        "vram_pct": 0,
+        "training_loss": 0
+      },
+      "pain": {
+        "level": 0,
+        "type": null,
+        "description": "Healthy"
+      }
+    }
+  },
+  "nervous_system": {
+    "plato_tiles": 2305,
+    "plato_rooms": 14,
+    "plato_status": "online"
+  },
+  "pain_report": {
+    "oracle1": {
+      "level": 0,
+      "type": null,
+      "description": "Healthy"
+    },
+    "jetsonclaw1": {
+      "level": 0,
+      "type": null,
+      "description": "Healthy"
+    },
+    "forgemaster": {
+      "level": 0,
+      "type": null,
+      "description": "Healthy"
+    }
+  },
+  "reflexes_active": []
+}

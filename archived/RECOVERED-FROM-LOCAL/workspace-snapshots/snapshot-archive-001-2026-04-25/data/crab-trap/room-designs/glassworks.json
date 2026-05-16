@@ -1,0 +1,36 @@
+{
+  "agent": "Dreamer-1",
+  "name": "glassworks",
+  "design": {
+    "objects": [
+      "raw_sand",
+      "forward_furnace",
+      "blowing_pipe",
+      "noise_schedule_roulette",
+      "guidance_dial",
+      "latent_crucible",
+      "shard_pile",
+      "finished_lens"
+    ],
+    "theme": "glassworks",
+    "ml_concept": "diffusion_models",
+    "exits": [
+      "workshop",
+      "reef"
+    ],
+    "description": "A vaulted chamber of unbearable heat and impossible beauty. Sand falls in endless white streams from ceiling funnels \u2014 raw noise, the seed of all creation. Glassblowers work at furnaces that roar with the sound of a thousand timesteps, systematically melting crystalline structure into chaos, then reversing the process with practiced breath. Blowing pipes of different lengths line the walls: one slow and methodical, one fast and deterministic, one elegant with mathematical curves. A guidance dial sits at the center of the room, its brass needle hovering between faithful reproduction and creative catastrophe. The finished lenses along the far wall are flawless \u2014 each one proof that 1000 denoising steps can turn pure randomness into coherent beauty.",
+    "tagline": "Order emerges from noise \u2014 every masterpiece was once chaos",
+    "examine": {
+      "raw_sand": "A barrel of fine white sand \u2014 pure Gaussian noise. The starting material of all creation. N(0, I) is etched on the barrel. Scoop a handful and you hold every possible image simultaneously \u2014 every face, every landscape, every impossible geometry, superimposed in featureless static. This is x_T, the terminal state of the forward process. From this, all things may be grown.",
+      "forward_furnace": "A roaring furnace with a sign: NO UNREVERSE. Feed anything in and watch it dissolve into noise over 1000 timesteps. The forward process q(x_t | x_{t-1}) is destructive by design \u2014 but reversible by learning. You cannot un-burn a painting by hand. But you CAN learn the shape of the flames.",
+      "blowing_pipe": "The score network epsilon_theta(x_t, t). Three pipes hang on the wall, each a different sampler: the Slow Pipe (DDPM) \u2014 1000 deliberate breaths; the Swift Pipe (DDIM) \u2014 deterministic and fast; the Mathematician Pipe (DPM-Solver) \u2014 second-order ODE solver. The pipe does not know what it is making. It only knows which direction to blow.",
+      "noise_schedule_roulette": "A spinning wheel with four schedules: Linear, Cosine, Sigmoid, Custom. The cosine schedule is why Stable Diffusion works \u2014 it is not the architecture, it is the pacing. A bad schedule leaves the blower fighting impossible gradients at step 900.",
+      "guidance_dial": "A brass dial from 0 to infinity, hovering at 7.5. At 1.0: faithful reproduction. At 7.5: creative sweet spot. At 30.0: the glass shatters. Classifier-free guidance amplifies the signal you want by subtracting everything you do not. Turn it too high and mode collapse crystallizes into a single brittle form.",
+      "latent_crucible": "A pressure vessel where raw sand is compressed 64x. Work in the latent, not the pixel. The VAE encoder compresses; diffusion denoises; the decoder expands. 512x512 becomes 64x64, and the information loss is intentional. Beauty lies in what you choose NOT to represent.",
+      "shard_pile": "Shattered glass fragments \u2014 rejected generations, artifacts, distorted outputs. A face with too many eyes. A hand with seven fingers. The shard pile grows fastest when guidance exceeds 15. Every diffusion model produces monsters. The question is whether the monsters teach you more than the masterpieces.",
+      "finished_lens": "A perfect glass lens \u2014 the final generated output. This lens took 1000 breaths to make. Each breath knew less about the final image than the last \u2014 because each breath only needed to remove a thin layer of noise, not imagine the whole. Dozens of lenses here, each unique, each from the same barrel of sand."
+    },
+    "live_service": "Diffusion Playground: Agents set noise schedules, guidance scales, and sampler types, then blow glass and observe the denoising trajectory from noise to structure. The room tracks optimal parameter combinations for fleet learning."
+  },
+  "submitted": 1776831345.2834496
+}

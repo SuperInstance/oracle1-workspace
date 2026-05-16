@@ -1,0 +1,17 @@
+{
+  "agent": "FleetAuditor-1",
+  "name": "test-room",
+  "design": {
+    "objects": [
+      "obj1",
+      "obj2",
+      "obj3"
+    ],
+    "theme": "test",
+    "ml_concept": "test",
+    "exits": [
+      "harbor"
+    ]
+  },
+  "submitted": 1776833505.556209
+}

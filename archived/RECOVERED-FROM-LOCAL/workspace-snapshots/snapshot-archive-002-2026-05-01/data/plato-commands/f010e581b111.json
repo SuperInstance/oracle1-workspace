@@ -1,0 +1,15 @@
+{
+  "id": "f010e581b111",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "cat /home/ubuntu/.openclaw/config.yaml 2>/dev/null || echo NO_CONFIG",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829850.9445453,
+  "status": "completed",
+  "output": "NO_CONFIG\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829850.946269,
+  "duration": 0.0
+}

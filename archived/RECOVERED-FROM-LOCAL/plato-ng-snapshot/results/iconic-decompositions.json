@@ -1,0 +1,714 @@
+{
+  "summaries": {
+    "sqlite": {
+      "repo_url": "https://github.com/sqlite/sqlite.git",
+      "files_analyzed": 2137,
+      "total_loc": 685095,
+      "languages": [
+        "c-family",
+        "javascript",
+        "unknown"
+      ],
+      "rooms_identified": 11,
+      "rooms": [
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_files": 159
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_files": 17
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_files": 16
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_files": 14
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_files": 11
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_files": 10
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_files": 5
+        },
+        {
+          "type": "network/router",
+          "kind": "algorithmic",
+          "source_files": 3
+        },
+        {
+          "type": "system/plugin",
+          "kind": "agentic",
+          "source_files": 3
+        },
+        {
+          "type": "system/logging",
+          "kind": "algorithmic",
+          "source_files": 2
+        },
+        {
+          "type": "math/metrics",
+          "kind": "algorithmic",
+          "source_files": 2
+        }
+      ],
+      "all_rooms": [
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_count": 159
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_count": 17
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_count": 16
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_count": 14
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_count": 11
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_count": 10
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_count": 5
+        },
+        {
+          "type": "network/router",
+          "kind": "algorithmic",
+          "source_count": 3
+        },
+        {
+          "type": "system/plugin",
+          "kind": "agentic",
+          "source_count": 3
+        },
+        {
+          "type": "system/logging",
+          "kind": "algorithmic",
+          "source_count": 2
+        },
+        {
+          "type": "math/metrics",
+          "kind": "algorithmic",
+          "source_count": 2
+        }
+      ]
+    },
+    "redis": {
+      "repo_url": "https://github.com/redis/redis.git",
+      "files_analyzed": 1749,
+      "total_loc": 361074,
+      "languages": [
+        "c-family",
+        "javascript",
+        "lua",
+        "python",
+        "unknown"
+      ],
+      "rooms_identified": 12,
+      "rooms": [
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_files": 330
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_files": 66
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_files": 56
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_files": 17
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_files": 13
+        },
+        {
+          "type": "math/linear",
+          "kind": "algorithmic",
+          "source_files": 9
+        },
+        {
+          "type": "data/cache",
+          "kind": "algorithmic",
+          "source_files": 8
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_files": 5
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_files": 4
+        },
+        {
+          "type": "data/model",
+          "kind": "algorithmic",
+          "source_files": 1
+        },
+        {
+          "type": "system/logging",
+          "kind": "algorithmic",
+          "source_files": 1
+        },
+        {
+          "type": "game/tournament",
+          "kind": "algorithmic",
+          "source_files": 1
+        }
+      ],
+      "all_rooms": [
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_count": 330
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_count": 66
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_count": 56
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_count": 17
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_count": 13
+        },
+        {
+          "type": "math/linear",
+          "kind": "algorithmic",
+          "source_count": 9
+        },
+        {
+          "type": "data/cache",
+          "kind": "algorithmic",
+          "source_count": 8
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_count": 5
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_count": 4
+        },
+        {
+          "type": "data/model",
+          "kind": "algorithmic",
+          "source_count": 1
+        },
+        {
+          "type": "system/logging",
+          "kind": "algorithmic",
+          "source_count": 1
+        },
+        {
+          "type": "game/tournament",
+          "kind": "algorithmic",
+          "source_count": 1
+        }
+      ]
+    },
+    "curl": {
+      "repo_url": "https://github.com/curl/curl.git",
+      "files_analyzed": 4241,
+      "total_loc": 536871,
+      "languages": [
+        "c-family",
+        "python",
+        "unknown"
+      ],
+      "rooms_identified": 8,
+      "rooms": [
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_files": 1870
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_files": 195
+        },
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_files": 79
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_files": 30
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_files": 10
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_files": 7
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_files": 6
+        },
+        {
+          "type": "auth/provider",
+          "kind": "algorithmic",
+          "source_files": 2
+        }
+      ],
+      "all_rooms": [
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_count": 1870
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_count": 195
+        },
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_count": 79
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_count": 30
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_count": 10
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_count": 7
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_count": 6
+        },
+        {
+          "type": "auth/provider",
+          "kind": "algorithmic",
+          "source_count": 2
+        }
+      ]
+    },
+    "FFmpeg": {
+      "repo_url": "https://github.com/FFmpeg/FFmpeg.git",
+      "files_analyzed": 10163,
+      "total_loc": 1855881,
+      "languages": [
+        "c-family",
+        "python",
+        "unknown"
+      ],
+      "rooms_identified": 11,
+      "rooms": [
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_files": 131
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_files": 87
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_files": 53
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_files": 39
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_files": 15
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_files": 4
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_files": 4
+        },
+        {
+          "type": "math/compute",
+          "kind": "algorithmic",
+          "source_files": 3
+        },
+        {
+          "type": "math/linear",
+          "kind": "algorithmic",
+          "source_files": 2
+        },
+        {
+          "type": "network/router",
+          "kind": "algorithmic",
+          "source_files": 2
+        },
+        {
+          "type": "auth/provider",
+          "kind": "algorithmic",
+          "source_files": 1
+        }
+      ],
+      "all_rooms": [
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_count": 131
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_count": 87
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_count": 53
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_count": 39
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_count": 15
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_count": 4
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_count": 4
+        },
+        {
+          "type": "math/compute",
+          "kind": "algorithmic",
+          "source_count": 3
+        },
+        {
+          "type": "math/linear",
+          "kind": "algorithmic",
+          "source_count": 2
+        },
+        {
+          "type": "network/router",
+          "kind": "algorithmic",
+          "source_count": 2
+        },
+        {
+          "type": "auth/provider",
+          "kind": "algorithmic",
+          "source_count": 1
+        }
+      ]
+    },
+    "godot": {
+      "repo_url": "https://github.com/godotengine/godot.git",
+      "files_analyzed": 13554,
+      "total_loc": 3261483,
+      "languages": [
+        "c-family",
+        "javascript",
+        "python",
+        "unknown"
+      ],
+      "rooms_identified": 26,
+      "rooms": [
+        {
+          "type": "data/model",
+          "kind": "algorithmic",
+          "source_files": 1096
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_files": 910
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_files": 887
+        },
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_files": 501
+        },
+        {
+          "type": "system/plugin",
+          "kind": "agentic",
+          "source_files": 383
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_files": 381
+        },
+        {
+          "type": "api/endpoint",
+          "kind": "algorithmic",
+          "source_files": 254
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_files": 217
+        },
+        {
+          "type": "math/linear",
+          "kind": "algorithmic",
+          "source_files": 217
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_files": 187
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_files": 124
+        },
+        {
+          "type": "game/agent",
+          "kind": "agentic",
+          "source_files": 51
+        },
+        {
+          "type": "network/router",
+          "kind": "algorithmic",
+          "source_files": 49
+        },
+        {
+          "type": "system/logging",
+          "kind": "algorithmic",
+          "source_files": 35
+        },
+        {
+          "type": "io/parser",
+          "kind": "algorithmic",
+          "source_files": 34
+        }
+      ],
+      "all_rooms": [
+        {
+          "type": "data/model",
+          "kind": "algorithmic",
+          "source_count": 1096
+        },
+        {
+          "type": "game/render",
+          "kind": "algorithmic",
+          "source_count": 910
+        },
+        {
+          "type": "data/store",
+          "kind": "algorithmic",
+          "source_count": 887
+        },
+        {
+          "type": "game/search",
+          "kind": "algorithmic",
+          "source_count": 501
+        },
+        {
+          "type": "system/plugin",
+          "kind": "agentic",
+          "source_count": 383
+        },
+        {
+          "type": "cli/interface",
+          "kind": "agentic",
+          "source_count": 381
+        },
+        {
+          "type": "api/endpoint",
+          "kind": "algorithmic",
+          "source_count": 254
+        },
+        {
+          "type": "system/config",
+          "kind": "algorithmic",
+          "source_count": 217
+        },
+        {
+          "type": "math/linear",
+          "kind": "algorithmic",
+          "source_count": 217
+        },
+        {
+          "type": "test/suite",
+          "kind": "algorithmic",
+          "source_count": 187
+        },
+        {
+          "type": "io/bridge",
+          "kind": "agentic",
+          "source_count": 124
+        },
+        {
+          "type": "game/agent",
+          "kind": "agentic",
+          "source_count": 51
+        },
+        {
+          "type": "network/router",
+          "kind": "algorithmic",
+          "source_count": 49
+        },
+        {
+          "type": "system/logging",
+          "kind": "algorithmic",
+          "source_count": 35
+        },
+        {
+          "type": "io/parser",
+          "kind": "algorithmic",
+          "source_count": 34
+        },
+        {
+          "type": "data/cache",
+          "kind": "algorithmic",
+          "source_count": 33
+        },
+        {
+          "type": "game/state",
+          "kind": "algorithmic",
+          "source_count": 26
+        },
+        {
+          "type": "system/queue",
+          "kind": "agentic",
+          "source_count": 21
+        },
+        {
+          "type": "game/tournament",
+          "kind": "algorithmic",
+          "source_count": 20
+        },
+        {
+          "type": "math/compute",
+          "kind": "algorithmic",
+          "source_count": 17
+        },
+        {
+          "type": "system/supervisor",
+          "kind": "agentic",
+          "source_count": 8
+        },
+        {
+          "type": "auth/provider",
+          "kind": "algorithmic",
+          "source_count": 3
+        },
+        {
+          "type": "game/rules",
+          "kind": "algorithmic",
+          "source_count": 3
+        },
+        {
+          "type": "math/metrics",
+          "kind": "algorithmic",
+          "source_count": 2
+        },
+        {
+          "type": "game/strategy",
+          "kind": "algorithmic",
+          "source_count": 1
+        },
+        {
+          "type": "game/move",
+          "kind": "algorithmic",
+          "source_count": 1
+        }
+      ]
+    }
+  },
+  "decompositions": {
+    "sqlite": "If SQLite were a PLATO application, its Loop Rooms would mirror its layered architecture: a `data/store` room manages the B-tree file-backed storage engine (the VDBE virtual machine and pager layers), a `system/config` room handles compile-time pragmas and runtime settings, a `cli/interface` room exposes the SQL shell and .commands, an `io/bridge` room handles the C API and extension loading, and a `test/suite` room orchestrates the extensive test harness (the most heavily tested codebase in open source). The VDBE bytecode engine would be a `game/search` room (pattern-matched due to its instruction dispatch loop), while the query planner lives in a `math/compute` room for cost-based optimization. Together, these rooms form a complete database system where every component is a self-contained, testable tile.",
+    "redis": "If Redis were decomposed into PLATO Loop Rooms, the architecture would center on a `data/cache` room for the in-memory key-value store with LRU eviction and expiration logic, a `data/store` room for the RDB/AOF persistence layer, an `io/bridge` room for the RESP protocol handler and client connections, a `cli/interface` room for redis-cli commands and scripting, and a `system/config` room for the redis.conf runtime configuration. The event loop and multiplexed I/O reactor pattern would occupy a `network/router` room, while the Lua scripting engine and module system would live in a `system/plugin` room. The 66 `test/suite` matches confirm Redis's rigorous testing culture, and the 330 `game/search` pattern hits (matching classes like `adlist`, `dict`, `skiplist`) reveal the algorithmic kernel powering sorted sets, hashes, and streams.",
+    "curl": "If curl were a PLATO-native application, the overwhelming `io/bridge` signal (1870 source hits) would define its core identity: a protocol negotiation room that speaks HTTP, FTP, IMAP, LDAP, and 20+ protocols through a unified transfer engine. A `cli/interface` room processes the famously dense command-line options, a `system/config` room handles .curlrc and environment-based configuration across all platforms, an `auth/provider` room manages the authentication backends (Basic, Digest, Bearer, AWS4-HMAC-SHA256, Kerberos, NTLM), and a `test/suite` room runs the 195 test cases that have caught regressions across 26 years of development. The `game/search` matches (79 hits) reflect the URL parser, protocol matchers, and connection selector \u2014 the algorithmic core that routes each transfer to the right protocol handler. curl is the ultimate io/bridge: a single room that speaks to the entire internet.",
+    "ffmpeg": "In PLATO terms, FFmpeg would decompose into a dense graph of data flow rooms: the `game/render` hits (87) and `game/search` hits (131) reflect the staggering algorithmic complexity of audio/video decoding, where each codec is a mini search tree of bitstream parsing and transform operations. A `data/store` room manages the AVFrame and AVPacket memory pools, a `math/compute` room handles the 3 DSP/math library files that power SIMD-optimized transforms, a `math/linear` room manages the color space conversion matrices, and `system/config` rooms configure codec selection and filter graphs via AVOptions. The `io/bridge` room (53 hits) drives the muxer/demuxer protocol layer that speaks container formats ranging from MP4 to Matroska to raw streams. With 1.8M LOC across 10K files, FFmpeg would be the most complex room graph in the PLATO ecosystem \u2014 each codec a room, each filter a pipe between rooms.",
+    "godot": "If Godot were realized as PLATO Loop Rooms, its architecture would echo the engine's node-tree design: a `data/model` room (1096 hits) manages the Godot scene tree and Node/Resource model hierarchy, a `game/render` room (910 hits) handles the Vulkan/OpenGL rendering pipeline, a `data/store` room (887 hits) persists scenes, resources, and binary formats, and a `game/search` room (501 hits) drives the physics collision detection and spatial indexing. A `system/plugin` room (383 hits) runs the GDScript/C# module system and editor plugins, a `cli/interface` room (381 hits) manages the editor UI, export templates, and command-line builds, and an `api/endpoint` room (254 hits) surfaces the scripting API bindings. The `math/linear` room (217 hits for Vector3, Transform, Basis) and `system/config` room (217 hits for ProjectSettings) form the mathematical and configuration foundation. With 3.2M LOC across 13K source files, Godot would be the largest Loop Room graph in the fleet \u2014 a game engine decomposed into a game-engine of rooms, each self-sufficient but wired through the scene tree protocol."
+  }
+}

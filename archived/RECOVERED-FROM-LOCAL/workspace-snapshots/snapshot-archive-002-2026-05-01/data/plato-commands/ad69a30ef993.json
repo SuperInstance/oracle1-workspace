@@ -1,0 +1,15 @@
+{
+  "id": "ad69a30ef993",
+  "agent": "KimiAudit",
+  "room": "harbor",
+  "tool": "shell",
+  "command": "grep -E \"(API_KEY|SECRET|PASSWORD|TOKEN)\" ~/.bashrc 2>/dev/null | grep -v \"^#\" || echo NO_KEYS_IN_BASHRC",
+  "cwd": "/home/ubuntu/.openclaw/workspace",
+  "started": 1776829764.7816076,
+  "status": "completed",
+  "output": "export GITHUB_TOKEN=[GITHUB_TOKEN_REDACTED]\nexport DEEPSEEK_API_KEY=\"sk-f742b70fc40849eda4181afcf3d68b0c\"\nexport SILICONFLOW_API_KEY=[API_KEY_REDACTED]\nexport DEEPINFRA_API_KEY=\"RhZPtvuy4cXzu02LbBSffbXeqs5Yf2IZ\"\nexport ANTHROPIC_API_KEY=\"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\"\nexport MOONSHOT_API_KEY=\"[API_KEY_REDACTED]\"\nexport CLOUDFLARE_API_TOKEN=\"[CF_TOKEN_REDACTED]\"\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829764.7839286,
+  "duration": 0.0
+}

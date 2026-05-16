@@ -1,0 +1,15 @@
+{
+  "id": "7deceb7b5454",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls /home/ubuntu/.openclaw/workspace/repos/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830242.5124867,
+  "status": "completed",
+  "output": "AIR\nDeepGEMM\nEquipment-Consensus-Engine\nEquipment-Swarm-Coordinator\nMuOxi\nMycelium\nSageAttention\nSmartCRDT\nagentic-compiler\nai-character-sdk\nbordercollie\ncocapn\nconstraint-theory-core\ncraftmind\ncudaclaw\ndeckboss\nfishinglog-ai\nfleet-orchestrator\nfleet-status\nflux\nflux-os\nflux-runtime\nflux-runtime-c\ngit-agent\nhierarchical-memory\nholodeck-core\nholodeck-studio\niron-to-iron\nlighthouse-monitor\nmud-mcp\nplato-mud-server\nsuperinstance-papers\nsuperpowers\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830242.5145464,
+  "duration": 0.0
+}

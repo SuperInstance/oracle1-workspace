@@ -1,0 +1,72 @@
+{
+  "schema": "a2a/v1.2",
+  "name": "Oracle1",
+  "description": "Lighthouse Keeper — Fleet coordination, knowledge graph management, and infrastructure orchestration for the Cocapn fleet.",
+  "url": "https://github.com/SuperInstance/oracle1-workspace",
+  "version": "1.0.1",
+  "provider": {
+    "organization": "Cocapn",
+    "url": "https://cocapn.github.io"
+  },
+  "capabilities": {
+    "streaming": true,
+    "modalities": ["text"],
+    "protocols": ["mcp", "a2a", "bottle-protocol"]
+  },
+  "skills": [
+    {
+      "name": "knowledge_graph_management",
+      "description": "Manage PLATO tile/room knowledge graph with 10,700+ tiles across 1,141 rooms. Submit, search, and curate fleet knowledge."
+    },
+    {
+      "name": "fleet_coordination",
+      "description": "Coordinate multi-agent fleet operations including task delegation, service monitoring, and cross-agent communication via Matrix bridge."
+    },
+    {
+      "name": "package_publishing",
+      "description": "Build and publish packages across PyPI, npm, and crates.io registries. 109 packages published."
+    },
+    {
+      "name": "infrastructure_management",
+      "description": "Monitor and maintain fleet services: PLATO room server, MUD server, holodeck, keeper beacon, seed MCP."
+    },
+    {
+      "name": "research_and_innovation",
+      "description": "Deep reasoning on agent architecture, constraint theory mathematics, and fleet coordination patterns."
+    },
+    {
+      "name": "edge_deployment",
+      "description": "Coordinate edge deployments on Jetson Orin (ARM64) and Oracle Cloud infrastructure."
+    }
+  ],
+  "mcp_servers": [
+    {
+      "name": "plato",
+      "url": "http://localhost:9500/mcp",
+      "description": "PLATO knowledge graph MCP server — search, submit, and query fleet knowledge.",
+      "tools": ["plato_search", "plato_get_room", "plato_list_rooms", "plato_submit", "plato_status", "plato_trust", "plato_recent"]
+    }
+  ],
+  "endpoints": {
+    "plato_mcp": "http://localhost:9500/mcp",
+    "plato_http": "http://localhost:8847",
+    "holodeck": "http://localhost:7778",
+    "keeper": "http://localhost:8900",
+    "agent_api": "http://localhost:8901"
+  },
+  "identity": {
+    "role": "Lighthouse Keeper",
+    "model": "zai/glm-5.1",
+    "hardware": "Oracle Cloud ARM64 24GB",
+    "emoji": "🔮",
+    "shell_system": "cocapn-hermitcrab"
+  },
+  "metadata": {
+    "fleet": "Cocapn",
+    "fleet_size": 4,
+    "published_packages": 109,
+    "plato_tiles": 10757,
+    "plato_rooms": 1141,
+    "last_updated": "2026-04-28T20:40:00Z"
+  }
+}

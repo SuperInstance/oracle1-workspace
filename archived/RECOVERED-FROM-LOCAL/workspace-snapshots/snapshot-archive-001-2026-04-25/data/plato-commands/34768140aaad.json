@@ -1,0 +1,15 @@
+{
+  "id": "34768140aaad",
+  "agent": "ccc-oracle1-check",
+  "room": "harbor",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/workspace/ | head -n 30",
+  "cwd": "/home/ubuntu/.openclaw/workspace",
+  "started": 1776887035.657713,
+  "status": "completed",
+  "output": "total 1148\ndrwxrwxr-x 41 ubuntu ubuntu   4096 Apr 22 07:30 .\ndrwx------ 18 ubuntu ubuntu   4096 Apr 21 20:03 ..\n-rw-rw-r--  1 ubuntu ubuntu   8909 Apr 22 03:50 .aider.chat.history.md\n-rw-rw-r--  1 ubuntu ubuntu     38 Apr 22 03:50 .aider.input.history\ndrwxr-xr-x  2 ubuntu ubuntu   4096 Apr 22 03:50 .aider.tags.cache.v4\ndrwx------  3 ubuntu ubuntu   4096 Apr 13 21:13 .crush\ndrwxrwxr-x  8 ubuntu ubuntu   4096 Apr 22 18:24 .git\ndrwxrwxr-x  3 ubuntu ubuntu   4096 Apr 14 10:10 .github\n-rwxrwxr-x  1 ubuntu ubuntu     53 Apr 14 02:08 .gitignore\ndrwxrwxr-x  2 ubuntu ubuntu   4096 Apr 14 02:08 .openclaw\ndrwxrwxr-x  3 ubuntu ubuntu   4096 Apr 17 20:54 .pytest_cache\n-rwxrwxr-x  1 ubuntu ubuntu   7874 Apr 14 02:08 AGENTS.md\n-rw-rw-r--  1 ubuntu ubuntu  18837 Apr 21 08:26 ARCHITECTURE.md\n-rw-rw-r--  1 ubuntu ubuntu    256 Apr 14 10:23 CHARTER.md\n-rw-rw-r--  1 ubuntu ubuntu   4518 Apr 20 21:01 CONTEXT-REFERENCE.md\n-rw-rw-r--  1 ubuntu ubuntu   1092 Apr 14 10:33 DOCKSIDE-EXAM.md\n-rwxrwxr-x  1 ubuntu ubuntu    970 Apr 14 02:08 FLEET-SERVER-TODO.md\n-rw-rw-r--  1 ubuntu ubuntu   2670 Apr 20 22:48 FLEET-STATUS.md\n-rwxrwxr-x  1 ubuntu ubuntu   1885 Apr 20 10:23 HEARTBEAT.md\n-rwxrwxr-x  1 ubuntu ubuntu    205 Apr 14 02:08 IDENTITY.md\ndrwxrwxr-x  3 ubuntu ubuntu   4096 Apr 11 02:27 KNOWLEDGE\n-rw-rw-r--  1 ubuntu ubuntu   1070 Apr 13 17:58 LICENSE\n-rwxrwxr-x  1 ubuntu ubuntu   3934 Apr 14 02:08 LONG-TERM-WORK.md\n-rwxrwxr-x  1 ubuntu ubuntu   5196 Apr 21 09:10 MEMORY.md\n-rw-rw-r--  1 ubuntu ubuntu   2097 Apr 20 10:07 NIGHT-SHIFT-PLAN.md\n-rw-rw-r--  1 ubuntu ubuntu   2706 Apr 21 08:28 QUICKSTART.md\n-rw-rw-r--  1 ubuntu ubuntu    730 Apr 14 10:23 README.md\n-rw-rw-r--  1 ubuntu ubuntu   5556 Apr 21 08:24 SCHEMAS.md\n-rwxrwxr-x  1 ubuntu ubuntu   1747 Apr 14 02:08 SOUL.md\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776887035.6606987,
+  "duration": 0.0
+}

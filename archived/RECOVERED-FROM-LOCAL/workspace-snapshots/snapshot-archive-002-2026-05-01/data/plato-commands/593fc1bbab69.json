@@ -1,0 +1,15 @@
+{
+  "id": "593fc1bbab69",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/agents/main/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830013.6378927,
+  "status": "completed",
+  "output": "total 32\ndrwx------ 4 ubuntu ubuntu  4096 Apr 10 02:53 .\ndrwx------ 4 ubuntu ubuntu  4096 Apr 18 18:59 ..\ndrwx------ 2 ubuntu ubuntu  4096 Apr 22 03:48 agent\ndrwxrwxr-x 2 ubuntu ubuntu 20480 Apr 22 03:52 sessions\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830013.6401365,
+  "duration": 0.0
+}

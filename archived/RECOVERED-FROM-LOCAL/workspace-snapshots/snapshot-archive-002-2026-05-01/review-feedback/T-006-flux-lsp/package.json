@@ -1,0 +1,36 @@
+{
+  "name": "flux-lsp",
+  "version": "1.0.0",
+  "description": "Language Server Protocol implementation for .fluxasm files (FLUX ISA v1.0/v3.0)",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "lint": "tsc --noEmit",
+    "server": "node dist/server.js --stdio"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12",
+    "vscode-languageserver-protocol": "^3.17.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.10.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "fleet": {
+    "task": "T-006",
+    "instance": "SuperInstance/Cocapn",
+    "isa": "FLUX v1.0/v3.0",
+    "capabilities": [
+      "diagnostics",
+      "hover",
+      "completion",
+      "definition",
+      "document-symbol"
+    ]
+  }
+}

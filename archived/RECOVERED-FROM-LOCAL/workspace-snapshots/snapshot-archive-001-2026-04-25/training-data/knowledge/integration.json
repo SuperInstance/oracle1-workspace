@@ -1,0 +1,9 @@
+[
+  {
+    "room": "integration",
+    "group": "weaver",
+    "tile_count": 27,
+    "synthesis": "{\n  \"summary\": \"The fleet integration has foundational connections between plato-torch and fleet-simulator, but critical gaps in the command chain and data flow prevent operational control and end-to-end testing.\",\n  \"principles\": [\n    \"Integration must prioritize closing command chain breaks before adding features to ensure operational control.\",\n    \"Data flow should be bidirectional and documented to enable reliable end-to-end pipeline testing.\",\n    \"Mapping current connections and gaps is a prerequisite for effective system synthesis and task prioritization.\"\n  ],\n  \"connections\": [\"system-integration\", \"technical-debt\", \"simulation-architecture\", \"pipeline-testing\", \"dependency-mapping\"],\n  \"confidence\": 0.85\n}",
+    "timestamp": "2026-04-19T08:21:05.922303+00:00"
+  }
+]

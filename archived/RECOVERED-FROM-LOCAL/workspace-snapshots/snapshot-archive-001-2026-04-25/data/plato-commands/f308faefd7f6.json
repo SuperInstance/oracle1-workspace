@@ -1,0 +1,15 @@
+{
+  "id": "f308faefd7f6",
+  "agent": "subagent-shell-1",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "python -m pytest --version",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829074.4835074,
+  "status": "failed",
+  "output": "",
+  "error": "/bin/sh: 1: python: not found\n",
+  "returncode": 127,
+  "completed": 1776829074.4843886,
+  "duration": 0.0
+}

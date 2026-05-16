@@ -1,0 +1,373 @@
+{
+  "timestamp": "2026-05-15T08:29:53Z",
+  "min_tiles": 10,
+  "total_rooms": 3439,
+  "qualifying_rooms": 1802,
+  "rooms": {
+    "fleet-coord": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "stuck",
+          "severity": "high",
+          "detail": "Same result in last 5 tiles"
+        }
+      ],
+      "edits": {
+        "p": "default room configuration\n# Refinement: try a different approach\n"
+      }
+    },
+    "flux-engine": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "degrading",
+          "severity": "high",
+          "detail": "Negative score trend -0.237"
+        }
+      ],
+      "edits": {
+        "K": [],
+        "p": "default room configuration"
+      }
+    },
+    "calibration": {
+      "status": "healthy",
+      "tiles": 3386
+    },
+    "fleet_health": {
+      "status": "healthy",
+      "tiles": 2502
+    },
+    "agent-oracle1": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "stuck",
+          "severity": "high",
+          "detail": "Same result in last 5 tiles"
+        },
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "p": "default room configuration\n# Refinement: try a different approach\n",
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "tension": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "oracle1-forgemaster-bridge": {
+      "status": "healthy",
+      "tiles": 1131
+    },
+    "synthesis": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "experiment_scale": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "research_log": {
+      "status": "healthy",
+      "tiles": 796
+    },
+    "forge": {
+      "status": "healthy",
+      "tiles": 656
+    },
+    "fleet-coupling": {
+      "status": "healthy",
+      "tiles": 621
+    },
+    "fleet-inspector": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "stuck",
+          "severity": "high",
+          "detail": "Same result in last 5 tiles"
+        },
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "p": "default room configuration\n# Refinement: try a different approach\n",
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "swarm-insights": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "stuck",
+          "severity": "high",
+          "detail": "Same result in last 5 tiles"
+        },
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "p": "default room configuration\n# Refinement: try a different approach\n",
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "innovation-heartbeat": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "fleet_tools": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833794"
+        ]
+      }
+    },
+    "game/tic-tac-toe": {
+      "status": "waiting",
+      "tiles": 4
+    },
+    "experiment_perf": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "fleet-experiments": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "stuck",
+          "severity": "high",
+          "detail": "Same result in last 5 tiles"
+        },
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "p": "default room configuration\n# Refinement: try a different approach\n",
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "fleet_synthesis": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "experiment_bulk": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "edge": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "neural-inference": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "fleet_experiments": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend -0.015 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "fleet-health": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend -0.008 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    },
+    "fleet-time": {
+      "status": "refined",
+      "failures": [
+        {
+          "type": "plateau",
+          "severity": "medium",
+          "detail": "Score trend 0.000 over 10 tiles"
+        }
+      ],
+      "edits": {
+        "K": [
+          "adaptive-strategy-1778833795"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "total_failures_found": 23,
+    "most_common_failure": "plateau",
+    "failure_type_counts": {
+      "stuck": 5,
+      "degrading": 1,
+      "plateau": 17
+    },
+    "rooms_with_harness_edits": [
+      "fleet-coord",
+      "flux-engine",
+      "agent-oracle1",
+      "tension",
+      "synthesis",
+      "experiment_scale",
+      "fleet-inspector",
+      "swarm-insights",
+      "innovation-heartbeat",
+      "fleet_tools",
+      "experiment_perf",
+      "fleet-experiments",
+      "fleet_synthesis",
+      "experiment_bulk",
+      "edge",
+      "neural-inference",
+      "fleet_experiments",
+      "fleet-health",
+      "fleet-time"
+    ],
+    "duration_seconds": 2.4
+  }
+}

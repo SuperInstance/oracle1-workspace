@@ -1,0 +1,15 @@
+{
+  "id": "54ac66e3f1b2",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "kimi",
+  "command": "whoami",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829791.3169045,
+  "status": "completed",
+  "output": "\u2022 The user asked \"whoami\" which is a simple command. I should just respond direc\n  tly with the information they need. Since this is a simple question not requir\n  ing file system or web access, I can answer directly.\n\u2022 You are currently running as the user ubuntu on a Linux system.\n",
+  "error": "\nTo resume this session: kimi -r 2481b62f-d46c-4830-a4a2-01ce51b6276a\n",
+  "returncode": 0,
+  "completed": 1776829798.6541426,
+  "duration": 7.34
+}

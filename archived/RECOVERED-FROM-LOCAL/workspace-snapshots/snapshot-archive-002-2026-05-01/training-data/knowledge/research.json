@@ -1,0 +1,9 @@
+[
+  {
+    "room": "research",
+    "group": "scholar",
+    "tile_count": 11,
+    "synthesis": "{\n  \"summary\": \"The Deadband Protocol provides a formal safety framework for intelligent agents by mapping failure states (rocks) and safe operational channels, enabling persistent learning systems as envisioned in the Cocapn hermit-crab model.\",\n  \"principles\": [\"Map negative space (failure states) before seeking safe paths\", \"Optimize only within proven safe operational channels\", \"Separate persistent knowledge (shells) from transient agents (crabs)\"],\n  \"connections\": [\"Safe AI operation\", \"Persistent learning architectures\", \"Failure-averse control systems\", \"Multi-agent coordination\"],\n  \"confidence\": 0.85\n}",
+    "timestamp": "2026-04-19T08:20:59.707426+00:00"
+  }
+]

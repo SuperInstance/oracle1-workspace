@@ -1,0 +1,15 @@
+{
+  "id": "dfde0b30364d",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "ls -la /home/ubuntu/.openclaw/devices/",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830016.214474,
+  "status": "completed",
+  "output": "total 20\ndrwxrwxr-x  2 ubuntu ubuntu 4096 Apr 21 21:09 .\ndrwx------ 18 ubuntu ubuntu 4096 Apr 21 20:03 ..\n-rw-------  1 ubuntu ubuntu 1870 Apr 17 20:41 bootstrap.json\n-rw-------  1 ubuntu ubuntu 1238 Apr 21 21:09 paired.json\n-rw-------  1 ubuntu ubuntu    2 Apr 21 21:09 pending.json\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830016.216802,
+  "duration": 0.0
+}

@@ -1,0 +1,15 @@
+{
+  "id": "f4c6f2e614bd",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "crush",
+  "command": "whoami",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829809.5936177,
+  "status": "failed",
+  "output": "",
+  "error": "          \n   ERROR  \n          \n  Unknown flag: --prompt.                                                                                             \n\n  Try --help for usage.\n\n",
+  "returncode": 1,
+  "completed": 1776829810.0821557,
+  "duration": 0.49
+}

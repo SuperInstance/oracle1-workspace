@@ -1,0 +1,15 @@
+{
+  "id": "4b81dc02cb1d",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "shell",
+  "command": "whoami && groups",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776830243.0592785,
+  "status": "completed",
+  "output": "ubuntu\nubuntu adm dialout cdrom floppy sudo audio dip video plugdev netdev lxd docker\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776830243.0619671,
+  "duration": 0.0
+}

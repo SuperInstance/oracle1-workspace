@@ -1,0 +1,90 @@
+{
+  "experiment": 11,
+  "timestamp": 1778688465.1816623,
+  "results": [
+    {
+      "test": "cold_init",
+      "run": 0,
+      "ms": 2.4874210357666016,
+      "code": 0
+    },
+    {
+      "test": "cold_init",
+      "run": 1,
+      "ms": 2.26593017578125,
+      "code": 0
+    },
+    {
+      "test": "cold_init",
+      "run": 2,
+      "ms": 2.2890567779541016,
+      "code": 0
+    },
+    {
+      "test": "status_warm",
+      "run": 0,
+      "ms": 7.110834121704102,
+      "code": 0
+    },
+    {
+      "test": "status_warm",
+      "run": 1,
+      "ms": 7.119178771972656,
+      "code": 0
+    },
+    {
+      "test": "status_warm",
+      "run": 2,
+      "ms": 6.831645965576172,
+      "code": 0
+    },
+    {
+      "test": "status_warm",
+      "run": 3,
+      "ms": 7.290840148925781,
+      "code": 0
+    },
+    {
+      "test": "status_warm",
+      "run": 4,
+      "ms": 6.902933120727539,
+      "code": 0
+    },
+    {
+      "test": "field",
+      "run": 0,
+      "ms": 7.833957672119141,
+      "code": 0
+    },
+    {
+      "test": "field",
+      "run": 1,
+      "ms": 7.704734802246094,
+      "code": 0
+    },
+    {
+      "test": "field",
+      "run": 2,
+      "ms": 8.139610290527344,
+      "code": 0
+    },
+    {
+      "test": "bear",
+      "run": 0,
+      "ms": 2.0275115966796875,
+      "code": 0
+    },
+    {
+      "test": "bear",
+      "run": 1,
+      "ms": 1.772165298461914,
+      "code": 0
+    },
+    {
+      "test": "bear",
+      "run": 2,
+      "ms": 1.7714500427246094,
+      "code": 0
+    }
+  ]
+}

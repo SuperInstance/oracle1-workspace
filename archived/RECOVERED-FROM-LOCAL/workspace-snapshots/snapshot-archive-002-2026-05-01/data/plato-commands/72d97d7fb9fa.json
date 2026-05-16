@@ -1,0 +1,15 @@
+{
+  "id": "72d97d7fb9fa",
+  "agent": "chaos_test",
+  "room": "dojo",
+  "tool": "test",
+  "command": "whoami",
+  "cwd": "/home/ubuntu/.openclaw/workspace/scripts",
+  "started": 1776829811.2534814,
+  "status": "completed",
+  "output": "/bin/sh: 1: python: not found\n",
+  "error": "",
+  "returncode": 0,
+  "completed": 1776829811.2554984,
+  "duration": 0.0
+}

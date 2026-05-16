@@ -1,0 +1,11 @@
+{
+  "api_key": "",
+  "model": "glm-5-turbo",
+  "base_url": "https://api.z.ai/api/coding/pas/v4",
+  "lighthouse_url": "http://127.0.0.1:8900",
+  "fleet": {
+    "identity": "superz-twin",
+    "vessel_type": "quartermaster",
+    "home_org": "SuperInstance"
+  }
+}
