@@ -41,3 +41,4 @@ data/rate-attention/
 capitaine-ai-pages/
 flux-compiler/
 api-keys/
+Cargo.lock
