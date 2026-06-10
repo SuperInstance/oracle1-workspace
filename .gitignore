@@ -42,3 +42,6 @@ capitaine-ai-pages/
 flux-compiler/
 api-keys/
 Cargo.lock
+.env
+credentials.*
+*.secret
