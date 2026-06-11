@@ -1,1 +1,3 @@
-{}
+{
+  "tests/test_analyze_repo.py::TestGetTree::test_max_depth": true
+}
